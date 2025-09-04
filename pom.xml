@@ -24,12 +24,12 @@
 -->
   <!-- OpenNMS Top-Level POM -->
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms</groupId>
-  <artifactId>opennms</artifactId>
+  <groupId>org.citadel</groupId>
+  <artifactId>citadel</artifactId>
   <version>35.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>OpenNMS</name>
-  <url>http://opennms.org/</url>
+  <name>Citadel</name>
+  <url>http://citadel.org/</url>
   <description>
     OpenNMS is the world's first enterprise grade network management platform developed under the open source model. It consists of a community supported open-source project as well as a commercial services, training and support organization.
   </description>
@@ -39,23 +39,23 @@
       <url>http://www.gnu.org/licenses/agpl.html</url>
       <comments>
         This Maven metadata is provided for informational purposes only. For specific licensing
-        questions, please contact: OpenNMS(R) Licensing (license@opennms.org)
+        questions, please contact: OpenNMS(R) Licensing (license@citadel.org)
       </comments>
     </license>
   </licenses>
   <issueManagement>
     <system>Jira</system>
-    <url>http://issues.opennms.org/</url>
+    <url>http://issues.citadel.org/</url>
  </issueManagement>
   <ciManagement>
     <system>CircleCI</system>
-    <url>https://app.circleci.com/pipelines/github/OpenNMS/opennms</url>
+    <url>https://app.circleci.com/pipelines/github/OpenNMS/citadel</url>
   </ciManagement>
   <developers>
     <developer>
       <id>soleger</id>
       <name>Seth Leger</name>
-      <email>seth@opennms.org</email>
+      <email>seth@citadel.org</email>
       <roles>
         <role>OGP Member</role>
         <role>Software Architect</role>
@@ -66,7 +66,7 @@
     <developer>
       <id>brozow</id>
       <name>Matt Brozowski</name>
-      <email>brozow@opennms.org</email>
+      <email>brozow@citadel.org</email>
       <roles>
         <role>OGP Member</role>
         <role>Software Architect</role>
@@ -77,7 +77,7 @@
     <developer>
       <id>rangerrick</id>
       <name>Benjamin Reed</name>
-      <email>ranger@opennms.org</email>
+      <email>ranger@citadel.org</email>
       <roles>
         <role>OGP Member</role>
         <role>Software Developer</role>
@@ -87,9 +87,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/OpenNMS/opennms.git</connection>
-    <developerConnection>scm:git:https://${user.name}@github.com/OpenNMS/opennms.git</developerConnection>
-    <url>https://github.com/OpenNMS/opennms</url>
+    <connection>scm:git:https://github.com/OpenNMS/citadel.git</connection>
+    <developerConnection>scm:git:https://${user.name}@github.com/OpenNMS/citadel.git</developerConnection>
+    <url>https://github.com/OpenNMS/citadel</url>
   </scm>
   <modules>
     <!-- new structure -->
@@ -104,35 +104,35 @@
     <module>ui</module>
 
     <!-- old structure -->
-    <module>opennms-util</module>
-    <module>opennms-bootstrap</module>
-    <module>opennms-model</module>
-    <module>opennms-ackd</module>
-    <module>opennms-alarms</module>
-    <module>opennms-config-tester</module>
-    <module>opennms-dao-api</module>
-    <module>opennms-dao</module>
-    <module>opennms-dao-mock</module>
-    <module>opennms-icmp</module>
-    <module>opennms-javamail</module>
-    <module>opennms-rrd</module>
-    <module>opennms-config-api</module>
-    <module>opennms-config-jaxb</module>
-    <module>opennms-config</module>
-    <module>opennms-config-model</module>
-    <module>opennms-provision</module>
-    <module>opennms-enterprise-reporting</module>
-    <module>opennms-services</module>
-    <module>opennms-taglib</module>
-    <module>opennms-jetty</module>
-    <module>opennms-correlation</module>
-    <module>opennms-web-api</module>
-    <module>opennms-web-dependencies</module>
-    <module>opennms-webapp</module>
-    <module>opennms-webapp-rest</module>
-    <module>opennms-wmi</module>
-    <module>opennms-asterisk</module>
-    <module>opennms-config-dao</module>
+    <module>citadel-util</module>
+    <module>citadel-bootstrap</module>
+    <module>citadel-model</module>
+    <module>citadel-ackd</module>
+    <module>citadel-alarms</module>
+    <module>citadel-config-tester</module>
+    <module>citadel-dao-api</module>
+    <module>citadel-dao</module>
+    <module>citadel-dao-mock</module>
+    <module>citadel-icmp</module>
+    <module>citadel-javamail</module>
+    <module>citadel-rrd</module>
+    <module>citadel-config-api</module>
+    <module>citadel-config-jaxb</module>
+    <module>citadel-config</module>
+    <module>citadel-config-model</module>
+    <module>citadel-provision</module>
+    <module>citadel-enterprise-reporting</module>
+    <module>citadel-services</module>
+    <module>citadel-taglib</module>
+    <module>citadel-jetty</module>
+    <module>citadel-correlation</module>
+    <module>citadel-web-api</module>
+    <module>citadel-web-dependencies</module>
+    <module>citadel-webapp</module>
+    <module>citadel-webapp-rest</module>
+    <module>citadel-wmi</module>
+    <module>citadel-asterisk</module>
+    <module>citadel-config-dao</module>
   </modules>
   <build>
   <extensions>
@@ -1067,7 +1067,7 @@
               <repositoryType>PLUGIN</repositoryType>
             </DynamicDependency>
             <DynamicDependency>
-              <groupId>org.opennms.maven.plugins</groupId>
+              <groupId>org.citadel.maven.plugins</groupId>
               <artifactId>structure-maven-plugin</artifactId>
               <version>1.0</version>
               <repositoryType>PLUGIN</repositoryType>
@@ -1082,7 +1082,7 @@
         <version>3.4.1</version>
       </plugin>
       <plugin>
-        <groupId>org.opennms.maven.plugins</groupId>
+        <groupId>org.citadel.maven.plugins</groupId>
         <artifactId>structure-maven-plugin</artifactId>
         <version>1.0</version>
       </plugin>
@@ -1093,7 +1093,7 @@
         <configuration>
           <properties>
             <owner>The OpenNMS Group, Inc.</owner>
-            <email>license@opennms.com</email>
+            <email>license@citadel.com</email>
           </properties>
           <licenseSets>
             <licenseSet>
@@ -1141,8 +1141,8 @@
                 <exclude>src/test/resources/test-data.sql</exclude>
 
                 <!-- don't need this can o' worms for now -->
-                <exclude>opennms-base-assembly/src/main/filtered/etc</exclude>
-                <exclude>opennms-base-assembly/src/main/resources</exclude>
+                <exclude>citadel-base-assembly/src/main/filtered/etc</exclude>
+                <exclude>citadel-base-assembly/src/main/resources</exclude>
 
                 <!-- BSD + GPL, see header for details -->
                 <exclude>core/test-api/dns/**/DNSServer.java</exclude>
@@ -1197,10 +1197,10 @@
              <goals><goal>directory-of</goal></goals>
              <phase>initialize</phase>
              <configuration>
-               <property>opennms.build.basedir</property>
+               <property>citadel.build.basedir</property>
                <project>
-                 <groupId>org.opennms</groupId>
-                 <artifactId>opennms</artifactId>
+                 <groupId>org.citadel</groupId>
+                 <artifactId>citadel</artifactId>
                </project>
              </configuration>
            </execution>
@@ -1239,7 +1239,7 @@
                <!-- ban dependencies that should be replaced with custom or better stuff -->
                <bannedDependencies>
                  <excludes>
-                   <!-- use org.opennms.dependencies:jaxb-dependencies:pom -->
+                   <!-- use org.citadel.dependencies:jaxb-dependencies:pom -->
                    <exclude>com.sun.xml.bind:*</exclude>
                    <exclude>com.sun.xml.bind.mvn:*</exclude>
                    <exclude>org.glassfish.jaxb:jaxb-core</exclude>
@@ -1261,7 +1261,7 @@
                    <exclude>javax.ws.rs:jsr311-api</exclude>         <!-- use: javax.ws.rs-api -->
                    <exclude>javax.xml.bind:jaxb-api</exclude>        <!-- use: jaxb-dependencies -->
                    <exclude>jdom:jdom</exclude>                      <!-- use: org.apache.servicemix.bundles.jdom -->
-                   <exclude>net.sf.jung:*</exclude>                  <!-- use: org.opennms.dependencies:jung-shaded -->
+                   <exclude>net.sf.jung:*</exclude>                  <!-- use: org.citadel.dependencies:jung-shaded -->
                    <exclude>log4j:log4j</exclude>                    <!-- use: log4j2 -->
                    <exclude>nekohtml:nekohtml</exclude>              <!-- use: org.nokogiri:nekohtml -->
                    <exclude>org.apache.geronimo.specs/geronimo-jms_2.0_spec</exclude>   <!-- use: javax.jms:javax.jms-api -->
@@ -1346,7 +1346,7 @@
          <additionalConfig>
            <file>
              <name>.settings/org.eclipse.jdt.core.prefs</name>
-             <url>https://opennms.svn.sourceforge.net/svnroot/opennms/opennms/trunk/src/main/eclipse/org.eclipse.jdt.core.prefs</url>
+             <url>https://citadel.svn.sourceforge.net/svnroot/citadel/citadel/trunk/src/main/eclipse/org.eclipse.jdt.core.prefs</url>
            </file>
          </additionalConfig>
        </configuration>
@@ -1400,7 +1400,7 @@
           <skip>${skipSurefire}</skip>
           <systemPropertyVariables>
             <!-- Turn off queuing in the RRD output -->
-            <org.opennms.rrd.usequeue>false</org.opennms.rrd.usequeue>
+            <org.citadel.rrd.usequeue>false</org.citadel.rrd.usequeue>
             <java.awt.headless>true</java.awt.headless>
             <java.locale.providers>CLDR,COMPAT</java.locale.providers>
             <mock.debug>${mock.debug}</mock.debug>
@@ -1413,16 +1413,16 @@
             <mock.db.adminPassword>${mock.db.adminPassword}</mock.db.adminPassword>
             <mock.runSnmpTests>${mock.runSnmpTests}</mock.runSnmpTests>
             <mock.snmpHost>${mock.snmpHost}</mock.snmpHost>
-            <opennms.library.jicmp>${opennms.library.jicmp}</opennms.library.jicmp>
-            <opennms.library.jrrd>${opennms.library.jrrd}</opennms.library.jrrd>
+            <citadel.library.jicmp>${citadel.library.jicmp}</citadel.library.jicmp>
+            <citadel.library.jrrd>${citadel.library.jrrd}</citadel.library.jrrd>
             <install.rrdtool.bin>${install.rrdtool.bin}</install.rrdtool.bin>
             <runRtTests>${runRtTests}</runRtTests>
             <runMailTests>${runMailTests}</runMailTests>
             <runPingTests>${runPingTests}</runPingTests>
             <skipIpv6Tests>${skipIpv6Tests}</skipIpv6Tests>
             <proxy.port>${proxy.port}</proxy.port>
-            <opennms.version>${project.version}</opennms.version>
-            <!-- <opennms.unit.test>true</opennms.unit.test> -->
+            <citadel.version>${project.version}</citadel.version>
+            <!-- <citadel.unit.test>true</citadel.unit.test> -->
           </systemPropertyVariables>
           <forkCount>1</forkCount>
           <reuseForks>false</reuseForks>
@@ -1678,31 +1678,31 @@
     <docs.product.version>33</docs.product.version>
     <install.version>${project.version}</install.version>
     <display.version>${install.version}</display.version>
-    <opennms.home>${dist.dir}/${dist.name}</opennms.home>
-    <opennms.osgi.version>35.0.0.SNAPSHOT</opennms.osgi.version>
+    <citadel.home>${dist.dir}/${dist.name}</citadel.home>
+    <citadel.osgi.version>35.0.0.SNAPSHOT</citadel.osgi.version>
     <root.dir>${project.basedir}</root.dir>
     <dist.dir>${root.dir}/target</dist.dir>
-    <dist.name>opennms-${project.version}</dist.name>
+    <dist.name>citadel-${project.version}</dist.name>
 
     <!-- install.prefix: a prefix used for installation in or chroot -->
     <install.prefix/>
-    <install.package.name>opennms</install.package.name>
+    <install.package.name>citadel</install.package.name>
     <install.package.description>OpenNMS</install.package.description>
-    <install.dir>${opennms.home}</install.dir>
+    <install.dir>${citadel.home}</install.dir>
     <install.init.dir>${install.dir}/bin</install.init.dir>
     <install.webapps.dir>${install.dir}/webapps</install.webapps.dir>
-    <install.servlet.dir>${install.webapps.dir}/opennms</install.servlet.dir>
+    <install.servlet.dir>${install.webapps.dir}/citadel</install.servlet.dir>
     <install.share.dir>${install.dir}/share</install.share.dir>
     <install.bin.dir>${install.dir}/bin</install.bin.dir>
     <install.contrib.dir>${install.dir}/contrib</install.contrib.dir>
     <install.etc.dir>${install.dir}/etc</install.etc.dir>
     <install.logs.dir>${install.dir}/logs</install.logs.dir>
-    <install.pid.file>${install.logs.dir}/opennms.pid</install.pid.file>
+    <install.pid.file>${install.logs.dir}/citadel.pid</install.pid.file>
 
     <install.postgresql.service>postgresql</install.postgresql.service>
-    <install.database.name>opennms</install.database.name>
-    <install.database.user>${scv:postgres:username|opennms}</install.database.user>
-    <install.database.password>${scv:postgres:password|opennms}</install.database.password>
+    <install.database.name>citadel</install.database.name>
+    <install.database.user>${scv:postgres:username|citadel}</install.database.user>
+    <install.database.password>${scv:postgres:password|citadel}</install.database.password>
     <install.database.admin.user>${scv:postgres-admin:username|postgres}</install.database.admin.user>
     <install.database.admin.password>${scv:postgres-admin:password|}</install.database.admin.password>
     <install.database.driver>org.postgresql.Driver</install.database.driver>
@@ -1712,21 +1712,21 @@
     <runMailTests>true</runMailTests>
 
     <!-- rpm specific -->
-    <rpm.install.dir>/opt/opennms</rpm.install.dir>
+    <rpm.install.dir>/opt/citadel</rpm.install.dir>
     <rpm.build.executable>rpmbuild</rpm.build.executable>
     <rpm.build.docs>1</rpm.build.docs>
     <rpm.sign>false</rpm.sign>
     <rpm.buildtests>false</rpm.buildtests>
-    <rpm.database.user>opennms</rpm.database.user>
+    <rpm.database.user>citadel</rpm.database.user>
     <rpm.additional.args/>
-    <rpm.database.name>opennms</rpm.database.name>
-    <rpm.database.password>opennms</rpm.database.password>
+    <rpm.database.name>citadel</rpm.database.name>
+    <rpm.database.password>citadel</rpm.database.password>
 
     <testcontainers.version>1.19.6</testcontainers.version>
     <test.keystore>${project.build.directory}/test-keystore.jks</test.keystore>
-    <test.storepass>opennms</test.storepass>
-    <test.keyalias>opennms-keystore-key</test.keyalias>
-    <test.keypass>opennms</test.keypass>
+    <test.storepass>citadel</test.storepass>
+    <test.keyalias>citadel-keystore-key</test.keyalias>
+    <test.keypass>citadel</test.keypass>
     <test.dnameCn>cn=${user.name}</test.dnameCn>
 
     <!-- whether to enable snapshot dependencies when building -->
@@ -1935,8 +1935,8 @@
     <okhttp3Version>3.10.0</okhttp3Version>
     <okioGrafanaVersion>1.17.6</okioGrafanaVersion>
     <openid4javaVersion>0.9.6</openid4javaVersion>
-    <opennmsApiVersion>1.6.1</opennmsApiVersion>
-    <opennmsApiVersionOsgi>1.6.1</opennmsApiVersionOsgi>
+    <citadelApiVersion>1.6.1</citadelApiVersion>
+    <citadelApiVersionOsgi>1.6.1</citadelApiVersionOsgi>
     <osgiVersion>7.0.0</osgiVersion>
     <osgiAnnotationVersion>7.0.0</osgiAnnotationVersion>
     <osgiCompendiumVersion>7.0.0</osgiCompendiumVersion>
@@ -2183,7 +2183,7 @@
         Whether to enable pulling snapshot dependencies from remote maven.
 
         This should match <repositories> in the default reactor, *plus*
-        add the `opennms-snapshots` repo. (We skip the eclipse repository
+        add the `citadel-snapshots` repo. (We skip the eclipse repository
         as it's a special case.)
       -->
       <repositories>
@@ -2201,9 +2201,9 @@
           </snapshots>
         </repository>
         <repository>
-          <id>opennms-snapshots</id>
+          <id>citadel-snapshots</id>
           <name>OpenNMS Snapshot Maven Mega-Repository</name>
-          <url>https://maven.opennms.org/repository/everything/</url>
+          <url>https://maven.citadel.org/repository/everything/</url>
           <releases>
             <enabled>false</enabled>
           </releases>
@@ -2242,9 +2242,9 @@
           </snapshots>
         </pluginRepository>
         <pluginRepository>
-          <id>opennms-snapshots</id>
+          <id>citadel-snapshots</id>
           <name>OpenNMS Snapshot Maven Mega-Repository</name>
-          <url>https://maven.opennms.org/repository/everything/</url>
+          <url>https://maven.citadel.org/repository/everything/</url>
           <releases>
             <enabled>false</enabled>
           </releases>
@@ -2355,13 +2355,13 @@
     <profile>
       <id>assemblies</id>
       <modules>
-        <module>opennms-full-assembly</module>
+        <module>citadel-full-assembly</module>
       </modules>
     </profile>
     <profile>
       <id>build-bamboo</id>
       <modules>
-        <module>opennms-full-assembly</module>
+        <module>citadel-full-assembly</module>
       </modules>
     </profile>
     <profile>
@@ -2434,8 +2434,8 @@
               </dependency>
             </dependencies>
             <configuration>
-              <configLocation>${opennms.build.basedir}/src/main/resources/nms_checks.xml</configLocation>
-              <suppressionsLocation>${opennms.build.basedir}/src/main/resources/checkstyle-suppressions.xml</suppressionsLocation>
+              <configLocation>${citadel.build.basedir}/src/main/resources/nms_checks.xml</configLocation>
+              <suppressionsLocation>${citadel.build.basedir}/src/main/resources/checkstyle-suppressions.xml</suppressionsLocation>
               <!-- <sourceDirectory> is needed so that checkstyle ignores the generated sources directory -->
               <sourceDirectories>${project.build.sourceDirectory}</sourceDirectories>
               <includeResources>true</includeResources>
@@ -2460,668 +2460,668 @@
   </profiles>
   <dependencyManagement>
     <dependencies>
-      <!--  opennms dependencies that are outside of the opennms/trunk project -->
+      <!--  citadel dependencies that are outside of the citadel/trunk project -->
       <!--  PLEASE KEEP THESE IN ALPHABETICAL ORDER -->
       <dependency>
-        <groupId>org.opennms.integration.api</groupId>
+        <groupId>org.citadel.integration.api</groupId>
         <artifactId>api</artifactId>
-        <version>${opennmsApiVersion}</version>
+        <version>${citadelApiVersion}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.integration.api</groupId>
+        <groupId>org.citadel.integration.api</groupId>
         <artifactId>common</artifactId>
-        <version>${opennmsApiVersion}</version>
+        <version>${citadelApiVersion}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.integration.api</groupId>
+        <groupId>org.citadel.integration.api</groupId>
         <artifactId>config</artifactId>
-        <version>${opennmsApiVersion}</version>
+        <version>${citadelApiVersion}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.integration.api</groupId>
+        <groupId>org.citadel.integration.api</groupId>
         <artifactId>karaf-features</artifactId>
-        <version>${opennmsApiVersion}</version>
+        <version>${citadelApiVersion}</version>
         <type>pom</type>
       </dependency>
 
-      <!--  opennms dependencies -->
+      <!--  citadel dependencies -->
       <!--  PLEASE KEEP THESE IN ALPHABETICAL ORDER -->
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-ackd</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-ackd</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.api</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.logging</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.logging</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.logging.log4j</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.logging.log4j</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.camel</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.camel</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.config</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.config</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.criteria</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.criteria</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.db</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.db</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.db.install</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.db.install</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.lib</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.lib</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.osgid</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.osgid</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.rpc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc.api</artifactId>
+        <groupId>org.citadel.core.ipc.rpc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.rpc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc.camel</artifactId>
+        <groupId>org.citadel.core.ipc.rpc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc.camel</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.rpc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc.common</artifactId>
+        <groupId>org.citadel.core.ipc.rpc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc.common</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.rpc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc.commands</artifactId>
+        <groupId>org.citadel.core.ipc.rpc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc.commands</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.rpc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc.utils</artifactId>
+        <groupId>org.citadel.core.ipc.rpc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc.utils</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.rpc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc.xml</artifactId>
+        <groupId>org.citadel.core.ipc.rpc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc.xml</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.sink</groupId>
-        <artifactId>org.opennms.core.ipc.sink.api</artifactId>
+        <groupId>org.citadel.core.ipc.sink</groupId>
+        <artifactId>org.citadel.core.ipc.sink.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.sink</groupId>
-        <artifactId>org.opennms.core.ipc.sink.xml</artifactId>
+        <groupId>org.citadel.core.ipc.sink</groupId>
+        <artifactId>org.citadel.core.ipc.sink.xml</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.common</groupId>
-        <artifactId>org.opennms.core.ipc.common.kafka-shell</artifactId>
+        <groupId>org.citadel.core.ipc.common</groupId>
+        <artifactId>org.citadel.core.ipc.common.kafka-shell</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.mate</groupId>
-        <artifactId>org.opennms.core.mate.api</artifactId>
+        <groupId>org.citadel.core.mate</groupId>
+        <artifactId>org.citadel.core.mate.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.mate</groupId>
-        <artifactId>org.opennms.core.mate.model</artifactId>
+        <groupId>org.citadel.core.mate</groupId>
+        <artifactId>org.citadel.core.mate.model</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.runtime</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.runtime</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.schema</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.schema</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.schema</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.schema</artifactId>
         <classifier>liquibase</classifier>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.snmp</groupId>
-        <artifactId>org.opennms.core.snmp.api</artifactId>
+        <groupId>org.citadel.core.snmp</groupId>
+        <artifactId>org.citadel.core.snmp.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.soa</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.soa</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.spring</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.spring</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.spring-web</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.spring-web</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.tasks</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.tasks</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.upgrade</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.upgrade</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.web</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.web</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.web-assets</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.web-assets</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.xml</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.xml</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.lib</artifactId>
-        <version>${project.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.activemq</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.lib</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.camel</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.activemq</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.collection</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.camel</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.db</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.collection</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.dns</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.db</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.http</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.dns</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.kafka</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.http</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.rest</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.kafka</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.services</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.rest</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.snmp</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.services</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.ssh</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.snmp</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.xml</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.ssh</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.charts</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.xml</artifactId>
+        <version>${project.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.charts</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.dhcpd</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.dhcpd</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.discovery</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.discovery</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.geocoder</groupId>
-        <artifactId>org.opennms.features.geocoder.api</artifactId>
+        <groupId>org.citadel.features.geocoder</groupId>
+        <artifactId>org.citadel.features.geocoder.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.geocoder</groupId>
-        <artifactId>org.opennms.features.geocoder.google</artifactId>
+        <groupId>org.citadel.features.geocoder</groupId>
+        <artifactId>org.citadel.features.geocoder.google</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.geocoder</groupId>
-        <artifactId>org.opennms.features.geocoder.nominatim</artifactId>
+        <groupId>org.citadel.features.geocoder</groupId>
+        <artifactId>org.citadel.features.geocoder.nominatim</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.jdbc-collector</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.jdbc-collector</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.name-cutter</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.name-cutter</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.notifications</groupId>
-        <artifactId>org.opennms.features.notifications.api</artifactId>
+        <groupId>org.citadel.features.notifications</groupId>
+        <artifactId>org.citadel.features.notifications.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.mib-compiler</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.mib-compiler</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.request-tracker</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.request-tracker</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.phonebook</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.phonebook</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.system-report</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.system-report</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.events</groupId>
-        <artifactId>org.opennms.features.events.api</artifactId>
+        <groupId>org.citadel.features.events</groupId>
+        <artifactId>org.citadel.features.events.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.events</groupId>
-        <artifactId>org.opennms.features.events.daemon</artifactId>
+        <groupId>org.citadel.features.events</groupId>
+        <artifactId>org.citadel.features.events.daemon</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.events</groupId>
-        <artifactId>org.opennms.features.events.syslog</artifactId>
+        <groupId>org.citadel.features.events</groupId>
+        <artifactId>org.citadel.features.events.syslog</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.events</groupId>
-        <artifactId>org.opennms.features.events.traps</artifactId>
+        <groupId>org.citadel.features.events</groupId>
+        <artifactId>org.citadel.features.events.traps</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.enlinkd</groupId>
-        <artifactId>org.opennms.features.enlinkd.service.api</artifactId>
+        <groupId>org.citadel.features.enlinkd</groupId>
+        <artifactId>org.citadel.features.enlinkd.service.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.enlinkd</groupId>
-        <artifactId>org.opennms.features.enlinkd.persistence.api</artifactId>
+        <groupId>org.citadel.features.enlinkd</groupId>
+        <artifactId>org.citadel.features.enlinkd.persistence.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.api</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.collectors</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.collectors</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.core</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.client-rpc</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.client-rpc</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.persistence.osgi</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.persistence.osgi</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.persistence.rrd</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.persistence.rrd</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.test-api</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.test-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.thresholding.api</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.thresholding.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.collection</groupId>
-        <artifactId>org.opennms.features.collection.persistence.tcp</artifactId>
+        <groupId>org.citadel.features.collection</groupId>
+        <artifactId>org.citadel.features.collection.persistence.tcp</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.poller</groupId>
-        <artifactId>org.opennms.features.poller.api</artifactId>
+        <groupId>org.citadel.features.poller</groupId>
+        <artifactId>org.citadel.features.poller.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.poller</groupId>
-        <artifactId>org.opennms.features.poller.client-rpc</artifactId>
+        <groupId>org.citadel.features.poller</groupId>
+        <artifactId>org.citadel.features.poller.client-rpc</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.poller</groupId>
-        <artifactId>org.opennms.features.poller.shell</artifactId>
+        <groupId>org.citadel.features.poller</groupId>
+        <artifactId>org.citadel.features.poller.shell</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.instrumentationLogReader</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.instrumentationLogReader</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.springframework-security</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.springframework-security</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.reporting</groupId>
-        <artifactId>org.opennms.features.reporting.api</artifactId>
+        <groupId>org.citadel.features.reporting</groupId>
+        <artifactId>org.citadel.features.reporting.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.reporting</groupId>
-        <artifactId>org.opennms.features.reporting.core</artifactId>
+        <groupId>org.citadel.features.reporting</groupId>
+        <artifactId>org.citadel.features.reporting.core</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.reporting</groupId>
-        <artifactId>org.opennms.features.reporting.dao</artifactId>
+        <groupId>org.citadel.features.reporting</groupId>
+        <artifactId>org.citadel.features.reporting.dao</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.reporting</groupId>
-        <artifactId>org.opennms.features.reporting.sdo</artifactId>
+        <groupId>org.citadel.features.reporting</groupId>
+        <artifactId>org.citadel.features.reporting.sdo</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.reporting</groupId>
-        <artifactId>org.opennms.features.reporting.model</artifactId>
+        <groupId>org.citadel.features.reporting</groupId>
+        <artifactId>org.citadel.features.reporting.model</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.reporting</groupId>
-        <artifactId>org.opennms.features.reporting.jasper-reports</artifactId>
+        <groupId>org.citadel.features.reporting</groupId>
+        <artifactId>org.citadel.features.reporting.jasper-reports</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.reporting</groupId>
-        <artifactId>org.opennms.features.reporting.availability</artifactId>
+        <groupId>org.citadel.features.reporting</groupId>
+        <artifactId>org.citadel.features.reporting.availability</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.reporting</groupId>
-        <artifactId>org.opennms.features.reporting.repository</artifactId>
+        <groupId>org.citadel.features.reporting</groupId>
+        <artifactId>org.citadel.features.reporting.repository</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.ticketing</groupId>
-        <artifactId>org.opennms.features.ticketing.api</artifactId>
+        <groupId>org.citadel.features.ticketing</groupId>
+        <artifactId>org.citadel.features.ticketing.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.provisioning</groupId>
-        <artifactId>org.opennms.features.provisioning.api</artifactId>
+        <groupId>org.citadel.features.provisioning</groupId>
+        <artifactId>org.citadel.features.provisioning.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.provisioning</groupId>
-        <artifactId>org.opennms.features.provisioning.lib</artifactId>
+        <groupId>org.citadel.features.provisioning</groupId>
+        <artifactId>org.citadel.features.provisioning.lib</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.topology</groupId>
-        <artifactId>org.opennms.features.topology.api</artifactId>
+        <groupId>org.citadel.features.topology</groupId>
+        <artifactId>org.citadel.features.topology.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
+        <groupId>org.citadel.features</groupId>
         <artifactId>vaadin</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-map-provisioning-adapter</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-map-provisioning-adapter</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-wsman-asset-provisioning-adapter</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-wsman-asset-provisioning-adapter</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-snmp-asset-provisioning-adapter</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-snmp-asset-provisioning-adapter</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-snmp-hardware-inventory-provisioning-adapter</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-snmp-hardware-inventory-provisioning-adapter</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-geoip-provisioning-adapter</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-geoip-provisioning-adapter</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-snmp-metadata-provisioning-adapter</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-snmp-metadata-provisioning-adapter</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.assemblies</groupId>
-        <artifactId>org.opennms.assemblies.webapp-full</artifactId>
+        <groupId>org.citadel.assemblies</groupId>
+        <artifactId>org.citadel.assemblies.webapp-full</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-alarmd</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-alarmd</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-alarm-northbounder-email</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-alarm-northbounder-email</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-alarm-northbounder-syslog</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-alarm-northbounder-syslog</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-alarm-northbounder-snmptrap</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-alarm-northbounder-snmptrap</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-alarm-northbounder-jms</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-alarm-northbounder-jms</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-alarm-northbounder-bsf</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-alarm-northbounder-bsf</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-alarm-northbounder-drools</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-alarm-northbounder-drools</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
+        <groupId>org.citadel</groupId>
         <artifactId>drools-correlation-engine</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-mock-simpleserver</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-mock-simpleserver</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.tests</groupId>
-        <artifactId>org.opennms.tests.mock-snmp-agent</artifactId>
+        <groupId>org.citadel.tests</groupId>
+        <artifactId>org.citadel.tests.mock-snmp-agent</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>activemq-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>activemq-web-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>atomikos-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>aws-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>camel-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>camel-test-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>liquibase-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>felix-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>geronimo-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>gwt-maps-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jackson1-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jackson2-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
@@ -3132,13 +3132,13 @@
         <version>${jsonVersion}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jasypt-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jung-shaded</artifactId>
         <version>${project.version}</version>
         <exclusions>
@@ -3159,13 +3159,13 @@
         <version>${jasyptVersion}_1</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>javamail-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jaxb-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
@@ -3176,595 +3176,595 @@
         <version>2.0.0</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jcifs-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jinterop-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jna-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jradius-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jrobin-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jrrd-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jrrd2-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jstl-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>oia-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>pax-exam-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>quartz-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>servlet-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>spring-security-core-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>spring-security-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-bootstrap</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-bootstrap</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-config-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-config-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-config-jaxb</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-config-jaxb</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-config</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-config</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-config-model</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-config-model</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-config-model</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-config-model</artifactId>
         <version>${project.version}</version>
         <classifier>xsds</classifier>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-config-tester</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-config-tester</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-config-utils</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-config-utils</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-correlator</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-correlator</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.daemon</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.daemon</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-dao</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-dao</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-dao-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-dao-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-dao-mock</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-dao-mock</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-base-assembly</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-base-assembly</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-bsf</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-bsf</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-datagram</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-datagram</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-dhcp</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-dhcp</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-generic</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-generic</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-jdbc</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-jdbc</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-jmx</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-jmx</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-jms</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-jms</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-rdns-lookup</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-rdns-lookup</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-lineoriented</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-lineoriented</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-simple</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-simple</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-ssh</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-ssh</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detector-web</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detector-web</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-detectorclient-rpc</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-detectorclient-rpc</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-provision-command</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-provision-command</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-requisition-service</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-requisition-service</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>drools-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>hibernate-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-full-assembly</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-full-assembly</artifactId>
         <version>${project.version}</version>
         <type>tar.gz</type>
         <classifier>dist</classifier>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-icmp-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-icmp-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-icmp-jni</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-icmp-jni</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-icmp-jni6</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-icmp-jni6</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-icmp-jna</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-icmp-jna</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-icmp-best</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-icmp-best</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.icmp-jna</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.icmp-jna</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-javamail-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-javamail-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>opennms-integration-rt</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>citadel-integration-rt</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-install</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-install</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>cxf-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-jetty</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-jetty</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>mina-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>netty-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-model</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-model</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-model</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-model</artifactId>
         <version>${project.version}</version>
         <classifier>xsds</classifier>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-provision-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-provision-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-provision-persistence</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-provision-persistence</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-provision-persistence</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-provision-persistence</artifactId>
         <version>${project.version}</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-provisiond</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-provisiond</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
+        <groupId>org.citadel.features</groupId>
         <artifactId>jmxconfiggenerator</artifactId>
         <classifier>onejar</classifier>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.tests</groupId>
-        <artifactId>org.opennms.tests.mock-elements</artifactId>
+        <groupId>org.citadel.tests</groupId>
+        <artifactId>org.citadel.tests.mock-elements</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.jstl-support</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.jstl-support</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-reportd</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-reportd</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-rrd-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-rrd-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-rrd-model</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-rrd-model</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-rrdtool-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-rrdtool-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-rrdcached-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-rrdcached-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-rrd-jrobin</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-rrd-jrobin</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-rrd-tcp</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-rrd-tcp</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-services</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-services</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.measurements</groupId>
-        <artifactId>org.opennms.features.measurements.api</artifactId>
+        <groupId>org.citadel.features.measurements</groupId>
+        <artifactId>org.citadel.features.measurements.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.measurements</groupId>
-        <artifactId>org.opennms.features.measurements.impl</artifactId>
+        <groupId>org.citadel.features.measurements</groupId>
+        <artifactId>org.citadel.features.measurements.impl</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-site</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-site</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jasper-shaded</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>spring-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>spring-web-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>spring-test-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-util</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-util</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-version</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-version</artifactId>
         <version>${project.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-web-api</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-web-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-web-dependencies</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-web-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-webapp</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-webapp</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-webapp</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-webapp</artifactId>
         <version>${project.version}</version>
         <type>war</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-webapp</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-webapp</artifactId>
         <version>${project.version}</version>
         <type>tar.gz</type>
         <classifier>meta-inf</classifier>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-webapp</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-webapp</artifactId>
         <version>${project.version}</version>
         <type>tar.gz</type>
         <classifier>lib</classifier>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features</groupId>
+        <groupId>org.citadel.features</groupId>
         <artifactId>root-webapp</artifactId>
         <version>${project.version}</version>
         <type>war</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-webapp-ng</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-webapp-ng</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-wmi</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-wmi</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-vmware</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-vmware</artifactId>
         <version>${project.version}</version>
       </dependency>
      <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>newts-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>smack-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-asterisk</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-asterisk</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>asterisk-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>dnsjava-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>snmp4j-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>snmp4j-agent-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>snmp-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>snmp-test-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>twitter4j-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>tracker-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>jmx-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>owasp-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
@@ -4442,7 +4442,7 @@
         <version>${vaadinAddonConfirmDialogVersion}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.features.vaadin-components</groupId>
+        <groupId>org.citadel.features.vaadin-components</groupId>
         <artifactId>extender-service</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -5445,7 +5445,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.opennms.dependencies</groupId>
+        <groupId>org.citadel.dependencies</groupId>
         <artifactId>groovy-dependencies</artifactId>
         <version>${project.version}</version>
         <type>pom</type>
@@ -5600,9 +5600,9 @@
       </snapshots>
     </pluginRepository>
     <pluginRepository>
-      <id>opennms-repo</id>
+      <id>citadel-repo</id>
       <name>OpenNMS Mega-Repository</name>
-      <url>https://maven.opennms.org/repository/everything/</url>
+      <url>https://maven.citadel.org/repository/everything/</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -5624,9 +5624,9 @@
       </snapshots>
     </repository>
     <repository>
-      <id>opennms-repo</id>
+      <id>citadel-repo</id>
       <name>OpenNMS Mega-Repository</name>
-      <url>https://maven.opennms.org/repository/everything/</url>
+      <url>https://maven.citadel.org/repository/everything/</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>

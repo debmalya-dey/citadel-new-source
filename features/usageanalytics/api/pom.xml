@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>org.opennms.features.usageanalytics</artifactId>
-        <groupId>org.opennms.features</groupId>
+        <artifactId>org.citadel.features.usageanalytics</artifactId>
+        <groupId>org.citadel.features</groupId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.opennms.features.usageanalytics</groupId>
-    <artifactId>org.opennms.features.usageanalytics.api</artifactId>
+    <groupId>org.citadel.features.usageanalytics</groupId>
+    <artifactId>org.citadel.features.usageanalytics.api</artifactId>
     <name>OpenNMS :: Features :: Usage Analytics :: Api</name>
 
     <packaging>bundle</packaging>
@@ -34,13 +34,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-model</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-model</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

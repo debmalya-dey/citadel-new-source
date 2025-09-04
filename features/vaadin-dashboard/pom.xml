@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <relativePath>../topology-map/poms/compiled/</relativePath>
-        <groupId>org.opennms.features.topology.build</groupId>
+        <groupId>org.citadel.features.topology.build</groupId>
         <artifactId>compiled-bundle-settings</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features</groupId>
+    <groupId>org.citadel.features</groupId>
     <artifactId>vaadin-dashboard</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: Dashboard</name>
@@ -16,8 +16,8 @@
         OpenNMS Vaadin Dashboard
     </description>
     <properties>
-        <bundle.symbolicName>org.opennms.features.vaadin-dashboard</bundle.symbolicName>
-        <bundle.namespace>org.opennms.features.vaadin.dashboard</bundle.namespace>
+        <bundle.symbolicName>org.citadel.features.vaadin-dashboard</bundle.symbolicName>
+        <bundle.namespace>org.citadel.features.vaadin.dashboard</bundle.namespace>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <guava.version>${guavaVersion}</guava.version>
     </properties>
@@ -30,7 +30,7 @@
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
-                    <include>org/opennms/features/vaadin/dashboard/internal/gwt/public/**</include>
+                    <include>org/citadel/features/vaadin/dashboard/internal/gwt/public/**</include>
                 </includes>
             </resource>
         </resources>
@@ -47,7 +47,7 @@
                         <Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
                         <Vaadin-Package-Version>1</Vaadin-Package-Version>
-                        <Vaadin-Widgetsets>org.opennms.features.vaadin.dashboard.DashboardWidgetSet</Vaadin-Widgetsets>
+                        <Vaadin-Widgetsets>org.citadel.features.vaadin.dashboard.DashboardWidgetSet</Vaadin-Widgetsets>
                         <Include-Resource>{maven-resources},target/gwt/</Include-Resource>
                     </instructions>
                 </configuration>
@@ -66,7 +66,7 @@
                     <compileReport>false</compileReport>
                     <style>OBF</style>
                     <strict>true</strict>
-                    <runTarget>http://localhost:8980/opennms/dashboard</runTarget>
+                    <runTarget>http://localhost:8980/citadel/dashboard</runTarget>
                     <gwtSdkFirstInClasspath>true</gwtSdkFirstInClasspath>
                     <localWorkers>${vaadinLocalWorkers}</localWorkers>
                 </configuration>
@@ -117,19 +117,19 @@
         <!-- Vaadin Dependencies -->
 
         <dependency>
-            <groupId>org.opennms.features</groupId>
+            <groupId>org.citadel.features</groupId>
             <artifactId>vaadin</artifactId>
             <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.vaadin-components</groupId>
+            <groupId>org.citadel.features.vaadin-components</groupId>
             <artifactId>core</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <!-- Other dependencies -->
         <dependency>
-            <groupId>org.opennms.features.themes</groupId>
+            <groupId>org.citadel.features.themes</groupId>
             <artifactId>dashboard-theme</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -144,14 +144,14 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-web-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-web-api</artifactId>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.criteria</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.criteria</artifactId>
             <scope>provided</scope>
         </dependency>
 

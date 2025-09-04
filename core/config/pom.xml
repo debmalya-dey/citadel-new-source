@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<parent>
-		<groupId>org.opennms</groupId>
-		<artifactId>org.opennms.core</artifactId>
+		<groupId>org.citadel</groupId>
+		<artifactId>org.citadel.core</artifactId>
 		<version>35.0.0-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.opennms.core</groupId>
-	<artifactId>org.opennms.core.config</artifactId>
+	<groupId>org.citadel.core</groupId>
+	<artifactId>org.citadel.core.config</artifactId>
 	<name>OpenNMS :: Core :: Configuration</name>
 	<packaging>bundle</packaging>
 	<build>
@@ -22,7 +22,7 @@
 						<Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Version>${project.version}</Bundle-Version>
-						<Export-Package>org.opennms.core.config.impl.*;version="${project.version}"</Export-Package>
+						<Export-Package>org.citadel.core.config.impl.*;version="${project.version}"</Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>
@@ -30,25 +30,25 @@
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>org.opennms.dependencies</groupId>
+			<groupId>org.citadel.dependencies</groupId>
 			<artifactId>spring-dependencies</artifactId>
 			<type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms.core</groupId>
-			<artifactId>org.opennms.core.api</artifactId>
+			<groupId>org.citadel.core</groupId>
+			<artifactId>org.citadel.core.api</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms.core</groupId>
-			<artifactId>org.opennms.core.xml</artifactId>
+			<groupId>org.citadel.core</groupId>
+			<artifactId>org.citadel.core.xml</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms</groupId>
-			<artifactId>opennms-config-jaxb</artifactId>
+			<groupId>org.citadel</groupId>
+			<artifactId>citadel-config-jaxb</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms</groupId>
-			<artifactId>opennms-config-model</artifactId>
+			<groupId>org.citadel</groupId>
+			<artifactId>citadel-config-model</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>

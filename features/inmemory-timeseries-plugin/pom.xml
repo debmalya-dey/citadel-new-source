@@ -2,11 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.features</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.features</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features</groupId>
+    <groupId>org.citadel.features</groupId>
     <artifactId>inmemory-timeseries-plugin</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: InMemory TimeSeries Plugin</name>
@@ -21,7 +21,7 @@
                         <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Karaf-Commands>org.opennms.features.timeseries.plugin.shell</Karaf-Commands>
+                        <Karaf-Commands>org.citadel.features.timeseries.plugin.shell</Karaf-Commands>
                     </instructions>
                 </configuration>
             </plugin>
@@ -30,14 +30,14 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>oia-dependencies</artifactId>
             <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.integration.api</groupId>
+            <groupId>org.citadel.integration.api</groupId>
             <artifactId>common</artifactId>
-            <version>${opennmsApiVersion}</version>
+            <version>${citadelApiVersion}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

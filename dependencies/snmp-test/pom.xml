@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
+    <groupId>org.citadel</groupId>
     <artifactId>dependencies</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.dependencies</groupId>
+  <groupId>org.citadel.dependencies</groupId>
   <artifactId>snmp-test-dependencies</artifactId>
   <packaging>pom</packaging>
   <name>OpenNMS :: Dependencies :: SNMP Test</name>
   <description>
-    This module is used to provide a single artifact that the opennms project
+    This module is used to provide a single artifact that the citadel project
     can depend on to use SNMP
   </description>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>snmp-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.implementations.mock</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.implementations.mock</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.lib</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-util</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-util</artifactId>
     </dependency>
   </dependencies>
 </project>

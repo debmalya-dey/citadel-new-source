@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features.bsm</groupId>
-    <artifactId>org.opennms.features.bsm.persistence</artifactId>
+    <groupId>org.citadel.features.bsm</groupId>
+    <artifactId>org.citadel.features.bsm.persistence</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>org.opennms.features.bsm.persistence.api</artifactId>
+  <artifactId>org.citadel.features.bsm.persistence.api</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: BSM :: Persistence :: API</name>
   <build>
@@ -27,12 +27,12 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>

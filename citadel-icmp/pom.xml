@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>citadel</artifactId>
+    <groupId>org.citadel</groupId>
+    <version>35.0.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>citadel-icmp</artifactId>
+  <packaging>pom</packaging>
+  <name>OpenNMS :: ICMP</name>
+  <modules>
+    <module>citadel-icmp-api</module>
+    <module>citadel-icmp-jni</module>
+    <module>citadel-icmp-jni6</module>
+    <module>citadel-icmp-jna</module>
+    <module>citadel-icmp-best</module>
+    <module>commands</module>
+    <module>citadel-icmp-proxy-rpc-impl</module>
+  </modules>
+</project>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core</groupId>
-    <artifactId>org.opennms.core.snmp</artifactId>
+    <groupId>org.citadel.core</groupId>
+    <artifactId>org.citadel.core.snmp</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.snmp</groupId>
-  <artifactId>org.opennms.core.snmp.implementations.snmp4j</artifactId>
+  <groupId>org.citadel.core.snmp</groupId>
+  <artifactId>org.citadel.core.snmp.implementations.snmp4j</artifactId>
   <name>OpenNMS :: Core :: SNMP :: SNMP4J Implementation</name>
   <packaging>bundle</packaging>
   <build>
@@ -22,7 +22,7 @@
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
             <Export-Package>
-              org.opennms.netmgt.snmp.snmp4j,
+              org.citadel.netmgt.snmp.snmp4j,
               <!-- TODO: Remove this export after removing direct dependencies on SNMP4J -->
               org.snmp4j.*
             </Export-Package>
@@ -33,7 +33,7 @@
             </Import-Package>
             <Embed-Dependency>snmp4j*</Embed-Dependency>
             <Embed-Transitive>true</Embed-Transitive>
-            <Bundle-Activator>org.opennms.netmgt.snmp.snmp4j.Snmp4JActivator</Bundle-Activator>
+            <Bundle-Activator>org.citadel.netmgt.snmp.snmp4j.Snmp4JActivator</Bundle-Activator>
           </instructions>
         </configuration>
       </plugin>
@@ -41,21 +41,21 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.api</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.lib</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.sysprops</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.sysprops</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.logging</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.logging</artifactId>
     </dependency>
     <dependency>
       <groupId>org.osgi</groupId>
@@ -67,18 +67,18 @@
       <artifactId>commons-lang</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>snmp4j-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>snmp4j-agent-dependencies</artifactId>
       <scope>test</scope>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-dependencies</artifactId>
       <scope>test</scope>
       <type>pom</type>

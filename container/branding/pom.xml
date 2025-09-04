@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.container</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.container</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
-    <groupId>org.opennms.container</groupId>
-    <artifactId>org.opennms.container.branding</artifactId>
+    <groupId>org.citadel.container</groupId>
+    <artifactId>org.citadel.container.branding</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: OSGi Container :: Branding</name>
 

@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>org.opennms.features.device-config</artifactId>
-        <groupId>org.opennms.features</groupId>
+        <artifactId>org.citadel.features.device-config</artifactId>
+        <groupId>org.citadel.features</groupId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.opennms.features.device-config</groupId>
-    <artifactId>org.opennms.features.device-config.monitor</artifactId>
+    <groupId>org.citadel.features.device-config</groupId>
+    <artifactId>org.citadel.features.device-config.monitor</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: Device Config :: Monitor</name>
     <build>
@@ -31,32 +31,32 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.poller</groupId>
-            <artifactId>org.opennms.features.poller.api</artifactId>
+            <groupId>org.citadel.features.poller</groupId>
+            <artifactId>org.citadel.features.poller.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config</groupId>
-            <artifactId>org.opennms.features.device-config.retrieval</artifactId>
+            <groupId>org.citadel.features.device-config</groupId>
+            <artifactId>org.citadel.features.device-config.retrieval</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config.persistence</groupId>
-            <artifactId>org.opennms.features.device-config.persistence.api</artifactId>
+            <groupId>org.citadel.features.device-config.persistence</groupId>
+            <artifactId>org.citadel.features.device-config.persistence.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config</groupId>
-            <artifactId>org.opennms.features.device-config.api</artifactId>
+            <groupId>org.citadel.features.device-config</groupId>
+            <artifactId>org.citadel.features.device-config.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.spring</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.spring</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>quartz-dependencies</artifactId>
            <type>pom</type>
         </dependency>

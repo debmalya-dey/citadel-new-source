@@ -3,17 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.bsm</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.bsm</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features.bsm</groupId>
+    <groupId>org.citadel.features.bsm</groupId>
     <artifactId>vaadin-adminpage</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: BSM :: Vaadin Adminpage</name>
     <properties>
-        <bundle.symbolicName>org.opennms.features.bsm.vaadin.adminpage</bundle.symbolicName>
-        <bundle.namespace>org.opennms.features.bsm.vaadin.adminpage</bundle.namespace>
+        <bundle.symbolicName>org.citadel.features.bsm.vaadin.adminpage</bundle.symbolicName>
+        <bundle.namespace>org.citadel.features.bsm.vaadin.adminpage</bundle.namespace>
     </properties>
     <build>
         <plugins>
@@ -25,7 +25,7 @@
                         <Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
                         <Vaadin-Package-Version>1</Vaadin-Package-Version>
-                        <Vaadin-Widgetsets>org.opennms.vaadin.DefaultWidgetset</Vaadin-Widgetsets>
+                        <Vaadin-Widgetsets>org.citadel.vaadin.DefaultWidgetset</Vaadin-Widgetsets>
                     </instructions>
                 </configuration>
             </plugin>
@@ -33,28 +33,28 @@
     </build>
     <dependencies>
        <dependency>
-			<groupId>org.opennms.features</groupId>
+			<groupId>org.citadel.features</groupId>
 	      	<artifactId>vaadin</artifactId>
 	      	<type>pom</type>
 	    </dependency>
         <dependency>
-            <groupId>org.opennms.features.vaadin-components</groupId>
+            <groupId>org.citadel.features.vaadin-components</groupId>
             <artifactId>core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.vaadin-components</groupId>
+            <groupId>org.citadel.features.vaadin-components</groupId>
             <artifactId>widgetset</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.topology</groupId>
-            <artifactId>org.opennms.features.topology.link</artifactId>
+            <groupId>org.citadel.features.topology</groupId>
+            <artifactId>org.citadel.features.topology.link</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.bsm</groupId>
-            <artifactId>org.opennms.features.bsm.service.api</artifactId>
+            <groupId>org.citadel.features.bsm</groupId>
+            <artifactId>org.citadel.features.bsm.service.api</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -69,8 +69,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-web-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-web-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -79,23 +79,23 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao-mock</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao-mock</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-rrd-jrobin</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-rrd-jrobin</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.db</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.db</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.collection</groupId>
-            <artifactId>org.opennms.features.collection.persistence.rrd</artifactId>
+            <groupId>org.citadel.features.collection</groupId>
+            <artifactId>org.citadel.features.collection.persistence.rrd</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

@@ -2,14 +2,14 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <parent>
-    <groupId>org.opennms.features.topology</groupId>
+    <groupId>org.citadel.features.topology</groupId>
     <artifactId>features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.osgi.features.topology</groupId>
-  <artifactId>opennms-topology-runtime-base</artifactId>
+  <groupId>org.citadel.osgi.features.topology</groupId>
+  <artifactId>citadel-topology-runtime-base</artifactId>
 
   <name>OpenNMS :: Features :: Topology :: Features :: Base</name>
 
@@ -20,46 +20,46 @@
   <dependencies>
     <!-- main topology app -->
     <dependency>
-      <groupId>org.opennms.features.topology</groupId>
-      <artifactId>org.opennms.features.topology.app</artifactId>
+      <groupId>org.citadel.features.topology</groupId>
+      <artifactId>org.citadel.features.topology.app</artifactId>
       <version>${project.version}</version>
     </dependency>
     <!-- topology HistoryManager -->
     <dependency>
-      <groupId>org.opennms.features.topology.plugins.topo</groupId>
-      <artifactId>org.opennms.features.topology.plugins.topo.history</artifactId>
+      <groupId>org.citadel.features.topology.plugins.topo</groupId>
+      <artifactId>org.citadel.features.topology.plugins.topo.history</artifactId>
       <version>${project.version}</version>
     </dependency>
     <!-- is required to build topology links -->
     <dependency>
-      <groupId>org.opennms.features.topology</groupId>
-      <artifactId>org.opennms.features.topology.link</artifactId>
+      <groupId>org.citadel.features.topology</groupId>
+      <artifactId>org.citadel.features.topology.link</artifactId>
       <version>${project.version}</version>
     </dependency>
     <!-- plugins -->
     <dependency>
-      <groupId>org.opennms.features.topology.plugins</groupId>
-      <artifactId>org.opennms.features.topology.plugins.layout</artifactId>
+      <groupId>org.citadel.features.topology.plugins</groupId>
+      <artifactId>org.citadel.features.topology.plugins.layout</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.topology</groupId>
-      <artifactId>org.opennms.features.topology.netutils</artifactId>
+      <groupId>org.citadel.features.topology</groupId>
+      <artifactId>org.citadel.features.topology.netutils</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.topology.themes</groupId>
-      <artifactId>org.opennms.features.topology.themes.default-theme</artifactId>
+      <groupId>org.citadel.features.topology.themes</groupId>
+      <artifactId>org.citadel.features.topology.themes.default-theme</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>org.opennms.features.vaadin-components</groupId>
+      <groupId>org.citadel.features.vaadin-components</groupId>
       <artifactId>core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.vaadin-components</groupId>
+      <groupId>org.citadel.features.vaadin-components</groupId>
       <artifactId>graph</artifactId>
       <version>${project.version}</version>
     </dependency>

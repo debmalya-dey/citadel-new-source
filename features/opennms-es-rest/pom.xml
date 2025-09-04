@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.opennms-es-rest</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.citadel-es-rest</artifactId>
   <name>OpenNMS :: Features :: ElasticSearch Rest</name>
   <description>${project.name}</description>
   <packaging>bundle</packaging>
@@ -77,8 +77,8 @@
       <version>${json-simpleVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.cache</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.cache</artifactId>
       <version>${project.version}</version>
     </dependency>
 
@@ -115,40 +115,40 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.osgi</groupId>
-      <artifactId>opennms-osgi-core</artifactId>
+      <groupId>org.citadel.osgi</groupId>
+      <artifactId>citadel-osgi-core</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.api</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.common</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.common</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.jest</groupId>
-      <artifactId>org.opennms.features.jest.client</artifactId>
+      <groupId>org.citadel.features.jest</groupId>
+      <artifactId>org.citadel.features.jest.client</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.jest</groupId>
+      <groupId>org.citadel.features.jest</groupId>
       <artifactId>jest-complete-osgi</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
@@ -216,8 +216,8 @@
     </dependency>
 
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.elasticsearch</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.elasticsearch</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
@@ -264,8 +264,8 @@
       <scope>test</scope>
     </dependency>
       <dependency>
-          <groupId>org.opennms</groupId>
-          <artifactId>opennms-dao-mock</artifactId>
+          <groupId>org.citadel</groupId>
+          <artifactId>citadel-dao-mock</artifactId>
           <scope>test</scope>
       </dependency>
   </dependencies>

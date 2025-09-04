@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>org.opennms.core.ipc.twin</artifactId>
-        <groupId>org.opennms.core.ipc</groupId>
+        <artifactId>org.citadel.core.ipc.twin</artifactId>
+        <groupId>org.citadel.core.ipc</groupId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.opennms.core.ipc.twin</groupId>
-    <artifactId>org.opennms.core.ipc.twin.kafka</artifactId>
+    <groupId>org.citadel.core.ipc.twin</groupId>
+    <artifactId>org.citadel.core.ipc.twin.kafka</artifactId>
     <packaging>pom</packaging>
     <name>OpenNMS :: Core :: IPC :: Twin :: Kafka</name>
     <modules>

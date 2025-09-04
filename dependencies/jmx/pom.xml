@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
+    <groupId>org.citadel</groupId>
     <artifactId>dependencies</artifactId>
     <version>35.0.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.dependencies</groupId>
+  <groupId>org.citadel.dependencies</groupId>
   <artifactId>jmx-dependencies</artifactId>
   <packaging>pom</packaging>
   <name>OpenNMS :: Dependencies :: JMX</name>
@@ -17,13 +17,13 @@
   </description>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.jmx</groupId>
-      <artifactId>org.opennms.core.jmx.api</artifactId>
+      <groupId>org.citadel.core.jmx</groupId>
+      <artifactId>org.citadel.core.jmx.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.jmx</groupId>
-      <artifactId>org.opennms.core.jmx.impl</artifactId>
+      <groupId>org.citadel.core.jmx</groupId>
+      <artifactId>org.citadel.core.jmx.impl</artifactId>
       <version>${project.version}</version>
     </dependency>
     <!-- Allow jmxmp jmx protocols -->

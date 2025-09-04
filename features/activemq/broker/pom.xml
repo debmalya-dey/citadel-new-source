@@ -6,14 +6,14 @@
 >
 
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.activemq</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.activemq</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.activemq</groupId>
-  <artifactId>org.opennms.features.activemq.broker</artifactId>
+  <groupId>org.citadel.features.activemq</groupId>
+  <artifactId>org.citadel.features.activemq.broker</artifactId>
 
   <name>OpenNMS :: Features :: ActiveMQ :: Broker</name>
 
@@ -92,25 +92,25 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>activemq-dependencies</artifactId>
       <type>pom</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>camel-test-dependencies</artifactId>
       <type>pom</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jaxb-dependencies</artifactId>
       <type>pom</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-dependencies</artifactId>
       <type>pom</type>
       <scope>test</scope>

@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.api-layer</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.api-layer</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.api-layer</groupId>
-    <artifactId>org.opennms.features.api-layer.common</artifactId>
+    <groupId>org.citadel.features.api-layer</groupId>
+    <artifactId>org.citadel.features.api-layer.common</artifactId>
     <name>OpenNMS :: Features :: API Layer :: Common</name>
     <packaging>bundle</packaging>
     <build>
@@ -57,29 +57,29 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>oia-dependencies</artifactId>
             <type>pom</type>
         </dependency>
         <!-- add this explicitly to be sure it's marked as scope:compile -->
         <dependency>
-            <groupId>org.opennms.integration.api</groupId>
+            <groupId>org.citadel.integration.api</groupId>
             <artifactId>common</artifactId>
-            <version>${opennmsApiVersion}</version>
+            <version>${citadelApiVersion}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.health</groupId>
-            <artifactId>org.opennms.core.health.api</artifactId>
+            <groupId>org.citadel.core.health</groupId>
+            <artifactId>org.citadel.core.health.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-provision-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-provision-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-provision-persistence</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-provision-persistence</artifactId>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
@@ -87,8 +87,8 @@
             <version>${mapstructVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.scv</groupId>
-            <artifactId>org.opennms.features.scv.api</artifactId>
+            <groupId>org.citadel.features.scv</groupId>
+            <artifactId>org.citadel.features.scv.api</artifactId>
             <version>${project.version}</version>
         </dependency>
 

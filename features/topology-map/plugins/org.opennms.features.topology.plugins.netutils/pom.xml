@@ -5,30 +5,30 @@
 
 	<parent>
 		<relativePath>../../poms/compiled/</relativePath>
-		<groupId>org.opennms.features.topology.build</groupId>
+		<groupId>org.citadel.features.topology.build</groupId>
 		<artifactId>compiled-bundle-settings</artifactId>
 		<version>35.0.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>org.opennms.features.topology</groupId>
-	<artifactId>org.opennms.features.topology.netutils</artifactId>
+	<groupId>org.citadel.features.topology</groupId>
+	<artifactId>org.citadel.features.topology.netutils</artifactId>
 	<packaging>${packaging.type}</packaging>
 	<name>OpenNMS :: Features :: Topology :: Plugins :: Net Utils</name>
 
 	<properties>
 		<packaging.type>bundle</packaging.type>
-		<bundle.symbolicName>org.opennms.features.topology.netutils</bundle.symbolicName>
-		<bundle.namespace>org.opennms.features.topology.netutils</bundle.namespace>
+		<bundle.symbolicName>org.citadel.features.topology.netutils</bundle.symbolicName>
+		<bundle.namespace>org.citadel.features.topology.netutils</bundle.namespace>
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.opennms.features</groupId>
+			<groupId>org.citadel.features</groupId>
 			<artifactId>vaadin</artifactId>
 			<type>pom</type>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms.features.topology</groupId>
-			<artifactId>org.opennms.features.topology.api</artifactId>
+			<groupId>org.citadel.features.topology</groupId>
+			<artifactId>org.citadel.features.topology.api</artifactId>
 			<version>${project.version}</version>
 			<scope>provided</scope>
 		</dependency>
@@ -39,8 +39,8 @@
 			<scope>provided</scope>
 		</dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-icmp-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-icmp-api</artifactId>
             <version>${project.version}</version>
 			<scope>provided</scope>
         </dependency>
@@ -50,26 +50,26 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms</groupId>
-			<artifactId>opennms-icmp-jni</artifactId>
+			<groupId>org.citadel</groupId>
+			<artifactId>citadel-icmp-jni</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms</groupId>
-			<artifactId>opennms-icmp-jna</artifactId>
+			<groupId>org.citadel</groupId>
+			<artifactId>citadel-icmp-jna</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms</groupId>
-			<artifactId>opennms-icmp-jni6</artifactId>
+			<groupId>org.citadel</groupId>
+			<artifactId>citadel-icmp-jni6</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.opennms</groupId>
-			<artifactId>opennms-icmp-best</artifactId>
+			<groupId>org.citadel</groupId>
+			<artifactId>citadel-icmp-best</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>

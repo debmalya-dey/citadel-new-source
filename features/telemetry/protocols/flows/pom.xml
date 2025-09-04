@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features.telemetry</groupId>
-    <artifactId>org.opennms.features.telemetry.protocols</artifactId>
+    <groupId>org.citadel.features.telemetry</groupId>
+    <artifactId>org.citadel.features.telemetry.protocols</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.telemetry.protocols</groupId>
-  <artifactId>org.opennms.features.telemetry.protocols.flows</artifactId>
+  <groupId>org.citadel.features.telemetry.protocols</groupId>
+  <artifactId>org.citadel.features.telemetry.protocols.flows</artifactId>
   <name>OpenNMS :: Features :: Telemetry :: Protocols :: Flows</name>
   <packaging>bundle</packaging>
   <build>
@@ -28,23 +28,23 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.flows</groupId>
-      <artifactId>org.opennms.features.flows.api</artifactId>
+      <groupId>org.citadel.features.flows</groupId>
+      <artifactId>org.citadel.features.flows.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows</groupId>
-      <artifactId>org.opennms.features.flows.processing</artifactId>
+      <groupId>org.citadel.features.flows</groupId>
+      <artifactId>org.citadel.features.flows.processing</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry</groupId>
-      <artifactId>org.opennms.features.telemetry.api</artifactId>
+      <groupId>org.citadel.features.telemetry</groupId>
+      <artifactId>org.citadel.features.telemetry.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.common</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -52,17 +52,17 @@
       <artifactId>guava</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>groovy-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
       <groupId>io.dropwizard.metrics</groupId>
@@ -75,8 +75,8 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features</groupId>
-      <artifactId>org.opennms.features.osgi-jsr223</artifactId>
+      <groupId>org.citadel.features</groupId>
+      <artifactId>org.citadel.features.osgi-jsr223</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>

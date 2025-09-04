@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>org.opennms.features.events</artifactId>
-    <groupId>org.opennms.features</groupId>
+    <artifactId>org.citadel.features.events</artifactId>
+    <groupId>org.citadel.features</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.events</groupId>
-  <artifactId>org.opennms.features.events.sink</artifactId>
+  <groupId>org.citadel.features.events</groupId>
+  <artifactId>org.citadel.features.events.sink</artifactId>
   <name>OpenNMS :: Features :: Events :: Sink </name>
   <packaging>pom</packaging>
   <modules>

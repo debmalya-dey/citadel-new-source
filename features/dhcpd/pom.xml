@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.features</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.features</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.dhcpd</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.dhcpd</artifactId>
     <name>OpenNMS :: Features :: DHCP Integration</name>
     <packaging>bundle</packaging>
 
@@ -23,7 +23,7 @@
                         <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Private-Package>org.opennms.features.dhcpd.impl.*</Private-Package>
+                        <Private-Package>org.citadel.features.dhcpd.impl.*</Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -36,7 +36,7 @@
             <artifactId>dhcp4java</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>spring-dependencies</artifactId>
             <type>pom</type>
         </dependency>
@@ -51,8 +51,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.lib</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.lib</artifactId>
         </dependency>
     </dependencies>
 </project>

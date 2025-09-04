@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>org.opennms.features</artifactId>
-    <groupId>org.opennms</groupId>
+    <artifactId>org.citadel.features</artifactId>
+    <groupId>org.citadel</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
+  <groupId>org.citadel.features</groupId>
   <artifactId>newts-repository-converter</artifactId>
   <name>RRD / JRobin to NewTS Conversion/Migration Tool</name>
   <packaging>jar</packaging>
@@ -15,37 +15,37 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.db</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.db</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jrobin-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrd-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrd-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrd-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrd-model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrdtool-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrdtool-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrd-jrobin</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrd-jrobin</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.logging</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.logging</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features</groupId>
-      <artifactId>org.opennms.features.newts</artifactId>
+      <groupId>org.citadel.features</groupId>
+      <artifactId>org.citadel.features.newts</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -67,17 +67,17 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.db</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.db</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>cassandra-test-dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -104,7 +104,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>org.opennms.features.newts.converter.NewtsConverter</mainClass>
+              <mainClass>org.citadel.features.newts.converter.NewtsConverter</mainClass>
             </manifest>
           </archive>
         </configuration>

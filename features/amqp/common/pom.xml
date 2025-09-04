@@ -7,14 +7,14 @@
 ">
 
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.amqp</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.amqp</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.amqp</groupId>
-  <artifactId>org.opennms.features.amqp.common</artifactId>
+  <groupId>org.citadel.features.amqp</groupId>
+  <artifactId>org.citadel.features.amqp.common</artifactId>
 
   <name>OpenNMS :: Features :: AMQP :: Common</name>
 
@@ -27,7 +27,7 @@
         <configuration>
           <skip>${skipSurefire}</skip>
           <systemPropertyVariables>
-            <opennms.home>${project.build.testOutputDirectory}</opennms.home>
+            <citadel.home>${project.build.testOutputDirectory}</citadel.home>
           </systemPropertyVariables>
         </configuration>
       </plugin>
@@ -61,8 +61,8 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.camel</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.camel</artifactId>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>

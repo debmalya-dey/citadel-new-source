@@ -2,23 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.jest</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.jest</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features.jest</groupId>
-    <artifactId>opennms-jest</artifactId>
+    <groupId>org.citadel.features.jest</groupId>
+    <artifactId>citadel-jest</artifactId>
     <name>OpenNMS :: Features :: Jest :: Feature definition</name>
     <description>Feature definition for Jest (ElasticSearch Java ReST Client)</description>
     <packaging>pom</packaging>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.jest</groupId>
-            <artifactId>org.opennms.features.jest.client</artifactId>
+            <groupId>org.citadel.features.jest</groupId>
+            <artifactId>org.citadel.features.jest.client</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.jest</groupId>
+            <groupId>org.citadel.features.jest</groupId>
             <artifactId>jest-complete-osgi</artifactId>
             <version>${project.version}</version>
         </dependency>

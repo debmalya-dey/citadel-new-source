@@ -3,17 +3,17 @@
 
   <parent>
     <relativePath>../poms/compiled/</relativePath>
-    <groupId>org.opennms.features.topology.build</groupId>
+    <groupId>org.citadel.features.topology.build</groupId>
     <artifactId>compiled-bundle-settings</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <properties>
-    <bundle.symbolicName>org.opennms.features.topology.shell</bundle.symbolicName>
-    <bundle.namespace>org.opennms.features.topology.shell</bundle.namespace>
+    <bundle.symbolicName>org.citadel.features.topology.shell</bundle.symbolicName>
+    <bundle.namespace>org.citadel.features.topology.shell</bundle.namespace>
   </properties>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.topology</groupId>
-  <artifactId>org.opennms.features.topology.shell</artifactId>
+  <groupId>org.citadel.features.topology</groupId>
+  <artifactId>org.citadel.features.topology.shell</artifactId>
   <name>OpenNMS :: Features :: Topology :: Shell Commands</name>
   <packaging>bundle</packaging>
   <build>
@@ -42,8 +42,8 @@
     </dependency>
     -->
     <dependency>
-      <groupId>org.opennms.features.topology</groupId>
-      <artifactId>org.opennms.features.topology.api</artifactId>
+      <groupId>org.citadel.features.topology</groupId>
+      <artifactId>org.citadel.features.topology.api</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>

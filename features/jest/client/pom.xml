@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.jest</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.jest</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.jest</groupId>
-  <artifactId>org.opennms.features.jest.client</artifactId>
+  <groupId>org.citadel.features.jest</groupId>
+  <artifactId>org.citadel.features.jest.client</artifactId>
   <packaging>bundle</packaging>
   <dependencies>
     <dependency>
@@ -25,17 +25,17 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.lib</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.jest</groupId>
-      <artifactId>org.opennms.features.jest.dependencies</artifactId>
+      <groupId>org.citadel.features.jest</groupId>
+      <artifactId>org.citadel.features.jest.dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.jest</groupId>
+      <groupId>org.citadel.features.jest</groupId>
       <artifactId>jest-complete-osgi</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -50,8 +50,8 @@
       <version>${httpclientVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.health</groupId>
-      <artifactId>org.opennms.core.health.api</artifactId>
+      <groupId>org.citadel.core.health</groupId>
+      <artifactId>org.citadel.core.health.api</artifactId>
       <version>${project.version}</version>
     </dependency>
 
@@ -62,8 +62,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -72,8 +72,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.xml</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.xml</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -98,20 +98,20 @@
       <version>${resilience4jVersion}</version>
     </dependency>
       <dependency>
-          <groupId>org.opennms.features.events</groupId>
-          <artifactId>org.opennms.features.events.api</artifactId>
+          <groupId>org.citadel.features.events</groupId>
+          <artifactId>org.citadel.features.events.api</artifactId>
       </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.mate</groupId>
-      <artifactId>org.opennms.core.mate.api</artifactId>
+      <groupId>org.citadel.core.mate</groupId>
+      <artifactId>org.citadel.core.mate.api</artifactId>
     </dependency>
   </dependencies>
 

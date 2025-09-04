@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.flows</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.flows</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.flows</groupId>
-  <artifactId>org.opennms.features.flows.processing</artifactId>
+  <groupId>org.citadel.features.flows</groupId>
+  <artifactId>org.citadel.features.flows.processing</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: Flows :: Processing</name>
   <build>
@@ -48,47 +48,47 @@
       <version>${gsonVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows</groupId>
-      <artifactId>org.opennms.features.flows.api</artifactId>
+      <groupId>org.citadel.features.flows</groupId>
+      <artifactId>org.citadel.features.flows.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.cache</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.cache</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.fileutils</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.fileutils</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows.classification.engine</groupId>
-      <artifactId>org.opennms.features.flows.classification.engine.api</artifactId>
+      <groupId>org.citadel.features.flows.classification.engine</groupId>
+      <artifactId>org.citadel.features.flows.classification.engine.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.thresholding.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.thresholding.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.config</groupId>
-      <artifactId>org.opennms.features.telemetry.config.api</artifactId>
+      <groupId>org.citadel.features.telemetry.config</groupId>
+      <artifactId>org.citadel.features.telemetry.config.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.common</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.cache</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.cache</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>oia-dependencies</artifactId>
       <type>pom</type>
     </dependency>
@@ -122,8 +122,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-mock</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-mock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -132,8 +132,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows.classification.engine</groupId>
-      <artifactId>org.opennms.features.flows.classification.engine.impl</artifactId>
+      <groupId>org.citadel.features.flows.classification.engine</groupId>
+      <artifactId>org.citadel.features.flows.classification.engine.impl</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

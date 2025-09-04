@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.request-tracker</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.request-tracker</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: Request Tracker Interface</name>
   <build>
@@ -28,12 +28,12 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.web</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.web</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-util</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-util</artifactId>
     </dependency>
     <dependency>
       <groupId>commons-beanutils</groupId>
@@ -58,8 +58,8 @@
       <artifactId>commons-lang</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
     </dependency>
   </dependencies>
 </project>

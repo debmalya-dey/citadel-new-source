@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.geolocation</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.geolocation</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.geolocation</groupId>
-  <artifactId>org.opennms.features.geolocation.api</artifactId>
+  <groupId>org.citadel.features.geolocation</groupId>
+  <artifactId>org.citadel.features.geolocation.api</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: Geolocation :: API</name>
   <description>Geolocation Services</description>
   <properties>
-    <bundle.symbolicName>org.opennms.features.geolocation.api</bundle.symbolicName>
-    <bundle.namespace>org.opennms.features.geolocation.api</bundle.namespace>
+    <bundle.symbolicName>org.citadel.features.geolocation.api</bundle.symbolicName>
+    <bundle.namespace>org.citadel.features.geolocation.api</bundle.namespace>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.status</groupId>
-      <artifactId>org.opennms.features.status.api</artifactId>
+      <groupId>org.citadel.features.status</groupId>
+      <artifactId>org.citadel.features.status.api</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>

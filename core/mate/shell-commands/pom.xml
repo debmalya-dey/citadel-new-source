@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core</groupId>
-    <artifactId>org.opennms.core.mate</artifactId>
+    <groupId>org.citadel.core</groupId>
+    <artifactId>org.citadel.core.mate</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.mate</groupId>
-  <artifactId>org.opennms.core.mate.shell-commands</artifactId>
+  <groupId>org.citadel.core.mate</groupId>
+  <artifactId>org.citadel.core.mate.shell-commands</artifactId>
   <name>OpenNMS :: Core :: Mate :: Shell-Commands</name>
   <packaging>bundle</packaging>
   <build>
@@ -29,8 +29,8 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.mate</groupId>
-      <artifactId>org.opennms.core.mate.api</artifactId>
+      <groupId>org.citadel.core.mate</groupId>
+      <artifactId>org.citadel.core.mate.api</artifactId>
     </dependency>
     <dependency>
       <groupId>org.apache.karaf.shell</groupId>

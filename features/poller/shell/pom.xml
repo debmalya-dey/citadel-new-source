@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.poller</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.poller</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.poller</groupId>
-  <artifactId>org.opennms.features.poller.shell</artifactId>
+  <groupId>org.citadel.features.poller</groupId>
+  <artifactId>org.citadel.features.poller.shell</artifactId>
   <name>OpenNMS :: Features :: Poller :: Shell</name>
   <packaging>bundle</packaging>
   <build>
@@ -33,20 +33,20 @@
       <artifactId>org.apache.karaf.shell.core</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.poller</groupId>
-      <artifactId>org.opennms.features.poller.api</artifactId>
+      <groupId>org.citadel.features.poller</groupId>
+      <artifactId>org.citadel.features.poller.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.device-config</groupId>
-      <artifactId>org.opennms.features.device-config.api</artifactId>
+      <groupId>org.citadel.features.device-config</groupId>
+      <artifactId>org.citadel.features.device-config.api</artifactId>
       <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>

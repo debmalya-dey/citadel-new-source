@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <artifactId>org.opennms.features</artifactId>
-    <groupId>org.opennms</groupId>
+    <artifactId>org.citadel.features</artifactId>
+    <groupId>org.citadel</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.mib-compiler</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.mib-compiler</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: MIB-Compiler</name>
 
   <description>Standalong MIB-Compiler based on JSMILib</description>
   <properties>
-    <bundle.symbolicName>org.opennms.features.mib-compiler</bundle.symbolicName>
-    <bundle.namespace>org.opennms.features</bundle.namespace>
+    <bundle.symbolicName>org.citadel.features.mib-compiler</bundle.symbolicName>
+    <bundle.namespace>org.citadel.features</bundle.namespace>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jsmiparser.version>0.14</jsmiparser.version>
   </properties>
@@ -42,39 +42,39 @@
  
   <dependencies>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>spring-dependencies</artifactId>
             <scope>provided</scope>
             <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.lib</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.lib</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-config</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-config</artifactId>
             <scope>provided</scope>
             <exclusions>
               <exclusion>
-                <groupId>org.opennms.features.config.service</groupId>
-                <artifactId>org.opennms.features.config.service.impl</artifactId>
+                <groupId>org.citadel.features.config.service</groupId>
+                <artifactId>org.citadel.features.config.service.impl</artifactId>
               </exclusion>
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao</artifactId>
             <scope>provided</scope>
             <exclusions>
               <exclusion>
-                <groupId>org.opennms.features.config.service</groupId>
-                <artifactId>org.opennms.features.config.service.api</artifactId>
+                <groupId>org.citadel.features.config.service</groupId>
+                <artifactId>org.citadel.features.config.service.api</artifactId>
               </exclusion>
               <exclusion>
-                <groupId>org.opennms.features.config.service</groupId>
-                <artifactId>org.opennms.features.config.service.impl</artifactId>
+                <groupId>org.citadel.features.config.service</groupId>
+                <artifactId>org.citadel.features.config.service.impl</artifactId>
               </exclusion>
             </exclusions>
         </dependency>
@@ -85,8 +85,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
-            <artifactId>org.opennms.features.name-cutter</artifactId>
+            <groupId>org.citadel.features</groupId>
+            <artifactId>org.citadel.features.name-cutter</artifactId>
         </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
@@ -108,8 +108,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.lib</artifactId> 
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.lib</artifactId> 
             <scope>test</scope>
         </dependency>
   </dependencies>

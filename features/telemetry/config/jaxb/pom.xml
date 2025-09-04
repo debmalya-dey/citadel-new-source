@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features.telemetry</groupId>
-    <artifactId>org.opennms.features.telemetry.config</artifactId>
+    <groupId>org.citadel.features.telemetry</groupId>
+    <artifactId>org.citadel.features.telemetry.config</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.telemetry.config</groupId>
-  <artifactId>org.opennms.features.telemetry.config.jaxb</artifactId>
+  <groupId>org.citadel.features.telemetry.config</groupId>
+  <artifactId>org.citadel.features.telemetry.config.jaxb</artifactId>
   <name>OpenNMS :: Features :: Telemetry :: Config :: JAXB</name>
   <packaging>bundle</packaging>
   <build>
@@ -40,14 +40,14 @@
         <configuration>
           <transformSchemas>
             <transformSchema>
-              <uri>http://xmlns.opennms.org/xsd/config/telemetryd-config</uri>
+              <uri>http://xmlns.citadel.org/xsd/config/telemetryd-config</uri>
               <toFile>telemetryd-config.xsd</toFile>
             </transformSchema>
           </transformSchemas>
           <outputDirectory>${project.build.directory}/xsds</outputDirectory>
           <workDirectory>${project.build.directory}/jaxb2-work</workDirectory>
           <includes>
-            <include>org/opennms/netmgt/telemetry/config/model/*.java</include>
+            <include>org/citadel/netmgt/telemetry/config/model/*.java</include>
           </includes>
           <verbose>true</verbose>
         </configuration>
@@ -76,36 +76,36 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.xml</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.xml</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.config</groupId>
-      <artifactId>org.opennms.features.telemetry.config.api</artifactId>
+      <groupId>org.citadel.features.telemetry.config</groupId>
+      <artifactId>org.citadel.features.telemetry.config.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry</groupId>
-      <artifactId>org.opennms.features.telemetry.api</artifactId>
+      <groupId>org.citadel.features.telemetry</groupId>
+      <artifactId>org.citadel.features.telemetry.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.xml</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.xml</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrd-jrobin</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrd-jrobin</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrdtool-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrdtool-api</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jrrd2-dependencies</artifactId>
       <scope>test</scope>
       <type>pom</type>

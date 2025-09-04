@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>org.opennms.features.events.sink</artifactId>
-    <groupId>org.opennms.features.events</groupId>
+    <artifactId>org.citadel.features.events.sink</artifactId>
+    <groupId>org.citadel.features.events</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.opennms.features.events.sink</groupId>
-  <artifactId>org.opennms.features.events.sink.dispatcher</artifactId>
+  <groupId>org.citadel.features.events.sink</groupId>
+  <artifactId>org.citadel.features.events.sink.dispatcher</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: Events :: Sink Dispatcher</name>
 
@@ -33,17 +33,17 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.events</groupId>
-      <artifactId>org.opennms.features.events.api</artifactId>
+      <groupId>org.citadel.features.events</groupId>
+      <artifactId>org.citadel.features.events.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.xml</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.xml</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>

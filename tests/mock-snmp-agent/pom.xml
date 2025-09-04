@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.tests</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.tests</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.tests</groupId>
-  <artifactId>org.opennms.tests.mock-snmp-agent</artifactId>
+  <groupId>org.citadel.tests</groupId>
+  <artifactId>org.citadel.tests.mock-snmp-agent</artifactId>
   <name>OpenNMS :: Tests :: Mock SNMP Agent</name>
   <packaging>bundle</packaging>
   <build>
@@ -32,7 +32,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>org.opennms.mock.snmp.MockSnmpAgent</mainClass>
+              <mainClass>org.citadel.mock.snmp.MockSnmpAgent</mainClass>
             </manifest>
           </archive>
           <overrideUid>0</overrideUid>
@@ -53,7 +53,7 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>snmp4j-agent-dependencies</artifactId>
       <type>pom</type>
     </dependency>
@@ -63,8 +63,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.lib</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.lib</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>

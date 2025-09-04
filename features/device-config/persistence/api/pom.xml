@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>org.opennms.features.device-config.persistence</artifactId>
-        <groupId>org.opennms.features.device-config</groupId>
+        <artifactId>org.citadel.features.device-config.persistence</artifactId>
+        <groupId>org.citadel.features.device-config</groupId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.opennms.features.device-config.persistence</groupId>
-    <artifactId>org.opennms.features.device-config.persistence.api</artifactId>
+    <groupId>org.citadel.features.device-config.persistence</groupId>
+    <artifactId>org.citadel.features.device-config.persistence.api</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: Device Config :: Persistence :: API</name>
     <build>
@@ -31,13 +31,13 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-model</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-model</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

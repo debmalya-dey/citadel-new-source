@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.reporting</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.reporting</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.reporting</groupId>
-  <artifactId>org.opennms.features.reporting.jasper-reports</artifactId>
+  <groupId>org.citadel.features.reporting</groupId>
+  <artifactId>org.citadel.features.reporting.jasper-reports</artifactId>
   <name>OpenNMS :: Features :: Reporting :: Jasper</name>
-  <url>http://www.opennms.org/</url>
+  <url>http://www.citadel.org/</url>
   <packaging>bundle</packaging>
   <build>
     <plugins>
@@ -34,7 +34,7 @@
             <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
-            <Export-Package>org.opennms.reporting.jasperreports.svclayer.*;version="${project.version}"</Export-Package>
+            <Export-Package>org.citadel.reporting.jasperreports.svclayer.*;version="${project.version}"</Export-Package>
           </instructions>
         </configuration>
       </plugin>
@@ -42,45 +42,45 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.db</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.db</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.tests</groupId>
-      <artifactId>org.opennms.tests.mock-elements</artifactId>
+      <groupId>org.citadel.tests</groupId>
+      <artifactId>org.citadel.tests.mock-elements</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.reporting</groupId>
-      <artifactId>org.opennms.features.reporting.api</artifactId>
+      <groupId>org.citadel.features.reporting</groupId>
+      <artifactId>org.citadel.features.reporting.api</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.reporting</groupId>
-      <artifactId>org.opennms.features.reporting.repository</artifactId>
+      <groupId>org.citadel.features.reporting</groupId>
+      <artifactId>org.citadel.features.reporting.repository</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.reporting</groupId>
-      <artifactId>org.opennms.features.reporting.model</artifactId>
+      <groupId>org.citadel.features.reporting</groupId>
+      <artifactId>org.citadel.features.reporting.model</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jasper-shaded</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.reporting</groupId>
+      <groupId>org.citadel.features.reporting</groupId>
       <artifactId>jasper-reports-filter</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.reporting</groupId>
-      <artifactId>org.opennms.features.reporting.jasper-reports-compiler</artifactId>
+      <groupId>org.citadel.features.reporting</groupId>
+      <artifactId>org.citadel.features.reporting.jasper-reports-compiler</artifactId>
       <version>${project.version}</version>
     </dependency>
       <dependency>

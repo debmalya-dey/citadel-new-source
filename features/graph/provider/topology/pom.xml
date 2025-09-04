@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features.graph</groupId>
-        <artifactId>org.opennms.features.graph.provider</artifactId>
+        <groupId>org.citadel.features.graph</groupId>
+        <artifactId>org.citadel.features.graph.provider</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.graph.provider</groupId>
-    <artifactId>org.opennms.features.graph.provider.topology</artifactId>
+    <groupId>org.citadel.features.graph.provider</groupId>
+    <artifactId>org.citadel.features.graph.provider.topology</artifactId>
     <name>OpenNMS :: Features :: Graph :: Provider :: Topology</name>
     <description>Exposes GraphContainerProvider to the (legacy) TopologyProvider API (Graph API -> Topology API)</description>
     <packaging>bundle</packaging>
@@ -34,17 +34,17 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.graph</groupId>
-            <artifactId>org.opennms.features.graph.api</artifactId>
+            <groupId>org.citadel.features.graph</groupId>
+            <artifactId>org.citadel.features.graph.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.topology</groupId>
-            <artifactId>org.opennms.features.topology.api</artifactId>
+            <groupId>org.citadel.features.topology</groupId>
+            <artifactId>org.citadel.features.topology.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>oia-dependencies</artifactId>
             <type>pom</type>
         </dependency>

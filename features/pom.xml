@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>opennms</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>citadel</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>org.opennms.features</artifactId>
+  <artifactId>org.citadel.features</artifactId>
   <packaging>pom</packaging>
   <name>OpenNMS :: Features</name>
   <modules>
@@ -79,11 +79,11 @@
     <module>rest-provider</module>
 
     <!-- OpenNMS OSGI Core -->
-    <module>opennms-osgi-core</module>
+    <module>citadel-osgi-core</module>
     
     <!-- OSGi Script Engine -->
     <module>osgi-jsr223</module>
-    <module>opennms-osgi-core-rest</module>
+    <module>citadel-osgi-core-rest</module>
 
     <!-- JMX config generator -->
     <module>jmx-config-generator</module>
@@ -163,7 +163,7 @@
     <module>scv</module>
 
     <!-- ReST Elasticsearch Integration -->
-    <module>opennms-es-rest</module>
+    <module>citadel-es-rest</module>
 
     <!-- Correlation Feedback -->
     <module>situation-feedback</module>

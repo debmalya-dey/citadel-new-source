@@ -2,14 +2,14 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <parent>
-    <groupId>org.opennms.core</groupId>
-    <artifactId>org.opennms.core.snmp</artifactId>
+    <groupId>org.citadel.core</groupId>
+    <artifactId>org.citadel.core.snmp</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.snmp</groupId>
-  <artifactId>org.opennms.core.snmp.commands</artifactId>
+  <groupId>org.citadel.core.snmp</groupId>
+  <artifactId>org.citadel.core.snmp.commands</artifactId>
 
   <name>OpenNMS :: Core :: SNMP :: Shell Commands</name>
 
@@ -35,13 +35,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.api</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config-api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>

@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-integrations</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-integrations</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>opennms-jasperstudio-extension</artifactId>
+    <artifactId>citadel-jasperstudio-extension</artifactId>
     <name>OpenNMS Integration for Jaspersoft Studio</name>
     <packaging>jar</packaging>
     <description>Add this jar to the Jaspersoft Studio build path in order to be able to execute/debug/create reports for OpenNMS</description>
@@ -45,27 +45,27 @@
     -->
     <dependencies>
         <dependency>
-            <groupId>org.opennms</groupId>
+            <groupId>org.citadel</groupId>
             <artifactId>jasper-extensions</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.soa</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.soa</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.sysprops</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.sysprops</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.endpoints.grafana</groupId>
-            <artifactId>org.opennms.features.endpoints.grafana.api</artifactId>
+            <groupId>org.citadel.features.endpoints.grafana</groupId>
+            <artifactId>org.citadel.features.endpoints.grafana.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.endpoints.grafana</groupId>
-            <artifactId>org.opennms.features.endpoints.grafana.client</artifactId>
+            <groupId>org.citadel.features.endpoints.grafana</groupId>
+            <artifactId>org.citadel.features.endpoints.grafana.client</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -84,18 +84,18 @@
             <version>${okioVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>spring-dependencies</artifactId>
             <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.xml</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.xml</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.spring</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.spring</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -118,8 +118,8 @@
             <version>${slf4jVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.measurements</groupId>
-            <artifactId>org.opennms.features.measurements.api</artifactId>
+            <groupId>org.citadel.features.measurements</groupId>
+            <artifactId>org.citadel.features.measurements.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

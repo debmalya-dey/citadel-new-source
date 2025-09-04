@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.search</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.search</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.search</groupId>
-  <artifactId>org.opennms.features.search.providers</artifactId>
+  <groupId>org.citadel.features.search</groupId>
+  <artifactId>org.citadel.features.search.providers</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: Search :: Providers</name>
   <build>
@@ -33,57 +33,57 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.search</groupId>
-      <artifactId>org.opennms.features.search.api</artifactId>
+      <groupId>org.citadel.features.search</groupId>
+      <artifactId>org.citadel.features.search.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-web-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-web-api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.utils</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.utils</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.mate</groupId>
-      <artifactId>org.opennms.core.mate.model</artifactId>
+      <groupId>org.citadel.core.mate</groupId>
+      <artifactId>org.citadel.core.mate.model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-mock</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-mock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrd-jrobin</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrd-jrobin</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrdtool-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrdtool-api</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.persistence.rrd</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.persistence.rrd</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.mock-impl</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.mock-impl</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.db</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.db</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>

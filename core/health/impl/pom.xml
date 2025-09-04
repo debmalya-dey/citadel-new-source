@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.health</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.health</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.core.health</groupId>
-    <artifactId>org.opennms.core.health.impl</artifactId>
+    <groupId>org.citadel.core.health</groupId>
+    <artifactId>org.citadel.core.health.impl</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Core :: Health :: Impl</name>
     <build>
@@ -18,7 +18,7 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Export-Package>org.opennms.core.health.impl</Export-Package>
+                        <Export-Package>org.citadel.core.health.impl</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -48,8 +48,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.health</groupId>
-            <artifactId>org.opennms.core.health.api</artifactId>
+            <groupId>org.citadel.core.health</groupId>
+            <artifactId>org.citadel.core.health.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -63,13 +63,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.lib</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.lib</artifactId>
             <scope>test</scope>
         </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-util</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-util</artifactId>
       </dependency>
     </dependencies>
 </project>

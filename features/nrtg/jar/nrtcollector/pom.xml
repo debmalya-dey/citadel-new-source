@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.opennms.features.nrtg</groupId>
+    <groupId>org.citadel.features.nrtg</groupId>
     <artifactId>jar</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
@@ -15,22 +15,22 @@
   <dependencies>
     <!-- OpenNMS NRTCollector -->
     <dependency>
-      <groupId>org.opennms.features.nrtg</groupId>
+      <groupId>org.citadel.features.nrtg</groupId>
       <artifactId>nrtg-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.nrtg</groupId>
+      <groupId>org.citadel.features.nrtg</groupId>
       <artifactId>nrtg-collector</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.nrtg.protocolcollector</groupId>
+      <groupId>org.citadel.features.nrtg.protocolcollector</groupId>
       <artifactId>nrtg-protocolcollector-snmp</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>activemq-dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -53,19 +53,19 @@
     </dependency>
     <!-- Spring -->
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-dependencies</artifactId>
       <type>pom</type>
     </dependency>
 
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.api</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.implementations.snmp4j</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.implementations.snmp4j</artifactId>
       <version>${project.version}</version>
     </dependency>
     
@@ -83,7 +83,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>org.opennms.nrtg.jar.nrtcollector.NrtCollectorStarter</mainClass>
+              <mainClass>org.citadel.nrtg.jar.nrtcollector.NrtCollectorStarter</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

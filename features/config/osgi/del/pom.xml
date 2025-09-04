@@ -4,13 +4,13 @@
         Provides Osgi Integration.
     </description>
     <parent>
-        <groupId>org.opennms.features.config</groupId>
-        <artifactId>org.opennms.features.config.osgi</artifactId>
+        <groupId>org.citadel.features.config</groupId>
+        <artifactId>org.citadel.features.config.osgi</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.config.osgi</groupId>
-    <artifactId>org.opennms.features.config.osgi.del</artifactId>
+    <groupId>org.citadel.features.config.osgi</groupId>
+    <artifactId>org.citadel.features.config.osgi.del</artifactId>
     <name>OpenNMS :: Features :: Config :: Configuration for Osgi :: Delegation</name>
     <packaging>bundle</packaging>
     <dependencies>
@@ -46,8 +46,8 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Export-Package>org.opennms.features.config.osgi.del*;version=${project.version};-noimport:=true</Export-Package>
-                        <Bundle-Activator>org.opennms.features.config.osgi.del.Activator</Bundle-Activator>
+                        <Export-Package>org.citadel.features.config.osgi.del*;version=${project.version};-noimport:=true</Export-Package>
+                        <Bundle-Activator>org.citadel.features.config.osgi.del.Activator</Bundle-Activator>
                     </instructions>
                 </configuration>
             </plugin>

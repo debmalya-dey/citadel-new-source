@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core.ipc</groupId>
-    <artifactId>org.opennms.core.ipc.sink</artifactId>
+    <groupId>org.citadel.core.ipc</groupId>
+    <artifactId>org.citadel.core.ipc.sink</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.ipc.sink</groupId>
-  <artifactId>org.opennms.core.ipc.sink.common</artifactId>
+  <groupId>org.citadel.core.ipc.sink</groupId>
+  <artifactId>org.citadel.core.ipc.sink.common</artifactId>
   <name>OpenNMS :: Core :: IPC :: Sink :: Common</name>
   <packaging>bundle</packaging>
   <build>
@@ -31,7 +31,7 @@
             <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
-            <Bundle-Activator>org.opennms.core.ipc.sink.offheap.Activator</Bundle-Activator>
+            <Bundle-Activator>org.citadel.core.ipc.sink.offheap.Activator</Bundle-Activator>
           </instructions>
         </configuration>
       </plugin>
@@ -73,12 +73,12 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.logging</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.logging</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.api</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.api</artifactId>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -89,17 +89,17 @@
       <artifactId>guava</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-util</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-util</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.sysprops</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.sysprops</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.soa</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.soa</artifactId>
     </dependency>
     <dependency>
       <groupId>org.osgi</groupId>
@@ -119,8 +119,8 @@
       <artifactId>metrics-jmx</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -134,8 +134,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.offheap</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.offheap</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

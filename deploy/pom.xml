@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>opennms</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>citadel</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>opennms-deploy</artifactId>
+  <artifactId>citadel-deploy</artifactId>
   <packaging>pom</packaging>
   <name>OpenNMS :: Maven Central Deployment</name>
   <modules>
@@ -78,24 +78,24 @@
     <module>../features/ticketing/api</module>
     <module>../features/timeformat/api</module>
     <module>../features/topologies/service/api</module>
-    <module>../features/topology-map/org.opennms.features.topology.api</module>
-    <module>../features/topology-map/org.opennms.features.topology.persistence/org.opennms.features.topology.persistence.api</module>
+    <module>../features/topology-map/org.citadel.features.topology.api</module>
+    <module>../features/topology-map/org.citadel.features.topology.persistence/org.citadel.features.topology.persistence.api</module>
     <module>../features/usageanalytics/api</module>
-    <module>../opennms-alarms/api</module>
-    <module>../opennms-config-api</module>
-    <module>../opennms-config-dao/common-api</module>
-    <module>../opennms-config-dao/poll-outages/api</module>
-    <module>../opennms-config-dao/thresholding/api</module>
-    <module>../opennms-dao-api</module>
-    <module>../opennms-icmp/opennms-icmp-api</module>
-    <module>../opennms-javamail/opennms-javamail-api</module>
-    <module>../opennms-model</module>
-    <module>../opennms-provision/opennms-provision-api</module>
-    <module>../opennms-provision/opennms-provision-persistence</module>
-    <module>../opennms-rrd/opennms-rrd-api</module>
-    <module>../opennms-rrd/opennms-rrd-rrdtool/opennms-rrdtool-api</module>
-    <module>../opennms-util</module>
-    <module>../opennms-web-api</module>
+    <module>../citadel-alarms/api</module>
+    <module>../citadel-config-api</module>
+    <module>../citadel-config-dao/common-api</module>
+    <module>../citadel-config-dao/poll-outages/api</module>
+    <module>../citadel-config-dao/thresholding/api</module>
+    <module>../citadel-dao-api</module>
+    <module>../citadel-icmp/citadel-icmp-api</module>
+    <module>../citadel-javamail/citadel-javamail-api</module>
+    <module>../citadel-model</module>
+    <module>../citadel-provision/citadel-provision-api</module>
+    <module>../citadel-provision/citadel-provision-persistence</module>
+    <module>../citadel-rrd/citadel-rrd-api</module>
+    <module>../citadel-rrd/citadel-rrd-rrdtool/citadel-rrdtool-api</module>
+    <module>../citadel-util</module>
+    <module>../citadel-web-api</module>
     <module>../smoke-test</module>
   </modules>
   <build>

@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>org.opennms.features.openconfig</artifactId>
-    <groupId>org.opennms.features</groupId>
+    <artifactId>org.citadel.features.openconfig</artifactId>
+    <groupId>org.citadel.features</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.opennms.features.openconfig</groupId>
-  <artifactId>org.opennms.features.openconfig.telemetry-client</artifactId>
+  <groupId>org.citadel.features.openconfig</groupId>
+  <artifactId>org.citadel.features.openconfig.telemetry-client</artifactId>
   <name>OpenNMS :: OpenConfig :: Telemetry Client</name>
   <packaging>bundle</packaging>
   <build>
@@ -36,13 +36,13 @@
       <artifactId>slf4j-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.lib</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.lib</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.grpc</groupId>
-      <artifactId>org.opennms.core.grpc.common</artifactId>
+      <groupId>org.citadel.core.grpc</groupId>
+      <artifactId>org.citadel.core.grpc.common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -66,13 +66,13 @@
       <version>${grpcVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.openconfig</groupId>
-      <artifactId>org.opennms.features.openconfig.api</artifactId>
+      <groupId>org.citadel.features.openconfig</groupId>
+      <artifactId>org.citadel.features.openconfig.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.openconfig</groupId>
-      <artifactId>org.opennms.features.openconfig.common</artifactId>
+      <groupId>org.citadel.features.openconfig</groupId>
+      <artifactId>org.citadel.features.openconfig.common</artifactId>
       <version>${project.version}</version>
     </dependency>
 

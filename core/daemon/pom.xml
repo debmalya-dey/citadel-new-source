@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.core</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.core</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core</groupId>
-  <artifactId>org.opennms.core.daemon</artifactId>
+  <groupId>org.citadel.core</groupId>
+  <artifactId>org.citadel.core.daemon</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Core :: Daemon</name>
   <description>
@@ -48,12 +48,12 @@
               org.apache.activemq.command;resolution:=optional,
               org.apache.activemq.jaas;resolution:=optional,
               org.apache.activemq.security;resolution:=optional,
-              org.opennms.features.activemq.broker.api;resolution:=optional,
-              org.opennms.features.activemq.broker.impl;resolution:=optional,
-              org.opennms.features.scv.jceks;resolution:=optional,
+              org.citadel.features.activemq.broker.api;resolution:=optional,
+              org.citadel.features.activemq.broker.impl;resolution:=optional,
+              org.citadel.features.scv.jceks;resolution:=optional,
               *
             </Import-Package>
-            <Export-Package>org.opennms.netmgt.daemon.*;org.opennms.netmgt.vmmgr.*;version="${project.version}"</Export-Package>
+            <Export-Package>org.citadel.netmgt.daemon.*;org.citadel.netmgt.vmmgr.*;version="${project.version}"</Export-Package>
           </instructions>
         </configuration>
       </plugin>
@@ -61,48 +61,48 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.logging</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.logging</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-icmp-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-icmp-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>activemq-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.activemq</groupId>
-      <artifactId>org.opennms.features.activemq.component</artifactId>
+      <groupId>org.citadel.features.activemq</groupId>
+      <artifactId>org.citadel.features.activemq.component</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.activemq</groupId>
-      <artifactId>org.opennms.features.activemq.broker-api</artifactId>
+      <groupId>org.citadel.features.activemq</groupId>
+      <artifactId>org.citadel.features.activemq.broker-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.db</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.db</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.soa</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.soa</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -187,8 +187,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.config</groupId>
-      <artifactId>org.opennms.features.config.mock</artifactId>
+      <groupId>org.citadel.features.config</groupId>
+      <artifactId>org.citadel.features.config.mock</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

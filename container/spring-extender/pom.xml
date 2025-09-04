@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.container</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.container</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.container</groupId>
+    <groupId>org.citadel.container</groupId>
     <artifactId>spring-extender</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Container :: Spring - Extender</name>
@@ -23,7 +23,7 @@
                         <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Bundle-Activator>org.opennms.netmgt.shared.bootstrap.Activator</Bundle-Activator>
+                        <Bundle-Activator>org.citadel.netmgt.shared.bootstrap.Activator</Bundle-Activator>
                         <Embed-Dependency>groupId=org.eclipse.gemini.blueprint</Embed-Dependency>
                     </instructions>
                 </configuration>
@@ -77,7 +77,7 @@
             <version>${eclipseGeminiVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>spring-dependencies</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
@@ -89,7 +89,7 @@
         <repository>
             <id>spring-ext</id>
             <name>OpenNMS Mega-Repository (spring-ext override)</name>
-            <url>https://maven.opennms.org/repository/everything/</url>
+            <url>https://maven.citadel.org/repository/everything/</url>
         </repository>
     </repositories>
 </project>

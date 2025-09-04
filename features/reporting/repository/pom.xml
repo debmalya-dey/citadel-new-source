@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.reporting</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.reporting</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.reporting</groupId>
-  <artifactId>org.opennms.features.reporting.repository</artifactId>
+  <groupId>org.citadel.features.reporting</groupId>
+  <artifactId>org.citadel.features.reporting.repository</artifactId>
   <name>OpenNMS :: Features :: Reporting :: Repository</name>
-  <url>http://www.opennms.org/</url>
+  <url>http://www.citadel.org/</url>
   <packaging>bundle</packaging>
   <build>
     <plugins>
@@ -23,10 +23,10 @@
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
             <Export-Package>
-              org.opennms.features.reporting.repository.global.*;version="${project.version}",
-              org.opennms.features.reporting.repository.local.*;version="${project.version}",
-              org.opennms.features.reporting.repository.remote.*;version="${project.version}",
-              org.opennms.features.reporting.repository.*;version="${project.version}"
+              org.citadel.features.reporting.repository.global.*;version="${project.version}",
+              org.citadel.features.reporting.repository.local.*;version="${project.version}",
+              org.citadel.features.reporting.repository.remote.*;version="${project.version}",
+              org.citadel.features.reporting.repository.*;version="${project.version}"
             </Export-Package>
           </instructions>
         </configuration>
@@ -35,33 +35,33 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.reporting</groupId>
-      <artifactId>org.opennms.features.reporting.dao</artifactId>
+      <groupId>org.citadel.features.reporting</groupId>
+      <artifactId>org.citadel.features.reporting.dao</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.reporting</groupId>
-      <artifactId>org.opennms.features.reporting.model</artifactId>
+      <groupId>org.citadel.features.reporting</groupId>
+      <artifactId>org.citadel.features.reporting.model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.reporting</groupId>
-      <artifactId>org.opennms.features.reporting.sdo</artifactId>
+      <groupId>org.citadel.features.reporting</groupId>
+      <artifactId>org.citadel.features.reporting.sdo</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.web</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.web</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>cxf-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.mate</groupId>
-      <artifactId>org.opennms.core.mate.api</artifactId>
+      <groupId>org.citadel.core.mate</groupId>
+      <artifactId>org.citadel.core.mate.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.scv</groupId>
-      <artifactId>org.opennms.features.scv.jceks-impl</artifactId>
+      <groupId>org.citadel.features.scv</groupId>
+      <artifactId>org.citadel.features.scv.jceks-impl</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -74,18 +74,18 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-test-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
     </dependency>
   </dependencies>
 </project>

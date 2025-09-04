@@ -4,13 +4,13 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.container</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.container</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.container</groupId>
-    <artifactId>org.opennms.container.karaf</artifactId>
+    <groupId>org.citadel.container</groupId>
+    <artifactId>org.citadel.container.karaf</artifactId>
     <packaging>karaf-assembly</packaging>
     <name>OpenNMS :: OSGi Container :: Embedded Karaf</name>
 
@@ -43,12 +43,12 @@
                         <!--Karaf standard features-->
                         <repository>mvn:org.apache.karaf.features/standard/${karafVersion}/xml/features</repository>
                         <!-- OPENNMS: Replace the spring-legacy features files with our modified versions -->
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/spring-legacy</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/spring-legacy</repository>
                         <repository>mvn:org.ops4j.pax.cdi/pax-cdi-features/${paxCdiVersion}/xml/features</repository>
                         <!-- OPENNMS: Add the OpenNMS feature repository -->
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/features</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/features</repository>
                         <!-- OPENNMS: Add the OpenNMS Minion feature repository -->
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/minion</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/minion</repository>
                     </bootRepositories>
                     <installedFeatures>
                         <feature>wrapper</feature>
@@ -79,7 +79,7 @@
                         <feature>wrap</feature>
 
                         <!-- OPENNMS: Add http, http-whiteboard to the default list of features -->
-                        <feature>opennms-http-whiteboard</feature>
+                        <feature>citadel-http-whiteboard</feature>
                     </bootFeatures>
                     <installedBundles>
                         <!-- override for security (see etc/overrides.properties) -->
@@ -93,7 +93,7 @@
                         <bundle>mvn:org.codehaus.jettison/jettison/${jettisonVersion}</bundle>
 
                         <!-- OPENNMS: initialize the config APIs at startup -->
-                        <bundle>mvn:org.opennms.features.config.osgi/org.opennms.features.config.osgi.del/${project.version}</bundle>
+                        <bundle>mvn:org.citadel.features.config.osgi/org.citadel.features.config.osgi.del/${project.version}</bundle>
                     </installedBundles>
                     <libraries>
                         <library>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xerces/${xercesVersion}_1;type:=endorsed;export:=true;delegate:=true</library>
@@ -119,7 +119,7 @@
                         <library>mvn:org.apache.mina/mina-core/${minaVersion};type:=boot;export:=false</library>
 
                         <!-- OPENNMS: Add our custom branding JAR -->
-                        <library>mvn:org.opennms.container/org.opennms.container.branding/${project.version};type:=default;export:=true</library>
+                        <library>mvn:org.citadel.container/org.citadel.container.branding/${project.version};type:=default;export:=true</library>
                     </libraries>
                     <javase>1.8</javase>
                 </configuration>
@@ -137,8 +137,8 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>org.opennms.karaf</groupId>
-                                    <artifactId>opennms</artifactId>
+                                    <groupId>org.citadel.karaf</groupId>
+                                    <artifactId>citadel</artifactId>
                                     <version>${project.version}</version>
                                     <classifier>overrides</classifier>
                                     <type>properties</type>
@@ -218,10 +218,10 @@
             </exclusions>
         </dependency>
         <!--
-            This is the original version of mvn:org.opennms.karaf/opennms//xml/standard so it
+            This is the original version of mvn:org.citadel.karaf/citadel//xml/standard so it
             shouldn't be necessary but the karaf-maven-plugin doesn't resolve the bootFeatures
             without it. The plugin looks at the classifier and scope when it does its magic so
-            something about mvn:org.opennms.karaf/opennms//xml/standard doesn't line up like
+            something about mvn:org.citadel.karaf/citadel//xml/standard doesn't line up like
             the original one does.
         -->
         <dependency>
@@ -242,44 +242,44 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>spring-legacy</classifier>
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>features</classifier>
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>minion</classifier>
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>felix-dependencies</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.container</groupId>
-            <artifactId>org.opennms.container.branding</artifactId>
+            <groupId>org.citadel.container</groupId>
+            <artifactId>org.citadel.container.branding</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>spring-dependencies</artifactId>
             <version>${project.version}</version>
             <type>pom</type>

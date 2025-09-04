@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <artifactId>dependencies</artifactId>
-    <groupId>org.opennms</groupId>
+    <groupId>org.citadel</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.dependencies</groupId>
+  <groupId>org.citadel.dependencies</groupId>
   <artifactId>jasper-shaded</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Dependencies :: Jasper Report</name>
@@ -36,19 +36,19 @@
           <relocations>
             <relocation>
               <pattern>com.lowagie</pattern>
-              <shadedPattern>org.opennms.shaded.jasper.com.lowagie</shadedPattern>
+              <shadedPattern>org.citadel.shaded.jasper.com.lowagie</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.jfree.chart</pattern>
-              <shadedPattern>org.opennms.shaded.jasper.org.jfree.chart</shadedPattern>
+              <shadedPattern>org.citadel.shaded.jasper.org.jfree.chart</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.jfree.data</pattern>
-              <shadedPattern>org.opennms.shaded.jasper.org.jfree.data</shadedPattern>
+              <shadedPattern>org.citadel.shaded.jasper.org.jfree.data</shadedPattern>
             </relocation>
             <relocation>
               <pattern>org.exolab.castor</pattern>
-              <shadedPattern>org.opennms.shaded.jasper.org.exolab.castor</shadedPattern>
+              <shadedPattern>org.citadel.shaded.jasper.org.exolab.castor</shadedPattern>
             </relocation>
           </relocations>
         </configuration>
@@ -322,7 +322,7 @@
       <artifactId>jcommon</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-dependencies</artifactId>
       <type>pom</type>
     </dependency>
@@ -343,7 +343,7 @@
     <!-- jaspersoft's cert expired 2023-04-03, use our copy of the olap4j jar for now -->
     <repository>
       <id>jaspersoft-third-party</id>
-      <url>https://maven.opennms.org/repository/thirdparty/</url>
+      <url>https://maven.citadel.org/repository/thirdparty/</url>
       <releases>
         <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>

@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>org.opennms.core.ipc</artifactId>
-    <groupId>org.opennms.core</groupId>
+    <artifactId>org.citadel.core.ipc</artifactId>
+    <groupId>org.citadel.core</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.opennms.core.ipc</groupId>
-  <artifactId>org.opennms.core.ipc.osgi</artifactId>
+  <groupId>org.citadel.core.ipc</groupId>
+  <artifactId>org.citadel.core.ipc.osgi</artifactId>
   <name>OpenNMS :: Core :: IPC :: OSGI</name>
   <packaging>bundle</packaging>
 
@@ -33,33 +33,33 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.api</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.api</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.common</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.twin</groupId>
-      <artifactId>org.opennms.core.ipc.twin.api</artifactId>
+      <groupId>org.citadel.core.ipc.twin</groupId>
+      <artifactId>org.citadel.core.ipc.twin.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.twin</groupId>
-      <artifactId>org.opennms.core.ipc.twin.common</artifactId>
+      <groupId>org.citadel.core.ipc.twin</groupId>
+      <artifactId>org.citadel.core.ipc.twin.common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.distributed</groupId>
-      <artifactId>org.opennms.features.distributed.opennms-identity</artifactId>
+      <groupId>org.citadel.features.distributed</groupId>
+      <artifactId>org.citadel.features.distributed.citadel-identity</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

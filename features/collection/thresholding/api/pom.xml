@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features.collection</groupId>
-    <artifactId>org.opennms.features.collection.thresholding</artifactId>
+    <groupId>org.citadel.features.collection</groupId>
+    <artifactId>org.citadel.features.collection.thresholding</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>org.opennms.features.collection.thresholding.api</artifactId>
+  <artifactId>org.citadel.features.collection.thresholding.api</artifactId>
   <name>OpenNMS :: Features :: Collection :: Thresholding :: API</name>
   <packaging>bundle</packaging>
   <build>
@@ -27,20 +27,20 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.distributed</groupId>
-      <artifactId>org.opennms.features.distributed.kv-store.api</artifactId>
+      <groupId>org.citadel.features.distributed</groupId>
+      <artifactId>org.citadel.features.distributed.kv-store.api</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>

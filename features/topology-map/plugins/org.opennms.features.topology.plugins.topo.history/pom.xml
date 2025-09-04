@@ -4,20 +4,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-    <artifactId>org.opennms.features.topology.plugins</artifactId>
-    <groupId>org.opennms.features.topology</groupId>
+    <artifactId>org.citadel.features.topology.plugins</artifactId>
+    <groupId>org.citadel.features.topology</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
-    <groupId>org.opennms.features.topology.plugins.topo</groupId>
-    <artifactId>org.opennms.features.topology.plugins.topo.history</artifactId>
+    <groupId>org.citadel.features.topology.plugins.topo</groupId>
+    <artifactId>org.citadel.features.topology.plugins.topo.history</artifactId>
     <packaging>bundle</packaging>
 
     <name>OpenNMS :: Features :: Topology :: Plugins :: History</name>
     
     <properties>
-        <bundle.symbolicName>org.opennms.features.topology.plugins.topo.history</bundle.symbolicName>
-        <bundle.namespace>org.opennms.features.topology.plugins.topo.history</bundle.namespace>
+        <bundle.symbolicName>org.citadel.features.topology.plugins.topo.history</bundle.symbolicName>
+        <bundle.namespace>org.citadel.features.topology.plugins.topo.history</bundle.namespace>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -27,12 +27,12 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.topology</groupId>
-            <artifactId>org.opennms.features.topology.api</artifactId>
+            <groupId>org.citadel.features.topology</groupId>
+            <artifactId>org.citadel.features.topology.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
+            <groupId>org.citadel.features</groupId>
             <artifactId>vaadin</artifactId>
             <type>pom</type>
         </dependency>
@@ -47,8 +47,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.topology</groupId>
-            <artifactId>org.opennms.features.topology.app</artifactId>
+            <groupId>org.citadel.features.topology</groupId>
+            <artifactId>org.citadel.features.topology.app</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>

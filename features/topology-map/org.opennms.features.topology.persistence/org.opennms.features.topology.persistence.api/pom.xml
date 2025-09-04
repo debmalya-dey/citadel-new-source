@@ -2,18 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <relativePath>../../poms/compiled/</relativePath>
-        <groupId>org.opennms.features.topology.build</groupId>
+        <groupId>org.citadel.features.topology.build</groupId>
         <artifactId>compiled-bundle-settings</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.topology</groupId>
-    <artifactId>org.opennms.features.topology.persistence.api</artifactId>
+    <groupId>org.citadel.features.topology</groupId>
+    <artifactId>org.citadel.features.topology.persistence.api</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: Topology :: Persistence :: API</name>
     <properties>
         <bundle.symbolicName>${project.artifactId}</bundle.symbolicName>
-        <bundle.namespace>org.opennms.netmgt.topology.persistence.api</bundle.namespace>
+        <bundle.namespace>org.citadel.netmgt.topology.persistence.api</bundle.namespace>
     </properties>
     <build>
         <plugins>
@@ -33,8 +33,8 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao-api</artifactId>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.collection</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.collection</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.collection</groupId>
-  <artifactId>org.opennms.features.collection.client-rpc</artifactId>
+  <groupId>org.citadel.features.collection</groupId>
+  <artifactId>org.citadel.features.collection.client-rpc</artifactId>
   <name>OpenNMS :: Features :: Collection :: RPC Client</name>
   <packaging>bundle</packaging>
   <build>
@@ -24,9 +24,9 @@
             <Import-Package>
               org.eclipse.persistence.internal.jaxb;resolution:=optional,
               org.eclipse.persistence.internal.jaxb.many;resolution:=optional,
-              org.opennms.core.xml,
-              org.opennms.netmgt.collection.adapters,
-              org.opennms.core.network,
+              org.citadel.core.xml,
+              org.citadel.netmgt.collection.adapters,
+              org.citadel.core.network,
               *
             </Import-Package>
           </instructions>
@@ -36,36 +36,36 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.api</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.xml</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.xml</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.utils</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.utils</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.api</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config-jaxb</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config-jaxb</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.xml</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.xml</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>

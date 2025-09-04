@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>dominion</artifactId>
-        <groupId>org.opennms.features.minion</groupId>
+        <groupId>org.citadel.features.minion</groupId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -31,7 +31,7 @@
     
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.distributed</groupId>
+            <groupId>org.citadel.features.distributed</groupId>
             <artifactId>core-api</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>

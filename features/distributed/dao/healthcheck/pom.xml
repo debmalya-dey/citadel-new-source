@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features.distributed</groupId>
-    <artifactId>org.opennms.features.distributed.dao</artifactId>
+    <groupId>org.citadel.features.distributed</groupId>
+    <artifactId>org.citadel.features.distributed.dao</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.distributed</groupId>
-  <artifactId>org.opennms.features.distributed.dao-healthcheck</artifactId>
+  <groupId>org.citadel.features.distributed</groupId>
+  <artifactId>org.citadel.features.distributed.dao-healthcheck</artifactId>
   <name>OpenNMS :: Features :: Distributed :: DAO :: Health Check</name>
   <packaging>bundle</packaging>
   <build>
@@ -28,8 +28,8 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.health</groupId>
-      <artifactId>org.opennms.core.health.api</artifactId>
+      <groupId>org.citadel.core.health</groupId>
+      <artifactId>org.citadel.core.health.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

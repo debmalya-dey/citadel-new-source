@@ -2,17 +2,17 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.enlinkd</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.enlinkd</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <properties>
-    <bundle.symbolicName>org.opennms.features.enlinkd.shell</bundle.symbolicName>
-    <bundle.namespace>org.opennms.features.enlinkd.shell</bundle.namespace>
+    <bundle.symbolicName>org.citadel.features.enlinkd.shell</bundle.symbolicName>
+    <bundle.namespace>org.citadel.features.enlinkd.shell</bundle.namespace>
   </properties>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.enlinkd</groupId>
-  <artifactId>org.opennms.features.enlinkd.shell</artifactId>
+  <groupId>org.citadel.features.enlinkd</groupId>
+  <artifactId>org.citadel.features.enlinkd.shell</artifactId>
   <name>OpenNMS :: Features :: Enlinkd :: Shell Commands</name>
   <packaging>bundle</packaging>
   <build>
@@ -57,56 +57,56 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.generator</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.generator</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.api</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.config</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.config</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.adapters.collectors.bridge</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.adapters.collectors.bridge</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.adapters.collectors.cdp</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.adapters.collectors.cdp</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.adapters.collectors.ipnettomedia</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.adapters.collectors.ipnettomedia</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.adapters.collectors.isis</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.adapters.collectors.isis</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.adapters.collectors.ospf</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.adapters.collectors.ospf</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.enlinkd</groupId>
-      <artifactId>org.opennms.features.enlinkd.adapters.collectors.lldp</artifactId>
+      <groupId>org.citadel.features.enlinkd</groupId>
+      <artifactId>org.citadel.features.enlinkd.adapters.collectors.lldp</artifactId>
       <version>${project.version}</version>
     </dependency>
     <!-- Test dependencies -->

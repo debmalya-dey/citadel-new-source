@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <artifactId>dependencies</artifactId>
-    <groupId>org.opennms</groupId>
+    <groupId>org.citadel</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.dependencies</groupId>
+  <groupId>org.citadel.dependencies</groupId>
   <artifactId>oia-dependencies</artifactId>
   <packaging>pom</packaging>
   <name>OpenNMS :: Dependencies :: OpenNMS Integration API</name>
@@ -20,33 +20,33 @@
   </description>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.integration.api</groupId>
+      <groupId>org.citadel.integration.api</groupId>
       <artifactId>api</artifactId>
-      <version>${opennmsApiVersion}</version>
+      <version>${citadelApiVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.integration.api</groupId>
+      <groupId>org.citadel.integration.api</groupId>
       <artifactId>common</artifactId>
-      <version>${opennmsApiVersion}</version>
+      <version>${citadelApiVersion}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.integration.api</groupId>
+      <groupId>org.citadel.integration.api</groupId>
       <artifactId>config</artifactId>
-      <version>${opennmsApiVersion}</version>
+      <version>${citadelApiVersion}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.integration.api</groupId>
+      <groupId>org.citadel.integration.api</groupId>
       <artifactId>karaf-features</artifactId>
-      <version>${opennmsApiVersion}</version>
+      <version>${citadelApiVersion}</version>
       <type>xml</type>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.integration.api</groupId>
+      <groupId>org.citadel.integration.api</groupId>
       <artifactId>tss-tests</artifactId>
-      <version>${opennmsApiVersion}</version>
+      <version>${citadelApiVersion}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

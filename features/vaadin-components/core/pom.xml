@@ -3,15 +3,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opennms.features</groupId>
+        <groupId>org.citadel.features</groupId>
         <artifactId>vaadin-components</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features.vaadin-components</groupId>
+    <groupId>org.citadel.features.vaadin-components</groupId>
     <artifactId>core</artifactId>
     <properties>
-        <bundle.symbolicName>org.opennms.features.vaadin.components.core</bundle.symbolicName>
-        <bundle.namespace>org.opennms.features.vaadin.components.core</bundle.namespace>
+        <bundle.symbolicName>org.citadel.features.vaadin.components.core</bundle.symbolicName>
+        <bundle.namespace>org.citadel.features.vaadin.components.core</bundle.namespace>
     </properties>
     <name>OpenNMS :: Features :: Vaadin :: Components :: Core</name>
     <packaging>bundle</packaging>
@@ -36,12 +36,12 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-web-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-web-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
+            <groupId>org.citadel.features</groupId>
             <artifactId>vaadin</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
@@ -53,23 +53,23 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao-mock</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao-mock</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-rrd-jrobin</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-rrd-jrobin</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.db</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.db</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.collection</groupId>
-            <artifactId>org.opennms.features.collection.persistence.rrd</artifactId>
+            <groupId>org.citadel.features.collection</groupId>
+            <artifactId>org.citadel.features.collection.persistence.rrd</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

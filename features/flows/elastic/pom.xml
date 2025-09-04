@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.flows</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.flows</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.flows</groupId>
-  <artifactId>org.opennms.features.flows.elastic</artifactId>
+  <groupId>org.citadel.features.flows</groupId>
+  <artifactId>org.citadel.features.flows.elastic</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: Flows :: Elastic</name>
   <properties>
@@ -58,45 +58,45 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.cache</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.cache</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.health</groupId>
-      <artifactId>org.opennms.core.health.api</artifactId>
+      <groupId>org.citadel.core.health</groupId>
+      <artifactId>org.citadel.core.health.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows</groupId>
-      <artifactId>org.opennms.features.flows.api</artifactId>
+      <groupId>org.citadel.features.flows</groupId>
+      <artifactId>org.citadel.features.flows.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows</groupId>
-      <artifactId>org.opennms.features.flows.processing</artifactId>
+      <groupId>org.citadel.features.flows</groupId>
+      <artifactId>org.citadel.features.flows.processing</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows.classification.engine</groupId>
-      <artifactId>org.opennms.features.flows.classification.engine.api</artifactId>
+      <groupId>org.citadel.features.flows.classification.engine</groupId>
+      <artifactId>org.citadel.features.flows.classification.engine.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
       <groupId>commons-beanutils</groupId>
       <artifactId>commons-beanutils</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.tracing</groupId>
-      <artifactId>org.opennms.core.tracing.api</artifactId>
+      <groupId>org.citadel.core.tracing</groupId>
+      <artifactId>org.citadel.core.tracing.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.distributed</groupId>
+      <groupId>org.citadel.features.distributed</groupId>
       <artifactId>core-api</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -106,17 +106,17 @@
       <version>${guavaVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.jest</groupId>
-      <artifactId>org.opennms.features.jest.client</artifactId>
+      <groupId>org.citadel.features.jest</groupId>
+      <artifactId>org.citadel.features.jest.client</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.elastic</groupId>
-      <artifactId>org.opennms.features.elastic.client</artifactId>
+      <groupId>org.citadel.features.elastic</groupId>
+      <artifactId>org.citadel.features.elastic.client</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.jest</groupId>
+      <groupId>org.citadel.features.jest</groupId>
       <artifactId>jest-complete-osgi</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -162,24 +162,24 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.xml</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.xml</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows.classification.engine</groupId>
-      <artifactId>org.opennms.features.flows.classification.engine.impl</artifactId>
+      <groupId>org.citadel.features.flows.classification.engine</groupId>
+      <artifactId>org.citadel.features.flows.classification.engine.impl</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-mock</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-mock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

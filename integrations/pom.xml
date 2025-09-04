@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <artifactId>opennms</artifactId>
-    <groupId>org.opennms</groupId>
+    <artifactId>citadel</artifactId>
+    <groupId>org.citadel</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>opennms-integrations</artifactId>
+  <artifactId>citadel-integrations</artifactId>
   <packaging>pom</packaging>
   <name>OpenNMS :: Integrations</name>
   <modules>
-    <module>opennms-dns-provisioning-adapter</module>
-    <module>opennms-reverse-dns-provisioning-adapter</module>
-    <module>opennms-puppet-provisioning-adapter</module>
-    <module>opennms-R</module>
-    <module>opennms-snmp-asset-provisioning-adapter</module>
-    <module>opennms-snmp-hardware-inventory-provisioning-adapter</module>
-    <module>opennms-wsman-asset-provisioning-adapter</module>
-    <module>opennms-jasper-extensions</module>
-    <module>opennms-jasperstudio-extension</module>
-    <module>opennms-vmware</module>
-    <module>opennms-vtdxml-collector-handler</module>
-    <module>opennms-snmp-metadata-provisioning-adapter</module>
-    <module>opennms-geoip-provisioning-adapter</module>
+    <module>citadel-dns-provisioning-adapter</module>
+    <module>citadel-reverse-dns-provisioning-adapter</module>
+    <module>citadel-puppet-provisioning-adapter</module>
+    <module>citadel-R</module>
+    <module>citadel-snmp-asset-provisioning-adapter</module>
+    <module>citadel-snmp-hardware-inventory-provisioning-adapter</module>
+    <module>citadel-wsman-asset-provisioning-adapter</module>
+    <module>citadel-jasper-extensions</module>
+    <module>citadel-jasperstudio-extension</module>
+    <module>citadel-vmware</module>
+    <module>citadel-vtdxml-collector-handler</module>
+    <module>citadel-snmp-metadata-provisioning-adapter</module>
+    <module>citadel-geoip-provisioning-adapter</module>
   </modules>
 </project>

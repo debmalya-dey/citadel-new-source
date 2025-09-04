@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core.ipc</groupId>
-    <artifactId>org.opennms.core.ipc.rpc</artifactId>
+    <groupId>org.citadel.core.ipc</groupId>
+    <artifactId>org.citadel.core.ipc.rpc</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.ipc.rpc</groupId>
-  <artifactId>org.opennms.core.ipc.rpc.commands</artifactId>
+  <groupId>org.citadel.core.ipc.rpc</groupId>
+  <artifactId>org.citadel.core.ipc.rpc.commands</artifactId>
   <name>OpenNMS :: Core :: IPC :: RPC :: Shell Commands</name>
   <packaging>bundle</packaging>
   <build>
@@ -30,12 +30,12 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.common</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.common</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.utils</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.utils</artifactId>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>

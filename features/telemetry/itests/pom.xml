@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.telemetry</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.telemetry</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.telemetry</groupId>
-  <artifactId>org.opennms.features.telemetry.itests</artifactId>
+  <groupId>org.citadel.features.telemetry</groupId>
+  <artifactId>org.citadel.features.telemetry.itests</artifactId>
   <name>OpenNMS :: Features :: Telemetry :: Integration Tests</name>
   <packaging>bundle</packaging>
   <build>
@@ -28,13 +28,13 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.telemetry</groupId>
-      <artifactId>org.opennms.features.telemetry.daemon</artifactId>
+      <groupId>org.citadel.features.telemetry</groupId>
+      <artifactId>org.citadel.features.telemetry.daemon</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-mock</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-mock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -48,135 +48,135 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.test-api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.test-api</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.db</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.db</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.services</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.services</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrd-jrobin</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrd-jrobin</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.persistence.rrd</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.persistence.rrd</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-icmp-jna</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-icmp-jna</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-icmp-best</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-icmp-best</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.mock-impl</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.mock-impl</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.common</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.common</artifactId>
       <version>${project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry</groupId>
-      <artifactId>org.opennms.features.telemetry.listeners</artifactId>
+      <groupId>org.citadel.features.telemetry</groupId>
+      <artifactId>org.citadel.features.telemetry.listeners</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.bmp</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.bmp.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.bmp</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.bmp.adapter</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.bmp</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.bmp.parser</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.bmp</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.bmp.parser</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.netflow</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.netflow.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.netflow</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.netflow.adapter</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.netflow</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.netflow.parser</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.netflow</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.netflow.parser</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.sflow</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.sflow.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.sflow</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.sflow.adapter</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.sflow</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.sflow.parser</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.sflow</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.sflow.parser</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.jti</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.jti.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.jti</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.jti.adapter</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.graphite</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.graphite.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.graphite</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.graphite.adapter</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.camel</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.camel</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.tracing</groupId>
-      <artifactId>org.opennms.core.tracing.registry</artifactId>
+      <groupId>org.citadel.core.tracing</groupId>
+      <artifactId>org.citadel.core.tracing.registry</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.distributed</groupId>
-      <artifactId>org.opennms.features.distributed.opennms-identity</artifactId>
-      <version>${project.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.opennms.core.ipc.sink.camel</groupId>
-      <artifactId>org.opennms.core.ipc.sink.camel.client</artifactId>
+      <groupId>org.citadel.features.distributed</groupId>
+      <artifactId>org.citadel.features.distributed.citadel-identity</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink.camel</groupId>
-      <artifactId>org.opennms.core.ipc.sink.camel.server</artifactId>
+      <groupId>org.citadel.core.ipc.sink.camel</groupId>
+      <artifactId>org.citadel.core.ipc.sink.camel.client</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.thresholding.impl</artifactId>
+      <groupId>org.citadel.core.ipc.sink.camel</groupId>
+      <artifactId>org.citadel.core.ipc.sink.camel.server</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.distributed</groupId>
-      <artifactId>org.opennms.features.distributed.kv-store.blob.postgres</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.thresholding.impl</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.citadel.features.distributed</groupId>
+      <artifactId>org.citadel.features.distributed.kv-store.blob.postgres</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

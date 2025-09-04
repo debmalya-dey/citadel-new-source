@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.device-config</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.device-config</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.device-config</groupId>
-    <artifactId>org.opennms.features.device-config.tftp</artifactId>
+    <groupId>org.citadel.features.device-config</groupId>
+    <artifactId>org.citadel.features.device-config.tftp</artifactId>
     <name>OpenNMS :: Features :: Device Config :: TFTP</name>
     <packaging>bundle</packaging>
 
@@ -23,7 +23,7 @@
                         <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Private-Package>org.opennms.features.deviceconfig.tftp.impl.*</Private-Package>
+                        <Private-Package>org.citadel.features.deviceconfig.tftp.impl.*</Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -46,8 +46,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.lib</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.lib</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>

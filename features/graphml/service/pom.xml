@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.graphml</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.graphml</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.graphml</groupId>
-  <artifactId>org.opennms.features.graphml.service</artifactId>
+  <groupId>org.citadel.features.graphml</groupId>
+  <artifactId>org.citadel.features.graphml.service</artifactId>
   <name>OpenNMS :: Features :: GraphML :: Service</name>
   <packaging>bundle</packaging>
   <build>
@@ -20,7 +20,7 @@
           <instructions>
             <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-            <Private-Package>org.opennms.features.graphml.service.impl</Private-Package>
+            <Private-Package>org.citadel.features.graphml.service.impl</Private-Package>
           </instructions>
         </configuration>
       </plugin>
@@ -28,13 +28,13 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.graphml</groupId>
-      <artifactId>org.opennms.features.graphml.api</artifactId>
+      <groupId>org.citadel.features.graphml</groupId>
+      <artifactId>org.citadel.features.graphml.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.config.service</groupId>
-      <artifactId>org.opennms.features.config.service.api</artifactId>
+      <groupId>org.citadel.features.config.service</groupId>
+      <artifactId>org.citadel.features.config.service.api</artifactId>
       <version>${project.version}</version>
       <scope>compile</scope>
       <exclusions>
@@ -50,8 +50,8 @@
       <version>${jsonVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.xml</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.xml</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.telemetry</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.telemetry</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.telemetry</groupId>
-  <artifactId>org.opennms.features.telemetry.common</artifactId>
+  <groupId>org.citadel.features.telemetry</groupId>
+  <artifactId>org.citadel.features.telemetry.common</artifactId>
   <name>OpenNMS :: Features :: Telemetry :: Common</name>
   <packaging>bundle</packaging>
   <build>
@@ -33,23 +33,23 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry</groupId>
-      <artifactId>org.opennms.features.telemetry.api</artifactId>
+      <groupId>org.citadel.features.telemetry</groupId>
+      <artifactId>org.citadel.features.telemetry.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry</groupId>
-      <artifactId>org.opennms.features.telemetry.registry</artifactId>
+      <groupId>org.citadel.features.telemetry</groupId>
+      <artifactId>org.citadel.features.telemetry.registry</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.config</groupId>
-      <artifactId>org.opennms.features.telemetry.config.api</artifactId>
+      <groupId>org.citadel.features.telemetry.config</groupId>
+      <artifactId>org.citadel.features.telemetry.config.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.api</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.api</artifactId>
     </dependency>
     <dependency>
       <groupId>com.google.protobuf</groupId>
@@ -57,8 +57,8 @@
     </dependency>
     <dependency>
       <!-- Required for the DistPollerDao -->
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
   </dependencies>
 </project>

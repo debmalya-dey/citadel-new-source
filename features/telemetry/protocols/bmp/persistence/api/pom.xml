@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>org.opennms.features.telemetry.protocols.bmp.persistence</artifactId>
-    <groupId>org.opennms.features.telemetry.protocols.bmp</groupId>
+    <artifactId>org.citadel.features.telemetry.protocols.bmp.persistence</artifactId>
+    <groupId>org.citadel.features.telemetry.protocols.bmp</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.opennms.features.telemetry.protocols.bmp.persistence</groupId>
-  <artifactId>org.opennms.features.telemetry.protocols.bmp.persistence.api</artifactId>
+  <groupId>org.citadel.features.telemetry.protocols.bmp.persistence</groupId>
+  <artifactId>org.citadel.features.telemetry.protocols.bmp.persistence.api</artifactId>
   <name>OpenNMS :: Features :: Telemetry :: Bmp :: Persistence :: Api</name>
   <packaging>bundle</packaging>
   <build>
@@ -31,8 +31,8 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
   </dependencies>
 

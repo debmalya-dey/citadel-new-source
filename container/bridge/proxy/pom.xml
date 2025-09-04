@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opennms.container</groupId>
-        <artifactId>org.opennms.container.bridge</artifactId>
+        <groupId>org.citadel.container</groupId>
+        <artifactId>org.citadel.container.bridge</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.container.bridge</groupId>
-    <artifactId>org.opennms.container.bridge.proxy</artifactId>
+    <groupId>org.citadel.container.bridge</groupId>
+    <artifactId>org.citadel.container.bridge.proxy</artifactId>
     <packaging>jar</packaging>
     <name>OpenNMS :: OSGi Container :: Web OSGi Bridge :: Proxy</name>
     <dependencies>
@@ -17,10 +17,10 @@
             <version>${felixProxyVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.container.bridge</groupId>
-            <artifactId>org.opennms.container.bridge.api</artifactId>
+            <groupId>org.citadel.container.bridge</groupId>
+            <artifactId>org.citadel.container.bridge.api</artifactId>
             <version>${project.version}</version>
-            <!-- otherwise it ends up in jetty-webapp/opennms/WEB-INF/lib, but we need it in lib -->
+            <!-- otherwise it ends up in jetty-webapp/citadel/WEB-INF/lib, but we need it in lib -->
             <scope>provided</scope>
         </dependency>
         <dependency>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
+    <groupId>org.citadel</groupId>
     <artifactId>dependencies</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.dependencies</groupId>
-  <artifactId>org.opennms.dependencies.jradius-extended</artifactId>
+  <groupId>org.citadel.dependencies</groupId>
+  <artifactId>org.citadel.dependencies.jradius-extended</artifactId>
   <name>OpenNMS :: Dependencies :: JRadius :: Extended</name>
   <description>
     This module is used to provide a single artifact that the OpenNMS project
@@ -38,7 +38,7 @@
             <!--
               Shade and relocate the bouncycastle classes so that we don't run into problems like:
 
-              https://issues.opennms.org/browse/NMS-7959
+              https://issues.citadel.org/browse/NMS-7959
             -->
             <configuration>
               <artifactSet>
@@ -60,7 +60,7 @@
               <relocations>
                 <relocation>
                   <pattern>org.bouncycastle</pattern>
-                  <shadedPattern>org.opennms.shaded.org.bouncycastle</shadedPattern>
+                  <shadedPattern>org.citadel.shaded.org.bouncycastle</shadedPattern>
                 </relocation>
               </relocations>
             </configuration>

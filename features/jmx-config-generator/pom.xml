@@ -4,15 +4,15 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>org.opennms.features</artifactId>
-        <groupId>org.opennms</groupId>
+        <artifactId>org.citadel.features</artifactId>
+        <groupId>org.citadel</groupId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features</groupId>
+    <groupId>org.citadel.features</groupId>
     <artifactId>jmxconfiggenerator</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: JMX Config Generator</name>
-    <url>http://www.opennms.org</url>
+    <url>http://www.citadel.org</url>
 
     <build>
         <resources>
@@ -57,15 +57,15 @@
                 <artifactId>onejar-maven-plugin</artifactId>
                 <configuration>
                     <filename>${project.artifactId}-${project.version}-onejar.jar</filename>
-                    <mainClass>org.opennms.features.jmxconfiggenerator.Starter</mainClass>
+                    <mainClass>org.citadel.features.jmxconfiggenerator.Starter</mainClass>
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.xml</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.xml</artifactId>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
@@ -74,8 +74,8 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
-            <artifactId>org.opennms.features.name-cutter</artifactId>
+            <groupId>org.citadel.features</groupId>
+            <artifactId>org.citadel.features.name-cutter</artifactId>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
@@ -84,8 +84,8 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-config-jaxb</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-config-jaxb</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>

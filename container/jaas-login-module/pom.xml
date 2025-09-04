@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.container</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.container</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.opennms.container</groupId>
-    <artifactId>org.opennms.container.jaas-login-module</artifactId>
+    <groupId>org.citadel.container</groupId>
+    <artifactId>org.citadel.container.jaas-login-module</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: OSGi Container :: Karaf JAAS Login Module</name>
 
@@ -22,13 +22,13 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>org.opennms.container.jaas-login-module</Bundle-SymbolicName>
-                        <Bundle-Activator>org.opennms.container.jaas.Activator</Bundle-Activator>
+                        <Bundle-SymbolicName>org.citadel.container.jaas-login-module</Bundle-SymbolicName>
+                        <Bundle-Activator>org.citadel.container.jaas.Activator</Bundle-Activator>
                         <Import-Package>
                             org.apache.karaf.jaas.config;version="${karafVersion}",
                             *
                         </Import-Package>
-                        <Export-Package>org.opennms.container.jaas.*</Export-Package>
+                        <Export-Package>org.citadel.container.jaas.*</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -42,13 +42,13 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-config</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-config</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
-            <artifactId>org.opennms.features.springframework-security</artifactId>
+            <groupId>org.citadel.features</groupId>
+            <artifactId>org.citadel.features.springframework-security</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>

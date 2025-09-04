@@ -2,13 +2,13 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.events</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.events</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.events</groupId>
-  <artifactId>org.opennms.features.events.commands</artifactId>
+  <groupId>org.citadel.features.events</groupId>
+  <artifactId>org.citadel.features.events.commands</artifactId>
   <name>OpenNMS :: Features :: Events :: Shell Commands</name>
   <packaging>bundle</packaging>
 
@@ -32,17 +32,17 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.events</groupId>
-      <artifactId>org.opennms.features.events.api</artifactId>
+      <groupId>org.citadel.features.events</groupId>
+      <artifactId>org.citadel.features.events.api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.lib</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config-api</artifactId>
     </dependency>
     <dependency>
       <groupId>com.google.guava</groupId>
@@ -64,8 +64,8 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -83,8 +83,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao</artifactId>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>

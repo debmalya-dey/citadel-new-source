@@ -3,38 +3,38 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.bsm</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.bsm</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features.bsm</groupId>
+    <groupId>org.citadel.features.bsm</groupId>
     <artifactId>test-util</artifactId>
     <packaging>jar</packaging>
     <name>OpenNMS :: Features :: BSM :: Test Util</name>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.bsm</groupId>
-            <artifactId>org.opennms.features.bsm.service.api</artifactId>
+            <groupId>org.citadel.features.bsm</groupId>
+            <artifactId>org.citadel.features.bsm.service.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.bsm</groupId>
-            <artifactId>org.opennms.features.bsm.persistence.api</artifactId>
+            <groupId>org.citadel.features.bsm</groupId>
+            <artifactId>org.citadel.features.bsm.persistence.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.bsm</groupId>
-            <artifactId>org.opennms.features.bsm.rest.api</artifactId>
+            <groupId>org.citadel.features.bsm</groupId>
+            <artifactId>org.citadel.features.bsm.rest.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.rest</groupId>
-            <artifactId>org.opennms.features.rest.common</artifactId>
+            <groupId>org.citadel.features.rest</groupId>
+            <artifactId>org.citadel.features.rest.common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao</artifactId>
         </dependency>
         <!-- Test dependencies -->
         <dependency>

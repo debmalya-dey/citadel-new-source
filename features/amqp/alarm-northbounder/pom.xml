@@ -7,14 +7,14 @@
 ">
 
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.amqp</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.amqp</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.amqp</groupId>
-  <artifactId>org.opennms.features.amqp.alarm-northbounder</artifactId>
+  <groupId>org.citadel.features.amqp</groupId>
+  <artifactId>org.citadel.features.amqp.alarm-northbounder</artifactId>
 
   <name>OpenNMS :: Features :: AMQP :: Alarm Northbounder</name>
 
@@ -27,7 +27,7 @@
         <configuration>
           <skip>${skipSurefire}</skip>
           <systemPropertyVariables>
-            <opennms.home>${project.build.testOutputDirectory}</opennms.home>
+            <citadel.home>${project.build.testOutputDirectory}</citadel.home>
           </systemPropertyVariables>
         </configuration>
       </plugin>
@@ -39,7 +39,7 @@
           <instructions>
             <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
             <!-- Add classes that are included in Camel routes -->
-            <Import-Package>org.opennms.core.xml,*</Import-Package>
+            <Import-Package>org.citadel.core.xml,*</Import-Package>
           </instructions>
         </configuration>
       </plugin>
@@ -48,8 +48,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.amqp</groupId>
-      <artifactId>org.opennms.features.amqp.common</artifactId>
+      <groupId>org.citadel.features.amqp</groupId>
+      <artifactId>org.citadel.features.amqp.common</artifactId>
       <version>${project.version}</version>
     </dependency>
 
@@ -74,16 +74,16 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.camel</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.camel</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.lib</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-alarm-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-alarm-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -181,18 +181,18 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-test-dependencies</artifactId>
       <type>pom</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.xml</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.xml</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.camel</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.camel</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>

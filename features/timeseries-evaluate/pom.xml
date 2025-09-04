@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.timeseries-evaluate</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.timeseries-evaluate</artifactId>
   <name>OpenNMS :: Features :: Timeseries Evaluate</name>
   <packaging>bundle</packaging>
   <build>
@@ -29,12 +29,12 @@
   <dependencies>
     <!-- APIs we implement -->
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
  
     <!-- Dependencies used -->
@@ -46,12 +46,12 @@
 
     <!-- Test dependencies --> 
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.collection</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.collection</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>

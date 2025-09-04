@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.scv</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.scv</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.scv</groupId>
-    <artifactId>org.opennms.features.scv.shell</artifactId>
+    <groupId>org.citadel.features.scv</groupId>
+    <artifactId>org.citadel.features.scv.shell</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: SCV :: Shell</name>
 
@@ -32,8 +32,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.scv</groupId>
-            <artifactId>org.opennms.features.scv.api</artifactId>
+            <groupId>org.citadel.features.scv</groupId>
+            <artifactId>org.citadel.features.scv.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

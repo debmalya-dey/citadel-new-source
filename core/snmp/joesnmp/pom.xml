@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core</groupId>
-    <artifactId>org.opennms.core.snmp</artifactId>
+    <groupId>org.citadel.core</groupId>
+    <artifactId>org.citadel.core.snmp</artifactId>
     <version>35.0.0-SNAPSHOT</version>
 	 <relativePath>..</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.snmp</groupId>
-  <artifactId>org.opennms.core.snmp.joesnmp</artifactId>
+  <groupId>org.citadel.core.snmp</groupId>
+  <artifactId>org.citadel.core.snmp.joesnmp</artifactId>
   <name>OpenNMS :: Core :: SNMP :: JoeSNMP</name>
   <packaging>bundle</packaging>
   <build>
@@ -23,8 +23,8 @@
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
             <Export-Package>
-              org.opennms.protocols.snmp.asn1.*;version="${project.version}",
-              org.opennms.protocols.snmp.*;version="${project.version}"
+              org.citadel.protocols.snmp.asn1.*;version="${project.version}",
+              org.citadel.protocols.snmp.*;version="${project.version}"
             </Export-Package>
           </instructions>
         </configuration>
@@ -33,8 +33,8 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.api</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.api</artifactId>
     </dependency>
   </dependencies>
 </project>

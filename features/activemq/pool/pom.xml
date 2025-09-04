@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.activemq</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.activemq</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <packaging>bundle</packaging>
-  <groupId>org.opennms.features.activemq</groupId>
-  <artifactId>org.opennms.features.activemq.pool</artifactId>
+  <groupId>org.citadel.features.activemq</groupId>
+  <artifactId>org.citadel.features.activemq.pool</artifactId>
 
   <build>
     <plugins>
@@ -35,8 +35,8 @@
       <version>${activemqVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.logging</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.logging</artifactId>
     </dependency>
   </dependencies>
 </project>

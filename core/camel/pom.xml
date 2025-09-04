@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.core</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.core</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core</groupId>
-  <artifactId>org.opennms.core.camel</artifactId>
+  <groupId>org.citadel.core</groupId>
+  <artifactId>org.citadel.core.camel</artifactId>
   <name>OpenNMS :: Core :: Camel</name>
   <packaging>bundle</packaging>
   <build>
@@ -28,11 +28,11 @@
             <Import-Package>
               org.eclipse.persistence.internal.jaxb;resolution:=optional,
               org.eclipse.persistence.internal.jaxb.many;resolution:=optional,
-              org.opennms.netmgt.config.trapd;resolution:=optional,
-              org.opennms.netmgt.snmp;resolution:=optional,
-              org.opennms.netmgt.syslogd;resolution:=optional,
-              org.opennms.netmgt.trapd;resolution:=optional,
-              org.opennms.distributed.core.api;resolution:=optional,
+              org.citadel.netmgt.config.trapd;resolution:=optional,
+              org.citadel.netmgt.snmp;resolution:=optional,
+              org.citadel.netmgt.syslogd;resolution:=optional,
+              org.citadel.netmgt.trapd;resolution:=optional,
+              org.citadel.distributed.core.api;resolution:=optional,
               *
             </Import-Package>
           </instructions>
@@ -42,11 +42,11 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.xml</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.xml</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>camel-dependencies</artifactId>
       <type>pom</type>
     </dependency>

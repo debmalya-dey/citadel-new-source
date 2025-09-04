@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
+  <groupId>org.citadel.features</groupId>
   <artifactId>vaadin</artifactId>
   <name>OpenNMS :: Features :: Vaadin + Dependencies</name>
   <description>The Vaadin web application framework including some addons and osgi related packages.</description>
@@ -55,7 +55,7 @@
       <version>${vaadinJsoupVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.vaadin-components</groupId>
+      <groupId>org.citadel.features.vaadin-components</groupId>
       <artifactId>extender-service</artifactId>
     </dependency>
     <dependency>
@@ -74,18 +74,18 @@
     </dependency>
     <!-- required by pax vaadin -->
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>servlet-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <!-- Custom OpenNMS Osgi components shared with all vaadin applications -->
     <dependency>
-      <groupId>org.opennms.osgi</groupId>
-      <artifactId>opennms-osgi-core</artifactId>
+      <groupId>org.citadel.osgi</groupId>
+      <artifactId>citadel-osgi-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.themes</groupId>
+      <groupId>org.citadel.features.themes</groupId>
       <artifactId>onms-default-theme</artifactId>
       <version>${project.version}</version>
     </dependency>

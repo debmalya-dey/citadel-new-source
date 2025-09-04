@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>citadel</artifactId>
+    <groupId>org.citadel</groupId>
+    <version>35.0.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>citadel-rrd</artifactId>
+  <packaging>pom</packaging>
+  <name>OpenNMS :: RRD</name>
+  <modules>
+    <module>citadel-rrd-api</module>
+    <module>citadel-rrd-jrobin</module>
+    <module>citadel-rrd-rrdtool</module>
+    <module>citadel-rrd-tcp</module>
+    <module>citadel-rrd-model</module>
+  </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <skip>${skipSurefire}</skip>
+          <systemPropertyVariables>
+            <citadel.home>${project.build.testOutputDirectory}</citadel.home>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

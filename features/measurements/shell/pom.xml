@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.measurements</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.measurements</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.measurements</groupId>
-  <artifactId>org.opennms.features.measurements.shell</artifactId>
+  <groupId>org.citadel.features.measurements</groupId>
+  <artifactId>org.citadel.features.measurements.shell</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: Measurements :: Shell</name>
 
@@ -35,17 +35,17 @@
       <artifactId>org.apache.karaf.shell.core</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.measurements</groupId>
-      <artifactId>org.opennms.features.measurements.api</artifactId>
+      <groupId>org.citadel.features.measurements</groupId>
+      <artifactId>org.citadel.features.measurements.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.newts</groupId>
+      <groupId>org.citadel.newts</groupId>
       <artifactId>newts-api</artifactId>
       <version>${newtsVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
   </dependencies>
 </project>

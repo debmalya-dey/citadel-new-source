@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features.graph</groupId>
-        <artifactId>org.opennms.features.graph.provider</artifactId>
+        <groupId>org.citadel.features.graph</groupId>
+        <artifactId>org.citadel.features.graph.provider</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.graph.provider</groupId>
-    <artifactId>org.opennms.features.graph.provider.bsm</artifactId>
+    <groupId>org.citadel.features.graph.provider</groupId>
+    <artifactId>org.citadel.features.graph.provider.bsm</artifactId>
     <name>OpenNMS :: Features :: Graph :: Provider :: Business Services</name>
     <packaging>bundle</packaging>
     <build>
@@ -27,32 +27,32 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.graph</groupId>
-            <artifactId>org.opennms.features.graph.api</artifactId>
+            <groupId>org.citadel.features.graph</groupId>
+            <artifactId>org.citadel.features.graph.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.graph</groupId>
-            <artifactId>org.opennms.features.graph.domain</artifactId>
+            <groupId>org.citadel.features.graph</groupId>
+            <artifactId>org.citadel.features.graph.domain</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.graph.rest</groupId>
-            <artifactId>org.opennms.features.graph.rest.api</artifactId>
+            <groupId>org.citadel.features.graph.rest</groupId>
+            <artifactId>org.citadel.features.graph.rest.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.bsm</groupId>
-            <artifactId>org.opennms.features.bsm.service.api</artifactId>
+            <groupId>org.citadel.features.bsm</groupId>
+            <artifactId>org.citadel.features.bsm.service.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.events</groupId>
-            <artifactId>org.opennms.features.events.api</artifactId>
+            <groupId>org.citadel.features.events</groupId>
+            <artifactId>org.citadel.features.events.api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-model</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-model</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms.features.distributed</groupId>
+        <groupId>org.citadel.features.distributed</groupId>
         <artifactId>distributed-parent</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.distributed</groupId>
-    <artifactId>org.opennms.features.distributed.datasource</artifactId>
+    <groupId>org.citadel.features.distributed</groupId>
+    <artifactId>org.citadel.features.distributed.datasource</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: Distributed :: DataSource</name>
     <build>
@@ -44,8 +44,8 @@
             <artifactId>guava</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.db</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.db</artifactId>
         </dependency>
     </dependencies>
 

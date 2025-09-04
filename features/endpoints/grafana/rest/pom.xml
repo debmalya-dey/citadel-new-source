@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features.endpoints</groupId>
-    <artifactId>org.opennms.features.endpoints.grafana</artifactId>
+    <groupId>org.citadel.features.endpoints</groupId>
+    <artifactId>org.citadel.features.endpoints.grafana</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.endpoints.grafana</groupId>
-  <artifactId>org.opennms.features.endpoints.grafana.rest</artifactId>
+  <groupId>org.citadel.features.endpoints.grafana</groupId>
+  <artifactId>org.citadel.features.endpoints.grafana.rest</artifactId>
   <name>OpenNMS :: Features :: Endpoints :: Grafana :: Rest</name>
   <packaging>bundle</packaging>
   <build>
@@ -28,13 +28,13 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.endpoints.grafana</groupId>
-      <artifactId>org.opennms.features.endpoints.grafana.api</artifactId>
+      <groupId>org.citadel.features.endpoints.grafana</groupId>
+      <artifactId>org.citadel.features.endpoints.grafana.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-web-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-web-api</artifactId>
     </dependency>
   </dependencies>
 </project>

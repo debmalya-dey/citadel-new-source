@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
+    <groupId>org.citadel</groupId>
     <artifactId>dependencies</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.dependencies</groupId>
+  <groupId>org.citadel.dependencies</groupId>
   <artifactId>jstl-dependencies</artifactId>
   <packaging>pom</packaging>
   <name>OpenNMS :: Dependencies :: JNA</name>
   <description>
-    This module is used to provide a single artifact that the opennms project
+    This module is used to provide a single artifact that the citadel project
     can depend on to use JSTL servlet templates.
   </description>
   <dependencies>
@@ -20,8 +20,8 @@
       <artifactId>apache-jstl</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.jstl-support</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.jstl-support</artifactId>
     </dependency>
   </dependencies>
 </project>

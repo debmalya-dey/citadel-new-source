@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>opennms</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>citadel</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms</groupId>
-  <artifactId>org.opennms.ui</artifactId>
+  <groupId>org.citadel</groupId>
+  <artifactId>org.citadel.ui</artifactId>
   <name>OpenNMS :: UI (SPA)</name>
   <packaging>jar</packaging>
 
@@ -181,7 +181,7 @@
     <profile>
       <id>forceCompile</id>
       <activation>
-        <file><missing>target/dist/assets/opennms.js</missing></file>
+        <file><missing>target/dist/assets/citadel.js</missing></file>
       </activation>
       <properties>
         <skipNodeJSBuild>false</skipNodeJSBuild>

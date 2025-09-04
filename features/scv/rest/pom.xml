@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.scv</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.scv</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.opennms.features.scv</groupId>
-    <artifactId>org.opennms.features.scv.rest</artifactId>
+    <groupId>org.citadel.features.scv</groupId>
+    <artifactId>org.citadel.features.scv.rest</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: SCV :: Rest</name>
 
@@ -32,8 +32,8 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.scv</groupId>
-            <artifactId>org.opennms.features.scv.api</artifactId>
+            <groupId>org.citadel.features.scv</groupId>
+            <artifactId>org.citadel.features.scv.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -49,8 +49,8 @@
             <artifactId>slf4j-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-web-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-web-api</artifactId>
         </dependency>
         <!-- test-->
         <dependency>
@@ -65,8 +65,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.scv</groupId>
-            <artifactId>org.opennms.features.scv.jceks-impl</artifactId>
+            <groupId>org.citadel.features.scv</groupId>
+            <artifactId>org.citadel.features.scv.jceks-impl</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>

@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.device-config</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.device-config</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.device-config</groupId>
-  <artifactId>org.opennms.features.device-config.retrieval</artifactId>
+  <groupId>org.citadel.features.device-config</groupId>
+  <artifactId>org.citadel.features.device-config.retrieval</artifactId>
   <name>OpenNMS :: Features :: Device Config :: Retrieval</name>
   <packaging>bundle</packaging>
 
@@ -31,13 +31,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.device-config</groupId>
-      <artifactId>org.opennms.features.device-config.tftp</artifactId>
+      <groupId>org.citadel.features.device-config</groupId>
+      <artifactId>org.citadel.features.device-config.tftp</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.device-config</groupId>
-      <artifactId>org.opennms.features.device-config.ssh-scripting</artifactId>
+      <groupId>org.citadel.features.device-config</groupId>
+      <artifactId>org.citadel.features.device-config.ssh-scripting</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -51,8 +51,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-util</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-util</artifactId>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>

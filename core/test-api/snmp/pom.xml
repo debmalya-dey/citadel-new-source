@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core</groupId>
-    <artifactId>org.opennms.core.test-api</artifactId>
+    <groupId>org.citadel.core</groupId>
+    <artifactId>org.citadel.core.test-api</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.test-api</groupId>
-  <artifactId>org.opennms.core.test-api.snmp</artifactId>
+  <groupId>org.citadel.core.test-api</groupId>
+  <artifactId>org.citadel.core.test-api.snmp</artifactId>
   <name>OpenNMS :: Core :: Test API :: SNMP</name>
   <packaging>bundle</packaging>
   <build>
@@ -22,8 +22,8 @@
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
             <Export-Package>
-              org.opennms.core.test.snmp.annotations.*;version="${project.version}",
-              org.opennms.core.test.snmp.*;version="${project.version}"
+              org.citadel.core.test.snmp.annotations.*;version="${project.version}",
+              org.citadel.core.test.snmp.*;version="${project.version}"
             </Export-Package>
           </instructions>
         </configuration>
@@ -32,17 +32,17 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.tests</groupId>
-      <artifactId>org.opennms.tests.mock-snmp-agent</artifactId>
+      <groupId>org.citadel.tests</groupId>
+      <artifactId>org.citadel.tests.mock-snmp-agent</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.soa</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.soa</artifactId>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -50,31 +50,31 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>snmp-dependencies</artifactId>
       <scope>compile</scope>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>snmp-test-dependencies</artifactId>
       <scope>compile</scope>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-test-dependencies</artifactId>
       <type>pom</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.proxy.rpc-impl</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.proxy.rpc-impl</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.mock-impl</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.mock-impl</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>

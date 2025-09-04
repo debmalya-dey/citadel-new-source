@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.core</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.core</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core</groupId>
-  <artifactId>org.opennms.core.schema</artifactId>
+  <groupId>org.citadel.core</groupId>
+  <artifactId>org.citadel.core.schema</artifactId>
   <name>OpenNMS :: Core :: Schema</name>
   <packaging>bundle</packaging>
   <build>
@@ -70,12 +70,12 @@
       <artifactId>commons-lang</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>liquibase-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-dependencies</artifactId>
       <type>pom</type>
     </dependency>
@@ -98,7 +98,7 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>groovy-dependencies</artifactId>
       <type>pom</type>
       <scope>test</scope>

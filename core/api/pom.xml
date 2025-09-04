@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.core</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.core</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core</groupId>
-  <artifactId>org.opennms.core.api</artifactId>
+  <groupId>org.citadel.core</groupId>
+  <artifactId>org.citadel.core.api</artifactId>
   <name>OpenNMS :: Core :: API</name>
   <packaging>bundle</packaging>
   <build>
@@ -22,8 +22,8 @@
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
             <Export-Package>
-              org.opennms.core.config.api.*;version="${project.version}",
-              org.opennms.core.network;version="${project.version}"
+              org.citadel.core.config.api.*;version="${project.version}",
+              org.citadel.core.network;version="${project.version}"
             </Export-Package>
           </instructions>
         </configuration>
@@ -36,8 +36,8 @@
       <artifactId>slf4j-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.soa</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.soa</artifactId>
     </dependency>
     <dependency>
       <groupId>org.osgi</groupId>

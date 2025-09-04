@@ -3,15 +3,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>org.opennms.features</artifactId>
-        <groupId>org.opennms</groupId>
+        <artifactId>org.citadel.features</artifactId>
+        <groupId>org.citadel</groupId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features</groupId>
+    <groupId>org.citadel.features</groupId>
     <artifactId>vaadin-jmxconfiggenerator</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Features :: JMX Config Generator :: Web UI</name>
-    <url>http://www.opennms.org</url>
+    <url>http://www.citadel.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -25,7 +25,7 @@
                     <instructions>
                         <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
                         <Vaadin-Package-Version>1</Vaadin-Package-Version>
-                        <Vaadin-Widgetsets>org.opennms.vaadin.DefaultWidgetset</Vaadin-Widgetsets>
+                        <Vaadin-Widgetsets>org.citadel.vaadin.DefaultWidgetset</Vaadin-Widgetsets>
                     </instructions>
                 </configuration>
             </plugin>
@@ -33,17 +33,17 @@
     </build>
     <dependencies>
        <dependency>
-			<groupId>org.opennms.features</groupId>
+			<groupId>org.citadel.features</groupId>
 	      	<artifactId>vaadin</artifactId>
 	      	<type>pom</type>
 	    </dependency>
         <dependency>
-            <groupId>org.opennms.features.vaadin-components</groupId>
+            <groupId>org.citadel.features.vaadin-components</groupId>
             <artifactId>core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.vaadin-components</groupId>
+            <groupId>org.citadel.features.vaadin-components</groupId>
             <artifactId>widgetset</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -64,31 +64,31 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
+            <groupId>org.citadel.features</groupId>
             <artifactId>jmxconfiggenerator</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>jaxb-dependencies</artifactId>
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>jmx-dependencies</artifactId>
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-web-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-web-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-config-jaxb</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-config-jaxb</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -103,7 +103,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.themes</groupId>
+            <groupId>org.citadel.features.themes</groupId>
             <artifactId>jmxconfiggenerator-theme</artifactId>
             <version>${project.version}</version>
         </dependency>

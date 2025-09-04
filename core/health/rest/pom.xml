@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.health</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.health</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.core.health</groupId>
-    <artifactId>org.opennms.core.health.rest</artifactId>
+    <groupId>org.citadel.core.health</groupId>
+    <artifactId>org.citadel.core.health.rest</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Core :: Health :: ReST</name>
     <build>
@@ -18,8 +18,8 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Export-Package>org.opennms.core.health.rest</Export-Package>
-                        <Private-Package>org.opennms.core.health.rest.internal</Private-Package>
+                        <Export-Package>org.citadel.core.health.rest</Export-Package>
+                        <Private-Package>org.citadel.core.health.rest.internal</Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -32,13 +32,13 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.health</groupId>
-            <artifactId>org.opennms.core.health.api</artifactId>
+            <groupId>org.citadel.core.health</groupId>
+            <artifactId>org.citadel.core.health.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-web-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-web-api</artifactId>
         </dependency>
     </dependencies>
 </project>

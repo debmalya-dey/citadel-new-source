@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features.graph</groupId>
-        <artifactId>org.opennms.features.graph.rest</artifactId>
+        <groupId>org.citadel.features.graph</groupId>
+        <artifactId>org.citadel.features.graph.rest</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.graph.rest</groupId>
-    <artifactId>org.opennms.features.graph.rest.impl</artifactId>
+    <groupId>org.citadel.features.graph.rest</groupId>
+    <artifactId>org.citadel.features.graph.rest.impl</artifactId>
     <name>OpenNMS :: Features :: Graph :: Rest :: Impl</name>
     <packaging>bundle</packaging>
     <build>
@@ -18,7 +18,7 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <configuration>
                     <instructions>
-                        <Private-Package>org.opennms.netmgt.graph.rest.impl*</Private-Package>
+                        <Private-Package>org.citadel.netmgt.graph.rest.impl*</Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -26,8 +26,8 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.graph.rest</groupId>
-            <artifactId>org.opennms.features.graph.rest.api</artifactId>
+            <groupId>org.citadel.features.graph.rest</groupId>
+            <artifactId>org.citadel.features.graph.rest.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

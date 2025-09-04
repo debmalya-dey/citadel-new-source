@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.config</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.config</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.config</groupId>
-    <artifactId>org.opennms.features.config.upgrade</artifactId>
+    <groupId>org.citadel.features.config</groupId>
+    <artifactId>org.citadel.features.config.upgrade</artifactId>
     <name>OpenNMS :: Features :: Config :: Upgrade</name>
     <packaging>bundle</packaging>
     <build>
@@ -40,18 +40,18 @@
           <version>${snakeyamlVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.config.dao</groupId>
-            <artifactId>org.opennms.features.config.dao.api</artifactId>
+            <groupId>org.citadel.features.config.dao</groupId>
+            <artifactId>org.citadel.features.config.dao.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.config.dao</groupId>
-            <artifactId>org.opennms.features.config.dao.impl</artifactId>
+            <groupId>org.citadel.features.config.dao</groupId>
+            <artifactId>org.citadel.features.config.dao.impl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.config.service</groupId>
-            <artifactId>org.opennms.features.config.service.api</artifactId>
+            <groupId>org.citadel.features.config.service</groupId>
+            <artifactId>org.citadel.features.config.service.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -59,15 +59,15 @@
             <artifactId>slf4j-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-config-model</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-config-model</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <!-- tests -->
         <dependency>
-            <groupId>org.opennms.features.config.service</groupId>
-            <artifactId>org.opennms.features.config.service.impl</artifactId>
+            <groupId>org.citadel.features.config.service</groupId>
+            <artifactId>org.citadel.features.config.service.impl</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
@@ -82,13 +82,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.db</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.db</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.services</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.services</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

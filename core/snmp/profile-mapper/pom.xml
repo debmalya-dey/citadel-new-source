@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>org.opennms.core.snmp</artifactId>
-    <groupId>org.opennms.core</groupId>
+    <artifactId>org.citadel.core.snmp</artifactId>
+    <groupId>org.citadel.core</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.opennms.core.snmp</groupId>
-  <artifactId>org.opennms.core.snmp.profile-mapper</artifactId>
+  <groupId>org.citadel.core.snmp</groupId>
+  <artifactId>org.citadel.core.snmp.profile-mapper</artifactId>
   <name>OpenNMS :: Core :: SNMP :: Profile Mapper</name>
   <packaging>bundle</packaging>
   <build>
@@ -32,12 +32,12 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.api</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config-api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -45,8 +45,8 @@
       <artifactId>guava</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -55,18 +55,18 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.snmp</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.snmp</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-mock</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-mock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

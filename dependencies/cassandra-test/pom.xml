@@ -2,24 +2,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <artifactId>dependencies</artifactId>
-    <groupId>org.opennms</groupId>
+    <groupId>org.citadel</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.dependencies</groupId>
+  <groupId>org.citadel.dependencies</groupId>
   <artifactId>cassandra-test-dependencies</artifactId>
   <packaging>pom</packaging>
   <name>OpenNMS :: Dependencies :: Cassandra :: Test</name>
   <!-- everything is scope:compile so it propagates properly as a test dependency down the line -->
   <dependencies>
     <dependency>
-      <groupId>org.opennms.newts</groupId>
+      <groupId>org.citadel.newts</groupId>
       <artifactId>newts-cassandra-common</artifactId>
       <version>${newtsVersion}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.newts</groupId>
+      <groupId>org.citadel.newts</groupId>
       <artifactId>newts-cassandra-test</artifactId>
       <version>${newtsVersion}</version>
       <scope>compile</scope>
@@ -46,7 +46,7 @@
         </exclusion>
         <!-- let this get pulled in by the "real" newts dependencies -->
         <exclusion>
-          <groupId>org.opennms.newts</groupId>
+          <groupId>org.citadel.newts</groupId>
           <artifactId>*</artifactId>
         </exclusion>
         <exclusion>
@@ -66,7 +66,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jna-dependencies</artifactId>
       <type>pom</type>
     </dependency>

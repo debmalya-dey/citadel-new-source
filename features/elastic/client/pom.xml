@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.elastic</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.elastic</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>org.opennms.features.elastic</groupId>
-    <artifactId>org.opennms.features.elastic.client</artifactId>
+    <groupId>org.citadel.features.elastic</groupId>
+    <artifactId>org.citadel.features.elastic.client</artifactId>
     <name>OpenNMS :: ElasticSearch :: Client</name>
     <packaging>bundle</packaging>
 
@@ -59,8 +59,8 @@
             <version>${gsonVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.health</groupId>
-            <artifactId>org.opennms.core.health.api</artifactId>
+            <groupId>org.citadel.core.health</groupId>
+            <artifactId>org.citadel.core.health.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

@@ -6,7 +6,7 @@
 ">
 
     <parent>
-        <groupId>org.opennms.features.minion</groupId>
+        <groupId>org.citadel.features.minion</groupId>
         <artifactId>core-parent</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
@@ -67,28 +67,28 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.minion</groupId>
+            <groupId>org.citadel.features.minion</groupId>
             <artifactId>core-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
        <dependency>
-            <groupId>org.opennms.features.distributed</groupId>
+            <groupId>org.citadel.features.distributed</groupId>
             <artifactId>jms</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.distributed</groupId>
+            <groupId>org.citadel.features.distributed</groupId>
             <artifactId>shell</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.health</groupId>
-            <artifactId>org.opennms.core.health.impl</artifactId>
+            <groupId>org.citadel.core.health</groupId>
+            <artifactId>org.citadel.core.health.impl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.health</groupId>
-            <artifactId>org.opennms.core.health.shell</artifactId>
+            <groupId>org.citadel.core.health</groupId>
+            <artifactId>org.citadel.core.health.shell</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

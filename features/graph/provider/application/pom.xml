@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features.graph</groupId>
-        <artifactId>org.opennms.features.graph.provider</artifactId>
+        <groupId>org.citadel.features.graph</groupId>
+        <artifactId>org.citadel.features.graph.provider</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.graph.provider</groupId>
-    <artifactId>org.opennms.features.graph.provider.application</artifactId>
+    <groupId>org.citadel.features.graph.provider</groupId>
+    <artifactId>org.citadel.features.graph.provider.application</artifactId>
     <name>OpenNMS :: Features :: Graph :: Provider :: Application</name>
     <packaging>bundle</packaging>
     <build>
@@ -27,18 +27,18 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.features.graph</groupId>
-            <artifactId>org.opennms.features.graph.api</artifactId>
+            <groupId>org.citadel.features.graph</groupId>
+            <artifactId>org.citadel.features.graph.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.graph.dao</groupId>
-            <artifactId>org.opennms.features.graph.dao.api</artifactId>
+            <groupId>org.citadel.features.graph.dao</groupId>
+            <artifactId>org.citadel.features.graph.dao.api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.graph</groupId>
-            <artifactId>org.opennms.features.graph.domain</artifactId>
+            <groupId>org.citadel.features.graph</groupId>
+            <artifactId>org.citadel.features.graph.domain</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -52,13 +52,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao-mock</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao-mock</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.lib</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.lib</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

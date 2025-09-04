@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.enlinkd</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.enlinkd</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.enlinkd</groupId>
-  <artifactId>org.opennms.features.enlinkd.config</artifactId>
+  <groupId>org.citadel.features.enlinkd</groupId>
+  <artifactId>org.citadel.features.enlinkd.config</artifactId>
   <name>OpenNMS :: Features :: Enlinkd :: Config </name>
   <packaging>bundle</packaging>
   <build>
@@ -40,14 +40,14 @@
         <configuration>
           <transformSchemas>
             <transformSchema>
-              <uri>http://xmlns.opennms.org/xsd/config/enlinkd-config</uri>
+              <uri>http://xmlns.citadel.org/xsd/config/enlinkd-config</uri>
               <toFile>enlinkd-config.xsd</toFile>
             </transformSchema>
           </transformSchemas>
           <outputDirectory>${project.build.directory}/xsds</outputDirectory>
           <workDirectory>${project.build.directory}/jaxb2-work</workDirectory>
           <includes>
-            <include>org/opennms/netmgt/enlinkd/config/model/*.java</include>
+            <include>org/citadel/netmgt/enlinkd/config/model/*.java</include>
           </includes>
           <verbose>true</verbose>
         </configuration>
@@ -76,16 +76,16 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.xml</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.xml</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config-model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.xml</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.xml</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>

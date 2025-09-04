@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.newts</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.newts</artifactId>
   <name>OpenNMS :: Features :: Newts</name>
   <packaging>bundle</packaging>
   <build>
@@ -29,30 +29,30 @@
   <dependencies>
     <!-- APIs we implement -->
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.measurements</groupId>
-      <artifactId>org.opennms.features.measurements.api</artifactId>
+      <groupId>org.citadel.features.measurements</groupId>
+      <artifactId>org.citadel.features.measurements.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.persistence.osgi</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.persistence.osgi</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.sysprops</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.sysprops</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <!-- Dependencies used -->
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>newts-dependencies</artifactId>
       <type>pom</type>
     </dependency>
@@ -92,18 +92,18 @@
 
     <!-- Testing -->
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>cassandra-test-dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-test-dependencies</artifactId>
       <type>pom</type>
       <scope>test</scope>

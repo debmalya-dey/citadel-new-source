@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.features</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.features</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.ifttt</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.ifttt</artifactId>
     <name>OpenNMS :: Features :: IFTTT Integration</name>
     <packaging>bundle</packaging>
     <build>
@@ -55,19 +55,19 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>jaxb-dependencies</artifactId>
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-model</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-model</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -94,13 +94,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.collection</groupId>
-            <artifactId>org.opennms.features.collection.test-api</artifactId>
+            <groupId>org.citadel.features.collection</groupId>
+            <artifactId>org.citadel.features.collection.test-api</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.xml</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.xml</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -120,8 +120,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.mate</groupId>
-            <artifactId>org.opennms.core.mate.api</artifactId>
+            <groupId>org.citadel.core.mate</groupId>
+            <artifactId>org.citadel.core.mate.api</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.container</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.container</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.opennms.container</groupId>
-    <artifactId>org.opennms.container.servlet</artifactId>
+    <groupId>org.citadel.container</groupId>
+    <artifactId>org.citadel.container.servlet</artifactId>
     <packaging>war</packaging>
     <name>OpenNMS :: OSGi Container :: Web Servlet</name>
 
@@ -31,8 +31,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.soa</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.soa</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -42,8 +42,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.container.bridge</groupId>
-            <artifactId>org.opennms.container.bridge.proxy</artifactId>
+            <groupId>org.citadel.container.bridge</groupId>
+            <artifactId>org.citadel.container.bridge.proxy</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

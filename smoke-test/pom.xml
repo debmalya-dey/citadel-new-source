@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms</groupId>
+  <groupId>org.citadel</groupId>
   <artifactId>smoke-test</artifactId>
   <version>35.0.0-SNAPSHOT</version>
   <name>OpenNMS Smoke Test</name>
-  <url>http://opennms.org/</url>
+  <url>http://citadel.org/</url>
   <description>Smoke Test APIs for OpenNMS</description>
   <licenses>
     <license>
@@ -14,23 +14,23 @@
       <url>http://www.gnu.org/licenses/agpl.html</url>
       <comments>
         This Maven metadata is provided for informational purposes only. For specific licensing
-        questions, please contact: OpenNMS(R) Licensing (license@opennms.org)
+        questions, please contact: OpenNMS(R) Licensing (license@citadel.org)
       </comments>
     </license>
   </licenses>
   <issueManagement>
     <system>Jira</system>
-    <url>http://issues.opennms.org/</url>
+    <url>http://issues.citadel.org/</url>
  </issueManagement>
   <ciManagement>
     <system>CircleCI</system>
-    <url>https://app.circleci.com/pipelines/github/OpenNMS/opennms</url>
+    <url>https://app.circleci.com/pipelines/github/OpenNMS/citadel</url>
   </ciManagement>
   <developers>
     <developer>
       <id>rangerrick</id>
       <name>Benjamin Reed</name>
-      <email>ranger@opennms.org</email>
+      <email>ranger@citadel.org</email>
       <roles>
         <role>OGP Member</role>
         <role>Software Developer</role>
@@ -40,9 +40,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/OpenNMS/opennms.git</connection>
-    <developerConnection>scm:git:https://${user.name}@github.com/OpenNMS/opennms.git</developerConnection>
-    <url>https://github.com/OpenNMS/opennms</url>
+    <connection>scm:git:https://github.com/OpenNMS/citadel.git</connection>
+    <developerConnection>scm:git:https://${user.name}@github.com/OpenNMS/citadel.git</developerConnection>
+    <url>https://github.com/OpenNMS/citadel</url>
   </scm>
   <properties>
     <skip.surefire.tests>false</skip.surefire.tests>
@@ -237,7 +237,7 @@
         <!-- Copy some default configuration for $OPENNMS_HOME/etc/ which is used by some system tests -->
         <executions>
           <execution>
-            <id>copy-opennms-base-assembly-resources</id>
+            <id>copy-citadel-base-assembly-resources</id>
             <phase>generate-test-resources</phase>
             <goals>
               <goal>copy-resources</goal>
@@ -246,7 +246,7 @@
               <outputDirectory>${basedir}/target/system-test-resources</outputDirectory>
               <resources>
                 <resource>
-                  <directory>${basedir}/../opennms-base-assembly/src/main/filtered</directory>
+                  <directory>${basedir}/../citadel-base-assembly/src/main/filtered</directory>
                   <filtering>true</filtering>
                 </resource>
               </resources>
@@ -269,8 +269,8 @@
               <stripVersion>true</stripVersion>
               <artifactItems>
                 <artifactItem>
-                  <groupId>org.opennms.features.distributed</groupId>
-                  <artifactId>org.opennms.features.distributed.dao-test</artifactId>
+                  <groupId>org.citadel.features.distributed</groupId>
+                  <artifactId>org.citadel.features.distributed.dao-test</artifactId>
                   <version>${project.version}</version>
                   <type>jar</type>
                 </artifactItem>
@@ -307,7 +307,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
             <configuration>
-              <excludedGroups>org.opennms.smoketest.junit.FlakyTests,org.opennms.smoketest.junit.MinionTests,org.opennms.smoketest.junit.SentinelTests</excludedGroups>
+              <excludedGroups>org.citadel.smoketest.junit.FlakyTests,org.citadel.smoketest.junit.MinionTests,org.citadel.smoketest.junit.SentinelTests</excludedGroups>
             </configuration>
           </plugin>
         </plugins>
@@ -324,7 +324,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
             <configuration>
-              <groups>org.opennms.smoketest.junit.FlakyTests</groups>
+              <groups>org.citadel.smoketest.junit.FlakyTests</groups>
             </configuration>
           </plugin>
         </plugins>
@@ -341,7 +341,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
             <configuration>
-              <groups>org.opennms.smoketest.junit.MinionTests</groups>
+              <groups>org.citadel.smoketest.junit.MinionTests</groups>
             </configuration>
           </plugin>
         </plugins>
@@ -358,7 +358,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
             <configuration>
-              <groups>org.opennms.smoketest.junit.SentinelTests</groups>
+              <groups>org.citadel.smoketest.junit.SentinelTests</groups>
             </configuration>
           </plugin>
         </plugins>
@@ -531,28 +531,13 @@
       <version>1.3.2</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-bootstrap</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-bootstrap</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
-      <version>${project.version}</version>
-      <exclusions>
-        <exclusion>
-          <groupId>xalan</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>xerces</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
       <version>${project.version}</version>
       <exclusions>
         <exclusion>
@@ -566,8 +551,23 @@
       </exclusions>
     </dependency>
     <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-provision-persistence</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao</artifactId>
+      <version>${project.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>xalan</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>xerces</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-provision-persistence</artifactId>
         <version>${project.version}</version>
         <!-- Exclude all transitive dependencies -->
         <exclusions>
@@ -578,18 +578,18 @@
         </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.kafka</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.kafka</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.camel</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.camel</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.web</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.web</artifactId>
       <version>${project.version}</version>
       <exclusions>
         <exclusion>
@@ -603,27 +603,27 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.xml</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.xml</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.events</groupId>
-      <artifactId>org.opennms.features.events.syslog</artifactId>
+      <groupId>org.citadel.features.events</groupId>
+      <artifactId>org.citadel.features.events.syslog</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.topology</groupId>
-      <artifactId>org.opennms.features.topology.link</artifactId>
+      <groupId>org.citadel.features.topology</groupId>
+      <artifactId>org.citadel.features.topology.link</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.criteria</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.criteria</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-test-dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -635,8 +635,8 @@
       <version>32.0.0-jre</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.jest</groupId>
-      <artifactId>org.opennms.features.jest.client</artifactId>
+      <groupId>org.citadel.features.jest</groupId>
+      <artifactId>org.citadel.features.jest.client</artifactId>
       <version>${project.version}</version>
       <!-- transitive dependencies are our custom osgi-ified jest, but it's a bit funky in the dep tree;
            we'll just pull in the upstream jest dependencies for smoke tests -->
@@ -675,8 +675,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.bmp</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.bmp.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.bmp</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.bmp.adapter</artifactId>
       <version>${project.version}</version>
       <exclusions>
         <exclusion>
@@ -684,15 +684,15 @@
           <artifactId>groovy-all</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>org.opennms.dependencies</groupId>
+          <groupId>org.citadel.dependencies</groupId>
           <artifactId>cxf-dependencies</artifactId>
         </exclusion>
       </exclusions>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.netflow</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.netflow.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.netflow</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.netflow.adapter</artifactId>
       <version>${project.version}</version>
       <exclusions>
         <exclusion>
@@ -703,20 +703,20 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows.rest</groupId>
-      <artifactId>org.opennms.features.flows.rest.api</artifactId>
+      <groupId>org.citadel.features.flows.rest</groupId>
+      <artifactId>org.citadel.features.flows.rest.api</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.distributed</groupId>
-      <artifactId>org.opennms.features.distributed.dao-test</artifactId>
+      <groupId>org.citadel.features.distributed</groupId>
+      <artifactId>org.citadel.features.distributed.dao-test</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.common</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.common</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
@@ -734,7 +734,7 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>groovy-dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
@@ -865,8 +865,8 @@
       <version>${slf4jVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows</groupId>
-      <artifactId>org.opennms.features.flows.elastic</artifactId>
+      <groupId>org.citadel.features.flows</groupId>
+      <artifactId>org.citadel.features.flows.elastic</artifactId>
       <version>${project.version}</version>
       <exclusions>
         <exclusion>
@@ -876,13 +876,13 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.flows</groupId>
-      <artifactId>org.opennms.features.flows.processing</artifactId>
+      <groupId>org.citadel.features.flows</groupId>
+      <artifactId>org.citadel.features.flows.processing</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.jti</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.jti.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.jti</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.jti.adapter</artifactId>
       <version>${project.version}</version>
       <exclusions>
         <exclusion>
@@ -893,8 +893,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.protocols.graphite</groupId>
-      <artifactId>org.opennms.features.telemetry.protocols.graphite.adapter</artifactId>
+      <groupId>org.citadel.features.telemetry.protocols.graphite</groupId>
+      <artifactId>org.citadel.features.telemetry.protocols.graphite.adapter</artifactId>
       <version>${project.version}</version>
       <exclusions>
         <exclusion>
@@ -915,14 +915,14 @@
       <version>24.0.1</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.health</groupId>
-      <artifactId>org.opennms.core.health.shell</artifactId>
+      <groupId>org.citadel.core.health</groupId>
+      <artifactId>org.citadel.core.health.shell</artifactId>
       <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.device-config.persistence</groupId>
-      <artifactId>org.opennms.features.device-config.persistence.impl</artifactId>
+      <groupId>org.citadel.features.device-config.persistence</groupId>
+      <artifactId>org.citadel.features.device-config.persistence.impl</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
       <exclusions>
@@ -941,8 +941,8 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.device-config</groupId>
-      <artifactId>org.opennms.features.device-config.rest</artifactId>
+      <groupId>org.citadel.features.device-config</groupId>
+      <artifactId>org.citadel.features.device-config.rest</artifactId>
       <version>${project.version}</version>
       <scope>compile</scope>
       <exclusions>
@@ -959,7 +959,7 @@
           <artifactId>*</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>org.opennms.dependencies</groupId>
+          <groupId>org.citadel.dependencies</groupId>
           <artifactId>cxf-dependencies</artifactId>
         </exclusion>
       </exclusions>
@@ -981,8 +981,8 @@
     </dependency>
 
     <dependency>
-      <groupId>org.opennms.features.elastic</groupId>
-      <artifactId>org.opennms.features.elastic.client</artifactId>
+      <groupId>org.citadel.features.elastic</groupId>
+      <artifactId>org.citadel.features.elastic.client</artifactId>
       <version>${project.version}</version>
     </dependency>
 
@@ -1001,9 +1001,9 @@
       </snapshots>
     </repository>
     <repository>
-      <id>opennms-repo</id>
+      <id>citadel-repo</id>
       <name>OpenNMS Mega-Repository</name>
-      <url>https://maven.opennms.org/repository/everything/</url>
+      <url>https://maven.citadel.org/repository/everything/</url>
       <releases>
         <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>
@@ -1013,9 +1013,9 @@
       </snapshots>
     </repository>
     <repository>
-      <id>opennms-snapshots</id>
+      <id>citadel-snapshots</id>
       <name>OpenNMS Snapshot Maven Mega-Repository</name>
-      <url>https://maven.opennms.org/repository/everything/</url>
+      <url>https://maven.citadel.org/repository/everything/</url>
       <releases>
         <enabled>false</enabled>
       </releases>

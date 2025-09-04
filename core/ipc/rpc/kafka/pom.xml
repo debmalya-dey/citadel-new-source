@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.core.ipc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc</artifactId>
+        <groupId>org.citadel.core.ipc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.core.ipc.rpc</groupId>
-    <artifactId>org.opennms.core.ipc.rpc.kafka</artifactId>
+    <groupId>org.citadel.core.ipc.rpc</groupId>
+    <artifactId>org.citadel.core.ipc.rpc.kafka</artifactId>
     <name>OpenNMS :: Core :: IPC :: RPC :: Kafka</name>
     <packaging>bundle</packaging>
     <build>
@@ -56,36 +56,36 @@
 
     <dependencies>
       <dependency>
-        <groupId>org.opennms.core.ipc.rpc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc.api</artifactId>
+        <groupId>org.citadel.core.ipc.rpc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc.api</artifactId>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.common</groupId>
-        <artifactId>org.opennms.core.ipc.common.kafka</artifactId>
+        <groupId>org.citadel.core.ipc.common</groupId>
+        <artifactId>org.citadel.core.ipc.common.kafka</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-	    <groupId>org.opennms.features.distributed</groupId>
+	    <groupId>org.citadel.features.distributed</groupId>
 	    <artifactId>core-api</artifactId>
 	    <version>${project.version}</version>
 	    <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.sysprops</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.sysprops</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core</groupId>
-        <artifactId>org.opennms.core.logging</artifactId>
+        <groupId>org.citadel.core</groupId>
+        <artifactId>org.citadel.core.logging</artifactId>
       </dependency>
       <dependency>
         <groupId> com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.ipc.rpc</groupId>
-        <artifactId>org.opennms.core.ipc.rpc.common</artifactId>
+        <groupId>org.citadel.core.ipc.rpc</groupId>
+        <artifactId>org.citadel.core.ipc.rpc.common</artifactId>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
@@ -102,8 +102,8 @@
         <version>${rateLimitedLoggerVersion}</version>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.tracing</groupId>
-        <artifactId>org.opennms.core.tracing.api</artifactId>
+        <groupId>org.citadel.core.tracing</groupId>
+        <artifactId>org.citadel.core.tracing.api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
@@ -112,8 +112,8 @@
         <version>${resilience4jVersion}</version>
       </dependency>
      <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.lib</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.lib</artifactId>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -122,25 +122,25 @@
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.kafka</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.kafka</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-model</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-model</artifactId>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.core.snmp</groupId>
-        <artifactId>org.opennms.core.snmp.proxy.rpc-impl</artifactId>
+        <groupId>org.citadel.core.snmp</groupId>
+        <artifactId>org.citadel.core.snmp.proxy.rpc-impl</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-dao-mock</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-dao-mock</artifactId>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -149,8 +149,8 @@
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.opennms.tests</groupId>
-        <artifactId>org.opennms.tests.mock-elements</artifactId>
+        <groupId>org.citadel.tests</groupId>
+        <artifactId>org.citadel.tests.mock-elements</artifactId>
         <scope>test</scope>
       </dependency>
       <dependency>

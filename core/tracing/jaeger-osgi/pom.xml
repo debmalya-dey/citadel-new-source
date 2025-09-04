@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>org.opennms.core.tracing</artifactId>
-    <groupId>org.opennms.core</groupId>
+    <artifactId>org.citadel.core.tracing</artifactId>
+    <groupId>org.citadel.core</groupId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.tracing</groupId>
-  <artifactId>org.opennms.core.tracing.jaeger-osgi</artifactId>
+  <groupId>org.citadel.core.tracing</groupId>
+  <artifactId>org.citadel.core.tracing.jaeger-osgi</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Core :: Tracing :: Jaeger :: OSGi wrapper</name>
   <description>OSGi wrapper for Jaeger Tracer.</description>

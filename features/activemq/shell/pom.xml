@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.activemq</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.activemq</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <packaging>bundle</packaging>
-  <groupId>org.opennms.features.activemq</groupId>
-  <artifactId>org.opennms.features.activemq.shell</artifactId>
+  <groupId>org.citadel.features.activemq</groupId>
+  <artifactId>org.citadel.features.activemq.shell</artifactId>
 
   <build>
     <plugins>
@@ -31,8 +31,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.activemq</groupId>
-      <artifactId>org.opennms.features.activemq.broker-api</artifactId>
+      <groupId>org.citadel.features.activemq</groupId>
+      <artifactId>org.citadel.features.activemq.broker-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -40,8 +40,8 @@
       <artifactId>org.apache.karaf.shell.core</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.lib</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.lib</artifactId>
     </dependency>
   </dependencies>
 </project>

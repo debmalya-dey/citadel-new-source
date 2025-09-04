@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features</groupId>
-        <artifactId>org.opennms.features.graph</artifactId>
+        <groupId>org.citadel.features</groupId>
+        <artifactId>org.citadel.features.graph</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.graph</groupId>
-    <artifactId>org.opennms.features.graph.api</artifactId>
+    <groupId>org.citadel.features.graph</groupId>
+    <artifactId>org.citadel.features.graph.api</artifactId>
     <name>OpenNMS :: Features :: Graph :: API</name>
     <packaging>bundle</packaging>
     <build>
@@ -28,16 +28,16 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>jung-shaded</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-model</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-model</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.lib</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.lib</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>

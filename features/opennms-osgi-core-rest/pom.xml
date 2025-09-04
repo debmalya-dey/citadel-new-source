@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <relativePath>../topology-map/poms/compiled/</relativePath>
-        <groupId>org.opennms.features.topology.build</groupId>
+        <groupId>org.citadel.features.topology.build</groupId>
         <artifactId>compiled-bundle-settings</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.osgi</groupId>
-    <artifactId>opennms-osgi-core-rest</artifactId>
+    <groupId>org.citadel.osgi</groupId>
+    <artifactId>citadel-osgi-core-rest</artifactId>
     <name>OpenNMS :: Features :: OSGI :: Core :: Rest</name>
     <description>
         Core module which provides features to install to listen for rest related services,
@@ -17,7 +17,7 @@
     </description>
     <packaging>bundle</packaging>
     <properties>
-        <bundle.namespace>org.opennms.osgi.core.rest</bundle.namespace>
+        <bundle.namespace>org.citadel.osgi.core.rest</bundle.namespace>
         <bundle.symbolicName>${bundle.namespace}</bundle.symbolicName>
     </properties>
     <dependencies>
@@ -44,13 +44,13 @@
             <version>${osgiJaxRsVersion}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
-            <artifactId>org.opennms.features.rest-provider</artifactId>
+            <groupId>org.citadel.features</groupId>
+            <artifactId>org.citadel.features.rest-provider</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.container.bridge</groupId>
-            <artifactId>org.opennms.container.bridge.rest</artifactId>
+            <groupId>org.citadel.container.bridge</groupId>
+            <artifactId>org.citadel.container.bridge.rest</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

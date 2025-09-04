@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core</groupId>
-    <artifactId>org.opennms.core.jmx</artifactId>
+    <groupId>org.citadel.core</groupId>
+    <artifactId>org.citadel.core.jmx</artifactId>
     <version>35.0.0-SNAPSHOT</version>
 	 <relativePath>..</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.jmx</groupId>
-  <artifactId>org.opennms.core.jmx.impl</artifactId>
+  <groupId>org.citadel.core.jmx</groupId>
+  <artifactId>org.citadel.core.jmx.impl</artifactId>
   <name>OpenNMS :: Core :: JMX :: Impl</name>
   <packaging>bundle</packaging>
   <build>
@@ -22,7 +22,7 @@
             <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
-            <Export-Package>org.opennms.netmgt.jmx.impl.*;version="${project.version}"</Export-Package>
+            <Export-Package>org.citadel.netmgt.jmx.impl.*;version="${project.version}"</Export-Package>
           </instructions>
         </configuration>
       </plugin>
@@ -30,8 +30,8 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.jmx</groupId>
-      <artifactId>org.opennms.core.jmx.api</artifactId>
+      <groupId>org.citadel.core.jmx</groupId>
+      <artifactId>org.citadel.core.jmx.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

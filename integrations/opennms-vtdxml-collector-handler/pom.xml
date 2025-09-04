@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>opennms-integrations</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>citadel-integrations</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>opennms-vtdxml-collector-handler</artifactId>
+  <artifactId>citadel-vtdxml-collector-handler</artifactId>
   <name>OpenNMS XML Collector Handler based on VTD-XML</name>
   <packaging>bundle</packaging>
   <build>
@@ -27,12 +27,12 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.persistence.rrd</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.persistence.rrd</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.protocols</groupId>
-      <artifactId>org.opennms.protocols.xml</artifactId>
+      <groupId>org.citadel.protocols</groupId>
+      <artifactId>org.citadel.protocols.xml</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -45,34 +45,34 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.collection</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.collection</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.http</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.http</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrd-jrobin</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrd-jrobin</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jrrd2-dependencies</artifactId>
       <scope>test</scope>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrdtool-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrdtool-api</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.protocols</groupId>
-      <artifactId>org.opennms.protocols.xml</artifactId>
+      <groupId>org.citadel.protocols</groupId>
+      <artifactId>org.citadel.protocols.xml</artifactId>
       <version>${project.version}</version>
       <type>test-jar</type>
       <scope>test</scope>

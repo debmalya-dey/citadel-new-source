@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.flows</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.flows</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.flows</groupId>
-  <artifactId>org.opennms.features.flows.api</artifactId>
+  <groupId>org.citadel.features.flows</groupId>
+  <artifactId>org.citadel.features.flows.api</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: Flows :: API</name>
   <build>
@@ -33,23 +33,23 @@
       <version>${guavaVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.utils</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.utils</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>oia-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.jest</groupId>
+      <groupId>org.citadel.features.jest</groupId>
       <artifactId>jest-complete-osgi</artifactId>
       <version>${project.version}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.telemetry.config</groupId>
-      <artifactId>org.opennms.features.telemetry.config.jaxb</artifactId>
+      <groupId>org.citadel.features.telemetry.config</groupId>
+      <artifactId>org.citadel.features.telemetry.config.jaxb</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>

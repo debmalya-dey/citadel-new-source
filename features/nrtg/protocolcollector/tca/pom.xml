@@ -2,17 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.opennms.features.nrtg</groupId>
+    <groupId>org.citadel.features.nrtg</groupId>
     <artifactId>protocol-collectors</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
-  <groupId>org.opennms.features.nrtg.protocolcollector</groupId>
+  <groupId>org.citadel.features.nrtg.protocolcollector</groupId>
   <artifactId>nrtg-protocolcollector-tca</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Features :: NRTG :: Collectors :: TCA</name>
   <properties>
-    <bundle.symbolicName>org.opennms.nrtg.protocolcollector.tca</bundle.symbolicName>
-    <bundle.namespace>org.opennms.nrtg.protocolcollector.tca</bundle.namespace>
+    <bundle.symbolicName>org.citadel.nrtg.protocolcollector.tca</bundle.symbolicName>
+    <bundle.namespace>org.citadel.nrtg.protocolcollector.tca</bundle.namespace>
   </properties>
   <description>
         Contains the TcaProtocolCollector, it's a SNMP based collector to handle TCA specific data inside of SNMP
@@ -21,14 +21,14 @@
   <dependencies>
     <!-- OpenNMS NRTCollector -->
     <dependency>
-      <groupId>org.opennms.features.nrtg</groupId>
+      <groupId>org.citadel.features.nrtg</groupId>
       <artifactId>nrtg-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <!-- OpenNMS SNMP -->
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.api</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.api</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
@@ -46,25 +46,25 @@
     </dependency>
     
     <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.lib</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.lib</artifactId>
         <scope>test</scope>
     </dependency>
     <dependency>
-        <groupId>org.opennms.core.test-api</groupId>
-        <artifactId>org.opennms.core.test-api.snmp</artifactId>
+        <groupId>org.citadel.core.test-api</groupId>
+        <artifactId>org.citadel.core.test-api.snmp</artifactId>
         <scope>test</scope>
     </dependency>
     
     <dependency>
-      <groupId>org.opennms.core.snmp</groupId>
-      <artifactId>org.opennms.core.snmp.implementations.snmp4j</artifactId>
+      <groupId>org.citadel.core.snmp</groupId>
+      <artifactId>org.citadel.core.snmp.implementations.snmp4j</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-mock</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-mock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

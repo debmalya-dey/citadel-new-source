@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core</groupId>
-    <artifactId>org.opennms.core.jmx</artifactId>
+    <groupId>org.citadel.core</groupId>
+    <artifactId>org.citadel.core.jmx</artifactId>
     <version>35.0.0-SNAPSHOT</version>
 	 <relativePath>..</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.jmx</groupId>
-  <artifactId>org.opennms.core.jmx.api</artifactId>
+  <groupId>org.citadel.core.jmx</groupId>
+  <artifactId>org.citadel.core.jmx.api</artifactId>
   <name>OpenNMS :: Core :: JMX :: API</name>
   <packaging>bundle</packaging>
   <build>
@@ -29,12 +29,12 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config-jaxb</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config-jaxb</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.xml</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.xml</artifactId>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

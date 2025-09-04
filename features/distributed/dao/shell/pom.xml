@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <groupId>org.opennms.features.distributed</groupId>
-        <artifactId>org.opennms.features.distributed.dao</artifactId>
+        <groupId>org.citadel.features.distributed</groupId>
+        <artifactId>org.citadel.features.distributed.dao</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.features.distributed</groupId>
-    <artifactId>org.opennms.features.distributed.dao-shell</artifactId>
+    <groupId>org.citadel.features.distributed</groupId>
+    <artifactId>org.citadel.features.distributed.dao-shell</artifactId>
     <name>OpenNMS :: Features :: Distributed :: DAO :: Shell</name>
     <packaging>bundle</packaging>
     <build>
@@ -21,7 +21,7 @@
                         <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>${project.version}</Bundle-Version>
-                        <Karaf-Commands>org.opennms.*</Karaf-Commands>
+                        <Karaf-Commands>org.citadel.*</Karaf-Commands>
                         <!-- Don't export any packages because this is an implementation bundle -->
                         <Export-Package></Export-Package>
                     </instructions>
@@ -43,8 +43,8 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao-api</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao-api</artifactId>
         </dependency>
     </dependencies>
 </project>

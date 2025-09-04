@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.container</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.container</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.container</groupId>
+    <groupId>org.citadel.container</groupId>
     <artifactId>extender</artifactId>
     <packaging>bundle</packaging>
     <name>OpenNMS :: Container :: Extender</name>
@@ -55,8 +55,8 @@
             <artifactId>guava</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.test-api</groupId>
-            <artifactId>org.opennms.core.test-api.lib</artifactId>
+            <groupId>org.citadel.core.test-api</groupId>
+            <artifactId>org.citadel.core.test-api.lib</artifactId>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -64,8 +64,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.health</groupId>
-            <artifactId>org.opennms.core.health.api</artifactId>
+            <groupId>org.citadel.core.health</groupId>
+            <artifactId>org.citadel.core.health.api</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.jdbc-collector</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.jdbc-collector</artifactId>
   <name>OpenNMS :: Features :: JDBC Collector</name>
   <packaging>bundle</packaging>
   <build>
@@ -35,11 +35,11 @@
           <srcdir>${basedir}/src/main/java</srcdir>
           <verbose>false</verbose>
           <includes>
-            <include>org/opennms/netmgt/config/jdbc/*.java</include>
+            <include>org/citadel/netmgt/config/jdbc/*.java</include>
           </includes>
           <schemas>
             <schema>
-              <namespace>http://xmlns.opennms.org/xsd/config/jdbc-datacollection</namespace>
+              <namespace>http://xmlns.citadel.org/xsd/config/jdbc-datacollection</namespace>
               <file>jdbc-datacollection.xsd</file>
             </schema>
           </schemas>
@@ -79,25 +79,25 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jaxb-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.db</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.db</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config-api</artifactId>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -105,12 +105,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.db</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.db</artifactId>
     </dependency>
     <dependency>
       <groupId>xmlunit</groupId>
@@ -118,8 +118,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.test-api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.test-api</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>

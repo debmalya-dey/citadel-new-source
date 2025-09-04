@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms.features</groupId>
+        <groupId>org.citadel.features</groupId>
         <artifactId>container-parent</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.opennms.features.container</groupId>
+    <groupId>org.citadel.features.container</groupId>
     <artifactId>sentinel</artifactId>
     <packaging>karaf-assembly</packaging>
     <name>OpenNMS :: Features :: Container :: Sentinel</name>
@@ -68,8 +68,8 @@
                             <stripClassifier>true</stripClassifier>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>org.opennms.features.scv</groupId>
-                                    <artifactId>org.opennms.features.scv.cli</artifactId>
+                                    <groupId>org.citadel.features.scv</groupId>
+                                    <artifactId>org.citadel.features.scv.cli</artifactId>
                                     <version>${project.version}</version>
                                     <classifier>jar-with-dependencies</classifier>
                                     <type>jar</type>
@@ -87,15 +87,15 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>org.opennms.container</groupId>
-                                    <artifactId>org.opennms.container.shared</artifactId>
+                                    <groupId>org.citadel.container</groupId>
+                                    <artifactId>org.citadel.container.shared</artifactId>
                                     <version>${project.version}</version>
                                     <type>tar.gz</type>
                                     <outputDirectory>${project.build.directory}/unpacked/container-shared</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.opennms.core</groupId>
-                                    <artifactId>org.opennms.core.cli</artifactId>
+                                    <groupId>org.citadel.core</groupId>
+                                    <artifactId>org.citadel.core.cli</artifactId>
                                     <version>${project.version}</version>
                                     <outputDirectory>${project.build.directory}/unpacked/core-cli</outputDirectory>
                                     <includes>bin/*</includes>
@@ -159,8 +159,8 @@
                                 <line>log4j2.appender.container.layout.pattern = ${karaf.log.container.pattern}</line>
 
                                 <line>${line.separator}# OPENNMS: Display all INFO logs for OpenNMS code</line>
-                                <line>log4j2.logger.opennms.name = org.opennms</line>
-                                <line>log4j2.logger.opennms.level = INFO</line>
+                                <line>log4j2.logger.citadel.name = org.citadel</line>
+                                <line>log4j2.logger.citadel.level = INFO</line>
                             </lines>
                         </file>
                     </files>
@@ -285,16 +285,16 @@
                         <karaf.clean.cache>true</karaf.clean.cache>
                         <karaf.local.user>admin</karaf.local.user>
                         <karaf.require.successful.features.boot>true</karaf.require.successful.features.boot>
-                        <snmp4j.LogFactory>org.opennms.netmgt.snmp.snmp4j.Slf4jLogFactory</snmp4j.LogFactory>
+                        <snmp4j.LogFactory>org.citadel.netmgt.snmp.snmp4j.Slf4jLogFactory</snmp4j.LogFactory>
                     </system>
 
                     <!-- repositories -->
                     <bootRepositories>
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/karaf-extensions</repository>
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/spring-legacy</repository>
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/features</repository>
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/sentinel</repository>
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/camel</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/karaf-extensions</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/spring-legacy</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/features</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/sentinel</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/camel</repository>
                         <repository>mvn:io.hawt/hawtio-karaf/${hawtio.version}/xml/features</repository>
                         <repository>mvn:org.ops4j.pax.cdi/pax-cdi-features/${paxCdiVersion}/xml/features</repository>
                         <repository>mvn:org.apache.karaf.features/framework/${karafVersion}/xml/features</repository>
@@ -349,27 +349,27 @@
                         <feature>spring-jms/${springVersion}</feature>
 
                         <!-- OpenNMS features -->
-                        <feature>opennms-core-ipc-rpc-jms</feature>
-                        <feature>opennms-core-tracing-jaeger</feature>
-                        <feature>opennms-events-sink-dispatcher</feature>
-                        <feature>opennms-core-ipc-sink-camel</feature>
-                        <feature>opennms-core-ipc-sink-kafka</feature>
-                        <feature>opennms-core-ipc-sink-camel-server</feature>
-                        <feature>opennms-core-ipc-sink-kafka-server</feature>
-                        <feature>opennms-send-event-command</feature>
-                        <feature>opennms-syslogd-listener-javanet</feature>
-                        <feature>opennms-syslogd-listener-camel-netty</feature>
-                        <feature>opennms-persistence</feature>
-                        <feature>opennms-spring-extender</feature>
-                        <feature>opennms-blobstore-shell</feature>
-                        <feature>opennms-jsonstore-shell</feature>
-                        <feature>opennms-distributed-core-impl</feature>
-                        <feature>opennms-util</feature>
+                        <feature>citadel-core-ipc-rpc-jms</feature>
+                        <feature>citadel-core-tracing-jaeger</feature>
+                        <feature>citadel-events-sink-dispatcher</feature>
+                        <feature>citadel-core-ipc-sink-camel</feature>
+                        <feature>citadel-core-ipc-sink-kafka</feature>
+                        <feature>citadel-core-ipc-sink-camel-server</feature>
+                        <feature>citadel-core-ipc-sink-kafka-server</feature>
+                        <feature>citadel-send-event-command</feature>
+                        <feature>citadel-syslogd-listener-javanet</feature>
+                        <feature>citadel-syslogd-listener-camel-netty</feature>
+                        <feature>citadel-persistence</feature>
+                        <feature>citadel-spring-extender</feature>
+                        <feature>citadel-blobstore-shell</feature>
+                        <feature>citadel-jsonstore-shell</feature>
+                        <feature>citadel-distributed-core-impl</feature>
+                        <feature>citadel-util</feature>
                         <feature>scv-api</feature>
                         <feature>scv-shell</feature>
                         <feature>scv-jceks-impl</feature>
                         <feature>cxf-commands/${cxfVersion}</feature>
-                        <feature>opennms-health-rest-service</feature>
+                        <feature>citadel-health-rest-service</feature>
 
                         <!-- Sentinel specific features -->
                         <feature>sentinel-core</feature>
@@ -467,27 +467,27 @@
 
         <!-- OpenNMS dependencies for unpacking/assembling -->
         <dependency>
-            <groupId>org.opennms.core</groupId>
-            <artifactId>org.opennms.core.cli</artifactId>
+            <groupId>org.citadel.core</groupId>
+            <artifactId>org.citadel.core.cli</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.container</groupId>
-            <artifactId>org.opennms.container.shared</artifactId>
+            <groupId>org.citadel.container</groupId>
+            <artifactId>org.citadel.container.shared</artifactId>
             <version>${project.version}</version>
             <type>tar.gz</type>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.sentinel</groupId>
+            <groupId>org.citadel.features.sentinel</groupId>
             <artifactId>core</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.scv</groupId>
-            <artifactId>org.opennms.features.scv.cli</artifactId>
+            <groupId>org.citadel.features.scv</groupId>
+            <artifactId>org.citadel.features.scv.cli</artifactId>
             <version>${project.version}</version>
             <classifier>jar-with-dependencies</classifier>
             <scope>provided</scope>
@@ -502,39 +502,39 @@
 
         <!-- feature dependencies for Karaf assembly resolution -->
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>core</classifier>
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>features</classifier>
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>karaf-extensions</classifier>
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>sentinel</classifier>
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>spring-legacy</classifier>
             <type>xml</type>

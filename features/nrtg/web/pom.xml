@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.opennms.features</groupId>
+    <groupId>org.citadel.features</groupId>
     <artifactId>nrtg</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
-  <groupId>org.opennms.features.nrtg</groupId>
+  <groupId>org.citadel.features.nrtg</groupId>
   <artifactId>nrtg-web</artifactId>
   <packaging>bundle</packaging>
   <properties>
-    <bundle.symbolicName>org.opennms.features.nrtg.web</bundle.symbolicName>
-    <bundle.namespace>org.opennms.nrtg.web</bundle.namespace>
+    <bundle.symbolicName>org.citadel.features.nrtg.web</bundle.symbolicName>
+    <bundle.namespace>org.citadel.nrtg.web</bundle.namespace>
   </properties>
   <name>OpenNMS :: Features :: NRTG :: Web Interface</name>
   <description>
@@ -25,25 +25,25 @@
     <dependencies>
         <!-- OpenNMS NRTCollector -->
         <dependency>
-            <groupId>org.opennms.features.nrtg</groupId>
+            <groupId>org.citadel.features.nrtg</groupId>
             <artifactId>nrtg-api</artifactId>
             <version>${project.version}</version>
         </dependency>
     
         <!-- OpenNMS dependencies -->
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-dao</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-dao</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-model</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-model</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.snmp</groupId>
-            <artifactId>org.opennms.core.snmp.api</artifactId>
+            <groupId>org.citadel.core.snmp</groupId>
+            <artifactId>org.citadel.core.snmp.api</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -69,7 +69,7 @@
     
         <!-- Spring -->
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>spring-dependencies</artifactId>
             <type>pom</type>
             <scope>provided</scope>

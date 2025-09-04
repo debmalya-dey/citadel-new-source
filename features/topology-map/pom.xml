@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.topology</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.topology</artifactId>
 
   <name>OpenNMS :: Features :: Topology (OSGi project)</name>
 
@@ -33,11 +33,11 @@
     <module>features</module>
     <module>poms</module>
     <module>provision</module>
-    <module>org.opennms.features.topology.api</module>
-    <module>org.opennms.features.topology.app</module>
-    <module>org.opennms.features.topology.link</module>
-    <module>org.opennms.features.topology.persistence</module>
-    <module>org.opennms.features.topology.shell</module>
+    <module>org.citadel.features.topology.api</module>
+    <module>org.citadel.features.topology.app</module>
+    <module>org.citadel.features.topology.link</module>
+    <module>org.citadel.features.topology.persistence</module>
+    <module>org.citadel.features.topology.shell</module>
     <module>plugins</module>
     <module>themes</module>
   </modules>

@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms</groupId>
-        <artifactId>org.opennms.container</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>org.citadel.container</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.opennms.container</groupId>
-    <artifactId>org.opennms.container.shared</artifactId>
+    <groupId>org.citadel.container</groupId>
+    <artifactId>org.citadel.container.shared</artifactId>
     <packaging>karaf-assembly</packaging>
     <name>OpenNMS :: Container :: Karaf (Shared)</name>
 
@@ -40,12 +40,12 @@
                 <artifactId>karaf-maven-plugin</artifactId>
                 <configuration>
                     <blacklistedRepositories>
-                        <!-- make sure the custom opennms karaf repo doesn't make it in -->
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/standard</repository>
+                        <!-- make sure the custom citadel karaf repo doesn't make it in -->
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/standard</repository>
                     </blacklistedRepositories>
                     <bootRepositories>
                         <!-- OPENNMS: Add the OpenNMS Karaf extensions feature repository -->
-                        <repository>mvn:org.opennms.karaf/opennms/${project.version}/xml/karaf-extensions</repository>
+                        <repository>mvn:org.citadel.karaf/citadel/${project.version}/xml/karaf-extensions</repository>
                         <!-- OPENNMS: Additional tools -->
                         <repository>mvn:io.hawt/hawtio-karaf/${hawtio.version}/xml/features</repository>
                         <!-- OPENNMS: get a good version of pax-cdi-features for inclusion -->
@@ -97,9 +97,9 @@
                         <feature>ssh/${karafSshdVersion}</feature>
                     </bootFeatures>
                     <blacklistedFeatures>
-                        <!-- make sure the custom opennms features don't make it in -->
-                        <feature>opennms-bridge-http-service</feature>
-                        <feature>opennms-http-whiteboard</feature>
+                        <!-- make sure the custom citadel features don't make it in -->
+                        <feature>citadel-bridge-http-service</feature>
+                        <feature>citadel-http-whiteboard</feature>
 
                         <feature>jetty9.4.52.v20230823</feature>
                         <feature>pax-jetty/9.4.52.v20230823</feature>
@@ -148,8 +148,8 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>org.opennms.karaf</groupId>
-                                    <artifactId>opennms</artifactId>
+                                    <groupId>org.citadel.karaf</groupId>
+                                    <artifactId>citadel</artifactId>
                                     <version>${project.version}</version>
                                     <classifier>overrides</classifier>
                                     <type>properties</type>
@@ -212,23 +212,23 @@
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>spring-legacy</classifier>
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>karaf-extensions</classifier>
             <type>xml</type>
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>spring-dependencies</artifactId>
             <version>${project.version}</version>
             <type>pom</type>

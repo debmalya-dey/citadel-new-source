@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.core</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.core</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core</groupId>
-  <artifactId>org.opennms.core.criteria</artifactId>
+  <groupId>org.citadel.core</groupId>
+  <artifactId>org.citadel.core.criteria</artifactId>
   <packaging>bundle</packaging>
   <name>OpenNMS :: Core :: Criteria Tools</name>
   <dependencies>
@@ -20,8 +20,8 @@
       <artifactId>slf4j-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -36,7 +36,7 @@
             <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
-            <Export-Package>org.opennms.core.criteria,org.opennms.core.criteria.restrictions;version="${project.version}"</Export-Package>
+            <Export-Package>org.citadel.core.criteria,org.citadel.core.criteria.restrictions;version="${project.version}"</Export-Package>
           </instructions>
         </configuration>
       </plugin>

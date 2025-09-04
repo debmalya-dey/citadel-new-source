@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.timeseries</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.timeseries</artifactId>
   <name>OpenNMS :: Features :: Timeseries</name>
   <packaging>bundle</packaging>
   <build>
@@ -29,29 +29,29 @@
   <dependencies>
     <!-- APIs we implement -->
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.measurements</groupId>
-      <artifactId>org.opennms.features.measurements.api</artifactId>
+      <groupId>org.citadel.features.measurements</groupId>
+      <artifactId>org.citadel.features.measurements.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.persistence.osgi</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.persistence.osgi</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.sysprops</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.sysprops</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.cache</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.cache</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -67,28 +67,28 @@
 
     <!-- Dependencies used -->
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>newts-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>oia-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.integration.api</groupId>
+      <groupId>org.citadel.integration.api</groupId>
       <artifactId>config</artifactId>
-      <version>${opennmsApiVersion}</version>
+      <version>${citadelApiVersion}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.utils</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.utils</artifactId>
     </dependency>
     <dependency>
       <groupId>com.lmax</groupId>
@@ -109,18 +109,18 @@
       <artifactId>hll</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.sink</groupId>
-      <artifactId>org.opennms.core.ipc.sink.offheap</artifactId>
+      <groupId>org.citadel.core.ipc.sink</groupId>
+      <artifactId>org.citadel.core.ipc.sink.offheap</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <!-- Testing -->
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.lib</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.lib</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>spring-test-dependencies</artifactId>
       <type>pom</type>
       <scope>test</scope>
@@ -131,30 +131,30 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.db</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.db</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.integration.api</groupId>
+      <groupId>org.citadel.integration.api</groupId>
       <artifactId>tss-tests</artifactId>
-      <version>${opennmsApiVersion}</version>
+      <version>${citadelApiVersion}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-mock</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-mock</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.scv</groupId>
-      <artifactId>org.opennms.features.scv.jceks-impl</artifactId>
+      <groupId>org.citadel.features.scv</groupId>
+      <artifactId>org.citadel.features.scv.jceks-impl</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.snmp-collector</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.snmp-collector</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

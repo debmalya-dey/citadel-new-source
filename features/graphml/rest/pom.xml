@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.graphml</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.graphml</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.graphml</groupId>
-  <artifactId>org.opennms.features.graphml.rest</artifactId>
+  <groupId>org.citadel.features.graphml</groupId>
+  <artifactId>org.citadel.features.graphml.rest</artifactId>
   <name>OpenNMS :: Features :: GraphML :: ReST</name>
   <packaging>bundle</packaging>
   <build>
@@ -21,7 +21,7 @@
             <Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version>
-            <Private-Package>org.opennms.netmgt.graphml.rest.internal</Private-Package>
+            <Private-Package>org.citadel.netmgt.graphml.rest.internal</Private-Package>
           </instructions>
         </configuration>
       </plugin>
@@ -29,13 +29,13 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.features.graphml</groupId>
-      <artifactId>org.opennms.features.graphml.api</artifactId>
+      <groupId>org.citadel.features.graphml</groupId>
+      <artifactId>org.citadel.features.graphml.api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-web-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-web-api</artifactId>
     </dependency>
   </dependencies>
 </project>

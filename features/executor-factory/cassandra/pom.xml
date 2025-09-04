@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.features</groupId>
-    <artifactId>org.opennms.features.executor-factory</artifactId>
+    <groupId>org.citadel.features</groupId>
+    <artifactId>org.citadel.features.executor-factory</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features.executor-factory</groupId>
-  <artifactId>org.opennms.features.executor-factory.cassandra</artifactId>
+  <groupId>org.citadel.features.executor-factory</groupId>
+  <artifactId>org.citadel.features.executor-factory.cassandra</artifactId>
   <name>OpenNMS :: Features :: Executor Factory :: Cassandra</name>
   <packaging>bundle</packaging>
   <build>
@@ -28,12 +28,12 @@
   </build>
   <dependencies>
     <dependency>
-        <groupId>org.opennms</groupId>
-        <artifactId>opennms-util</artifactId>
+        <groupId>org.citadel</groupId>
+        <artifactId>citadel-util</artifactId>
     </dependency>
     <!-- Needed for Cassandra -->
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jackson1-dependencies</artifactId>
       <type>pom</type>
     </dependency>

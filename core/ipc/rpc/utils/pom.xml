@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms.core.ipc</groupId>
-    <artifactId>org.opennms.core.ipc.rpc</artifactId>
+    <groupId>org.citadel.core.ipc</groupId>
+    <artifactId>org.citadel.core.ipc.rpc</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.core.ipc.rpc</groupId>
-  <artifactId>org.opennms.core.ipc.rpc.utils</artifactId>
+  <groupId>org.citadel.core.ipc.rpc</groupId>
+  <artifactId>org.citadel.core.ipc.rpc.utils</artifactId>
   <name>OpenNMS :: Core :: IPC :: RPC :: Utils</name>
   <packaging>bundle</packaging>
   <build>
@@ -28,16 +28,16 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>org.opennms.core.mate</groupId>
-      <artifactId>org.opennms.core.mate.model</artifactId>
+      <groupId>org.citadel.core.mate</groupId>
+      <artifactId>org.citadel.core.mate.model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.ipc.rpc</groupId>
-      <artifactId>org.opennms.core.ipc.rpc.api</artifactId>
+      <groupId>org.citadel.core.ipc.rpc</groupId>
+      <artifactId>org.citadel.core.ipc.rpc.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -55,8 +55,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.scv</groupId>
-      <artifactId>org.opennms.features.scv.jceks-impl</artifactId>
+      <groupId>org.citadel.features.scv</groupId>
+      <artifactId>org.citadel.features.scv.jceks-impl</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>

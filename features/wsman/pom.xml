@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>org.opennms</groupId>
-    <artifactId>org.opennms.features</artifactId>
+    <groupId>org.citadel</groupId>
+    <artifactId>org.citadel.features</artifactId>
     <version>35.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.opennms.features</groupId>
-  <artifactId>org.opennms.features.wsman</artifactId>
+  <groupId>org.citadel.features</groupId>
+  <artifactId>org.citadel.features.wsman</artifactId>
   <name>OpenNMS :: Features :: WS-Man Integration</name>
   <packaging>bundle</packaging>
   <build>
@@ -26,8 +26,8 @@
             <Import-Package>
               org.eclipse.persistence.internal.jaxb;resolution:=optional,
               org.eclipse.persistence.internal.jaxb.many;resolution:=optional,
-              org.opennms.core.network,
-              org.opennms.netmgt.collection.adapters,
+              org.citadel.core.network,
+              org.citadel.netmgt.collection.adapters,
               *
             </Import-Package>
           </instructions>
@@ -58,21 +58,21 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>jaxb-dependencies</artifactId>
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core</groupId>
-      <artifactId>org.opennms.core.db</artifactId>
+      <groupId>org.citadel.core</groupId>
+      <artifactId>org.citadel.core.db</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-model</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-model</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.api</artifactId>
     </dependency>
     <!-- This is needed when running wsman in non-osgi env with Java11-->
     <dependency>
@@ -81,8 +81,8 @@
       <version>1.1.3</version>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.poller.monitors</groupId>
-      <artifactId>org.opennms.features.poller.monitors.core</artifactId>
+      <groupId>org.citadel.features.poller.monitors</groupId>
+      <artifactId>org.citadel.features.poller.monitors.core</artifactId>
       <type>jar</type>
       <version>${project.version}</version>
       <!-- this is to make sure it doesn't sneak in in tests -->
@@ -98,20 +98,20 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-provision-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-provision-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao-api</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.poller</groupId>
-      <artifactId>org.opennms.features.poller.api</artifactId>
+      <groupId>org.citadel.features.poller</groupId>
+      <artifactId>org.citadel.features.poller.api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.wsman</groupId>
-      <artifactId>org.opennms.core.wsman.cxf</artifactId>
+      <groupId>org.citadel.core.wsman</groupId>
+      <artifactId>org.citadel.core.wsman.cxf</artifactId>
       <version>${wsmanVersion}</version>
       <exclusions>
         <exclusion>
@@ -151,7 +151,7 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.opennms.dependencies</groupId>
+      <groupId>org.citadel.dependencies</groupId>
       <artifactId>cxf-dependencies</artifactId>
       <type>pom</type>
     </dependency>
@@ -166,32 +166,32 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.persistence.rrd</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.persistence.rrd</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-rrd-jrobin</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-rrd-jrobin</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-dao</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-dao</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms</groupId>
-      <artifactId>opennms-config</artifactId>
+      <groupId>org.citadel</groupId>
+      <artifactId>citadel-config</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.xml</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.xml</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.core.test-api</groupId>
-      <artifactId>org.opennms.core.test-api.collection</artifactId>
+      <groupId>org.citadel.core.test-api</groupId>
+      <artifactId>org.citadel.core.test-api.collection</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -206,8 +206,8 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.opennms.features.collection</groupId>
-      <artifactId>org.opennms.features.collection.test-api</artifactId>
+      <groupId>org.citadel.features.collection</groupId>
+      <artifactId>org.citadel.features.collection.test-api</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>

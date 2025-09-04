@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.opennms.features.minion</groupId>
+        <groupId>org.citadel.features.minion</groupId>
         <artifactId>minion-parent</artifactId>
         <version>35.0.0-SNAPSHOT</version>
     </parent>
@@ -27,23 +27,23 @@
                             <descriptors>
                                 <descriptor>mvn:org.apache.karaf.features/standard/${karafVersion}/xml/features</descriptor>
                                 <!-- Add OpenNMS features -->
-                                <descriptor>mvn:org.opennms.karaf/opennms/${project.version}/xml/features</descriptor>
-                                <descriptor>mvn:org.opennms.karaf/opennms/${project.version}/xml/spring-legacy</descriptor>
+                                <descriptor>mvn:org.citadel.karaf/citadel/${project.version}/xml/features</descriptor>
+                                <descriptor>mvn:org.citadel.karaf/citadel/${project.version}/xml/spring-legacy</descriptor>
                                 <!-- Add Minion features -->
-                                <descriptor>mvn:org.opennms.karaf/opennms/${project.version}/xml/minion</descriptor>
+                                <descriptor>mvn:org.citadel.karaf/citadel/${project.version}/xml/minion</descriptor>
                             </descriptors>
                             <!-- To ensure that all JAR files for a feature
                                 are included in the repository tar.gz file, add the feature to this list. -->
                             <features>
-                                <feature>opennms-core-ipc-jms</feature>
-                                <feature>opennms-core-ipc-kafka</feature>
-                                <feature>opennms-core-ipc-twin-shell</feature>
-                                <feature>opennms-core-ipc-sink-offheap</feature>
-                                <feature>opennms-syslogd-listener-javanet</feature>
-                                <feature>opennms-syslogd-listener-camel-netty</feature>
-                                <feature>opennms-trapd-listener</feature>
-                                <feature>opennms-send-event-command</feature>
-                                <feature>opennms-events-sink-dispatcher</feature>
+                                <feature>citadel-core-ipc-jms</feature>
+                                <feature>citadel-core-ipc-kafka</feature>
+                                <feature>citadel-core-ipc-twin-shell</feature>
+                                <feature>citadel-core-ipc-sink-offheap</feature>
+                                <feature>citadel-syslogd-listener-javanet</feature>
+                                <feature>citadel-syslogd-listener-camel-netty</feature>
+                                <feature>citadel-trapd-listener</feature>
+                                <feature>citadel-send-event-command</feature>
+                                <feature>citadel-events-sink-dispatcher</feature>
                                 <feature>minion-shell</feature>
                                 <feature>minion-heartbeat-producer</feature>
                                 <feature>minion-snmp-proxy</feature>
@@ -54,23 +54,23 @@
                                 <feature>minion-icmp-proxy</feature>
                                 <feature>minion-telemetryd-receivers</feature>
                                 <feature>cxf-commands/${cxfVersion}</feature>
-                                <feature>opennms-core-tracing-jaeger</feature>
-                                <feature>opennms-dnsresolver-shell</feature>
-                                <feature>opennms-dnsresolver-netty</feature>
-                                <feature>opennms-core-ipc-grpc-client</feature>
-                                <feature>opennms-distributed-core-impl</feature>
-                                <feature>opennms-util</feature>
+                                <feature>citadel-core-tracing-jaeger</feature>
+                                <feature>citadel-dnsresolver-shell</feature>
+                                <feature>citadel-dnsresolver-netty</feature>
+                                <feature>citadel-core-ipc-grpc-client</feature>
+                                <feature>citadel-distributed-core-impl</feature>
+                                <feature>citadel-util</feature>
                                 <feature>scv-api</feature>
                                 <feature>scv-shell</feature>
                                 <feature>scv-jceks-impl</feature>
                                 <feature>dominion-grpc-client</feature>
                                 <feature>dominion-secure-credentials-vault</feature>
-                                <feature>opennms-health-rest-service</feature>
+                                <feature>citadel-health-rest-service</feature>
                                 <feature>minion-health-check</feature>
                                 <feature>minion-api-layer</feature>
                                 <feature>minion-plugin-sample</feature>
-                                <feature>opennms-deviceconfig-monitor</feature>
-                                <feature>opennms-deviceconfig-sink</feature>
+                                <feature>citadel-deviceconfig-monitor</feature>
+                                <feature>citadel-deviceconfig-sink</feature>
                             </features>
                             <repository>${project.build.directory}/maven-repo</repository>
                         </configuration>
@@ -164,347 +164,347 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.opennms.dependencies</groupId>
+            <groupId>org.citadel.dependencies</groupId>
             <artifactId>oia-dependencies</artifactId>
             <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>features</classifier>
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.karaf</groupId>
-            <artifactId>opennms</artifactId>
+            <groupId>org.citadel.karaf</groupId>
+            <artifactId>citadel</artifactId>
             <version>${project.version}</version>
             <classifier>spring-legacy</classifier>
             <type>xml</type>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.minion</groupId>
+            <groupId>org.citadel.features.minion</groupId>
             <artifactId>core-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.distributed</groupId>
+            <groupId>org.citadel.features.distributed</groupId>
             <artifactId>jms</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.distributed</groupId>
+            <groupId>org.citadel.features.distributed</groupId>
             <artifactId>core-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.minion.shell</groupId>
-            <artifactId>org.opennms.features.minion.shell.collection</artifactId>
+            <groupId>org.citadel.features.minion.shell</groupId>
+            <artifactId>org.citadel.features.minion.shell.collection</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.minion.shell</groupId>
-            <artifactId>org.opennms.features.minion.shell.poller</artifactId>
+            <groupId>org.citadel.features.minion.shell</groupId>
+            <artifactId>org.citadel.features.minion.shell.poller</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.minion.shell</groupId>
-            <artifactId>org.opennms.features.minion.shell.provision</artifactId>
+            <groupId>org.citadel.features.minion.shell</groupId>
+            <artifactId>org.citadel.features.minion.shell.provision</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.minion.heartbeat</groupId>
-            <artifactId>org.opennms.features.minion.heartbeat.producer</artifactId>
+            <groupId>org.citadel.features.minion.heartbeat</groupId>
+            <artifactId>org.citadel.features.minion.heartbeat.producer</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.events.sink</groupId>
-            <artifactId>org.opennms.features.events.sink.dispatcher</artifactId>
+            <groupId>org.citadel.features.events.sink</groupId>
+            <artifactId>org.citadel.features.events.sink.dispatcher</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.events.sink</groupId>
-            <artifactId>org.opennms.features.events.sink.command</artifactId>
+            <groupId>org.citadel.features.events.sink</groupId>
+            <artifactId>org.citadel.features.events.sink.command</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.common</groupId>
-            <artifactId>org.opennms.core.ipc.common.kafka-shell</artifactId>
+            <groupId>org.citadel.core.ipc.common</groupId>
+            <artifactId>org.citadel.core.ipc.common.kafka-shell</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-requisition-service</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-requisition-service</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-bsf</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-bsf</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-dhcp</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-dhcp</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-lineoriented</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-lineoriented</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-generic</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-generic</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-simple</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-simple</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-datagram</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-datagram</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-jmx</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-jmx</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-jms</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-jms</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-jdbc</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-jdbc</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-rdns-lookup</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-rdns-lookup</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-ssh</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-ssh</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-detector-web</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-detector-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms.protocols</groupId>
-            <artifactId>org.opennms.protocols.radius</artifactId>
+            <groupId>org.citadel.protocols</groupId>
+            <artifactId>org.citadel.protocols.radius</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.protocols</groupId>
-            <artifactId>org.opennms.protocols.nsclient</artifactId>
+            <groupId>org.citadel.protocols</groupId>
+            <artifactId>org.citadel.protocols.nsclient</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.collection</groupId>
-            <artifactId>org.opennms.features.collection.collectors</artifactId>
+            <groupId>org.citadel.features.collection</groupId>
+            <artifactId>org.citadel.features.collection.collectors</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
-            <artifactId>org.opennms.features.wsman</artifactId>
+            <groupId>org.citadel.features</groupId>
+            <artifactId>org.citadel.features.wsman</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.telemetry.protocols.bmp</groupId>
-            <artifactId>org.opennms.features.telemetry.protocols.bmp.parser</artifactId>
+            <groupId>org.citadel.features.telemetry.protocols.bmp</groupId>
+            <artifactId>org.citadel.features.telemetry.protocols.bmp.parser</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.telemetry.protocols.netflow</groupId>
-            <artifactId>org.opennms.features.telemetry.protocols.netflow.parser</artifactId>
+            <groupId>org.citadel.features.telemetry.protocols.netflow</groupId>
+            <artifactId>org.citadel.features.telemetry.protocols.netflow.parser</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.telemetry.protocols.sflow</groupId>
-            <artifactId>org.opennms.features.telemetry.protocols.sflow.parser</artifactId>
+            <groupId>org.citadel.features.telemetry.protocols.sflow</groupId>
+            <artifactId>org.citadel.features.telemetry.protocols.sflow.parser</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.telemetry</groupId>
-            <artifactId>org.opennms.features.telemetry.shell</artifactId>
+            <groupId>org.citadel.features.telemetry</groupId>
+            <artifactId>org.citadel.features.telemetry.shell</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.rpc</groupId>
-            <artifactId>org.opennms.core.ipc.rpc.jms-impl</artifactId>
+            <groupId>org.citadel.core.ipc.rpc</groupId>
+            <artifactId>org.citadel.core.ipc.rpc.jms-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.rpc</groupId>
-            <artifactId>org.opennms.core.ipc.rpc.kafka</artifactId>
+            <groupId>org.citadel.core.ipc.rpc</groupId>
+            <artifactId>org.citadel.core.ipc.rpc.kafka</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.sink.camel</groupId>
-            <artifactId>org.opennms.core.ipc.sink.camel.client</artifactId>
+            <groupId>org.citadel.core.ipc.sink.camel</groupId>
+            <artifactId>org.citadel.core.ipc.sink.camel.client</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.sink.kafka</groupId>
-            <artifactId>org.opennms.core.ipc.sink.kafka.client</artifactId>
+            <groupId>org.citadel.core.ipc.sink.kafka</groupId>
+            <artifactId>org.citadel.core.ipc.sink.kafka.client</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.sink</groupId>
-            <artifactId>org.opennms.core.ipc.sink.offheap</artifactId>
+            <groupId>org.citadel.core.ipc.sink</groupId>
+            <artifactId>org.citadel.core.ipc.sink.offheap</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.tracing</groupId>
-            <artifactId>org.opennms.core.tracing.jaeger-osgi</artifactId>
+            <groupId>org.citadel.core.tracing</groupId>
+            <artifactId>org.citadel.core.tracing.jaeger-osgi</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.tracing</groupId>
-            <artifactId>org.opennms.core.tracing.jaeger-tracer</artifactId>
+            <groupId>org.citadel.core.tracing</groupId>
+            <artifactId>org.citadel.core.tracing.jaeger-tracer</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.distributed</groupId>
-            <artifactId>org.opennms.features.distributed.dao-api</artifactId>
+            <groupId>org.citadel.features.distributed</groupId>
+            <artifactId>org.citadel.features.distributed.dao-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.poller</groupId>
-            <artifactId>org.opennms.features.poller.client-rpc</artifactId>
+            <groupId>org.citadel.features.poller</groupId>
+            <artifactId>org.citadel.features.poller.client-rpc</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.poller.monitors</groupId>
-            <artifactId>org.opennms.features.poller.monitors.core</artifactId>
+            <groupId>org.citadel.features.poller.monitors</groupId>
+            <artifactId>org.citadel.features.poller.monitors.core</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features</groupId>
-            <artifactId>org.opennms.features.jdbc-collector</artifactId>
+            <groupId>org.citadel.features</groupId>
+            <artifactId>org.citadel.features.jdbc-collector</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-vmware</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-vmware</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.opennms.protocols</groupId>
-            <artifactId>org.opennms.protocols.xml</artifactId>
+            <groupId>org.citadel.protocols</groupId>
+            <artifactId>org.citadel.protocols.xml</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.dnsresolver</groupId>
-            <artifactId>org.opennms.features.dnsresolver.netty</artifactId>
+            <groupId>org.citadel.features.dnsresolver</groupId>
+            <artifactId>org.citadel.features.dnsresolver.netty</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.dnsresolver</groupId>
-            <artifactId>org.opennms.features.dnsresolver.shell</artifactId>
+            <groupId>org.citadel.features.dnsresolver</groupId>
+            <artifactId>org.citadel.features.dnsresolver.shell</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.grpc</groupId>
-            <artifactId>org.opennms.core.ipc.grpc.client</artifactId>
+            <groupId>org.citadel.core.ipc.grpc</groupId>
+            <artifactId>org.citadel.core.ipc.grpc.client</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.twin.grpc</groupId>
-            <artifactId>org.opennms.core.ipc.twin.grpc.subscriber</artifactId>
+            <groupId>org.citadel.core.ipc.twin.grpc</groupId>
+            <artifactId>org.citadel.core.ipc.twin.grpc.subscriber</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.twin.jms</groupId>
-            <artifactId>org.opennms.core.ipc.twin.jms.subscriber</artifactId>
+            <groupId>org.citadel.core.ipc.twin.jms</groupId>
+            <artifactId>org.citadel.core.ipc.twin.jms.subscriber</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.twin</groupId>
-            <artifactId>org.opennms.core.ipc.twin.shell</artifactId>
+            <groupId>org.citadel.core.ipc.twin</groupId>
+            <artifactId>org.citadel.core.ipc.twin.shell</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.twin.kafka</groupId>
-            <artifactId>org.opennms.core.ipc.twin.kafka.subscriber</artifactId>
+            <groupId>org.citadel.core.ipc.twin.kafka</groupId>
+            <artifactId>org.citadel.core.ipc.twin.kafka.subscriber</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.ipc.grpc</groupId>
-            <artifactId>org.opennms.core.ipc.grpc.common</artifactId>
+            <groupId>org.citadel.core.ipc.grpc</groupId>
+            <artifactId>org.citadel.core.ipc.grpc.common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.grpc</groupId>
-            <artifactId>org.opennms.core.grpc.osgi</artifactId>
+            <groupId>org.citadel.core.grpc</groupId>
+            <artifactId>org.citadel.core.grpc.osgi</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.minion</groupId>
+            <groupId>org.citadel.features.minion</groupId>
             <artifactId>dominion-grpc-client</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.scv</groupId>
-            <artifactId>org.opennms.features.scv.jceks-impl</artifactId>
+            <groupId>org.citadel.features.scv</groupId>
+            <artifactId>org.citadel.features.scv.jceks-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.scv</groupId>
-            <artifactId>org.opennms.features.scv.shell</artifactId>
+            <groupId>org.citadel.features.scv</groupId>
+            <artifactId>org.citadel.features.scv.shell</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.scv</groupId>
-            <artifactId>org.opennms.features.scv.dominion-grpc-impl</artifactId>
+            <groupId>org.citadel.features.scv</groupId>
+            <artifactId>org.citadel.features.scv.dominion-grpc-impl</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.core.health</groupId>
-            <artifactId>org.opennms.core.health.rest-cxf</artifactId>
+            <groupId>org.citadel.core.health</groupId>
+            <artifactId>org.citadel.core.health.rest-cxf</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.minion</groupId>
+            <groupId>org.citadel.features.minion</groupId>
             <artifactId>health-check</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.api-layer</groupId>
-            <artifactId>org.opennms.features.api-layer.minion</artifactId>
+            <groupId>org.citadel.features.api-layer</groupId>
+            <artifactId>org.citadel.features.api-layer.minion</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config</groupId>
-            <artifactId>org.opennms.features.device-config.shell</artifactId>
+            <groupId>org.citadel.features.device-config</groupId>
+            <artifactId>org.citadel.features.device-config.shell</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config</groupId>
-            <artifactId>org.opennms.features.device-config.tftp</artifactId>
+            <groupId>org.citadel.features.device-config</groupId>
+            <artifactId>org.citadel.features.device-config.tftp</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config</groupId>
-            <artifactId>org.opennms.features.device-config.retrieval</artifactId>
+            <groupId>org.citadel.features.device-config</groupId>
+            <artifactId>org.citadel.features.device-config.retrieval</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config.sink</groupId>
-            <artifactId>org.opennms.features.device-config.sink.module</artifactId>
+            <groupId>org.citadel.features.device-config.sink</groupId>
+            <artifactId>org.citadel.features.device-config.sink.module</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config.sink</groupId>
-            <artifactId>org.opennms.features.device-config.sink.dispatcher</artifactId>
+            <groupId>org.citadel.features.device-config.sink</groupId>
+            <artifactId>org.citadel.features.device-config.sink.dispatcher</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config</groupId>
-            <artifactId>org.opennms.features.device-config.ssh-scripting</artifactId>
+            <groupId>org.citadel.features.device-config</groupId>
+            <artifactId>org.citadel.features.device-config.ssh-scripting</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms.features.device-config</groupId>
-            <artifactId>org.opennms.features.device-config.monitor</artifactId>
+            <groupId>org.citadel.features.device-config</groupId>
+            <artifactId>org.citadel.features.device-config.monitor</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.opennms</groupId>
-            <artifactId>opennms-util</artifactId>
+            <groupId>org.citadel</groupId>
+            <artifactId>citadel-util</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
