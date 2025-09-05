@@ -315,7 +315,7 @@
       <groupId>org.jfree</groupId>
       <artifactId>jfreechart</artifactId>
       <!-- jasper uses 1.0.19, so we shade it and minimize exposure -->
-      <version>1.0.19</version>
+      <version>1.5.6</version>
     </dependency>
     <dependency>
       <groupId>org.jfree</groupId>
