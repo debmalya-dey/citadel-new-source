@@ -30,7 +30,8 @@ import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
-import org.opennms.core.fiber.PausableFiber;
+import org.citadel.core.fiber.Fiber;
+import org.citadel.core.fiber.PausableFiber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -570,8 +571,8 @@ final class Executor implements Runnable, PausableFiber {
      * Returns the current status of the pausable fiber.
      *
      * @return The current status of the fiber.
-     * @see org.opennms.core.fiber.PausableFiber
-     * @see org.opennms.core.fiber.Fiber
+     * @see PausableFiber
+     * @see Fiber
      */
     @Override
     public synchronized int getStatus() {

@@ -27,10 +27,10 @@
 	import="java.util.*,
 		org.opennms.web.element.NetworkElementFactory,
 		org.opennms.web.admin.nodeManagement.*,
-		org.opennms.core.utils.WebSecurityUtils
+		org.citadel.core.utils.WebSecurityUtils
 	"
 %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%!
     int interfaceIndex;

@@ -37,9 +37,9 @@ import java.util.List;
 
 import org.junit.After;
 import org.junit.Before;
-import org.opennms.core.rpc.mock.MockRpcClientFactory;
-import org.opennms.core.test.MockPlatformTransactionManager;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.rpc.mock.MockRpcClientFactory;
+import org.citadel.core.test.MockPlatformTransactionManager;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.mock.snmp.MockSnmpAgent;
 import org.opennms.netmgt.collection.api.CollectionAttribute;
 import org.opennms.netmgt.collection.api.CollectionInitializationException;

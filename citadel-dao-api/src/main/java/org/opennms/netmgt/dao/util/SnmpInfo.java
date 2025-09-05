@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.utils.StringUtils;
 import org.opennms.netmgt.events.api.EventDatabaseConstants;
 import org.opennms.netmgt.xml.event.Snmp;
 

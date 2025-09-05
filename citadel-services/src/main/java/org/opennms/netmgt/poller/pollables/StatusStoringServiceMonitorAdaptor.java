@@ -26,7 +26,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.Objects;
 
-import org.opennms.core.utils.ParameterMap;
+import org.citadel.core.utils.ParameterMap;
 import org.opennms.netmgt.collection.api.PersisterFactory;
 import org.opennms.netmgt.collection.api.ServiceParameters;
 import org.opennms.netmgt.collection.dto.CollectionAgentDTO;

@@ -11,7 +11,7 @@
 
     <reference id="alarmDao" interface="org.opennms.netmgt.dao.api.AlarmDao" availability="mandatory"/>
     <reference id="transactionTemplate" interface="org.springframework.transaction.support.TransactionOperations" availability="mandatory"/>
-    <reference id="entityScopeProvider" interface="org.opennms.core.mate.api.EntityScopeProvider" availability="mandatory"/>
+    <reference id="entityScopeProvider" interface="api.mate.org.citadel.core.EntityScopeProvider" availability="mandatory"/>
 
     <bean class="org.opennms.features.ifttt.IfTttDaemon" init-method="start" destroy-method="stop">
         <argument ref="alarmDao"/>

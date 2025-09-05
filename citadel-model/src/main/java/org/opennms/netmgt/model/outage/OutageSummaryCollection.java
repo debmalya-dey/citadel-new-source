@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.map.annotate.JsonRootName;
-import org.opennms.core.config.api.JaxbListWrapper;
+import org.citadel.core.config.api.JaxbListWrapper;
 
 @XmlRootElement(name="outage-summaries")
 @JsonRootName("outage-summaries")

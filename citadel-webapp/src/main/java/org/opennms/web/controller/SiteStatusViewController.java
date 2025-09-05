@@ -26,7 +26,7 @@ import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.model.AggregateStatusView;
 import org.opennms.web.svclayer.SiteStatusViewService;
 import org.opennms.web.svclayer.model.AggregateStatus;

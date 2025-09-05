@@ -51,7 +51,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 import org.hibernate.annotations.Filter;
 import org.hibernate.annotations.Type;
-import org.opennms.core.network.InetAddressXmlAdapter;
+import org.citadel.core.network.InetAddressXmlAdapter;
 
 import com.google.common.base.MoreObjects;
 

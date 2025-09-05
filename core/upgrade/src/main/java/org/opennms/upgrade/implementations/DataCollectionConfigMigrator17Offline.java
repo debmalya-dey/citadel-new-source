@@ -34,8 +34,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.DefaultDataCollectionConfigDao;
 import org.opennms.netmgt.config.datacollection.DatacollectionConfig;
 import org.opennms.netmgt.config.datacollection.DatacollectionGroup;

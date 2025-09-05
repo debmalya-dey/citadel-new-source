@@ -29,7 +29,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.HandlerWrapper;
-import org.opennms.core.logging.Logging;
+import org.citadel.core.logging.Logging;
 
 public class MDCHandler extends HandlerWrapper {
 

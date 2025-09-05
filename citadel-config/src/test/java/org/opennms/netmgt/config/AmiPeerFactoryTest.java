@@ -28,7 +28,7 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.ami.AmiConfig;
 import org.opennms.test.JUnitConfigurationEnvironment;
 import org.opennms.test.OpenNMSConfigurationExecutionListener;

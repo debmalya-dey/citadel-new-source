@@ -44,7 +44,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.MockLogAppender;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.LegacyDatetimeFormatter;
 import org.opennms.test.LocaleProviderUtils;

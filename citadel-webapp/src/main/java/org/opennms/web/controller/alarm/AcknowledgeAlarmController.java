@@ -27,7 +27,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.dao.api.AlarmRepository;
 import org.opennms.web.alarm.AcknowledgeType;
 import org.opennms.web.controller.RedirectRestricter;

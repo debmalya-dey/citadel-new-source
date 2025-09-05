@@ -28,7 +28,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-import org.opennms.core.db.DataSourceFactory;
+import org.citadel.core.db.DataSourceFactory;
 import org.opennms.netmgt.events.api.EventParameterUtils;
 import org.opennms.netmgt.xml.event.Parm;
 import org.opennms.upgrade.api.AbstractOnmsUpgrade;

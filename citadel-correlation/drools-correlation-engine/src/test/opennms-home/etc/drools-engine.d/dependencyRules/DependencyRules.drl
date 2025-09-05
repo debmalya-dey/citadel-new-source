@@ -1,6 +1,6 @@
 package org.opennms.netmgt.correlation.drools;
 
-import org.opennms.core.utils.InetAddressUtils;
+import utils.org.citadel.core.InetAddressUtils;
 
 import java.util.Date;
 import java.net.InetAddress;

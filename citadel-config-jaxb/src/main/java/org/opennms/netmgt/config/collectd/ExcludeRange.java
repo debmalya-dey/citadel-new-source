@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.network.IPAddress;
+import org.citadel.core.network.IPAddress;
 
 /**
  * Range of addresses to be excluded from this

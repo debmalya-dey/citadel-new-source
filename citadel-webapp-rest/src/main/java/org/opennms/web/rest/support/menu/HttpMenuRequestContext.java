@@ -25,9 +25,9 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
-import org.opennms.core.time.CentralizedDateTimeFormat;
-import org.opennms.core.time.ExtendedDateOnlyFormat;
-import org.opennms.core.time.ExtendedTimeOnlyFormat;
+import org.citadel.core.time.CentralizedDateTimeFormat;
+import org.citadel.core.time.ExtendedDateOnlyFormat;
+import org.citadel.core.time.ExtendedTimeOnlyFormat;
 import org.opennms.netmgt.config.NotifdConfigFactory;
 
 public class HttpMenuRequestContext implements MenuRequestContext {

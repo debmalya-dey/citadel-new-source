@@ -28,7 +28,7 @@ import java.util.Iterator;
 
 import junit.framework.TestCase;
 
-import org.opennms.core.network.IPAddress;
+import org.citadel.core.network.IPAddress;
 
 /**
  * IPAddressRangeTest

@@ -31,7 +31,7 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

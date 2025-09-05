@@ -15,7 +15,7 @@
     <tx:annotation-driven/>
     <aop:aspectj-autoproxy proxy-target-class="true" />
 
-    <bean id="dataSource" class="org.opennms.core.db.DataSourceFactoryBean" />
+    <bean id="dataSource" class="db.org.citadel.core.DataSourceFactoryBean" />
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />

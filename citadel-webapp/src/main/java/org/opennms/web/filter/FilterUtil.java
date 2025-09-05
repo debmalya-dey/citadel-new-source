@@ -21,7 +21,7 @@
  */
 package org.opennms.web.filter;
 
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.utils.StringUtils;
 
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;

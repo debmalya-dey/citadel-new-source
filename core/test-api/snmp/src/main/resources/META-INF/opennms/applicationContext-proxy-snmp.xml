@@ -9,11 +9,11 @@
 
 	<context:annotation-config/>
 
-	<bean id="mockSnmpConfig" class="org.opennms.core.test.ConfigurationTestUtils" factory-method="getInputStreamForConfigFile">
+	<bean id="mockSnmpConfig" class="test.org.citadel.core.ConfigurationTestUtils" factory-method="getInputStreamForConfigFile">
 		<constructor-arg value="snmp-config.xml"/>
 	</bean>
 
-	<bean id="snmpPeerFactory" class="org.opennms.core.test.snmp.ProxySnmpAgentConfigFactory">
+	<bean id="snmpPeerFactory" class="org.citadel.core.test.snmp.ProxySnmpAgentConfigFactory">
 		<constructor-arg ref="mockSnmpConfig"/>
 	</bean>
 

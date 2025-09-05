@@ -6,7 +6,7 @@
         https://osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
 ">
 
-    <bean id="passiveEchoRpcHealthCheck" class="org.opennms.core.health.api.DefaultPassiveHealthCheck">
+    <bean id="passiveEchoRpcHealthCheck" class="api.health.org.citadel.core.DefaultPassiveHealthCheck">
         <argument value="Echo RPC (passive)"/>
         <argument>
             <list>
@@ -19,8 +19,8 @@
 
     <service ref="passiveEchoRpcHealthCheck">
         <interfaces>
-            <value>org.opennms.core.health.api.HealthCheck</value>
-            <value>org.opennms.core.health.api.HealthCheckResponseCache</value>
+            <value>api.health.org.citadel.core.HealthCheck</value>
+            <value>api.health.org.citadel.core.HealthCheckResponseCache</value>
         </interfaces>
         <service-properties>
             <entry key="alias" value="opennms.passiveEchoRpcHealthCheck"/>

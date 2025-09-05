@@ -33,7 +33,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.junit.Test;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.events.api.model.IEvent;
 import org.opennms.netmgt.events.api.model.IParm;
 import org.opennms.netmgt.events.api.model.ImmutableEvent;

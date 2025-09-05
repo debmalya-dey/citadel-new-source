@@ -25,7 +25,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.NotificationManager;
 import org.opennms.netmgt.dao.api.MicroblogConfigurationDao;
 import org.opennms.netmgt.dao.jaxb.DefaultMicroblogConfigurationDao;

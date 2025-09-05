@@ -25,13 +25,13 @@
 	contentType="text/html"
 	session="true"
 	import="org.opennms.web.api.Authentication,
-		org.opennms.core.db.DataSourceFactory,
-		org.opennms.core.resource.Vault,
-		org.opennms.core.utils.TimeSeries,
-		org.opennms.core.utils.WebSecurityUtils,
-		org.opennms.core.utils.DBUtils,
-		org.opennms.core.rpc.common.RpcStrategy,
-		org.opennms.core.ipc.sink.common.SinkStrategy,
+		org.citadel.core.db.DataSourceFactory,
+		org.citadel.core.resource.Vault,
+		org.citadel.core.utils.TimeSeries,
+		org.citadel.core.utils.WebSecurityUtils,
+		org.citadel.core.utils.DBUtils,
+		org.citadel.core.rpc.common.RpcStrategy,
+		org.citadel.core.ipc.sink.common.SinkStrategy,
 		java.sql.Connection
 	"
 %>

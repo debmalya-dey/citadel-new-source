@@ -8,7 +8,7 @@
 
     <reference id="minion" interface="org.opennms.distributed.core.api.MinionIdentity" />
 
-    <reference id="messageDispatcherFactory" interface="org.opennms.core.ipc.sink.api.MessageDispatcherFactory" />
+    <reference id="messageDispatcherFactory" interface="api.sink.ipc.org.citadel.core.MessageDispatcherFactory" />
 
     <bean id="heartbeatProducer" class="org.opennms.minion.heartbeat.producer.HeartbeatProducer" destroy-method="cancel">
         <argument ref="minion"/>

@@ -34,8 +34,8 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
 import org.opennms.netmgt.config.CategoryFactory;
 import org.opennms.netmgt.config.api.CatFactory;
 import org.slf4j.Logger;

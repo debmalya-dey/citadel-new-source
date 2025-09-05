@@ -33,8 +33,8 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.datacollction.nsclient.NsclientCollection;
 import org.opennms.netmgt.config.datacollction.nsclient.NsclientDatacollectionConfig;
 import org.opennms.netmgt.rrd.RrdRepository;

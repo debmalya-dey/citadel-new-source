@@ -14,10 +14,10 @@
   <context:annotation-config />
 
 
-    <bean id="kafkaMessageConsumerManager" class="org.opennms.core.ipc.sink.kafka.server.KafkaMessageConsumerManager" />
+    <bean id="kafkaMessageConsumerManager" class="org.citadel.core.ipc.sink.kafka.server.KafkaMessageConsumerManager" />
 
-    <bean id="kafkaLocalMessageDispatcherFactory" class="org.opennms.core.ipc.sink.kafka.client.KafkaLocalMessageDispatcherFactory" />
+    <bean id="kafkaLocalMessageDispatcherFactory" class="org.citadel.core.ipc.sink.kafka.client.KafkaLocalMessageDispatcherFactory" />
 
-	<bean id="kafkaOffsetProvider" class="org.opennms.core.ipc.sink.kafka.server.offset.KafkaOffsetProvider"/>
+	<bean id="kafkaOffsetProvider" class="org.citadel.core.ipc.sink.kafka.server.offset.KafkaOffsetProvider"/>
 
 </beans>

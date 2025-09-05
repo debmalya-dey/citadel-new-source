@@ -35,8 +35,8 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriInfo;
 
 import org.apache.cxf.jaxrs.ext.search.SearchContext;
-import org.opennms.core.config.api.JaxbListWrapper;
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.config.api.JaxbListWrapper;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.dao.api.CategoryDao;
 import org.opennms.netmgt.dao.support.CreateIfNecessaryTemplate;
 import org.opennms.netmgt.model.OnmsCategory;

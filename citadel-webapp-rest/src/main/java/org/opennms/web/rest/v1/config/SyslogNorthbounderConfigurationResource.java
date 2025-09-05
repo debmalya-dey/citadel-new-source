@@ -42,8 +42,8 @@ import javax.ws.rs.core.Response.Status;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.config.api.JaxbListWrapper;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.config.api.JaxbListWrapper;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.alarmd.northbounder.syslog.SyslogDestination;
 import org.opennms.netmgt.alarmd.northbounder.syslog.SyslogNorthbounderConfig;
 import org.opennms.netmgt.alarmd.northbounder.syslog.SyslogNorthbounderConfigDao;

@@ -31,8 +31,8 @@ import java.util.Map;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import org.opennms.core.xml.AbstractMergingJaxbConfigDao;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.AbstractMergingJaxbConfigDao;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.collectd.jmx.Attrib;
 import org.opennms.netmgt.config.collectd.jmx.CompAttrib;
 import org.opennms.netmgt.config.collectd.jmx.CompMember;

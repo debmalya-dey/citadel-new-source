@@ -25,8 +25,8 @@
 	import="java.sql.Connection,
 			java.util.List,
 			java.util.Set,
-			org.opennms.core.db.DataSourceFactory,
-			org.opennms.core.utils.DBUtils,
+			org.citadel.core.db.DataSourceFactory,
+			org.citadel.core.utils.DBUtils,
 			org.opennms.netmgt.dao.api.PathOutageManager,
 			org.opennms.netmgt.dao.hibernate.PathOutageManagerDaoImpl"
 %>

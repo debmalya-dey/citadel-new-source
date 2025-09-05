@@ -23,7 +23,8 @@ package org.opennms.netmgt.dao.stats;
 
 import java.util.List;
 
-import org.opennms.core.criteria.Criteria;
+import org.citadel.core.criteria.restrictions.Restrictions;
+import org.citadel.core.criteria.Criteria;
 import org.opennms.netmgt.dao.api.AlarmDao;
 import org.opennms.netmgt.dao.api.AlarmStatisticsService;
 import org.opennms.netmgt.model.OnmsAlarm;
@@ -42,14 +43,14 @@ public class DefaultAlarmStatisticsService extends AbstractBaseStatisticsService
     @Transactional
     @Override
     public int getAcknowledgedCount(final Criteria criteria) {
-    	criteria.addRestriction(org.opennms.core.criteria.restrictions.Restrictions.isNotNull("alarmAckUser"));
+    	criteria.addRestriction(Restrictions.isNotNull("alarmAckUser"));
         return m_alarmDao.countMatching(criteria);
     }
 
     @Transactional
     @Override
     public OnmsAlarm getAcknowledged(final Criteria criteria) {
-        criteria.addRestriction(org.opennms.core.criteria.restrictions.Restrictions.isNotNull("alarmAckUser"));
+        criteria.addRestriction(Restrictions.isNotNull("alarmAckUser"));
         criteria.setLimit(1);
         final List<OnmsAlarm> alarms = m_alarmDao.findMatching(criteria);
         if (alarms.size() == 0) return null;
@@ -59,7 +60,7 @@ public class DefaultAlarmStatisticsService extends AbstractBaseStatisticsService
     @Transactional
     @Override
     public OnmsAlarm getUnacknowledged(final Criteria criteria) {
-        criteria.addRestriction(org.opennms.core.criteria.restrictions.Restrictions.isNull("alarmAckUser"));
+        criteria.addRestriction(Restrictions.isNull("alarmAckUser"));
         criteria.setLimit(1);
         final List<OnmsAlarm> alarms = m_alarmDao.findMatching(criteria);
         if (alarms.size() == 0) return null;

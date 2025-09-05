@@ -26,9 +26,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.opennms.core.collections.LazySet;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.netmgt.dao.api.IpInterfaceDao;
+import org.citadel.core.collections.LazySet;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.MonitoringLocationUtils;
 import org.opennms.netmgt.dao.api.ResourceStorageDao;
 import org.opennms.netmgt.model.OnmsAttribute;

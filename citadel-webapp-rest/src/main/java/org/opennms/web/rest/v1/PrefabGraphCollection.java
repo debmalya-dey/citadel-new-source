@@ -27,7 +27,7 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.config.api.JaxbListWrapper;
+import org.citadel.core.config.api.JaxbListWrapper;
 import org.opennms.netmgt.model.PrefabGraph;
 
 @XmlRootElement(name = "prefab-graphs")

@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.poller.PollStatus;
 import org.opennms.netmgt.xml.event.Event;
 

@@ -35,7 +35,7 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.xml.XmlTest;
+import org.citadel.core.test.xml.XmlTest;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;

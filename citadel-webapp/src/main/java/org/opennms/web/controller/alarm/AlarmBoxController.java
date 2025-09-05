@@ -26,7 +26,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.sysprops.SystemProperties;
+import org.citadel.core.sysprops.SystemProperties;
 import org.opennms.netmgt.dao.api.AlarmRepository;
 import org.opennms.netmgt.model.alarm.AlarmSummary;
 import org.springframework.beans.factory.InitializingBean;

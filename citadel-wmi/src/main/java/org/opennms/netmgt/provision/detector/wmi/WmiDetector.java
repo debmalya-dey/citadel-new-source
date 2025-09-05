@@ -23,7 +23,7 @@ package org.opennms.netmgt.provision.detector.wmi;
 
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.wmi.WmiAgentConfig;
 import org.opennms.netmgt.provision.DetectRequest;
 import org.opennms.netmgt.provision.support.AgentBasedSyncAbstractDetector;

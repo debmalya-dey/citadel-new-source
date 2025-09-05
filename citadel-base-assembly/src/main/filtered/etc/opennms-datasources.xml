@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://xmlns.opennms.org/xsd/config/opennms-datasources 
   http://www.opennms.org/xsd/config/opennms-datasources.xsd ">
 
-  <connection-pool factory="org.opennms.core.db.HikariCPConnectionFactory"
+  <connection-pool factory="db.org.citadel.core.HikariCPConnectionFactory"
     idleTimeout="600"
     loginTimeout="3"
     minPool="25"

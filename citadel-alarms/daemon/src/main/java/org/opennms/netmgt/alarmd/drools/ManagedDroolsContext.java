@@ -54,7 +54,7 @@ import org.kie.api.runtime.conf.ClockTypeOption;
 import org.kie.api.time.SessionClock;
 import org.kie.api.time.SessionPseudoClock;
 import org.kie.internal.io.ResourceFactory;
-import org.opennms.core.sysprops.SystemProperties;
+import org.citadel.core.sysprops.SystemProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -36,7 +36,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import org.opennms.core.resource.Vault;
+import org.citadel.core.resource.Vault;
 import org.opennms.web.api.Authentication;
 import org.opennms.web.rest.support.menu.model.MainMenu;
 import org.opennms.web.rest.support.menu.model.MenuEntry;

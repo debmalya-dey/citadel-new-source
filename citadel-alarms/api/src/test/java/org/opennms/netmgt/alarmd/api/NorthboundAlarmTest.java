@@ -26,8 +26,8 @@ import java.util.Collection;
 import java.util.Date;
 
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.test.xml.XmlTestNoCastor;
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.test.xml.XmlTestNoCastor;
+import org.citadel.core.utils.StringUtils;
 import org.opennms.netmgt.alarmd.api.NorthboundAlarm.AlarmType;
 import org.opennms.netmgt.model.OnmsSeverity;
 import org.opennms.netmgt.model.TroubleTicketState;

@@ -22,7 +22,7 @@
 package org.opennms.netmgt.config;
 
 import static org.junit.Assert.assertTrue;
-import static org.opennms.core.test.ConfigurationTestUtils.getDaemonEtcDirectory;
+import static org.citadel.core.test.ConfigurationTestUtils.getDaemonEtcDirectory;
 
 import java.io.File;
 import java.io.IOException;

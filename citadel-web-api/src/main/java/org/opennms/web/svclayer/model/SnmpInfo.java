@@ -29,7 +29,7 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.SnmpEventInfo;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;
 

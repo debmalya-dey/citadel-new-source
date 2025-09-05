@@ -31,7 +31,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.web.api.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

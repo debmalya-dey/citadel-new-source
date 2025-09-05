@@ -30,8 +30,8 @@ import java.sql.SQLException;
 import org.hibernate.HibernateException;
 import org.hibernate.type.StringType;
 import org.hibernate.usertype.UserType;
-import org.opennms.core.utils.InetAddressComparator;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressComparator;
+import org.citadel.core.utils.InetAddressUtils;
 
 public class InetAddressUserType implements UserType {
 

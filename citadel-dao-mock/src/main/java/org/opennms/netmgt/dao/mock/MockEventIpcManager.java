@@ -37,7 +37,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import javax.sql.DataSource;
 
 import org.apache.commons.lang.builder.HashCodeBuilder;
-import org.opennms.core.concurrent.LogPreservingThreadFactory;
+import org.citadel.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.config.api.EventdConfig;
 import org.opennms.netmgt.dao.api.EventExpander;

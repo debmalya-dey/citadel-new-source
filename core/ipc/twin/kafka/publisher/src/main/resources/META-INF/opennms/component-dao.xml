@@ -6,6 +6,6 @@
        ">
 
     <!-- Conditionally load the Kafka Twin Impl. -->
-    <bean class="org.opennms.core.ipc.twin.kafka.publisher.ConditionalKafkaTwinContext"/>
+    <bean class="org.citadel.core.ipc.twin.kafka.publisher.ConditionalKafkaTwinContext"/>
 
 </beans>

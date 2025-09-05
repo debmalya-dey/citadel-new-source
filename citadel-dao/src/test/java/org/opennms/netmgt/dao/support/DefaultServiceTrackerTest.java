@@ -39,7 +39,7 @@ import java.util.stream.Collectors;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.FilterWatcher;
 import org.opennms.netmgt.dao.api.ServiceRef;
 import org.opennms.netmgt.dao.api.ServiceTracker;

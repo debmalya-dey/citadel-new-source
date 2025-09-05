@@ -31,7 +31,7 @@
 		java.io.UnsupportedEncodingException,
 		org.opennms.web.event.Event,
 		org.opennms.web.filter.Filter,
-		org.opennms.core.utils.WebSecurityUtils
+		org.citadel.core.utils.WebSecurityUtils
 	"
 %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

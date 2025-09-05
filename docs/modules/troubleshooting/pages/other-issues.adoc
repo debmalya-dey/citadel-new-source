@@ -23,7 +23,7 @@ If you run `config-tester -a`, the output shows that an error is generated immed
 
 [source, shell]
 ----
-11:05:42.570 [Main] INFO  org.opennms.core.xml.AbstractJaxbConfigDao - Loaded Config for Drools Northbounder in 6 ms
+11:05:42.570 [Main] INFO  xml.org.citadel.core.AbstractJaxbConfigDao - Loaded Config for Drools Northbounder in 6 ms
 java.lang.reflect.InvocationTargetException
     at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
     at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -111,7 +111,7 @@ Possible deadlocks will be logged with a message similar to the following:
 ---
 2023-07-03 21:39:52,357 ERROR [Main] o.o.c.d.HikariCPConnectionFactory: Possible database deadlock detected: Attempting to acquire connection in thread while existing transaction active.
 java.lang.Exception: Possible deadlock
-        at org.opennms.core.db.HikariCPConnectionFactory.getConnection(HikariCPConnectionFactory.java:109) ~[org.opennms.core.db-31.0.3-SNAPSHOT.jar:?]
+        at db.org.citadel.core.HikariCPConnectionFactory.getConnection(HikariCPConnectionFactory.java:109) ~[org.opennms.core.db-31.0.3-SNAPSHOT.jar:?]
         at org.opennms.netmgt.filter.JdbcFilterDao.getNodeIPAddressServiceMap(JdbcFilterDao.java:235) ~[opennms-config-31.0.3-SNAPSHOT.jar:?]
         at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
         at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]

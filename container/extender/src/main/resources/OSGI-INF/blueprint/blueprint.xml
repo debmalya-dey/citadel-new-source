@@ -10,7 +10,7 @@
     <reference id="featuresService" interface="org.apache.karaf.features.FeaturesService"/>
     <reference id="karService" interface="org.apache.karaf.kar.KarService"/>
 
-    <bean id="karafExtenderHealthCheck" class="org.opennms.core.health.api.DefaultPassiveHealthCheck">
+    <bean id="karafExtenderHealthCheck" class="org.citadel.core.health.api.DefaultPassiveHealthCheck">
         <argument value="Karaf extender"/>
         <argument>
             <list>
@@ -31,8 +31,8 @@
 
     <service ref="karafExtenderHealthCheck">
         <interfaces>
-            <value>org.opennms.core.health.api.HealthCheck</value>
-            <value>org.opennms.core.health.api.HealthCheckResponseCache</value>
+            <value>org.citadel.core.health.api.HealthCheck</value>
+            <value>org.citadel.core.health.api.HealthCheckResponseCache</value>
         </interfaces>
         <service-properties>
             <entry key="alias" value="opennms.karafExtenderHealthCheck"/>

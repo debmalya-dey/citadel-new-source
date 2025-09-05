@@ -27,10 +27,10 @@ import static org.junit.Assert.fail;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.test.rest.AbstractSpringJerseyRestTestCase;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.test.rest.AbstractSpringJerseyRestTestCase;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.provision.persist.foreignsource.ForeignSourceCollection;
 import org.opennms.test.JUnitConfigurationEnvironment;
 import org.springframework.mock.web.MockHttpServletResponse;

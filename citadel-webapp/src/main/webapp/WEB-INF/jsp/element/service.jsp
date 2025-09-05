@@ -48,12 +48,12 @@
 <%@ page import="org.opennms.netmgt.model.OnmsOutage" %>
 <%@ page import="java.util.Collection" %>
 <%@ page import="org.opennms.web.services.ServiceJspUtil" %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
-<%@ page import="org.opennms.core.mate.api.Interpolator" %>
-<%@ page import="org.opennms.core.mate.api.FallbackScope" %>
-<%@ page import="org.opennms.core.mate.api.Scope" %>
-<%@ page import="org.opennms.core.utils.InetAddressUtils" %>
-<%@ page import="org.opennms.core.mate.api.MapScope" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.mate.api.Interpolator" %>
+<%@ page import="org.citadel.core.mate.api.FallbackScope" %>
+<%@ page import="org.citadel.core.mate.api.Scope" %>
+<%@ page import="org.citadel.core.utils.InetAddressUtils" %>
+<%@ page import="org.citadel.core.mate.api.MapScope" %>
 <%@ page import="org.opennms.netmgt.poller.ServiceMonitorLocator" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -135,7 +135,7 @@
                     continue; // Hide passwords for security reasons
                 }
                 if (p.getValue() == null) {
-                    String xmlData  = org.opennms.core.xml.JaxbUtils.marshal(p.getAnyObject());
+                    String xmlData  = JaxbUtils.marshal(p.getAnyObject());
                     String xmlFixed = xmlData.replaceAll("<","&lt;").replaceAll(">", "&gt;").replaceAll("[\\r\\n]+", "<br/>").replaceAll(" ","&nbsp;").replaceAll("(password|user-info)=\"[^\"]+\"", "$1=\"XXXX\"").replaceAll("key=\"([^\"]*pass(word|wd)[^\"]*)\"(\\s|&nbsp;)+value=\"[^\"]+\"", "key=\"$1\" value=\"XXXX\"");
                     xmlParams.put(p.getKey(), xmlFixed);
                 } else {
@@ -161,6 +161,7 @@
 </c:url>
 
 <%@ page import="org.opennms.web.utils.Bootstrap" %>
+<%@ page import="org.citadel.core.xml.JaxbUtils" %>
 <% Bootstrap.with(pageContext)
           .headTitle("${service.serviceName} Service on ${service.ipInterface.ipAddress.hostAddress}")
           .breadcrumb("Search", "element/index.jsp")

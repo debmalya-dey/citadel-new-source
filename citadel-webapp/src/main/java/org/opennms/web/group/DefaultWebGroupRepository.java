@@ -21,7 +21,7 @@
  */
 package org.opennms.web.group;
 
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.config.groups.Group;
 import org.opennms.web.svclayer.api.GroupService;
 import org.springframework.beans.factory.InitializingBean;

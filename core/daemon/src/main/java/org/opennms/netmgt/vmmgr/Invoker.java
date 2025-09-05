@@ -40,7 +40,7 @@ import javax.management.MBeanServer;
 import javax.management.ObjectInstance;
 import javax.management.ObjectName;
 
-import org.opennms.core.logging.Logging;
+import org.citadel.core.logging.Logging;
 import org.opennms.netmgt.config.service.Argument;
 import org.opennms.netmgt.config.service.Invoke;
 import org.opennms.netmgt.config.service.InvokeAtType;

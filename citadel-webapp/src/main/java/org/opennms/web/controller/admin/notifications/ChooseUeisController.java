@@ -34,9 +34,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.opennms.core.utils.BundleLists;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.BundleLists;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.config.notifications.Notification;
 import org.opennms.netmgt.xml.eventconf.Event;

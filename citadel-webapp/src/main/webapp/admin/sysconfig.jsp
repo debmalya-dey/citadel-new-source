@@ -25,12 +25,12 @@
 	contentType="text/html"
 	session="true"
 %>
-<%@page import="org.opennms.core.resource.Vault"%>
-<%@page import="org.opennms.core.spring.BeanUtils"%>
+<%@page import="org.citadel.core.resource.Vault"%>
+<%@page import="org.citadel.core.spring.BeanUtils"%>
 <%@page import="org.opennms.netmgt.config.SyslogdConfigFactory"%>
 <%@page import="org.opennms.netmgt.config.TrapdConfigFactory"%>
 <%@page import="java.time.Instant"%>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@taglib uri="../WEB-INF/taglib.tld" prefix="onms" %>
 
 <%@ page import="org.opennms.web.utils.Bootstrap" %>

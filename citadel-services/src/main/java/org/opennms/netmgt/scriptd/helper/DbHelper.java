@@ -21,8 +21,8 @@
  */
 package org.opennms.netmgt.scriptd.helper;
 
-import org.opennms.core.spring.BeanFactoryReference;
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.spring.BeanFactoryReference;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.dao.api.NodeDao;
 
 public abstract class DbHelper {

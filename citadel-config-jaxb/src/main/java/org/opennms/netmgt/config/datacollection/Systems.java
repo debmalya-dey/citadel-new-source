@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.xml.ValidateUsing;
 
 @XmlRootElement(name="systems", namespace="http://xmlns.opennms.org/xsd/config/datacollection")
 @XmlAccessorType(XmlAccessType.NONE)

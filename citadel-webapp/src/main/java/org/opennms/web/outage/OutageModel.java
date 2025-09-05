@@ -30,8 +30,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
 import org.opennms.netmgt.dao.api.OutageDao;
 import org.opennms.netmgt.model.outage.OutageSummary;
 

@@ -27,7 +27,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-import static org.opennms.core.test.xml.XmlTest.assertXmlEquals;
+import static org.citadel.core.test.xml.XmlTest.assertXmlEquals;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -41,9 +41,9 @@ import java.util.Map;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Test;
-import org.opennms.core.network.IPAddress;
-import org.opennms.core.network.IPAddressRange;
-import org.opennms.core.network.IPAddressRangeSet;
+import org.citadel.core.network.IPAddress;
+import org.citadel.core.network.IPAddressRange;
+import org.citadel.core.network.IPAddressRangeSet;
 import org.opennms.netmgt.config.snmp.Definition;
 import org.opennms.netmgt.config.snmp.SnmpProfile;
 import org.opennms.netmgt.events.api.EventConstants;

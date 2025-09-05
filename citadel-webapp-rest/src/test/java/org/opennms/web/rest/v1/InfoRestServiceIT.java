@@ -21,31 +21,23 @@
  */
 package org.opennms.web.rest.v1;
 
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
-import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.test.rest.AbstractSpringJerseyRestTestCase;
-import org.opennms.core.xml.JaxbUtils;
-import org.opennms.netmgt.model.*;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.test.rest.AbstractSpringJerseyRestTestCase;
 import org.opennms.netmgt.vmmgr.Controller;
 import org.opennms.netmgt.vmmgr.StatusGetter;
 import org.opennms.test.JUnitConfigurationEnvironment;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import javax.servlet.ServletContext;
-import javax.ws.rs.core.MediaType;
 import java.io.FileInputStream;
 import java.util.Arrays;
 

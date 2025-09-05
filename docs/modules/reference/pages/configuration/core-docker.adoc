@@ -38,7 +38,7 @@
 | `POSTGRES_PORT`                            | PostgreSQL server port                                                            | optional | `5432`
 | `POSTGRES_USER`                            | PostgreSQL super user to initialize database schema specified in `OPENNMS_DBNAME` | required | -
 | `POSTGRES_PASSWORD`                        | PostgreSQL super user password                                                    | required | -
-| `OPENNMS_DATABASE_CONNECTION_POOLFACTORY`  | Database connection pool factory                                                  | optional | `org.opennms.core.db.HikariCPConnectionFactory`
+| `OPENNMS_DATABASE_CONNECTION_POOLFACTORY`  | Database connection pool factory                                                  | optional | `db.org.citadel.core.HikariCPConnectionFactory`
 | `OPENNMS_DATABASE_CONNECTION_IDLETIMEOUT`  | Database connection pool idle timeout                                             | optional | `600`
 | `OPENNMS_DATABASE_CONNECTION_LOGINTIMEOUT` | Database connection pool login timeout                                            | optional | `3`
 | `OPENNMS_DATABASE_CONNECTION_MINPOOL`      | Minimal connection pool size                                                      | optional | `50`

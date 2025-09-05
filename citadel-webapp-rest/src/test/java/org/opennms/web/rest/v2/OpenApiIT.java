@@ -23,9 +23,9 @@ package org.opennms.web.rest.v2;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.test.rest.AbstractSpringJerseyRestTestCase;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.test.rest.AbstractSpringJerseyRestTestCase;
 import org.opennms.test.JUnitConfigurationEnvironment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

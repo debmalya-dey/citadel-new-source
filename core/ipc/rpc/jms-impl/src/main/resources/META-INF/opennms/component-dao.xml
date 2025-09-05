@@ -8,6 +8,6 @@
        ">
 
     <!-- Conditionally load the JMS RPC Impl. -->
-    <bean class="org.opennms.core.rpc.jms.ConditionalJmsRpcContext"/>
+    <bean class="org.citadel.core.rpc.jms.ConditionalJmsRpcContext"/>
 
 </beans>

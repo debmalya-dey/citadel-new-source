@@ -25,8 +25,8 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.snmp.SnmpUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -28,7 +28,7 @@
 <%@page import="java.util.Collection"%>
 <%@page import="org.opennms.web.navigate.PageNavEntry"%>
 <%@page import="org.springframework.web.context.support.WebApplicationContextUtils"%>
-<%@page import="org.opennms.core.soa.ServiceRegistry"%>
+<%@page import="org.citadel.core.soa.ServiceRegistry"%>
 <%@page import="org.springframework.web.context.WebApplicationContext"%>
 <%@page import="org.opennms.netmgt.config.NotifdConfigFactory"%>
 

@@ -48,7 +48,7 @@
 <%@page import="org.opennms.web.outage.filter.RegainedServiceDateBeforeFilter"%>
 <%@page import="org.opennms.web.outage.filter.LocationFilter" %>
 <%@page import="org.opennms.web.outage.filter.NegativeLocationFilter" %>
-<%@page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@ page import="org.opennms.web.outage.filter.PerspectiveLocationFilter" %>
 <%@ page import="org.opennms.web.outage.filter.NegativePerspectiveLocationFilter" %>
 

@@ -26,7 +26,7 @@
        <property name="registry" ref="requisitionProviderRegistry"/>
        <property name="executor" ref="requisitionRequestExecutor"/>
     </bean>
-    <service ref="requisitionRpcModule" interface="org.opennms.core.rpc.api.RpcModule" />
+    <service ref="requisitionRpcModule" interface="api.rpc.org.citadel.core.RpcModule" />
 
     <!-- The 'file' provider -->
     <bean id="fileRequisitionProvider" class="org.opennms.netmgt.provision.service.requisition.FileRequisitionProvider" />

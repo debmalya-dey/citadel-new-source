@@ -29,7 +29,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.MockLogAppender;
 import org.opennms.features.scv.api.Credentials;
 import org.opennms.features.scv.jceks.JCEKSSecureCredentialsVault;
 

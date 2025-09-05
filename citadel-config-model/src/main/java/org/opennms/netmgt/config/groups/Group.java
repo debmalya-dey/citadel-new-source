@@ -37,8 +37,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import org.opennms.core.xml.StringTrimAdapter;
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.xml.StringTrimAdapter;
+import org.citadel.core.xml.ValidateUsing;
 import org.opennms.netmgt.config.utils.ConfigUtils;
 
 @XmlRootElement(name = "group")

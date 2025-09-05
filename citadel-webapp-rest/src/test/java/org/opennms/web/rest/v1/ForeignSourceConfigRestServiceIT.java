@@ -25,10 +25,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.test.rest.AbstractSpringJerseyRestTestCase;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.test.rest.AbstractSpringJerseyRestTestCase;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.test.JUnitConfigurationEnvironment;
 import org.opennms.web.rest.v1.ForeignSourceConfigRestService.ElementList;
 import org.opennms.web.rest.v1.ForeignSourceConfigRestService.SimplePluginConfigList;

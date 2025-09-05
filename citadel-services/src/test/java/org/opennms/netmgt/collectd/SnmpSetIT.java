@@ -37,10 +37,9 @@ import java.util.concurrent.ExecutionException;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
-import org.opennms.core.rpc.mock.MockRpcClientFactory;
+import org.citadel.core.rpc.mock.MockRpcClientFactory;
 import org.opennms.netmgt.mock.OpenNMSITCase;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;
 import org.opennms.netmgt.snmp.SnmpObjId;

@@ -29,10 +29,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.service.Service;
 import org.opennms.netmgt.config.service.ServiceConfiguration;
 

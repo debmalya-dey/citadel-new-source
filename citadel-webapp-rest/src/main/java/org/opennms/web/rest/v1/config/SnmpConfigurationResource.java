@@ -27,8 +27,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.opennms.core.config.api.ConfigurationResource;
-import org.opennms.core.config.api.ConfigurationResourceException;
+import org.citadel.core.config.api.ConfigurationResource;
+import org.citadel.core.config.api.ConfigurationResourceException;
 import org.opennms.netmgt.config.snmp.SnmpConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

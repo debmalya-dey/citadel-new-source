@@ -37,7 +37,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 

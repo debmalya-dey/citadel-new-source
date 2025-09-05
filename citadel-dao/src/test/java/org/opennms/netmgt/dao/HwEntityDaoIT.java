@@ -21,13 +21,14 @@
  */
 package org.opennms.netmgt.dao;
 
+import org.citadel.core.spring.BeanUtils;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
 import org.opennms.netmgt.dao.api.HwEntityAttributeTypeDao;
 import org.opennms.netmgt.dao.api.HwEntityDao;
 import org.opennms.netmgt.dao.api.NodeDao;
@@ -87,7 +88,7 @@ public class HwEntityDaoIT implements InitializingBean {
      */
     @Override
     public void afterPropertiesSet() throws Exception {
-        org.opennms.core.spring.BeanUtils.assertAutowiring(this);
+        BeanUtils.assertAutowiring(this);
     }
 
     /**

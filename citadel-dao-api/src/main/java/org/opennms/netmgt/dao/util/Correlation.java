@@ -25,7 +25,7 @@ import java.io.StringWriter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.events.api.EventDatabaseConstants;
 import org.springframework.dao.DataAccessException;
 

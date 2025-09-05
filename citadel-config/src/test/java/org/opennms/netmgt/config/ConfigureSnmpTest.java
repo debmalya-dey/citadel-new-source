@@ -25,8 +25,8 @@ import java.net.UnknownHostException;
 
 import junit.framework.TestCase;
 
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.model.ImmutableMapper;
 import org.opennms.netmgt.model.events.EventBuilder;

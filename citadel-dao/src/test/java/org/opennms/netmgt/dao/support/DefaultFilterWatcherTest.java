@@ -45,7 +45,7 @@ import java.util.function.Supplier;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.FilterWatcher;
 import org.opennms.netmgt.dao.api.SessionUtils;
 import org.opennms.netmgt.events.api.EventConstants;

@@ -24,7 +24,7 @@ package org.opennms.netmgt.poller.mock;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 public abstract class MonitorTestUtils {
 

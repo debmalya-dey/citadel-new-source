@@ -44,12 +44,12 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriInfo;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.criteria.Order;
-import org.opennms.core.criteria.restrictions.Restriction;
-import org.opennms.core.criteria.restrictions.Restrictions;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.Order;
+import org.citadel.core.criteria.restrictions.Restriction;
+import org.citadel.core.criteria.restrictions.Restrictions;
 import org.opennms.netmgt.dao.api.CategoryDao;
 import org.opennms.netmgt.dao.api.MonitoringLocationDao;
 import org.opennms.netmgt.dao.api.NodeDao;

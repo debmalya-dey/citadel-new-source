@@ -19,7 +19,7 @@
 
     <reference id="queuingservice" interface="org.apache.camel.Component" filter="(alias=opennms.broker)" />
 
-    <reference id="tracerRegistry" interface="org.opennms.core.tracing.api.TracerRegistry"/>
+    <reference id="tracerRegistry" interface="org.citadel.core.tracing.api.TracerRegistry"/>
 
     <reference id="identity" interface="org.opennms.distributed.core.api.Identity"/>
 
@@ -31,7 +31,7 @@
         </service-properties>
     </service>
 
-    <bean id="camelMessageConsumerManager" class="org.opennms.core.ipc.sink.camel.server.CamelMessageConsumerManager"
+    <bean id="camelMessageConsumerManager" class="org.citadel.core.ipc.sink.camel.server.CamelMessageConsumerManager"
           init-method="start" destroy-method="shutdown">
         <argument ref="sinkServer"/>
         <argument ref="identity"/>
@@ -39,7 +39,7 @@
         <argument ref="camelSinkMetricRegistry"/>
     </bean>
 
-    <service ref="camelMessageConsumerManager" interface="org.opennms.core.ipc.sink.api.MessageConsumerManager" />
+    <service ref="camelMessageConsumerManager" interface="org.citadel.core.ipc.sink.api.MessageConsumerManager" />
 
     <camelContext id="sinkServer" xmlns="http://camel.apache.org/schema/blueprint">
         <!-- Exchanges contain credentials i.e. SNMP community details, so avoid logging them -->

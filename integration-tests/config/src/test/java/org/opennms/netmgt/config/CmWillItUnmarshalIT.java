@@ -28,7 +28,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.opennms.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
 import org.opennms.features.config.dao.api.ConfigConverter;
 import org.opennms.features.config.dao.api.ConfigDefinition;
 import org.opennms.features.config.dao.impl.util.XsdHelper;

@@ -37,7 +37,7 @@ import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.internet.InternetAddress;
 
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.utils.StringUtils;
 import org.opennms.javamail.JavaMailerException;
 import org.opennms.javamail.JavaReadMailer;
 import org.opennms.netmgt.config.ackd.Parameter;

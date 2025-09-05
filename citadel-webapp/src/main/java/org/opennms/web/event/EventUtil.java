@@ -27,7 +27,7 @@ import java.util.List;
 
 import javax.servlet.ServletContext;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.model.OnmsSeverity;
 import org.opennms.web.event.filter.AcknowledgedByFilter;
 import org.opennms.web.event.filter.AfterDateFilter;

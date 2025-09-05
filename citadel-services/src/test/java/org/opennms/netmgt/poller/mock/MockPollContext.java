@@ -29,8 +29,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.test.db.MockDatabase;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.test.db.MockDatabase;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.events.api.EventIpcManager;
 import org.opennms.netmgt.events.api.EventListener;
 import org.opennms.netmgt.events.api.model.ImmutableMapper;

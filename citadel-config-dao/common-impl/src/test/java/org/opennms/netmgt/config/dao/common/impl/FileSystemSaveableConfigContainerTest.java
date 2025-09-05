@@ -40,7 +40,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.dao.common.api.SaveableConfigContainer;
 
 public class FileSystemSaveableConfigContainerTest {

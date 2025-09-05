@@ -25,8 +25,8 @@ import java.io.File;
 import java.net.InetAddress;
 import java.util.Date;
 
-import org.opennms.core.logging.Logging;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.collectd.Collectd.SchedulingCompletedFlag;
 import org.opennms.netmgt.collection.api.AttributeGroup;
 import org.opennms.netmgt.collection.api.CollectionAgent;

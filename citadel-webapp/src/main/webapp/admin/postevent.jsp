@@ -30,7 +30,7 @@
                 org.opennms.netmgt.xml.event.Event,
                 org.opennms.netmgt.xml.event.Parm,
                 org.opennms.netmgt.xml.event.Value,
-                org.opennms.core.xml.JaxbUtils,
+                org.citadel.core.xml.JaxbUtils,
                 org.apache.commons.lang.StringUtils
 	"
 %>

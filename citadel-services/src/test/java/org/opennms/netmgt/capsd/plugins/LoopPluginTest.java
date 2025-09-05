@@ -27,7 +27,7 @@ import java.util.Map;
 
 import junit.framework.TestCase;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.poller.monitors.support.LoopPlugin;
 public class LoopPluginTest extends TestCase {
 

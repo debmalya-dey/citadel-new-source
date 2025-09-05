@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.xml.ValidateUsing;
 
 /**
  * A very basic configuration for defining simple input to a schedule

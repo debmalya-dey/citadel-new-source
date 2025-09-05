@@ -25,9 +25,9 @@ import java.lang.reflect.UndeclaredThrowableException;
 import java.time.Instant;
 import java.util.concurrent.Callable;
 
-import org.opennms.core.fiber.Fiber;
-import org.opennms.core.logging.Logging;
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.fiber.Fiber;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.spring.BeanUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;

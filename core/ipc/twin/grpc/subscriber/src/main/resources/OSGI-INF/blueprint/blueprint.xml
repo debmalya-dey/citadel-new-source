@@ -21,9 +21,9 @@
 
     <reference id="minionIdentity" interface="org.opennms.distributed.core.api.MinionIdentity"/>
 
-    <reference id="tracerRegistry" interface="org.opennms.core.tracing.api.TracerRegistry"/>
+    <reference id="tracerRegistry" interface="org.citadel.core.tracing.api.TracerRegistry"/>
 
-    <bean id="grpcTwinSubscriber" class="org.opennms.core.ipc.twin.grpc.subscriber.GrpcTwinSubscriber"
+    <bean id="grpcTwinSubscriber" class="org.citadel.core.ipc.twin.grpc.subscriber.GrpcTwinSubscriber"
           init-method="start" destroy-method="close">
         <argument ref="minionIdentity"/>
         <argument ref="configAdmin"/>
@@ -32,7 +32,7 @@
         <argument value="${port}"/>
     </bean>
 
-    <service ref="grpcTwinSubscriber" interface="org.opennms.core.ipc.twin.api.TwinSubscriber"/>
+    <service ref="grpcTwinSubscriber" interface="org.citadel.core.ipc.twin.api.TwinSubscriber"/>
 
     <!-- Grpc Twin Subscriber Metrics -->
     <bean id="metricRegistry" class="com.codahale.metrics.MetricRegistry"/>

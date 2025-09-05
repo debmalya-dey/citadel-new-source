@@ -27,9 +27,9 @@ import java.util.List;
 
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.AcknowledgmentDao;
 import org.opennms.netmgt.dao.api.NotificationDao;
 import org.opennms.netmgt.model.AckAction;

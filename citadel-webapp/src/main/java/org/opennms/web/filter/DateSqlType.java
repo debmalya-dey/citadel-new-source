@@ -25,7 +25,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Date;
 
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.utils.StringUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 
 /**

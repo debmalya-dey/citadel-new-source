@@ -24,12 +24,12 @@
         </cm:default-properties>
     </cm:property-placeholder>
     
-    <bean id="offHeapQueueFactory" class="org.opennms.core.ipc.sink.offheap.QueueFileOffHeapDispatchQueueFactory">
+    <bean id="offHeapQueueFactory" class="org.citadel.core.ipc.sink.offheap.QueueFileOffHeapDispatchQueueFactory">
         <argument value="${entriesAllowedOnHeap}"/>
         <argument value="${batchSize}"/>
         <argument value="${offHeapSize}"/>
         <argument value="${offHeapFilePath}"/>
     </bean>
-    <service ref="offHeapQueueFactory" interface="org.opennms.core.ipc.sink.api.DispatchQueueFactory" />
+    <service ref="offHeapQueueFactory" interface="org.citadel.core.ipc.sink.api.DispatchQueueFactory" />
 
 </blueprint>

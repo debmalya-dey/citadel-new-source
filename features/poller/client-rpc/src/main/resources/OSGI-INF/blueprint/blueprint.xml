@@ -19,6 +19,6 @@
        <property name="serviceMonitorRegistry" ref="serviceMonitorRegistry"/>
        <property name="executor" ref="pollerExecutor"/>
     </bean>
-    <service ref="pollerRpcModule" interface="org.opennms.core.rpc.api.RpcModule" />
+    <service ref="pollerRpcModule" interface="api.rpc.org.citadel.core.RpcModule" />
 
 </blueprint>

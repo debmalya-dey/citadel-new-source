@@ -40,7 +40,7 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.opennms.upgrade.api.AbstractOnmsUpgrade;
 import org.opennms.upgrade.api.OnmsUpgradeException;
 import org.w3c.dom.Document;

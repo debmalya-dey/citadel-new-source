@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.opennms.core.xml.AbstractJaxbConfigDao;
+import org.citadel.core.xml.AbstractJaxbConfigDao;
 import org.opennms.features.reporting.model.LocalReports;
 import org.opennms.features.reporting.model.Report;
 import org.opennms.netmgt.dao.api.DatabaseReportConfigDao;

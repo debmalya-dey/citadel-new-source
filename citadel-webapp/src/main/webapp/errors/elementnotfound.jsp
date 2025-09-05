@@ -27,7 +27,7 @@
 	isErrorPage="true"
 	import="org.opennms.web.element.*"
 %>
-<%@page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%!
     public ElementNotFoundException findElementNotFoundException(Throwable throwable) {

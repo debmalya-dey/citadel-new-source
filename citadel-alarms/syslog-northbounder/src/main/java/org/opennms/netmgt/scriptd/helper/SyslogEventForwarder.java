@@ -28,8 +28,8 @@ import org.graylog2.syslog4j.Syslog;
 import org.graylog2.syslog4j.SyslogIF;
 import org.graylog2.syslog4j.SyslogRuntimeException;
 
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.alarmd.northbounder.syslog.SyslogDestination;
 import org.opennms.netmgt.alarmd.northbounder.syslog.SyslogFilter;
 import org.opennms.netmgt.alarmd.northbounder.syslog.SyslogUtils;

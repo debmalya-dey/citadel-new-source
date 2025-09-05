@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.config.api.JaxbListWrapper;
+import org.citadel.core.config.api.JaxbListWrapper;
 import org.opennms.netmgt.config.PollerConfig;
 import org.opennms.netmgt.config.api.CollectdConfigFactory;
 import org.opennms.netmgt.dao.api.CategoryDao;

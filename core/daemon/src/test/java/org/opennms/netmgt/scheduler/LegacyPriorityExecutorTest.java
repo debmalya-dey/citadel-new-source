@@ -32,8 +32,8 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.fiber.PausableFiber;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.fiber.PausableFiber;
+import org.citadel.core.test.MockLogAppender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

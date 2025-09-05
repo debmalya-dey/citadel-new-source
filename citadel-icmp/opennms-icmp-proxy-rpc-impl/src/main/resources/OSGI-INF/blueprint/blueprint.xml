@@ -14,13 +14,13 @@
     <!-- Pinger service -->
     <reference id="pingerFactory" interface="org.opennms.netmgt.icmp.PingerFactory" />
 
-    <service interface="org.opennms.core.rpc.api.RpcModule">
+    <service interface="api.rpc.org.citadel.core.RpcModule">
         <bean class="org.opennms.netmgt.icmp.proxy.PingProxyRpcModule">
             <property name="pingerFactory" ref="pingerFactory" />
         </bean>
     </service>
 
-    <service interface="org.opennms.core.rpc.api.RpcModule">
+    <service interface="api.rpc.org.citadel.core.RpcModule">
         <bean class="org.opennms.netmgt.icmp.proxy.PingSweepRpcModule">
             <property name="pingerFactory" ref="pingerFactory" />
         </bean>

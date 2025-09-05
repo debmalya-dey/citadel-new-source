@@ -32,11 +32,11 @@ import java.util.Map;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.test.http.JUnitHttpServerExecutionListener;
-import org.opennms.core.test.http.annotations.JUnitHttpServer;
-import org.opennms.core.test.http.annotations.Webapp;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.test.http.JUnitHttpServerExecutionListener;
+import org.citadel.core.test.http.annotations.JUnitHttpServer;
+import org.citadel.core.test.http.annotations.Webapp;
 import org.opennms.netmgt.model.notifd.Argument;
 import org.opennms.netmgt.model.notifd.NotificationStrategy;
 import org.opennms.test.JUnitConfigurationEnvironment;

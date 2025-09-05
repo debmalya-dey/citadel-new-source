@@ -24,8 +24,8 @@ package org.opennms.protocols.radius.monitor;
 import java.net.InetAddress;
 import java.util.Map;
 
-import org.opennms.core.utils.ParameterMap;
-import org.opennms.core.utils.TimeoutTracker;
+import org.citadel.core.utils.ParameterMap;
+import org.citadel.core.utils.TimeoutTracker;
 import org.opennms.netmgt.poller.MonitoredService;
 import org.opennms.netmgt.poller.PollStatus;
 import org.opennms.netmgt.poller.monitors.support.ParameterSubstitutingMonitor;

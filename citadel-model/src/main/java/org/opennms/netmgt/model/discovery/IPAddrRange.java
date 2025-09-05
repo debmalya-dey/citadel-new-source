@@ -31,9 +31,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
-import org.opennms.core.network.IPAddress;
-import org.opennms.core.utils.ByteArrayComparator;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.network.IPAddress;
+import org.citadel.core.utils.ByteArrayComparator;
+import org.citadel.core.utils.InetAddressUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

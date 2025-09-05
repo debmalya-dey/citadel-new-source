@@ -23,7 +23,7 @@ package org.opennms.web.alarm.filter;
 
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.web.filter.NotEqualOrNullFilter;
 import org.opennms.web.filter.SQLType;
 

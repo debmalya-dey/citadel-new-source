@@ -32,10 +32,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.test.rest.AbstractSpringJerseyRestTestCase;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.test.rest.AbstractSpringJerseyRestTestCase;
 import org.opennms.netmgt.dao.DatabasePopulator;
 import org.opennms.test.JUnitConfigurationEnvironment;
 import org.opennms.web.api.Authentication;
@@ -85,7 +85,7 @@ public class AssetSuggestionsRestServiceIT extends AbstractSpringJerseyRestTestC
     private ServletContext m_servletContext;
 
     /* (non-Javadoc)
-     * @see org.opennms.core.test.rest.AbstractSpringJerseyRestTestCase#afterServletStart()
+     * @see rest.test.org.citadel.core.AbstractSpringJerseyRestTestCase#afterServletStart()
      */
     @Override
     protected void afterServletStart() {

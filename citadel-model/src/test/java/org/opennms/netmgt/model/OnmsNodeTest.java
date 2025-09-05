@@ -25,8 +25,8 @@ import static org.junit.Assert.assertFalse;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.xml.JaxbUtils;
 
 /**
  * Basic unit tests for OnmsNode Class

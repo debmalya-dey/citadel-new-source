@@ -29,8 +29,8 @@ import javax.servlet.ServletContext;
 
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.model.OnmsAlarm;
 import org.opennms.netmgt.model.OnmsCriteria;
 import org.opennms.netmgt.model.OnmsSeverity;

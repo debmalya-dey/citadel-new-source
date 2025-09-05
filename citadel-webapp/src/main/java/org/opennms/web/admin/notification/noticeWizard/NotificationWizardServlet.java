@@ -37,10 +37,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.NotifdConfigFactory;
 import org.opennms.netmgt.config.NotificationFactory;
 import org.opennms.netmgt.config.notifications.Notification;

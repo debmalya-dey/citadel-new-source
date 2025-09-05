@@ -46,11 +46,11 @@ import java.util.TreeSet;
 
 import javax.sql.DataSource;
 
-import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.Querier;
-import org.opennms.core.utils.RowProcessor;
-import org.opennms.core.utils.SingleResultQuerier;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.DBUtils;
+import org.citadel.core.utils.Querier;
+import org.citadel.core.utils.RowProcessor;
+import org.citadel.core.utils.SingleResultQuerier;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.notifications.Header;
 import org.opennms.netmgt.config.notifications.Notification;
 import org.opennms.netmgt.config.notifications.Notifications;
@@ -687,7 +687,7 @@ public abstract class NotificationManager {
      * <p>doAcknowledgeNotificationsFromEvent</p>
      *
      * @param connection a {@link java.sql.Connection} object.
-     * @param dbUtils a {@link org.opennms.core.utils.DBUtils} object.
+     * @param dbUtils a {@link DBUtils} object.
      * @param eventID a {@link java.lang.Integer} object.
      * @return a {@link java.util.List} object.
      * @throws java.sql.SQLException if any.
@@ -1242,7 +1242,7 @@ public abstract class NotificationManager {
      * <p>forEachUserNotification</p>
      *
      * @param notifId a int.
-     * @param rp a {@link org.opennms.core.utils.RowProcessor} object.
+     * @param rp a {@link RowProcessor} object.
      */
     public void forEachUserNotification(final int notifId, final RowProcessor rp) {
         final Querier querier = new Querier(m_dataSource, "select * from usersNotified where notifyId = ? order by notifytime", rp);

@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.protocols.radius.utils.RadiusUtils;
 import org.opennms.web.api.Authentication;
 import org.slf4j.Logger;

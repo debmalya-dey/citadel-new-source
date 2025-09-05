@@ -30,16 +30,16 @@ import static org.hamcrest.Matchers.nullValue;
 import static org.hamcrest.core.Every.everyItem;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsNot.not;
-import static org.opennms.core.test.alarms.AlarmMatchers.acknowledged;
-import static org.opennms.core.test.alarms.AlarmMatchers.hasSeverity;
+import static org.citadel.core.test.alarms.AlarmMatchers.acknowledged;
+import static org.citadel.core.test.alarms.AlarmMatchers.hasSeverity;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
-import org.opennms.core.test.alarms.driver.Scenario;
-import org.opennms.core.test.alarms.driver.ScenarioResults;
-import org.opennms.core.test.alarms.driver.State;
+import org.citadel.core.test.alarms.driver.Scenario;
+import org.citadel.core.test.alarms.driver.ScenarioResults;
+import org.citadel.core.test.alarms.driver.State;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.model.OnmsSeverity;
 

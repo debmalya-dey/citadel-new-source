@@ -22,7 +22,7 @@
 package org.opennms.netmgt.xml.eventconf;
 
 import com.google.common.base.MoreObjects;
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.xml.ValidateUsing;
 import org.opennms.netmgt.collection.api.AttributeType;
 import org.opennms.netmgt.model.ResourceTypeUtils;
 

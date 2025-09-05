@@ -21,7 +21,7 @@
  */
 package org.slf4j.impl;
 
-import org.opennms.core.test.MockLoggerFactory;
+import org.citadel.core.test.MockLoggerFactory;
 import org.slf4j.ILoggerFactory;
 import org.slf4j.spi.LoggerFactoryBinder;
 

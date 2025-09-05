@@ -35,7 +35,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.model.OnmsSeverity;
 import org.opennms.web.alarm.filter.AfterFirstEventTimeFilter;
 import org.opennms.web.alarm.filter.AfterLastEventTimeFilter;

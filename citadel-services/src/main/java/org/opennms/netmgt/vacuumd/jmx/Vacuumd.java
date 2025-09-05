@@ -22,6 +22,7 @@
 package org.opennms.netmgt.vacuumd.jmx;
 
 import org.apache.commons.lang.NotImplementedException;
+import org.citadel.core.fiber.Fiber;
 import org.opennms.netmgt.events.api.EventIpcManager;
 import org.opennms.netmgt.events.api.EventIpcManagerFactory;
 
@@ -105,7 +106,7 @@ public class Vacuumd implements VacuumdMBean {
      */
     @Override
     public String status() {
-        return org.opennms.core.fiber.Fiber.STATUS_NAMES[getStatus()];
+        return Fiber.STATUS_NAMES[getStatus()];
     }
 
     /*
@@ -120,7 +121,7 @@ public class Vacuumd implements VacuumdMBean {
      */
     @Override
     public String getStatusText() {
-        return org.opennms.core.fiber.Fiber.STATUS_NAMES[getStatus()];
+        return Fiber.STATUS_NAMES[getStatus()];
     }
 
     @Override

@@ -21,8 +21,8 @@
  */
 package org.opennms.netmgt.model.events;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.str;
 import static org.opennms.netmgt.events.api.EventConstants.APPLICATION_DELETED_EVENT_UEI;
 import static org.opennms.netmgt.events.api.EventConstants.INTERFACE_DELETED_EVENT_UEI;
 import static org.opennms.netmgt.events.api.EventConstants.NODE_ADDED_EVENT_UEI;
@@ -55,9 +55,9 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Objects;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.InsufficientInformationException;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InsufficientInformationException;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.model.IEvent;
 import org.opennms.netmgt.events.api.model.IParm;

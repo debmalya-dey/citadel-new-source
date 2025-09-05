@@ -33,7 +33,7 @@ import java.util.Optional;
 import java.util.function.Consumer;
 
 import org.hibernate.ObjectNotFoundException;
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.dao.api.AcknowledgmentDao;
 import org.opennms.netmgt.dao.api.AlarmEntityNotifier;
 import org.opennms.netmgt.model.AckAction;

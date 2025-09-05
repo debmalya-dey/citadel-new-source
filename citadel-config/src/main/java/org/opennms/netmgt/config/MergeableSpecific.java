@@ -25,7 +25,7 @@ import java.net.InetAddress;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 /**
  * This class is used as a wrapper object for the generated Specific class in the

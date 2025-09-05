@@ -24,7 +24,7 @@ package org.opennms.netmgt.dao.jaxb;
 import java.util.Collections;
 import java.util.List;
 
-import org.opennms.core.xml.AbstractJaxbConfigDao;
+import org.citadel.core.xml.AbstractJaxbConfigDao;
 import org.opennms.netmgt.config.reporting.DateParm;
 import org.opennms.netmgt.config.reporting.IntParm;
 import org.opennms.netmgt.config.reporting.OpennmsReports;

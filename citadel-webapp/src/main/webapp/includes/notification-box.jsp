@@ -30,7 +30,7 @@
 --%>
 
 <%@page language="java" contentType="text/html" session="true" import="
-	org.opennms.core.utils.WebSecurityUtils,
+	org.citadel.core.utils.WebSecurityUtils,
 	org.opennms.web.filter.Filter,
 	org.opennms.web.notification.AcknowledgeType,
 	org.opennms.web.notification.WebNotificationRepository,

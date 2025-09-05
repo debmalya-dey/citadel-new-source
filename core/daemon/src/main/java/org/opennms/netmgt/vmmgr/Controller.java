@@ -40,10 +40,10 @@ import javax.management.remote.JMXConnectorFactory;
 import javax.management.remote.JMXServiceURL;
 
 import com.google.common.annotations.VisibleForTesting;
-import org.opennms.core.logging.Logging;
-import org.opennms.core.mate.api.Interpolator;
-import org.opennms.core.mate.api.Scope;
-import org.opennms.core.mate.api.SecureCredentialsVaultScope;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.mate.api.Interpolator;
+import org.citadel.core.mate.api.Scope;
+import org.citadel.core.mate.api.SecureCredentialsVaultScope;
 import org.opennms.features.scv.api.SecureCredentialsVault;
 import org.opennms.features.scv.utils.ScvUtils;
 import org.slf4j.Logger;

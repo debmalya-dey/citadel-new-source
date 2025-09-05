@@ -32,8 +32,8 @@ import java.util.Map;
 
 import javax.sql.DataSource;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

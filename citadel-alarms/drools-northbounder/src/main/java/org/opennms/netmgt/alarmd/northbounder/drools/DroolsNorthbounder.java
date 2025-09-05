@@ -43,7 +43,7 @@ import org.kie.api.marshalling.Marshaller;
 import org.kie.api.marshalling.ObjectMarshallingStrategy;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
-import org.opennms.core.logging.Logging;
+import org.citadel.core.logging.Logging;
 import org.opennms.netmgt.alarmd.api.NorthboundAlarm;
 import org.opennms.netmgt.alarmd.api.NorthbounderException;
 import org.opennms.netmgt.alarmd.api.support.AbstractNorthbounder;

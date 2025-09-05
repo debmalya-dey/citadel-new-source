@@ -27,8 +27,8 @@ import java.io.IOException;
 import java.io.StringReader;
 
 import org.junit.Test;
-import org.opennms.core.xml.JaxbUtils;
-import org.opennms.core.xml.MarshallingResourceFailureException;
+import org.citadel.core.xml.JaxbUtils;
+import org.citadel.core.xml.MarshallingResourceFailureException;
 import org.opennms.netmgt.xml.eventconf.Events;
 
 public class ConfigTesterTest_testEventConf {

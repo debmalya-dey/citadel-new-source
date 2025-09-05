@@ -25,10 +25,7 @@ import java.text.ParseException;
 import java.util.Arrays;
 import java.util.Collection;
 
-import org.opennms.core.test.xml.XmlTestNoCastor;
-import org.opennms.netmgt.config.reporting.OpennmsReports;
-import org.opennms.netmgt.config.reporting.Parameters;
-import org.opennms.netmgt.config.reporting.Report;
+import org.citadel.core.test.xml.XmlTestNoCastor;
 
 public class OpennmsReportsTest extends XmlTestNoCastor<OpennmsReports> {
 

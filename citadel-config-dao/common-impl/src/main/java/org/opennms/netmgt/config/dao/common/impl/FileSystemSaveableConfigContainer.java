@@ -28,7 +28,7 @@ import java.util.Objects;
 import java.util.concurrent.locks.Lock;
 import java.util.function.Consumer;
 
-import org.opennms.core.xml.AbstractWritableJaxbConfigDao;
+import org.citadel.core.xml.AbstractWritableJaxbConfigDao;
 import org.opennms.netmgt.config.dao.common.api.SaveableConfigContainer;
 import org.springframework.core.io.FileSystemResource;
 

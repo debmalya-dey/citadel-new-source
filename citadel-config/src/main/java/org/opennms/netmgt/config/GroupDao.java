@@ -27,7 +27,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.utils.OwnedIntervalSequence;
+import org.citadel.core.utils.OwnedIntervalSequence;
 import org.opennms.netmgt.config.groups.Group;
 import org.opennms.netmgt.config.groups.Role;
 import org.opennms.netmgt.config.groups.Schedule;
@@ -224,7 +224,7 @@ public interface GroupDao {
      * @param roleid a {@link java.lang.String} object.
      * @param start a {@link java.util.Date} object.
      * @param end a {@link java.util.Date} object.
-     * @return a {@link org.opennms.core.utils.OwnedIntervalSequence} object.
+     * @return a {@link OwnedIntervalSequence} object.
      */
     OwnedIntervalSequence getRoleScheduleEntries(String roleid, Date start, Date end);
     

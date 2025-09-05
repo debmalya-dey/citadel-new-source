@@ -35,7 +35,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.xml.eventconf.EnterpriseIdPartition;
 import org.opennms.netmgt.xml.eventconf.Event;

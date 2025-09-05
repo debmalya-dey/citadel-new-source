@@ -32,8 +32,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.ThreadPoolExecutor;
 
-import org.opennms.core.concurrent.LogPreservingThreadFactory;
-import org.opennms.core.fiber.PausableFiber;
+import org.citadel.core.concurrent.LogPreservingThreadFactory;
+import org.citadel.core.fiber.PausableFiber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;

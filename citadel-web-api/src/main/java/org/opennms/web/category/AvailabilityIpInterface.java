@@ -21,7 +21,7 @@
  */
 package org.opennms.web.category;
 
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -27,7 +27,7 @@ import static org.mockito.Mockito.when;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.collection.api.StorageStrategyService;
 import org.opennms.netmgt.model.ResourcePath;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;

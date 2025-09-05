@@ -35,12 +35,12 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Test;
-import org.opennms.core.test.IntervalTestCase;
-import org.opennms.core.utils.OwnedInterval;
-import org.opennms.core.utils.OwnedIntervalSequence;
-import org.opennms.core.utils.Owner;
-import org.opennms.core.utils.TimeInterval;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.test.IntervalTestCase;
+import org.citadel.core.utils.OwnedInterval;
+import org.citadel.core.utils.OwnedIntervalSequence;
+import org.citadel.core.utils.Owner;
+import org.citadel.core.utils.TimeInterval;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.groups.Schedule;
 import org.opennms.netmgt.config.groups.Time;
 import org.opennms.netmgt.config.poller.outages.Outage;

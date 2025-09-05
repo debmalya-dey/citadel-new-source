@@ -26,7 +26,7 @@
 	session="true"
 	import="
 		org.opennms.netmgt.model.OnmsNode,
-		org.opennms.core.utils.WebSecurityUtils,
+		org.citadel.core.utils.WebSecurityUtils,
 		org.opennms.web.element.NetworkElementFactory,
 		org.opennms.web.servlet.MissingParameterException
 	"

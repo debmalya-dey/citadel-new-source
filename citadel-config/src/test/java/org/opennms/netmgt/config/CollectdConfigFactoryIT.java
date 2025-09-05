@@ -29,7 +29,7 @@ import java.io.InputStream;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
 import org.opennms.netmgt.config.collectd.Package;
 import org.opennms.test.JUnitConfigurationEnvironment;
 import org.opennms.test.OpenNMSConfigurationExecutionListener;

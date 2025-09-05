@@ -27,7 +27,7 @@ import java.io.FileWriter;
 import java.util.Date;
 import java.util.Properties;
 
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.opennms.upgrade.api.OnmsUpgrade;
 import org.opennms.upgrade.api.OnmsUpgradeException;
 

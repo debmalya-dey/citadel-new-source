@@ -34,9 +34,8 @@ import java.util.HashSet;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.test.Level;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.MockLogAppender;
 import org.opennms.netmgt.dao.support.PropertiesGraphDao.PrefabGraphTypeDao;
 import org.opennms.netmgt.mock.MockResourceType;
 import org.opennms.netmgt.model.ExternalValueAttribute;

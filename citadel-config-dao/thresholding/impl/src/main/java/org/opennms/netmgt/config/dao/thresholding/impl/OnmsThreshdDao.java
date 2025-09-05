@@ -29,9 +29,9 @@ import java.util.List;
 import java.util.Objects;
 
 import org.codehaus.jackson.map.ObjectMapper;
-import org.opennms.core.config.api.ConfigReloadContainer;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JacksonUtils;
+import org.citadel.core.config.api.ConfigReloadContainer;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JacksonUtils;
 import org.opennms.features.distributed.kvstore.api.JsonStore;
 import org.opennms.netmgt.config.dao.common.api.ConfigDaoConstants;
 import org.opennms.netmgt.config.dao.common.api.SaveableConfigContainer;

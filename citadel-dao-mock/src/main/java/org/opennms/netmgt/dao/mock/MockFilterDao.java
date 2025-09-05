@@ -28,8 +28,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.SortedMap;
 
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.dao.api.IpInterfaceDao;
 import org.opennms.netmgt.filter.api.FilterDao;
 import org.opennms.netmgt.filter.api.FilterParseException;

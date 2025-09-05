@@ -21,8 +21,8 @@
  */
 package org.opennms.netmgt.config;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
-import static org.opennms.core.utils.InetAddressUtils.toIpAddrBytes;
+import static org.citadel.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.toIpAddrBytes;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -37,12 +37,11 @@ import java.util.List;
 
 import org.apache.commons.collections.ListUtils;
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.collectd.CollectdConfiguration;
 import org.opennms.netmgt.config.collectd.Collector;
 import org.opennms.netmgt.config.collectd.Package;
-import org.opennms.netmgt.config.poller.Monitor;
 import org.opennms.netmgt.filter.FilterDaoFactory;
 import org.opennms.netmgt.model.OnmsIpInterface;
 import org.opennms.netmgt.model.OnmsMonitoredService;

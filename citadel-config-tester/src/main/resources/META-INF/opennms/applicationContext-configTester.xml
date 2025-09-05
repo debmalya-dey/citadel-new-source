@@ -229,7 +229,7 @@
   </bean>
 
   <bean id="emptyScope" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean">
-    <property name="staticField" value="org.opennms.core.mate.api.EmptyScope.EMPTY"/>
+    <property name="staticField" value="org.citadel.core.mate.api.EmptyScope.EMPTY"/>
   </bean>
 
   <bean id="javaMailerConfig" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
@@ -320,7 +320,7 @@
   <bean id="nsClientDataCollectionConfigFactory" class="org.opennms.netmgt.protocols.nsclient.config.NSClientDataCollectionConfigFactory" depends-on="nsClientDataCollectionConfigFactory-init" factory-method="getInstance"/>
   -->
     
-  <bean id="dataSourceTester" class="org.opennms.core.db.DataSourceConfigurationFactory">
+  <bean id="dataSourceTester" class="org.citadel.core.db.DataSourceConfigurationFactory">
     <constructor-arg value="${opennms.home}/etc/opennms-datasources.xml"/>
   </bean>
 

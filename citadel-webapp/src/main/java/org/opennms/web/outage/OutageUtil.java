@@ -31,7 +31,7 @@ import java.util.StringTokenizer;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.web.api.Util;
 import org.opennms.web.outage.filter.LocationFilter;
 import org.opennms.web.outage.filter.NegativeLocationFilter;

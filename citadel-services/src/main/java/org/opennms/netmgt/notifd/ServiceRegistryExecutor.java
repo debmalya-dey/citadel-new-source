@@ -23,10 +23,10 @@ package org.opennms.netmgt.notifd;
 
 import java.util.List;
 
-import org.opennms.core.soa.lookup.ServiceLookup;
-import org.opennms.core.soa.lookup.ServiceLookupBuilder;
-import org.opennms.core.soa.lookup.ServiceRegistryLookup;
-import org.opennms.core.soa.support.DefaultServiceRegistry;
+import org.citadel.core.soa.lookup.ServiceLookup;
+import org.citadel.core.soa.lookup.ServiceLookupBuilder;
+import org.citadel.core.soa.lookup.ServiceRegistryLookup;
+import org.citadel.core.soa.support.DefaultServiceRegistry;
 import org.opennms.netmgt.model.notifd.Argument;
 import org.opennms.netmgt.model.notifd.NotificationStrategy;
 import org.slf4j.Logger;

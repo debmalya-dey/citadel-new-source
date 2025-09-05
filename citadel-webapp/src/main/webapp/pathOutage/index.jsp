@@ -25,7 +25,7 @@
 	import="
 		java.net.InetAddress,
 		java.util.List,
-		org.opennms.core.utils.InetAddressUtils,
+		org.citadel.core.utils.InetAddressUtils,
 		org.opennms.features.topology.link.Layout,
 		org.opennms.features.topology.link.TopologyLinkBuilder"
 %>

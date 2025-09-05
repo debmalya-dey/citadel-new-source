@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import org.opennms.core.network.InetAddressXmlAdapter;
+import org.citadel.core.network.InetAddressXmlAdapter;
 
 /**
  * <p>NSClientAgentConfig class.</p>

@@ -27,7 +27,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.junit.Test;
-import org.opennms.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
 
 /**
  * @author <a href="mailto:dj@opennms.org">DJ Gregor</a>

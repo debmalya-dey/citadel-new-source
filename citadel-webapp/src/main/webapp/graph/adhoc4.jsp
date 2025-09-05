@@ -22,7 +22,7 @@
 
 --%>
 <%@page language="java"	contentType="text/html"	session="true"%>
-<%@page import="org.opennms.core.utils.WebSecurityUtils, org.opennms.web.servlet.MissingParameterException, org.opennms.web.api.Util"%>
+<%@page import="org.citadel.core.utils.WebSecurityUtils, org.opennms.web.servlet.MissingParameterException, org.opennms.web.api.Util"%>
 <%@page import="java.util.*"%>
 <%@page import="org.springframework.web.context.support.WebApplicationContextUtils"%>
 <%@page import="org.springframework.web.context.WebApplicationContext"%>

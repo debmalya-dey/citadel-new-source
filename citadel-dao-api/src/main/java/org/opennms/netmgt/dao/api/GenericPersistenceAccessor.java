@@ -26,7 +26,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.criteria.Criteria;
+import org.citadel.core.criteria.Criteria;
 
 public interface GenericPersistenceAccessor {
     <T> List<T> find(String query);

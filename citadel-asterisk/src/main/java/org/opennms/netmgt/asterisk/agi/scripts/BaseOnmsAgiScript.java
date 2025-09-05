@@ -28,7 +28,7 @@ import java.net.InetAddress;
 
 import org.asteriskjava.fastagi.AgiException;
 import org.asteriskjava.fastagi.BaseAgiScript;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 /**
  * <p>Abstract BaseOnmsAgiScript class.</p>

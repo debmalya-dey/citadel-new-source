@@ -25,8 +25,8 @@ import java.io.Serializable;
 import java.net.InetAddress;
 import java.util.Comparator;
 
-import org.opennms.core.utils.ByteArrayComparator;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.ByteArrayComparator;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.snmp.Range;
 
 /**

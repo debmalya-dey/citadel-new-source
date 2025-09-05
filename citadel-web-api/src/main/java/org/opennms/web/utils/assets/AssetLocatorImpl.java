@@ -46,9 +46,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.opennms.core.logging.Logging;
-import org.opennms.core.utils.StringUtils;
-import org.opennms.core.sysprops.SystemProperties;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.utils.StringUtils;
+import org.citadel.core.sysprops.SystemProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;

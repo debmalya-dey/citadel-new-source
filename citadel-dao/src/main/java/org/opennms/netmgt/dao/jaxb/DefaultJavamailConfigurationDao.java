@@ -24,8 +24,8 @@ package org.opennms.netmgt.dao.jaxb;
 import java.io.FileWriter;
 import java.util.List;
 
-import org.opennms.core.xml.AbstractJaxbConfigDao;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.AbstractJaxbConfigDao;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.javamail.End2endMailConfig;
 import org.opennms.netmgt.config.javamail.JavamailConfiguration;
 import org.opennms.netmgt.config.javamail.ReadmailConfig;
@@ -61,7 +61,7 @@ public class DefaultJavamailConfigurationDao extends AbstractJaxbConfigDao<Javam
     }
 
     /* (non-Javadoc)
-     * @see org.opennms.core.xml.AbstractJaxbConfigDao#translateConfig(java.lang.Object)
+     * @see xml.org.citadel.core.AbstractJaxbConfigDao#translateConfig(java.lang.Object)
      */
     @Override
     public JavamailConfiguration translateConfig(JavamailConfiguration config) {

@@ -23,7 +23,7 @@ package org.opennms.netmgt.asterisk.utils;
 
 import java.util.Properties;
 
-import org.opennms.core.utils.PropertiesUtils;
+import org.citadel.core.utils.PropertiesUtils;
 
 /**
  * Given a pattern, expands embedded Asterisk-related property values

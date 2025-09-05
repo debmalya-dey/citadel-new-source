@@ -32,10 +32,10 @@ import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
-import org.opennms.core.config.api.ConfigReloadContainer;
-import org.opennms.core.spring.FileReloadContainer;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.AbstractJaxbConfigDao;
+import org.citadel.core.config.api.ConfigReloadContainer;
+import org.citadel.core.spring.FileReloadContainer;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.AbstractJaxbConfigDao;
 import org.opennms.netmgt.collection.api.AttributeGroupType;
 import org.opennms.netmgt.config.api.DataCollectionConfigDao;
 import org.opennms.netmgt.config.datacollection.DataCollectionGroups;

@@ -25,9 +25,9 @@ import java.io.IOException;
 import java.util.Date;
 
 import org.junit.Test;
-import org.opennms.core.test.xml.JsonTest;
-import org.opennms.core.test.xml.XmlTest;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.test.xml.JsonTest;
+import org.citadel.core.test.xml.XmlTest;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.model.monitoringLocations.OnmsMonitoringLocation;
 
 public class OnmsOutageTest {

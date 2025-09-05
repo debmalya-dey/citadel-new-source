@@ -25,7 +25,7 @@
 	contentType="text/html"
 	session="true"
 	import="org.opennms.web.admin.notification.noticeWizard.*,
-                org.opennms.core.utils.WebSecurityUtils
+                org.citadel.core.utils.WebSecurityUtils
         "
 %>
 

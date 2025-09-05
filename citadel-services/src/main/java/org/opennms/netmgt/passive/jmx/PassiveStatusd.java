@@ -22,7 +22,7 @@
 package org.opennms.netmgt.passive.jmx;
 
 import org.apache.commons.lang.NotImplementedException;
-import org.opennms.core.db.DataSourceFactory;
+import org.citadel.core.db.DataSourceFactory;
 import org.opennms.netmgt.daemon.AbstractServiceDaemon;
 import org.opennms.netmgt.events.api.EventIpcManager;
 import org.opennms.netmgt.events.api.EventIpcManagerFactory;

@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.xml.ValidateUsing;
 
 @XmlRootElement(name = "geoip-config")
 @XmlAccessorType(XmlAccessType.NONE)

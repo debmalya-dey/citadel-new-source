@@ -25,9 +25,9 @@ import java.net.InetAddress;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.ParameterMap;
-import org.opennms.core.utils.TimeoutTracker;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.ParameterMap;
+import org.citadel.core.utils.TimeoutTracker;
 import org.opennms.netmgt.config.WmiPeerFactory;
 import org.opennms.netmgt.config.wmi.WmiAgentConfig;
 import org.opennms.netmgt.poller.MonitoredService;

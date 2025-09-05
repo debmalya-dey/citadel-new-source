@@ -32,7 +32,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.collection.api.StorageStrategyService;
 import org.opennms.netmgt.config.datacollection.Parameter;
 import org.opennms.netmgt.model.ResourcePath;

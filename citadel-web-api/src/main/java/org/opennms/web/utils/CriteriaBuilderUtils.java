@@ -23,7 +23,7 @@ package org.opennms.web.utils;
 
 import java.util.Objects;
 
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.CriteriaBuilder;
 
 public class CriteriaBuilderUtils {
 

@@ -33,7 +33,7 @@ import java.time.zone.ZoneRulesException;
 import java.util.TimeZone;
 
 import org.junit.Test;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 
 public class ConfigurationTest {
 

@@ -28,7 +28,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.config.GroupDao;
 import org.opennms.netmgt.config.GroupManager;
 import org.opennms.netmgt.config.UserManager;

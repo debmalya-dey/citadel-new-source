@@ -21,7 +21,7 @@
  */
 package org.opennms.web.enlinkd;
 
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -39,10 +39,10 @@ import java.util.stream.Collectors;
 import javax.servlet.ServletContext;
 
 import org.apache.commons.lang3.tuple.Pair;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.sysprops.SystemProperties;
-import org.opennms.core.utils.LldpUtils.LldpChassisIdSubType;
-import org.opennms.core.utils.LldpUtils.LldpPortIdSubType;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.sysprops.SystemProperties;
+import org.citadel.core.utils.LldpUtils.LldpChassisIdSubType;
+import org.citadel.core.utils.LldpUtils.LldpPortIdSubType;
 import org.opennms.netmgt.dao.api.IpInterfaceDao;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.dao.api.SnmpInterfaceDao;

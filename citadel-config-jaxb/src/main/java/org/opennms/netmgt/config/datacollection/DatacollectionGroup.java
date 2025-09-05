@@ -33,7 +33,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.xml.ValidateUsing;
 
 /**
  * Top-level element for the datacollection group

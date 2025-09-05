@@ -32,9 +32,9 @@ import javax.ws.rs.core.UriInfo;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.apache.cxf.jaxrs.ext.search.SearchBean;
-import org.opennms.core.config.api.JaxbListWrapper;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.config.api.JaxbListWrapper;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.dao.api.SnmpInterfaceDao;
 import org.opennms.netmgt.model.OnmsSnmpInterface;
 import org.opennms.netmgt.model.OnmsSnmpInterfaceList;

@@ -31,7 +31,7 @@ import java.nio.charset.StandardCharsets;
 
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
-import org.opennms.core.mate.api.SecureCredentialsVaultScope;
+import org.citadel.core.mate.api.SecureCredentialsVaultScope;
 import org.opennms.features.scv.api.Credentials;
 import org.opennms.features.scv.api.SecureCredentialsVault;
 import org.opennms.features.scv.jceks.JCEKSSecureCredentialsVault;

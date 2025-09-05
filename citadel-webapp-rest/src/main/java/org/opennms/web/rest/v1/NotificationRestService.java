@@ -41,11 +41,11 @@ import javax.ws.rs.core.SecurityContext;
 import javax.ws.rs.core.UriInfo;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.criteria.restrictions.Restrictions;
-import org.opennms.core.logging.Logging;
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.restrictions.Restrictions;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.dao.api.NotificationDao;
 import org.opennms.netmgt.model.OnmsNotification;
 import org.opennms.netmgt.model.OnmsNotificationCollection;

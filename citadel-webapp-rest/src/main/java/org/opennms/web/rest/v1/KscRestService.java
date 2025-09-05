@@ -47,7 +47,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.config.api.JaxbListWrapper;
+import org.citadel.core.config.api.JaxbListWrapper;
 import org.opennms.netmgt.config.KSC_PerformanceReportFactory;
 import org.opennms.netmgt.config.kscReports.Graph;
 import org.opennms.netmgt.config.kscReports.Report;

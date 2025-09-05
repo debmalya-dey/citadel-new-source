@@ -24,8 +24,8 @@ package org.opennms.netmgt.jmx.connection;
 import java.net.InetAddress;
 import java.util.Map;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.ParameterMap;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.ParameterMap;
 
 public class JmxConnectionConfigBuilder {
 

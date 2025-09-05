@@ -31,7 +31,7 @@
 		org.opennms.netmgt.config.*
 	"
 %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 

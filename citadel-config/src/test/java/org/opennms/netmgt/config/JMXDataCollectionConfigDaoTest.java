@@ -29,7 +29,7 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
-import org.opennms.core.xml.MarshallingResourceFailureException;
+import org.citadel.core.xml.MarshallingResourceFailureException;
 import org.opennms.netmgt.config.collectd.jmx.JmxDatacollectionConfig;
 
 public class JMXDataCollectionConfigDaoTest {

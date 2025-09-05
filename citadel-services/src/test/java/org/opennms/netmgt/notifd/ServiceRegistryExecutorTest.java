@@ -22,7 +22,7 @@
 package org.opennms.netmgt.notifd;
 
 import org.junit.Test;
-import org.opennms.core.soa.support.DefaultServiceRegistry;
+import org.citadel.core.soa.support.DefaultServiceRegistry;
 import org.opennms.netmgt.model.notifd.NotificationStrategy;
 
 import java.util.Collections;

@@ -34,14 +34,14 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.collection.test.JUnitCollector;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.TestContextAware;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.test.snmp.annotations.JUnitSnmpAgent;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.collection.test.JUnitCollector;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.TestContextAware;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.test.snmp.annotations.JUnitSnmpAgent;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.collection.api.CollectionSet;
 import org.opennms.netmgt.collection.api.CollectionStatus;
 import org.opennms.netmgt.collection.core.CollectionSpecification;
@@ -314,7 +314,7 @@ public class SnmpCollectorWithMibPropertiesIT implements InitializingBean, TestC
     }
 
     /* (non-Javadoc)
-     * @see org.opennms.core.test.TestContextAware#setTestContext(org.springframework.test.context.TestContext)
+     * @see test.org.citadel.core.TestContextAware#setTestContext(org.springframework.test.context.TestContext)
      */
     @Override
     public void setTestContext(TestContext context) {

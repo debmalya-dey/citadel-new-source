@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.collectd.jmx;
 
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.util.List;
 import java.util.concurrent.ThreadPoolExecutor;

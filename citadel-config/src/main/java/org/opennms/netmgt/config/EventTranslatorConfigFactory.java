@@ -46,12 +46,12 @@ import javax.sql.DataSource;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.utils.MatchTable;
-import org.opennms.core.utils.PropertiesUtils;
-import org.opennms.core.utils.SingleResultQuerier;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.MatchTable;
+import org.citadel.core.utils.PropertiesUtils;
+import org.citadel.core.utils.SingleResultQuerier;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.translator.Assignment;
 import org.opennms.netmgt.config.translator.EventTranslationSpec;
 import org.opennms.netmgt.config.translator.EventTranslatorConfiguration;

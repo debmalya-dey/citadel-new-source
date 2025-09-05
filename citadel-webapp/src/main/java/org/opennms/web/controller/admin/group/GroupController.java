@@ -35,8 +35,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.UserManager;
 import org.opennms.netmgt.config.users.DutySchedule;
 import org.opennms.netmgt.dao.api.CategoryDao;

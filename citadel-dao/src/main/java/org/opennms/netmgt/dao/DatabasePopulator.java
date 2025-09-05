@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.AcknowledgmentDao;
 import org.opennms.netmgt.dao.api.AlarmAssociationDao;
 import org.opennms.netmgt.dao.api.AlarmDao;
@@ -40,7 +40,6 @@ import org.opennms.netmgt.dao.api.EventDao;
 import org.opennms.netmgt.dao.api.IpInterfaceDao;
 import org.opennms.netmgt.dao.api.MonitoredServiceDao;
 import org.opennms.netmgt.dao.api.MonitoringLocationDao;
-import org.opennms.netmgt.dao.api.MonitoringSystemDao;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.dao.api.NotificationDao;
 import org.opennms.netmgt.dao.api.OnmsDao;

@@ -31,7 +31,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.function.Consumer;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.dao.outages.api.OverrideablePollOutagesDao;
 import org.opennms.netmgt.config.poller.outages.Outages;
 

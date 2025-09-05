@@ -22,7 +22,7 @@
 package org.opennms.netmgt.notifd;
 
 import static org.junit.Assert.assertEquals;
-import static org.opennms.core.web.HttpClientWrapperConfigHelper.PARAMETER_KEYS.useSystemProxy;
+import static org.citadel.core.web.HttpClientWrapperConfigHelper.PARAMETER_KEYS.useSystemProxy;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -30,8 +30,8 @@ import java.util.stream.Collectors;
 
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.EventDao;
 import org.opennms.netmgt.model.OnmsCriteria;
 import org.opennms.netmgt.model.OnmsEvent;

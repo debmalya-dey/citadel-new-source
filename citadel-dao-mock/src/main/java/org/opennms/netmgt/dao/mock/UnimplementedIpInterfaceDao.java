@@ -25,7 +25,7 @@ import java.net.InetAddress;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.criteria.Criteria;
+import org.citadel.core.criteria.Criteria;
 import org.opennms.netmgt.dao.api.IpInterfaceDao;
 import org.opennms.netmgt.model.OnmsCriteria;
 import org.opennms.netmgt.model.OnmsIpInterface;

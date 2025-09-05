@@ -29,12 +29,13 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.opennms.core.criteria.Alias;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.restrictions.EqRestriction;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.criteria.Alias;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.restrictions.EqRestriction;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.api.PathOutageConfig;
 import org.opennms.netmgt.dao.api.CriticalPath;
 import org.opennms.netmgt.dao.api.MonitoredServiceDao;
@@ -179,7 +180,7 @@ public class PathOutageManagerDaoImpl implements PathOutageManager {
 
         result[0] = node.getLabel();
 
-        final org.opennms.core.criteria.Criteria crit = new org.opennms.core.criteria.Criteria(OnmsMonitoredService.class)
+        final Criteria crit = new Criteria(OnmsMonitoredService.class)
         .setAliases(Arrays.asList(new Alias[] {
             new Alias("ipInterface","ipInterface", JoinType.INNER_JOIN)
         }))

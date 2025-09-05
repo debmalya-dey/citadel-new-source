@@ -28,7 +28,7 @@ import java.nio.charset.StandardCharsets;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.MockLogAppender;
 import org.opennms.netmgt.dao.mock.MockEventIpcManager;
 import org.opennms.netmgt.mock.OpenNMSITCase;
 import org.opennms.netmgt.mock.OutageAnticipator;

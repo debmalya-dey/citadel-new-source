@@ -25,7 +25,7 @@ import java.net.MalformedURLException;
 import java.util.Map;
 import java.util.Properties;
 
-import org.opennms.core.utils.TimeoutTracker;
+import org.citadel.core.utils.TimeoutTracker;
 import org.opennms.netmgt.poller.MonitoredService;
 import org.opennms.netmgt.poller.PollStatus;
 import org.opennms.netmgt.poller.monitors.support.ParameterSubstitutingMonitor;

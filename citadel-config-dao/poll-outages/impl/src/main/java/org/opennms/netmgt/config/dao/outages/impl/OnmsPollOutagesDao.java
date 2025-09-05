@@ -29,8 +29,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.function.Consumer;
 
 import org.codehaus.jackson.map.ObjectMapper;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JacksonUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JacksonUtils;
 import org.opennms.features.distributed.kvstore.api.JsonStore;
 import org.opennms.netmgt.config.dao.common.api.ConfigDaoConstants;
 import org.opennms.netmgt.config.dao.common.api.SaveableConfigContainer;

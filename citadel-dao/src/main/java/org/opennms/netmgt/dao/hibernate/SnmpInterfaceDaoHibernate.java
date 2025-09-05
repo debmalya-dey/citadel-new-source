@@ -24,8 +24,8 @@ package org.opennms.netmgt.dao.hibernate;
 import java.util.Collection;
 import java.util.List;
 
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.criteria.restrictions.Restrictions;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.restrictions.Restrictions;
 import org.opennms.netmgt.dao.api.SnmpInterfaceDao;
 import org.opennms.netmgt.model.OnmsSnmpInterface;
 import org.springframework.util.Assert;

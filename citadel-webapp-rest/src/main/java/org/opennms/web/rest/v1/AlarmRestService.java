@@ -39,7 +39,7 @@ import javax.ws.rs.core.UriInfo;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang3.EnumUtils;
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.dao.api.AcknowledgmentDao;
 import org.opennms.netmgt.dao.api.AlarmDao;
 import org.opennms.netmgt.model.AckAction;

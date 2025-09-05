@@ -25,7 +25,7 @@ import java.util.function.Function;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.cxf.jaxrs.ext.search.ConditionType;
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.CriteriaBuilder;
 
 /**
  * <p>Specify a custom handler for a FIQL query term. This allows us to:</p>

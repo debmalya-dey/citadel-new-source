@@ -46,7 +46,7 @@ import io.swagger.v3.oas.annotations.headers.Header;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.provision.persist.ForeignSourceRepositoryFactory;
 import org.opennms.netmgt.provision.persist.requisition.DeployedRequisitionStats;
 import org.opennms.netmgt.provision.persist.requisition.DeployedStats;

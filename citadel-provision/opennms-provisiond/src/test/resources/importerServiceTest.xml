@@ -32,15 +32,15 @@
     <constructor-arg><value>0 15 10 * * ? 2020</value></constructor-arg>
   </bean>
 
-  <bean id="importExecutor" class="org.opennms.core.concurrent.PausibleScheduledThreadPoolExecutor">
+  <bean id="importExecutor" class="concurrent.org.citadel.core.PausibleScheduledThreadPoolExecutor">
     <constructor-arg ref="importThreads" />
   </bean>
   
-  <bean id="scanExecutor" class="org.opennms.core.concurrent.PausibleScheduledThreadPoolExecutor">
+  <bean id="scanExecutor" class="concurrent.org.citadel.core.PausibleScheduledThreadPoolExecutor">
     <constructor-arg ref="scanThreads" />
   </bean>
   
-  <bean id="writeExecutor" class="org.opennms.core.concurrent.PausibleScheduledThreadPoolExecutor">
+  <bean id="writeExecutor" class="concurrent.org.citadel.core.PausibleScheduledThreadPoolExecutor">
     <constructor-arg ref="writeThreads" />
   </bean>
   

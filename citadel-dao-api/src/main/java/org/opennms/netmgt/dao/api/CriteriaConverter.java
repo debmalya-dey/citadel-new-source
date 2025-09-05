@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.dao.api;
 
-import org.opennms.core.criteria.Criteria;
+import org.citadel.core.criteria.Criteria;
 
 public interface CriteriaConverter<T> {
 	public T convert(Criteria criteria);

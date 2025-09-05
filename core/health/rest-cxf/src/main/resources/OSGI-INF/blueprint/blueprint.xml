@@ -24,6 +24,6 @@
     </jaxrs:providers>
   </jaxrs:server>
 
-  <reference id="healthCheckRestService" interface="org.opennms.core.health.rest.HealthCheckRestService" availability="mandatory" />
+  <reference id="healthCheckRestService" interface="org.citadel.core.health.rest.HealthCheckRestService" availability="mandatory" />
 
 </blueprint>

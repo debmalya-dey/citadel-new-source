@@ -26,7 +26,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import org.opennms.core.utils.IPLike;
+import org.citadel.core.utils.IPLike;
 
 public class IPLikeTest {
 

@@ -4,7 +4,7 @@
 
 	<start-script language="beanshell">
 
-		import org.opennms.core.utils.InetAddressUtils;
+		import utils.org.citadel.core.InetAddressUtils;
 		import org.opennms.netmgt.snmp.SnmpTrapBuilder;
 		import org.opennms.netmgt.config.DataSourceFactory;
 		import org.opennms.netmgt.utils.SingleResultQuerier;

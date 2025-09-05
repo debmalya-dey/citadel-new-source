@@ -33,7 +33,7 @@ import java.util.concurrent.Executors;
 
 import org.apache.bsf.BSFException;
 import org.apache.bsf.BSFManager;
-import org.opennms.core.concurrent.LogPreservingThreadFactory;
+import org.citadel.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.netmgt.config.ScriptdConfigFactory;
 import org.opennms.netmgt.config.scriptd.Engine;
 import org.opennms.netmgt.config.scriptd.EventScript;

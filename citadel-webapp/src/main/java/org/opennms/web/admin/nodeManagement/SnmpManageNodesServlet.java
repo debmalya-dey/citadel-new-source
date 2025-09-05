@@ -21,7 +21,7 @@
  */
 package org.opennms.web.admin.nodeManagement;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -36,9 +36,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.NotificationFactory;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.model.PrimaryType;

@@ -30,7 +30,7 @@ import java.util.Map;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
-import org.opennms.core.criteria.Criteria;
+import org.citadel.core.criteria.Criteria;
 import org.opennms.netmgt.dao.api.GenericPersistenceAccessor;
 import org.springframework.dao.DataAccessException;
 import org.springframework.orm.hibernate3.HibernateCallback;

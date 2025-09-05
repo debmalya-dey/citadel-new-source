@@ -21,7 +21,6 @@
  */
 package org.opennms.web.rest.support;
 
-import static org.opennms.web.rest.support.CriteriaValueConverters.BOOLEAN_CONVERTER;
 import static org.opennms.web.rest.support.CriteriaValueConverters.CHARACTER_CONVERTER;
 import static org.opennms.web.rest.support.CriteriaValueConverters.DATE_CONVERTER;
 import static org.opennms.web.rest.support.CriteriaValueConverters.FLOAT_CONVERTER;
@@ -36,9 +35,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.cxf.jaxrs.ext.search.ConditionType;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.restrictions.Restrictions;
-import org.opennms.core.criteria.restrictions.SqlRestriction.Type;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.restrictions.Restrictions;
+import org.citadel.core.criteria.restrictions.SqlRestriction.Type;
 import org.opennms.netmgt.model.OnmsEventParameter;
 import org.opennms.netmgt.model.OnmsSeverity;
 import org.opennms.netmgt.model.TroubleTicketState;

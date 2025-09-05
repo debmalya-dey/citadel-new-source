@@ -27,8 +27,7 @@ import java.util.Collections;
 import java.util.Enumeration;
 import java.util.List;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.netmgt.config.PollerConfig;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.poller.Package;
 import org.opennms.netmgt.config.poller.Service;
 import org.opennms.netmgt.dao.mock.EventAnticipator;

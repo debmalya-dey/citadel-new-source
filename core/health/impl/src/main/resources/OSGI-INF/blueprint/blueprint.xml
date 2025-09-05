@@ -26,8 +26,8 @@
     <reference id="bundleService" interface="org.apache.karaf.bundle.core.BundleService" availability="mandatory" />
 
     <!-- Container Health Check -->
-    <service interface="org.opennms.core.health.api.HealthCheck">
-        <bean class="org.opennms.core.health.impl.ContainerIntegrityHealthCheck" >
+    <service interface="org.citadel.core.health.api.HealthCheck">
+        <bean class="org.citadel.core.health.impl.ContainerIntegrityHealthCheck" >
             <argument ref="blueprintBundleContext" />
             <argument ref="bundleService" />
             <argument value="${ignoreBundleList}" />
@@ -35,8 +35,8 @@
     </service>
 
     <!-- Health Check Service -->
-    <service interface="org.opennms.core.health.api.HealthCheckService">
-        <bean class="org.opennms.core.health.impl.DefaultHealthCheckService" >
+    <service interface="org.citadel.core.health.api.HealthCheckService">
+        <bean class="org.citadel.core.health.impl.DefaultHealthCheckService" >
             <argument ref="blueprintBundleContext"/>
         </bean>
     </service>

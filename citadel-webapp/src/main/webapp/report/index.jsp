@@ -27,7 +27,7 @@
 %>
 
 
-<%@page import="org.opennms.core.resource.Vault"%>
+<%@page import="org.citadel.core.resource.Vault"%>
 <%@ page import="org.opennms.web.utils.Bootstrap" %>
 <% Bootstrap.with(pageContext)
           .headTitle("Reports")

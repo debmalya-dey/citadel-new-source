@@ -43,10 +43,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.config.api.ConfigReloadContainer;
-import org.opennms.core.spring.FileReloadCallback;
-import org.opennms.core.spring.FileReloadContainer;
-import org.opennms.core.utils.BundleLists;
+import org.citadel.core.config.api.ConfigReloadContainer;
+import org.citadel.core.spring.FileReloadCallback;
+import org.citadel.core.spring.FileReloadContainer;
+import org.citadel.core.utils.BundleLists;
 import org.opennms.netmgt.dao.api.GraphDao;
 import org.opennms.netmgt.model.AdhocGraphType;
 import org.opennms.netmgt.model.OnmsAttribute;

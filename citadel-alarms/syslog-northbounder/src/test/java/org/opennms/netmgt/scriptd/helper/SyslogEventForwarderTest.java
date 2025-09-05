@@ -42,7 +42,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.MockLogAppender;
 import org.opennms.netmgt.model.OnmsNode;
 import org.opennms.netmgt.xml.event.Event;
 import org.opennms.netmgt.xml.event.Logmsg;

@@ -40,12 +40,12 @@
     </onmsgi:service-properties>
   </onmsgi:service>
 
-  <bean id="kafkaRpcClientFactory" class="org.opennms.core.ipc.rpc.kafka.KafkaRpcClientFactory" primary="true"
-    init-method="start" destroy-method="stop" >
+  <bean id="kafkaRpcClientFactory" class="org.citadel.core.ipc.rpc.kafka.KafkaRpcClientFactory" primary="true"
+        init-method="start" destroy-method="stop" >
      <property name="location" ref="location"/>
      <property name="metrics" ref="kafkaRpcMetricRegistry"/>
   </bean>
 
-  <onmsgi:service ref="kafkaRpcClientFactory" interface="org.opennms.core.rpc.api.RpcClientFactory" />
+  <onmsgi:service ref="kafkaRpcClientFactory" interface="org.citadel.core.rpc.api.RpcClientFactory" />
 
 </beans>

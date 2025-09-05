@@ -30,7 +30,7 @@
 <%@page import="java.util.Map"%>
 <%@page import="java.util.Set"%>
 <%@page import="java.util.HashSet"%>
-<%@page import="org.opennms.core.utils.WebSecurityUtils"%>
+<%@page import="org.citadel.core.utils.WebSecurityUtils"%>
 <%@page import="org.opennms.netmgt.events.api.EventConstants"%>
 
 <%@page import="org.opennms.web.event.AcknowledgeType"%>

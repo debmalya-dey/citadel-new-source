@@ -30,7 +30,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 
 public class AlarmdTestUtil {
     public static File enableDisabledRules() throws IOException {

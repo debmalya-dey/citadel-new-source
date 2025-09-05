@@ -32,8 +32,8 @@ import java.util.Objects;
 
 import javax.management.remote.JMXServiceURL;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.PropertiesUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.PropertiesUtils;
 
 /**
  * Helper object to safety access the connection properties.

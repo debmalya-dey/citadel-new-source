@@ -25,8 +25,8 @@ import java.net.InetAddress;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.logging.Logging;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.model.IEvent;
 import org.opennms.netmgt.events.api.model.IParm;

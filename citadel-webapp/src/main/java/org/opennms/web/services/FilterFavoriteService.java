@@ -31,7 +31,7 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang.StringUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.dao.api.FilterFavoriteDao;
 import org.opennms.netmgt.model.OnmsFilterFavorite;
 import org.springframework.beans.factory.annotation.Autowired;

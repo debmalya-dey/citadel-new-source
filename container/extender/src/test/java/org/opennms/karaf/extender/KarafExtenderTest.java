@@ -36,7 +36,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.MockLogAppender;
 
 import com.google.common.collect.Lists;
 import com.google.common.io.Files;

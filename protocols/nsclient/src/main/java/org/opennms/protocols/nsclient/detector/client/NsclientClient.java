@@ -24,7 +24,7 @@ package org.opennms.protocols.nsclient.detector.client;
 import java.io.IOException;
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.provision.support.Client;
 import org.opennms.protocols.nsclient.NsclientException;
 import org.opennms.protocols.nsclient.NsclientManager;

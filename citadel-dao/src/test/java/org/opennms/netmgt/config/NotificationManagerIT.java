@@ -22,7 +22,7 @@
 package org.opennms.netmgt.config;
 
 import static org.junit.Assert.assertEquals;
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -39,12 +39,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.utils.DBUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.mock.MockNotifdConfigManager;
 import org.opennms.netmgt.config.notifications.Notification;
 import org.opennms.netmgt.config.notifications.Rule;

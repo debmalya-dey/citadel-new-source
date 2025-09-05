@@ -18,12 +18,12 @@
 
     <reference id="configAdmin" interface="org.osgi.service.cm.ConfigurationAdmin" />
 
-    <bean id="grpcIpcServer" class="org.opennms.core.grpc.common.GrpcIpcServerBuilder">
+    <bean id="grpcIpcServer" class="org.citadel.core.grpc.common.GrpcIpcServerBuilder">
         <argument ref="configAdmin"/>
         <argument value="${port}"/>
         <argument value="${startDelay}"/>
     </bean>
 
-    <service ref="grpcIpcServer" interface="org.opennms.core.grpc.common.GrpcIpcServer"/>
+    <service ref="grpcIpcServer" interface="org.citadel.core.grpc.common.GrpcIpcServer"/>
 
 </blueprint>

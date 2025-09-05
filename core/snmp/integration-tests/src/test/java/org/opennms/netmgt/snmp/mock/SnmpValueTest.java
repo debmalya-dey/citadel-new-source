@@ -34,8 +34,8 @@ import java.util.Arrays;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.snmp.SnmpObjId;
 import org.opennms.netmgt.snmp.SnmpValue;
 import org.opennms.netmgt.snmp.SnmpValueFactory;

@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.dao.api;
 
-import org.opennms.core.criteria.Criteria;
+import org.citadel.core.criteria.Criteria;
 import org.springframework.transaction.annotation.Transactional;
 
 public interface StatisticsService<T> {

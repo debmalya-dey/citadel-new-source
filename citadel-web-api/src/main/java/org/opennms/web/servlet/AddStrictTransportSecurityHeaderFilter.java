@@ -32,7 +32,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.resource.Vault;
+import org.citadel.core.resource.Vault;
 import org.opennms.web.api.Util;
 
 public class AddStrictTransportSecurityHeaderFilter implements Filter {

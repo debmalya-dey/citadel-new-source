@@ -27,7 +27,7 @@
 		org.opennms.netmgt.model.monitoringLocations.OnmsMonitoringLocation"%>
 
 <%@ page import="com.google.common.base.Strings" %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="element" tagdir="/WEB-INF/tags/element" %>

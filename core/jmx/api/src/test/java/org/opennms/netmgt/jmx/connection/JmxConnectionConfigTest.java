@@ -25,7 +25,7 @@ import java.net.MalformedURLException;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 public class JmxConnectionConfigTest {
 

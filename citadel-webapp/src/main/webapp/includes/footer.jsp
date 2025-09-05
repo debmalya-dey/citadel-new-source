@@ -49,7 +49,7 @@
         contentType="text/html"
         session="true"
         import="java.io.File,
-                org.opennms.core.resource.Vault,
+                org.citadel.core.resource.Vault,
                 org.opennms.web.servlet.XssRequestWrapper"
 %>
 

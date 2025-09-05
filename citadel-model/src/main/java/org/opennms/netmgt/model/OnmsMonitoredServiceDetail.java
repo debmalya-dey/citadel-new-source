@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.model;
 
-import static org.opennms.core.utils.InetAddressUtils.toInteger;
+import static org.citadel.core.utils.InetAddressUtils.toInteger;
 
 import java.io.Serializable;
 import java.math.BigInteger;
@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import org.opennms.core.network.InetAddressXmlAdapter;
+import org.citadel.core.network.InetAddressXmlAdapter;
 
 @SuppressWarnings("serial")
 @XmlRootElement(name = "monitored-service")

@@ -26,8 +26,8 @@ import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
-import org.opennms.core.rpc.api.RpcRequest;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.rpc.api.RpcRequest;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;
 import org.opennms.netmgt.snmp.proxy.SNMPRequestBuilder;
 

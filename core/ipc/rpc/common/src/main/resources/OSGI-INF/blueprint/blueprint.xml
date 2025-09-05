@@ -5,16 +5,16 @@
 		https://osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
 ">
 
-    <bean id="echoRpcModule" class="org.opennms.core.rpc.echo.EchoRpcModule" />
+    <bean id="echoRpcModule" class="org.citadel.core.rpc.echo.EchoRpcModule" />
 
     <reference id="healthCheckResponseCacheRef" availability="optional" filter="(alias=opennms.passiveEchoRpcHealthCheck)"
-               interface="org.opennms.core.health.api.HealthCheckResponseCache" />
+               interface="org.citadel.core.health.api.HealthCheckResponseCache" />
 
-    <bean id="healthTrackingEchoRpcModule" class="org.opennms.core.rpc.echo.HealthTrackingEchoRpcModule" >
+    <bean id="healthTrackingEchoRpcModule" class="org.citadel.core.rpc.echo.HealthTrackingEchoRpcModule" >
         <argument ref="echoRpcModule"/>
         <argument ref="healthCheckResponseCacheRef"/>
     </bean>
 
-    <service ref="healthTrackingEchoRpcModule" interface="org.opennms.core.rpc.api.RpcModule" />
+    <service ref="healthTrackingEchoRpcModule" interface="org.citadel.core.rpc.api.RpcModule" />
 
 </blueprint>

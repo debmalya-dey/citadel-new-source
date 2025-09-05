@@ -28,7 +28,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.web.controller.RedirectRestricter;
 import org.opennms.web.filter.Filter;
 import org.opennms.web.notification.Notification;

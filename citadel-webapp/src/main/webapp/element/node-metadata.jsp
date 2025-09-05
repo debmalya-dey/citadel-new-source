@@ -29,7 +29,7 @@
             org.opennms.netmgt.model.OnmsNode,
             org.opennms.web.api.Authentication,
             org.opennms.web.element.*,
-            org.opennms.core.utils.WebSecurityUtils,
+            org.citadel.core.utils.WebSecurityUtils,
             org.opennms.netmgt.model.OnmsMetaData"
 %>
 

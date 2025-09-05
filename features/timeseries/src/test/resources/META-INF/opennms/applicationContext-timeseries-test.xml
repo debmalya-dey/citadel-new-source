@@ -68,8 +68,8 @@
   <bean id="timeseriesStorageImpl" class="org.opennms.integration.api.v1.timeseries.InMemoryStorage" />
   <onmsgi:service interface="org.opennms.integration.api.v1.timeseries.TimeSeriesStorage" ref="timeseriesStorageImpl" />
 
-  <bean id="entityScopeProvider" class="org.opennms.core.mate.model.EntityScopeProviderImpl"/>
-  <onmsgi:service interface="org.opennms.core.mate.api.EntityScopeProvider" ref="entityScopeProvider" />
+  <bean id="entityScopeProvider" class="model.mate.org.citadel.core.EntityScopeProviderImpl"/>
+  <onmsgi:service interface="api.mate.org.citadel.core.EntityScopeProvider" ref="entityScopeProvider" />
 
   <bean id="metaTagDataLoader" class="org.opennms.netmgt.timeseries.samplewrite.MetaTagDataLoader" />
 
@@ -99,11 +99,11 @@
   <onmsgi:service ref="rrdStrategy" interface="org.opennms.netmgt.rrd.RrdStrategy" />
 
   <!-- CacheConfig -->
-  <bean id="timeseriesPersisterMetaTagCache" class="org.opennms.core.cache.CacheConfig">
+  <bean id="timeseriesPersisterMetaTagCache" class="cache.org.citadel.core.CacheConfig">
     <constructor-arg index="0" value="timeseriesPersisterMetaTagCache" />
     <property name="expireAfterRead" value="${cache.timeseriesPersisterMetaTagCache.expireAfterRead:1}" />
   </bean>
-  <bean id="timeseriesSearcherCache" class="org.opennms.core.cache.CacheConfig">
+  <bean id="timeseriesSearcherCache" class="cache.org.citadel.core.CacheConfig">
     <constructor-arg index="0" value="timeseriesSearcherCache" />
     <property name="expireAfterRead" value="${cache.timeseriesSearcherCache.expireAfterRead:300}" />
   </bean>

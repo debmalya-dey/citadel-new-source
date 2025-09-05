@@ -41,9 +41,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.web.api.Util;
 import org.opennms.web.servlet.MissingParameterException;
 import org.slf4j.Logger;

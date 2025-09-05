@@ -26,7 +26,7 @@ import javax.servlet.ServletException;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
 import org.opennms.test.JUnitConfigurationEnvironment;
 import org.springframework.test.context.ContextConfiguration;
 

@@ -8,6 +8,6 @@
        ">
 
   <!-- Conditionally load the GRPC IPC -->
-  <bean class="org.opennms.core.ipc.grpc.server.ConditionalGrpcIpcContext"/>
+  <bean class="org.citadel.core.ipc.grpc.server.ConditionalGrpcIpcContext"/>
 
 </beans>

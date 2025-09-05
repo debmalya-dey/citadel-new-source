@@ -27,8 +27,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.eventd.AbstractEventUtil;
 import org.opennms.netmgt.eventd.EventdConstants;
 import org.slf4j.Logger;

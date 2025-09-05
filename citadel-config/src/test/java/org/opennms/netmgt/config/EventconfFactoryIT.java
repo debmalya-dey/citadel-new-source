@@ -30,7 +30,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.io.File;
 import java.io.FileReader;
@@ -51,9 +51,9 @@ import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.model.events.EventBuilder;
 import org.opennms.netmgt.model.events.snmp.SyntaxToEvent;

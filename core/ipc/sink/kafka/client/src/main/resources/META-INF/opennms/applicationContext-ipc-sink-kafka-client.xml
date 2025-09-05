@@ -14,11 +14,11 @@
   <context:annotation-config />
 
   <!-- If this is loaded via Spring, then it means the client is loaded in OpenNMS thus, the LocalMessageDispatcher should be used -->
-  <bean id="kafkaLocalMessageDispatcherFactory" class="org.opennms.core.ipc.sink.kafka.client.KafkaLocalMessageDispatcherFactory">
+  <bean id="kafkaLocalMessageDispatcherFactory" class="org.citadel.core.ipc.sink.kafka.client.KafkaLocalMessageDispatcherFactory">
     <property name="metrics" ref="kafkaSinkMetricRegistry"/>
   </bean>
 
-  <onmsgi:service ref="kafkaLocalMessageDispatcherFactory" interface="org.opennms.core.ipc.sink.api.MessageDispatcherFactory" />
+  <onmsgi:service ref="kafkaLocalMessageDispatcherFactory" interface="org.citadel.core.ipc.sink.api.MessageDispatcherFactory" />
 
   <!-- Sink Metrics -->
   <bean id="kafkaSinkMetricRegistry" class="com.codahale.metrics.MetricRegistry"/>

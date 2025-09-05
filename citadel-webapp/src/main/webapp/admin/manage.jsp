@@ -26,7 +26,7 @@
 	session="true"
 	import="java.util.*,
 		org.opennms.web.element.NetworkElementFactory,
-		org.opennms.core.utils.WebSecurityUtils,
+		org.citadel.core.utils.WebSecurityUtils,
 		org.opennms.web.admin.nodeManagement.*
 	"
 %>

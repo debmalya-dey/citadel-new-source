@@ -29,7 +29,7 @@ import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 
 import org.junit.Test;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.kscReports.Report;
 import org.opennms.netmgt.config.kscReports.ReportsList;
 import org.opennms.netmgt.model.ResourceId;

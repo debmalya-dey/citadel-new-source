@@ -30,8 +30,8 @@ import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.TimeUnit;
 
-import org.opennms.core.rpc.api.RequestRejectedException;
-import org.opennms.core.rpc.api.RequestTimedOutException;
+import org.citadel.core.rpc.api.RequestRejectedException;
+import org.citadel.core.rpc.api.RequestTimedOutException;
 import org.opennms.netmgt.config.PollerConfig;
 import org.opennms.netmgt.dao.api.CriticalPath;
 import org.opennms.netmgt.dao.hibernate.PathOutageManagerDaoImpl;
@@ -54,8 +54,6 @@ import org.opennms.netmgt.xml.event.Event;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
-
-import javax.annotation.PostConstruct;
 
 /**
  * Represents a DefaultPollContext

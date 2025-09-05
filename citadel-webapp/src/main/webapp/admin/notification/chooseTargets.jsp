@@ -25,7 +25,7 @@
 	contentType="text/html"
 	session="true"
 	import="java.util.*,
-			org.opennms.core.utils.WebSecurityUtils,
+			org.citadel.core.utils.WebSecurityUtils,
             org.opennms.web.api.Util,
             org.opennms.netmgt.config.*,
             org.opennms.netmgt.config.destinationPaths.*"

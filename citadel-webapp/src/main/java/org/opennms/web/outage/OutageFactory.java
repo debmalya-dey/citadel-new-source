@@ -32,8 +32,8 @@ import java.util.List;
 
 import javax.servlet.ServletContext;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
 import org.opennms.netmgt.dao.api.OutageDao;
 import org.opennms.web.filter.Filter;
 import org.opennms.web.outage.filter.InterfaceFilter;

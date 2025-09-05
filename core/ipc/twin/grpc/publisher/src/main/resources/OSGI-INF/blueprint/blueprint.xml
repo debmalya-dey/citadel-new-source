@@ -7,20 +7,20 @@
 
     <reference id="configAdmin" interface="org.osgi.service.cm.ConfigurationAdmin" />
 
-    <reference id="grpcIpcServer" interface="org.opennms.core.grpc.common.GrpcIpcServer" />
+    <reference id="grpcIpcServer" interface="org.citadel.core.grpc.common.GrpcIpcServer" />
 
-    <reference id="localTwinSubscriber" interface="org.opennms.core.ipc.twin.api.LocalTwinSubscriber"/>
+    <reference id="localTwinSubscriber" interface="org.citadel.core.ipc.twin.api.LocalTwinSubscriber"/>
 
     <!-- Tracing, metrics disabled for grpc due to class loader issues, see NMS-17732 -->
-    <bean id="grpcTwinPublisher" class="org.opennms.core.ipc.twin.grpc.publisher.GrpcTwinPublisher"
+    <bean id="grpcTwinPublisher" class="org.citadel.core.ipc.twin.grpc.publisher.GrpcTwinPublisher"
           init-method="start" destroy-method="close">
         <argument ref="localTwinSubscriber"/>
         <argument ref="grpcIpcServer"/>
     </bean>
 
-    <service ref="localTwinSubscriber" interface="org.opennms.core.ipc.twin.api.TwinSubscriber"/>
+    <service ref="localTwinSubscriber" interface="org.citadel.core.ipc.twin.api.TwinSubscriber"/>
 
-    <service ref="grpcTwinPublisher" interface="org.opennms.core.ipc.twin.api.TwinPublisher">
+    <service ref="grpcTwinPublisher" interface="org.citadel.core.ipc.twin.api.TwinPublisher">
         <service-properties>
             <entry key="strategy" value="grpc"/>
             <entry key="registration.export" value="true"/>

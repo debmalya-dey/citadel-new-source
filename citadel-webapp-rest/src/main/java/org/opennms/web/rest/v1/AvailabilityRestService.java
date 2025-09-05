@@ -21,7 +21,7 @@
  */
 package org.opennms.web.rest.v1;
 
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.io.IOException;
 import java.net.URLDecoder;
@@ -47,7 +47,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.map.annotate.JsonRootName;
-import org.opennms.core.config.api.JaxbListWrapper;
+import org.citadel.core.config.api.JaxbListWrapper;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.model.OnmsIpInterface;
 import org.opennms.netmgt.model.OnmsMonitoredService;

@@ -38,9 +38,8 @@ import java.util.Set;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.opennms.core.utils.RowProcessor;
+import org.citadel.core.utils.RowProcessor;
 import org.opennms.netmgt.config.NotificationManager;
 import org.opennms.netmgt.config.notifications.Notification;
 import org.opennms.netmgt.events.api.EventConstants;

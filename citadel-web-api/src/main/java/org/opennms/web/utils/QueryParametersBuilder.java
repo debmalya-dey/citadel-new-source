@@ -21,7 +21,7 @@
  */
 package org.opennms.web.utils;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 
 import static org.opennms.web.utils.UriInfoUtils.hasKey;
 

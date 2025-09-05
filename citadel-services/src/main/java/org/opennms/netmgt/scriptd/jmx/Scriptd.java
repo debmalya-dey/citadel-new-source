@@ -22,6 +22,7 @@
 package org.opennms.netmgt.scriptd.jmx;
 
 import org.apache.commons.lang.NotImplementedException;
+import org.citadel.core.fiber.Fiber;
 
 /**
  * <p>Scriptd class.</p>
@@ -75,7 +76,7 @@ public class Scriptd implements ScriptdMBean {
      */
     @Override
     public String status() {
-        return org.opennms.core.fiber.Fiber.STATUS_NAMES[getStatus()];
+        return Fiber.STATUS_NAMES[getStatus()];
     }
 
     /**
@@ -85,7 +86,7 @@ public class Scriptd implements ScriptdMBean {
      */
     @Override
     public String getStatusText() {
-        return org.opennms.core.fiber.Fiber.STATUS_NAMES[getStatus()];
+        return Fiber.STATUS_NAMES[getStatus()];
     }
 
     @Override

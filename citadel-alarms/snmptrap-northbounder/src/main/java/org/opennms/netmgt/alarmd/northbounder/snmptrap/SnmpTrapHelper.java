@@ -26,8 +26,8 @@ import java.net.InetAddress;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.opennms.core.utils.Base64;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.Base64;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;
 import org.opennms.netmgt.snmp.SnmpObjId;

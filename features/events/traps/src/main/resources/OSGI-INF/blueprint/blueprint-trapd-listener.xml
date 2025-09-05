@@ -19,7 +19,7 @@
 		</cm:default-properties>
 	</cm:property-placeholder>
 
-	<reference id="messageDispatcherFactory" interface="org.opennms.core.ipc.sink.api.MessageDispatcherFactory"/>
+	<reference id="messageDispatcherFactory" interface="api.sink.ipc.org.citadel.core.MessageDispatcherFactory"/>
 	<reference id="distPollerDao" interface="org.opennms.netmgt.dao.api.DistPollerDao"/>
 
 	<!-- Config Bean -->
@@ -45,7 +45,7 @@
 		<property name="distPollerDao" ref="distPollerDao"/>
 	</bean>
 
-	<reference-list id="twinSubscriberRef" interface="org.opennms.core.ipc.twin.api.TwinSubscriber" availability="optional">
+	<reference-list id="twinSubscriberRef" interface="api.twin.ipc.org.citadel.core.TwinSubscriber" availability="optional">
 		<reference-listener bind-method="bind" unbind-method="unbind" ref="trapListener"/>
 	</reference-list>
 </blueprint>

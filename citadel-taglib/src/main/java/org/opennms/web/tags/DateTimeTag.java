@@ -30,7 +30,7 @@ import java.util.Optional;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
-import org.opennms.core.time.CentralizedDateTimeFormat;
+import org.citadel.core.time.CentralizedDateTimeFormat;
 
 /**
  * This class replaces the &lt;fmt:formatDate /&gt; tag.

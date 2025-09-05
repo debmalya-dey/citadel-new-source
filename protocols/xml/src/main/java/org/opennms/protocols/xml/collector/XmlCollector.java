@@ -31,9 +31,9 @@ import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.opennms.core.mate.api.Interpolator;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.ParameterMap;
+import org.citadel.core.mate.api.Interpolator;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.ParameterMap;
 import org.opennms.netmgt.collection.api.AbstractRemoteServiceCollector;
 import org.opennms.netmgt.collection.api.CollectionAgent;
 import org.opennms.netmgt.collection.api.CollectionException;

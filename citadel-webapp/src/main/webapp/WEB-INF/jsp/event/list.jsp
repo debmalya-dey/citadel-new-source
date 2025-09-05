@@ -40,7 +40,7 @@
 <%@page import="java.util.List"%>
 <%@page import="org.opennms.web.api.Util" %>
 <%@page import="org.opennms.web.tags.FavoriteTag" %>
-<%@page import="org.opennms.core.utils.WebSecurityUtils"%>
+<%@page import="org.citadel.core.utils.WebSecurityUtils"%>
 <%@ page import="com.google.common.base.Strings" %>
 
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

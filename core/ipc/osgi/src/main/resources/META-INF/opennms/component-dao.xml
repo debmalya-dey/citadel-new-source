@@ -8,6 +8,6 @@
        ">
 
   <!-- Conditionally load OSGI IPC -->
-  <bean class="org.opennms.core.ipc.osgi.ConditionalOsgiIpcContext"/>
+  <bean class="org.citadel.core.ipc.osgi.ConditionalOsgiIpcContext"/>
 
 </beans>

@@ -35,7 +35,7 @@
 <%@page language="java"
 	contentType="text/html"
 	session="true"
-	import="org.opennms.core.utils.WebSecurityUtils,
+	import="org.citadel.core.utils.WebSecurityUtils,
 		org.opennms.web.event.*,
 		org.opennms.web.api.Authentication,
 		org.opennms.web.servlet.MissingParameterException

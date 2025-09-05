@@ -23,7 +23,7 @@ package org.opennms.netmgt.dao;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.dao.api.SnmpInterfaceDao;
 import org.opennms.netmgt.dao.support.UpsertTemplate;

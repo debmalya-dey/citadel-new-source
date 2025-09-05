@@ -24,7 +24,7 @@ package org.opennms.web.controller;
 import org.jrobin.core.RrdException;
 import org.jrobin.core.timespec.TimeParser;
 import org.jrobin.core.timespec.TimeSpec;
-import org.opennms.core.utils.StreamUtils;
+import org.citadel.core.utils.StreamUtils;
 import org.opennms.netmgt.model.ResourceId;
 import org.opennms.web.servlet.MissingParameterException;
 import org.opennms.web.svclayer.RrdGraphService;

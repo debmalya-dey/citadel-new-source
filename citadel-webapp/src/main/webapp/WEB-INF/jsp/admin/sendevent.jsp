@@ -25,7 +25,7 @@
 	contentType="text/html"
 	session="true"
 	import="
-		org.opennms.core.utils.InetAddressUtils
+		org.citadel.core.utils.InetAddressUtils
 	"
 %>
 <%

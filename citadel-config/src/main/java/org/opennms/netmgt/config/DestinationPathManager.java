@@ -32,7 +32,7 @@ import java.util.Date;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.destinationPaths.DestinationPaths;
 import org.opennms.netmgt.config.destinationPaths.Header;
 import org.opennms.netmgt.config.destinationPaths.Path;

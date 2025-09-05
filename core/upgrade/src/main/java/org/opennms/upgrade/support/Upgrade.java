@@ -28,8 +28,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.opennms.core.logging.Logging;
-import org.opennms.core.utils.FuzzyDateFormatter;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.utils.FuzzyDateFormatter;
 import org.opennms.netmgt.vmmgr.ControllerUtils;
 import org.opennms.upgrade.api.Ignore;
 import org.opennms.upgrade.api.OnmsUpgrade;

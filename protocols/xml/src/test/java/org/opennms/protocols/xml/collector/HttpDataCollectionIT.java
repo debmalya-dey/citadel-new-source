@@ -21,7 +21,6 @@
  */
 package org.opennms.protocols.xml.collector;
 
-import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.isNotNull;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.mock;
@@ -42,14 +41,14 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
-import org.opennms.core.collection.test.CollectionSetUtils;
-import org.opennms.core.collection.test.MockCollectionAgent;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.test.http.JUnitHttpServerExecutionListener;
-import org.opennms.core.test.http.annotations.JUnitHttpServer;
-import org.opennms.core.test.http.annotations.Webapp;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.collection.test.CollectionSetUtils;
+import org.citadel.core.collection.test.MockCollectionAgent;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.test.http.JUnitHttpServerExecutionListener;
+import org.citadel.core.test.http.annotations.JUnitHttpServer;
+import org.citadel.core.test.http.annotations.Webapp;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.collection.api.CollectionAgent;
 import org.opennms.netmgt.collection.api.CollectionSet;
 import org.opennms.netmgt.collection.api.CollectionSetVisitor;

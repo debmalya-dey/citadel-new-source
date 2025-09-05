@@ -21,8 +21,8 @@
  */
 package org.opennms.web.element;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.StringUtils;
 import org.opennms.netmgt.model.OnmsMonitoredService;
 
 public class Service {

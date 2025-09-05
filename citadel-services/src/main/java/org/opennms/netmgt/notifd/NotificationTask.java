@@ -33,7 +33,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.Executor;
 
-import org.opennms.core.logging.Logging;
+import org.citadel.core.logging.Logging;
 import org.opennms.netmgt.config.NotificationManager;
 import org.opennms.netmgt.config.UserManager;
 import org.opennms.netmgt.config.notificationCommands.Argument;

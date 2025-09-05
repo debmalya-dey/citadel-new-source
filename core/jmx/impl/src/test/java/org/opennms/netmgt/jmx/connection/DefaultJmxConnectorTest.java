@@ -36,7 +36,7 @@ import javax.management.remote.JMXConnector;
 import javax.management.remote.JMXConnectorFactory;
 
 import org.junit.Test;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.jmx.connection.test.ClientProvider;
 import org.opennms.netmgt.jmx.impl.connection.connectors.DefaultConnectionManager;
 

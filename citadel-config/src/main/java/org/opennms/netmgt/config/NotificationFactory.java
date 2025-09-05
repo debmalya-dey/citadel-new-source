@@ -34,8 +34,8 @@ import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.ConfigFileConstants;
 
 /**
  * <p>NotificationFactory class.</p>

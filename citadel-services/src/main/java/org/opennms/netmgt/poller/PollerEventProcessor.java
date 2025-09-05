@@ -21,8 +21,8 @@
  */
 package org.opennms.netmgt.poller;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -32,7 +32,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.PollerConfig;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.EventIpcManager;

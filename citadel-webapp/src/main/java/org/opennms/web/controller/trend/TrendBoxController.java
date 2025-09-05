@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.trend.TrendConfiguration;
 import org.opennms.netmgt.config.trend.TrendDefinition;
 import org.slf4j.Logger;

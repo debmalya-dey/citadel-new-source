@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.filter;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import java.lang.reflect.UndeclaredThrowableException;
 import java.net.InetAddress;
@@ -44,8 +44,8 @@ import java.util.regex.Pattern;
 import javax.annotation.PreDestroy;
 import javax.sql.DataSource;
 
-import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.InetAddressComparator;
+import org.citadel.core.utils.DBUtils;
+import org.citadel.core.utils.InetAddressComparator;
 import org.opennms.netmgt.config.api.DatabaseSchemaConfig;
 import org.opennms.netmgt.config.filter.Table;
 import org.opennms.netmgt.filter.api.FilterDao;

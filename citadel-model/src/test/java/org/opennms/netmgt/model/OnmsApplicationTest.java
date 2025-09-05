@@ -24,8 +24,8 @@ package org.opennms.netmgt.model;
 import java.io.IOException;
 
 import org.junit.Test;
-import org.opennms.core.test.xml.JsonTest;
-import org.opennms.core.test.xml.XmlTest;
+import org.citadel.core.test.xml.JsonTest;
+import org.citadel.core.test.xml.XmlTest;
 
 
 public class OnmsApplicationTest {

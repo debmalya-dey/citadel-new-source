@@ -50,7 +50,7 @@
     </service>
 
     <!-- JMS HealthCheck -->
-    <service interface="org.opennms.core.health.api.HealthCheck">
+    <service interface="api.health.org.citadel.core.HealthCheck">
         <bean class="org.opennms.distributed.jms.impl.JmsConnectionHealthCheck" >
             <argument ref="blueprintBundleContext"/>
         </bean>

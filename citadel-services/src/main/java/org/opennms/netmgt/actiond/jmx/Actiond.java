@@ -24,6 +24,7 @@ package org.opennms.netmgt.actiond.jmx;
 import java.lang.reflect.UndeclaredThrowableException;
 
 import org.apache.commons.lang.NotImplementedException;
+import org.citadel.core.fiber.Fiber;
 import org.opennms.netmgt.config.ActiondConfigFactory;
 
 /**
@@ -87,7 +88,7 @@ public class Actiond implements ActiondMBean {
      */
     @Override
     public String status() {
-        return org.opennms.core.fiber.Fiber.STATUS_NAMES[getStatus()];
+        return Fiber.STATUS_NAMES[getStatus()];
     }
 
     /**
@@ -97,7 +98,7 @@ public class Actiond implements ActiondMBean {
      */
     @Override
     public String getStatusText() {
-        return org.opennms.core.fiber.Fiber.STATUS_NAMES[getStatus()];
+        return Fiber.STATUS_NAMES[getStatus()];
     }
 
     @Override

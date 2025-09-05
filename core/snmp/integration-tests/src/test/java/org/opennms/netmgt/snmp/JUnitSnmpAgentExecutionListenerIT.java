@@ -22,17 +22,17 @@
 package org.opennms.netmgt.snmp;
 
 import static org.junit.Assert.assertEquals;
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.test.snmp.JUnitSnmpAgentExecutionListener;
-import org.opennms.core.test.snmp.ProxySnmpAgentConfigFactory;
-import org.opennms.core.test.snmp.annotations.JUnitSnmpAgent;
-import org.opennms.core.test.snmp.annotations.JUnitSnmpAgents;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.test.snmp.JUnitSnmpAgentExecutionListener;
+import org.citadel.core.test.snmp.ProxySnmpAgentConfigFactory;
+import org.citadel.core.test.snmp.annotations.JUnitSnmpAgent;
+import org.citadel.core.test.snmp.annotations.JUnitSnmpAgents;
 import org.opennms.netmgt.config.SnmpPeerFactory;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;

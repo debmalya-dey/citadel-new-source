@@ -30,7 +30,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.notificationCommands.Command;
 import org.opennms.netmgt.config.notificationCommands.NotificationCommands;
 import org.slf4j.Logger;

@@ -23,7 +23,7 @@ package org.opennms.netmgt.dao.api;
 
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 public class CriticalPath {
 

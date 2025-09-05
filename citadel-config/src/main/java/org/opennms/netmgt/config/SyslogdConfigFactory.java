@@ -31,9 +31,9 @@ import java.util.List;
 import java.util.TimeZone;
 import java.util.stream.Collectors;
 
-import org.opennms.core.config.api.ConfigReloadContainer;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.config.api.ConfigReloadContainer;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.syslogd.HideMatch;
 import org.opennms.netmgt.config.syslogd.SyslogdConfiguration;
 import org.opennms.netmgt.config.syslogd.SyslogdConfigurationGroup;

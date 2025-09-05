@@ -25,7 +25,7 @@
 		contentType="text/html"
 		session="true"
 		import="java.util.*,
-    org.opennms.core.utils.SIUtils,
+    org.citadel.core.utils.SIUtils,
     org.opennms.netmgt.model.OnmsNode,
     org.opennms.netmgt.model.OnmsResource,
     org.opennms.netmgt.dao.api.IfLabel,
@@ -34,7 +34,7 @@
     org.opennms.netmgt.dao.hibernate.IfLabelDaoImpl"
 %>
 <%@ page import="org.opennms.netmgt.model.ResourceId" %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <%

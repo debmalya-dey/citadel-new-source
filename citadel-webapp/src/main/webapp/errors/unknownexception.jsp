@@ -25,7 +25,7 @@
 	contentType="text/html"
 	session="true"
 	isErrorPage="true"
-	import="org.opennms.core.resource.Vault,
+	import="org.citadel.core.resource.Vault,
                 java.lang.StackTraceElement,
                 java.lang.StringBuilder"
  %>

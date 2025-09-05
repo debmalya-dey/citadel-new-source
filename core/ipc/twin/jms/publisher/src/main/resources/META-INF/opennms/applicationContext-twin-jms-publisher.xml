@@ -17,7 +17,7 @@
     <context:annotation-config />
 
 
-    <bean id="jmsTwinPublisher" class="org.opennms.core.ipc.twin.jms.publisher.JmsTwinPublisher" primary="true"
+    <bean id="jmsTwinPublisher" class="org.citadel.core.ipc.twin.jms.publisher.JmsTwinPublisher" primary="true"
           init-method="init" destroy-method="close" >
         <constructor-arg ref="twinRpcServer"/>
         <constructor-arg ref="localTwinSubscriber"/>
@@ -26,13 +26,13 @@
     </bean>
 
     <bean id="identity" class="org.opennms.features.distributed.identity.impl.OpenNMSIdentityImpl"/>
-    <bean id="localTwinSubscriber" class="org.opennms.core.ipc.twin.common.LocalTwinSubscriberImpl">
+    <bean id="localTwinSubscriber" class="org.citadel.core.ipc.twin.common.LocalTwinSubscriberImpl">
         <constructor-arg ref="identity"/>
         <constructor-arg ref="tracerRegistry"/>
         <constructor-arg ref="localTwinMetricRegistry"/>
     </bean>
 
-    <onmsgi:service ref="localTwinSubscriber" interface="org.opennms.core.ipc.twin.api.TwinSubscriber"/>
+    <onmsgi:service ref="localTwinSubscriber" interface="org.citadel.core.ipc.twin.api.TwinSubscriber"/>
 
     <!-- Reduces the graceful shutdown time from 300 to 15 seconds. -->
     <bean id="shutdownStrategy" class="org.apache.camel.impl.DefaultShutdownStrategy">

@@ -28,8 +28,8 @@ import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
-import org.opennms.core.rpc.api.RpcClient;
-import org.opennms.core.rpc.api.RpcClientFactory;
+import org.citadel.core.rpc.api.RpcClient;
+import org.citadel.core.rpc.api.RpcClientFactory;
 import org.opennms.netmgt.snmp.CollectionTracker;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;
 import org.opennms.netmgt.snmp.SnmpObjId;

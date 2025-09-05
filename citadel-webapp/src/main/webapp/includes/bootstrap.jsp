@@ -65,7 +65,7 @@
 
 <%@page language="java"
         import="
-		org.opennms.core.utils.TimeSeries,
+		org.citadel.core.utils.TimeSeries,
 		org.opennms.web.api.Util,
 		org.opennms.netmgt.config.NotifdConfigFactory,
 		org.owasp.encoder.Encode

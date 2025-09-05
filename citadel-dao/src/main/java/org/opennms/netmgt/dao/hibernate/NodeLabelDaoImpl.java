@@ -28,12 +28,13 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import org.opennms.core.criteria.Alias;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.restrictions.EqRestriction;
-import org.opennms.core.criteria.restrictions.NeRestriction;
-import org.opennms.core.utils.ByteArrayComparator;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.criteria.Alias;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.restrictions.EqRestriction;
+import org.citadel.core.criteria.restrictions.NeRestriction;
+import org.citadel.core.utils.ByteArrayComparator;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.IpInterfaceDao;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.dao.api.NodeLabel;
@@ -272,7 +273,7 @@ public class NodeLabelDaoImpl implements NodeLabel{
         List<InetAddress> ipv4AddrList = new ArrayList<>();
         List<String> ipHostNameList = new ArrayList<>();
 
-        final org.opennms.core.criteria.Criteria criteria = new org.opennms.core.criteria.Criteria(OnmsIpInterface.class)
+        final Criteria criteria = new Criteria(OnmsIpInterface.class)
         .setAliases(Arrays.asList(new Alias[] {
             new Alias("node","node", JoinType.LEFT_JOIN)
         }))
@@ -305,7 +306,7 @@ public class NodeLabelDaoImpl implements NodeLabel{
             ipv4AddrList.clear();
             ipHostNameList.clear();
 
-            final org.opennms.core.criteria.Criteria crit = new org.opennms.core.criteria.Criteria(OnmsIpInterface.class)
+            final Criteria crit = new Criteria(OnmsIpInterface.class)
             .setAliases(Arrays.asList(new Alias[] {
                 new Alias("node","node", JoinType.LEFT_JOIN)
             }))

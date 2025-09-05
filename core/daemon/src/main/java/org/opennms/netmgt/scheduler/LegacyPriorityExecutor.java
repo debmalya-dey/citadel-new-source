@@ -29,8 +29,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 
-import org.opennms.core.concurrent.LogPreservingThreadFactory;
-import org.opennms.core.fiber.PausableFiber;
+import org.citadel.core.concurrent.LogPreservingThreadFactory;
+import org.citadel.core.fiber.PausableFiber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

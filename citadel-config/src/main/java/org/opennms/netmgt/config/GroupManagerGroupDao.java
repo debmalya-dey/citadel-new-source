@@ -27,8 +27,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.utils.OwnedIntervalSequence;
-import org.opennms.core.xml.MarshallingExceptionTranslator;
+import org.citadel.core.utils.OwnedIntervalSequence;
+import org.citadel.core.xml.MarshallingExceptionTranslator;
 import org.opennms.netmgt.config.groups.Group;
 import org.opennms.netmgt.config.groups.Role;
 import org.opennms.netmgt.config.groups.Schedule;

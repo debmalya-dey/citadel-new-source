@@ -32,8 +32,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 import java.util.stream.Collectors;
 
-import org.opennms.core.rpc.xml.AbstractXmlRpcModule;
-import org.opennms.core.utils.LocationUtils;
+import org.citadel.core.rpc.xml.AbstractXmlRpcModule;
+import org.citadel.core.utils.LocationUtils;
 import org.opennms.features.scv.api.SecureCredentialsVault;
 import org.opennms.netmgt.snmp.AggregateTracker;
 import org.opennms.netmgt.snmp.Collectable;

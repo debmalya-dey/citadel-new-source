@@ -31,9 +31,9 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.criteria.restrictions.InRestriction;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.restrictions.InRestriction;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.collection.api.PersisterFactory;
 import org.opennms.netmgt.config.PollerConfig;
 import org.opennms.netmgt.config.dao.outages.api.ReadablePollOutagesDao;

@@ -24,7 +24,7 @@ package org.opennms.netmgt.dao.jaxb.collector;
 import java.io.File;
 import java.util.Iterator;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.datacollection.Collect;
 import org.opennms.netmgt.config.datacollection.DatacollectionConfig;
 import org.opennms.netmgt.config.datacollection.Group;

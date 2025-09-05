@@ -37,8 +37,8 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-import org.opennms.core.sysprops.SystemProperties;
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.sysprops.SystemProperties;
+import org.citadel.core.utils.StringUtils;
 import org.opennms.netmgt.dao.api.FilterWatcher;
 import org.opennms.netmgt.dao.api.ServiceRef;
 import org.opennms.netmgt.dao.api.SessionUtils;

@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.daemon;
 
-import org.opennms.core.logging.Logging;
+import org.citadel.core.logging.Logging;
 import org.opennms.netmgt.model.ServiceDaemon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

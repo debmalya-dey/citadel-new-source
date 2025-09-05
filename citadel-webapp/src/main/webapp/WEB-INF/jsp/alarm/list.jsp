@@ -23,8 +23,8 @@
 --%>
 <%@page language="java" contentType="text/html" session="true" %>
   
-<%@page import="org.opennms.core.utils.InetAddressUtils" %>
-<%@page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@page import="org.citadel.core.utils.InetAddressUtils" %>
+<%@page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@page import="org.opennms.netmgt.model.OnmsAlarm" %>
 <%@page import="org.opennms.netmgt.model.OnmsEvent" %>
 <%@page import="org.opennms.netmgt.model.OnmsFilterFavorite"%>

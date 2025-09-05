@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 https://osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
 
-    <reference id="messageConsumerManager" interface="org.opennms.core.ipc.sink.api.MessageConsumerManager" availability="mandatory" />
+    <reference id="messageConsumerManager" interface="api.sink.ipc.org.citadel.core.MessageConsumerManager" availability="mandatory" />
     <reference id="deviceConfigSinkModule" interface="org.opennms.features.deviceconfig.sink.module.DeviceConfigSinkModule" availability="mandatory" />
     <reference id="ipInterfaceDao"         interface="org.opennms.netmgt.dao.api.IpInterfaceDao" availability="mandatory" />
     <reference id="deviceConfigDao"        interface="org.opennms.features.deviceconfig.persistence.api.DeviceConfigDao" availability="mandatory" />

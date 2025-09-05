@@ -17,14 +17,14 @@
   <onmsgi:reference id="jdbcTemplate" interface="org.springframework.jdbc.core.JdbcOperations" />
   -->
 
-  <bean id="temporaryDatabase" class="org.opennms.core.test.db.TemporaryDatabaseHsqldb">
+  <bean id="temporaryDatabase" class="org.citadel.core.test.db.TemporaryDatabaseHsqldb">
     <property name="dataSource" ref="dataSource" />
     <property name="jdbcTemplate" ref="jdbcTemplate" />
   </bean>
 
   <!-- Set the HSQLDB datasource as the XADataSource -->
   <bean id="init-xaDataSourceFactory" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean" depends-on="temporaryDatabase">
-    <property name="staticMethod"><value>org.opennms.core.db.XADataSourceFactory.init</value></property>
+    <property name="staticMethod"><value>org.citadel.core.db.XADataSourceFactory.init</value></property>
     <property name="arguments"><list><ref bean="temporaryDatabase"/></list></property>
   </bean>
 
@@ -35,7 +35,7 @@
   <bean id="dataSource" class="com.atomikos.jdbc.AtomikosDataSourceBean" destroy-method="close" depends-on="init-xaDataSourceFactory">
     <property name="uniqueResourceName" value="opennms"/>
     <property name="xaDataSource">
-      <bean class="org.opennms.core.db.XADataSourceFactoryBean" />
+      <bean class="org.citadel.core.db.XADataSourceFactoryBean" />
     </property>
     <property name="poolSize" value="30"/>
     <!-- This test query assures that connections are refreshed following a database restart -->

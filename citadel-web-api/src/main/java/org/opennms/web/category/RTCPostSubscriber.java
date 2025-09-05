@@ -24,8 +24,8 @@ package org.opennms.web.category;
 import java.io.IOException;
 import java.util.concurrent.Callable;
 
-import org.opennms.core.logging.Logging;
-import org.opennms.core.resource.Vault;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.resource.Vault;
 import org.opennms.netmgt.config.ViewsDisplayFactory;
 import org.opennms.netmgt.config.viewsdisplay.Section;
 import org.opennms.netmgt.config.viewsdisplay.View;

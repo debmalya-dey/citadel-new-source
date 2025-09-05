@@ -25,8 +25,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.graylog2.syslog4j.Syslog;
-import org.opennms.core.soa.Registration;
-import org.opennms.core.soa.ServiceRegistry;
+import org.citadel.core.soa.Registration;
+import org.citadel.core.soa.ServiceRegistry;
 import org.opennms.netmgt.alarmd.api.NorthboundAlarm;
 import org.opennms.netmgt.alarmd.api.Northbounder;
 import org.opennms.netmgt.alarmd.api.NorthbounderException;

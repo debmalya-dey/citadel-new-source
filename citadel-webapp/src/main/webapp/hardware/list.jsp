@@ -40,7 +40,7 @@
                 org.opennms.netmgt.model.snmpmetadata.SnmpMetadataTable,
                 org.opennms.netmgt.model.snmpmetadata.SnmpMetadataValue"
 %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <%!

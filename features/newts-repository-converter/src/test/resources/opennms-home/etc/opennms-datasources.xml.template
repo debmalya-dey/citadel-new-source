@@ -2,7 +2,7 @@
 <datasource-configuration xmlns:this="http://xmlns.opennms.org/xsd/config/opennms-datasources"
                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                           xsi:schemaLocation="http://xmlns.opennms.org/xsd/config/opennms-datasources http://www.opennms.org/xsd/config/opennms-datasources.xsd">
-  <connection-pool factory="org.opennms.core.db.C3P0ConnectionFactory"
+  <connection-pool factory="db.org.citadel.core.C3P0ConnectionFactory"
                    idleTimeout="600"
                    loginTimeout="3"
                    minPool="50"

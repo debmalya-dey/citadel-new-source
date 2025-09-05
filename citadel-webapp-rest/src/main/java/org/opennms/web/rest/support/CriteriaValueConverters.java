@@ -25,7 +25,7 @@ import java.net.InetAddress;
 import java.util.Date;
 import java.util.function.Function;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 /**
  * This class is used to override {@link #toString()} on several

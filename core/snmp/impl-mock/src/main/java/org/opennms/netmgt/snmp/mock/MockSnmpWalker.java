@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import org.opennms.core.concurrent.LogPreservingThreadFactory;
+import org.citadel.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.netmgt.snmp.CollectionTracker;
 import org.opennms.netmgt.snmp.ErrorStatus;
 import org.opennms.netmgt.snmp.SnmpAgentAddress;

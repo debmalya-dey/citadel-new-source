@@ -25,7 +25,7 @@
 	contentType="text/html"
 	session="true"
 	import="
-		org.opennms.core.utils.WebSecurityUtils,
+		org.citadel.core.utils.WebSecurityUtils,
 		org.opennms.web.servlet.MissingParameterException
 	"
 %>

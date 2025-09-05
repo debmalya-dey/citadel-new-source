@@ -23,7 +23,7 @@ package org.opennms.netmgt.poller.pollables;
 
 import static org.mockito.Mockito.*;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -39,12 +39,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.MockDatabase;
-import org.opennms.core.test.db.TemporaryDatabaseAware;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.MockDatabase;
+import org.citadel.core.test.db.TemporaryDatabaseAware;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
 import org.opennms.netmgt.collection.api.PersisterFactory;
 import org.opennms.netmgt.config.PollerConfig;
 import org.opennms.netmgt.config.dao.outages.api.OverrideablePollOutagesDao;

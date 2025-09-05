@@ -30,7 +30,7 @@
 		org.opennms.netmgt.config.notifications.*
 	"
 %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%!
     public void init() throws ServletException {

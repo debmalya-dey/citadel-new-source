@@ -12,6 +12,6 @@
        the registry must be made available. Otherwise the onmsgi:* statements will not work
     -->
     <onmsgi:default-registry/>  <!-- creates bean with id "serviceRegistry -->
-    <onmsgi:service ref="serviceRegistry" interface="org.opennms.core.soa.ServiceRegistry" /> <!-- expose that bean -->
+    <onmsgi:service ref="serviceRegistry" interface="soa.org.citadel.core.ServiceRegistry" /> <!-- expose that bean -->
 
 </beans>

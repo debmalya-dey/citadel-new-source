@@ -24,7 +24,7 @@ package org.opennms.netmgt.model;
 import java.beans.PropertyEditorSupport;
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 public class InetAddressTypeEditor extends PropertyEditorSupport {
 

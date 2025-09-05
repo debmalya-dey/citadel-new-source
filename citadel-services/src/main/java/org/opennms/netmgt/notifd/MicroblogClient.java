@@ -27,9 +27,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Optional;
 
-import org.opennms.core.mate.api.Interpolator;
-import org.opennms.core.mate.api.Scope;
-import org.opennms.core.mate.api.SecureCredentialsVaultScope;
+import org.citadel.core.mate.api.Interpolator;
+import org.citadel.core.mate.api.Scope;
+import org.citadel.core.mate.api.SecureCredentialsVaultScope;
 import org.opennms.features.scv.api.SecureCredentialsVault;
 import org.opennms.features.scv.jceks.JCEKSSecureCredentialsVault;
 import org.opennms.netmgt.config.microblog.MicroblogProfile;

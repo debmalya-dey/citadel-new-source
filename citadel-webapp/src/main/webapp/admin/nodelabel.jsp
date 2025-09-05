@@ -25,11 +25,11 @@
 	contentType="text/html"
 	session="true"
 	import="
-		org.opennms.core.spring.BeanUtils,
+		org.citadel.core.spring.BeanUtils,
 		org.opennms.netmgt.dao.api.NodeLabel,
 		org.opennms.netmgt.model.OnmsNode.NodeLabelSource,
 		org.opennms.web.servlet.MissingParameterException,
-		org.opennms.core.utils.WebSecurityUtils,
+		org.citadel.core.utils.WebSecurityUtils,
 		java.util.*
 	"
 %>

@@ -22,7 +22,7 @@
 
 --%>
 <%@page language="java"	contentType="text/html" session="true"%>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%
   String nodeId = WebSecurityUtils.sanitizeString(request.getParameter("node"));
   String nodeLabel = WebSecurityUtils.sanitizeString(request.getParameter("nodelabel"));

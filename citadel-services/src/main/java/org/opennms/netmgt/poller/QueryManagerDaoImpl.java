@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.poller;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -34,14 +34,14 @@ import java.util.NoSuchElementException;
 
 
 
-import org.opennms.core.criteria.Alias;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.criteria.restrictions.AnyRestriction;
-import org.opennms.core.criteria.restrictions.EqRestriction;
-import org.opennms.core.criteria.restrictions.NeRestriction;
-import org.opennms.core.criteria.restrictions.NullRestriction;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.criteria.Alias;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.restrictions.AnyRestriction;
+import org.citadel.core.criteria.restrictions.EqRestriction;
+import org.citadel.core.criteria.restrictions.NeRestriction;
+import org.citadel.core.criteria.restrictions.NullRestriction;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.EventDao;
 import org.opennms.netmgt.dao.api.IpInterfaceDao;
 import org.opennms.netmgt.dao.api.MonitoredServiceDao;

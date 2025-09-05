@@ -63,7 +63,7 @@ import org.hibernate.ObjectNotFoundException;
 import org.hibernate.annotations.Filter;
 import org.hibernate.annotations.Formula;
 import org.hibernate.annotations.Type;
-import org.opennms.core.network.InetAddressXmlAdapter;
+import org.citadel.core.network.InetAddressXmlAdapter;
 import com.google.common.base.MoreObjects;
 
 /**

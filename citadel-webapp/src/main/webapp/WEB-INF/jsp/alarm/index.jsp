@@ -29,13 +29,13 @@
 <%@page import="java.util.Collections" %>
 <%@page import="org.springframework.web.context.WebApplicationContext" %>
 <%@page import="org.opennms.web.navigate.PageNavEntry" %>
-<%@page import="org.opennms.core.soa.ServiceRegistry" %>
+<%@page import="org.citadel.core.soa.ServiceRegistry" %>
 <%@page import="org.opennms.web.tags.filters.AlarmFilterCallback" %>
 <%@page import="org.opennms.web.tags.filters.FilterCallback" %>
 <%@page import="org.opennms.netmgt.model.OnmsFilterFavorite" %>
 <%@page import="org.opennms.web.filter.NormalizedQueryParameters" %>
 <%@page import="org.opennms.web.filter.Filter" %>
-<%@page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="../../taglib.tld" prefix="onms" %>

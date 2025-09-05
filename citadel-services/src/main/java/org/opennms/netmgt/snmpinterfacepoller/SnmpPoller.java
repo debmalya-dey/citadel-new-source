@@ -23,9 +23,9 @@ package org.opennms.netmgt.snmpinterfacepoller;
 
 
 import org.apache.commons.lang.StringUtils;
-import org.opennms.core.network.IPAddress;
-import org.opennms.core.network.IPAddressRange;
-import org.opennms.core.utils.ParameterMap;
+import org.citadel.core.network.IPAddress;
+import org.citadel.core.network.IPAddressRange;
+import org.citadel.core.utils.ParameterMap;
 import org.opennms.netmgt.config.SnmpEventInfo;
 import org.opennms.netmgt.config.SnmpInterfacePollerConfig;
 import org.opennms.netmgt.daemon.AbstractServiceDaemon;

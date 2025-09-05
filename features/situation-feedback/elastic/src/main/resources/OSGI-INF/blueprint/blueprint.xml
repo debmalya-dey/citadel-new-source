@@ -53,7 +53,7 @@
     <reference id="sessionUtils" interface="org.opennms.netmgt.dao.api.SessionUtils"/>
     <reference id="secureCredentialsVault" interface="org.opennms.features.scv.api.SecureCredentialsVault" availability="mandatory"/>
 
-    <bean id="entityScopeProvider" class="org.opennms.core.mate.model.EntityScopeProviderImpl">
+    <bean id="entityScopeProvider" class="model.mate.org.citadel.core.EntityScopeProviderImpl">
         <property name="nodeDao" ref="nodeDao"/>
         <property name="ipInterfaceDao" ref="ipInterfaceDao"/>
         <property name="monitoredServiceDao" ref="monitoredServiceDao"/>
@@ -142,7 +142,7 @@
     </reference-list>
 
     <!-- Health Check -->
-    <service interface="org.opennms.core.health.api.HealthCheck">
+    <service interface="api.health.org.citadel.core.HealthCheck">
         <bean class="org.opennms.features.jest.client.ElasticHealthCheck" >
             <argument ref="jestClientWithCircuitBreaker"/>
             <argument value="Situation Feedback"/>

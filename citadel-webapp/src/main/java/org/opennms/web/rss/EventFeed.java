@@ -25,7 +25,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.model.OnmsSeverity;
 import org.opennms.web.event.AcknowledgeType;
 import org.opennms.web.event.Event;

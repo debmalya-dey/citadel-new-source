@@ -80,7 +80,7 @@
     </service>
 
     <!-- Configure node cache -->
-    <bean id="nodeCacheConfig" class="org.opennms.core.cache.CacheConfig">
+    <bean id="nodeCacheConfig" class="cache.org.citadel.core.CacheConfig">
         <argument value="nodes-for-alarm-history-in-es"/>
         <property name="metricRegistry" ref="metricRegistry" />
         <property name="enabled" value="${nodeCache.enabled}" />
@@ -95,7 +95,7 @@
     <reference id="sessionUtils" interface="org.opennms.netmgt.dao.api.SessionUtils"/>
     <reference id="secureCredentialsVault" interface="org.opennms.features.scv.api.SecureCredentialsVault" availability="mandatory"/>
 
-    <bean id="entityScopeProvider" class="org.opennms.core.mate.model.EntityScopeProviderImpl">
+    <bean id="entityScopeProvider" class="model.mate.org.citadel.core.EntityScopeProviderImpl">
         <property name="nodeDao" ref="nodeDao"/>
         <property name="ipInterfaceDao" ref="ipInterfaceDao"/>
         <property name="monitoredServiceDao" ref="monitoredServiceDao"/>
@@ -199,7 +199,7 @@
     <service ref="elasticAlarmHistoryRepository" interface="org.opennms.features.alarms.history.api.AlarmHistoryRepository"/>
 
     <!-- Our health Check -->
-    <service interface="org.opennms.core.health.api.HealthCheck">
+    <service interface="api.health.org.citadel.core.HealthCheck">
         <bean class="org.opennms.features.alarms.history.elastic.ElasticHealthCheck" >
             <argument ref="elasticAlarmHistoryRepository"/>
         </bean>

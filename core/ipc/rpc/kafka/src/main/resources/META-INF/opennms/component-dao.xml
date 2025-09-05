@@ -8,6 +8,6 @@
        ">
 
     <!-- Conditionally load the Kafka RPC Impl. -->
-    <bean class="org.opennms.core.ipc.rpc.kafka.ConditionalKafkaRpcContext"/>
+    <bean class="org.citadel.core.ipc.rpc.kafka.ConditionalKafkaRpcContext"/>
 
 </beans>

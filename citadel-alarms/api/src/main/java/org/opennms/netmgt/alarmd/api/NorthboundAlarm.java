@@ -35,8 +35,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.xml.ValidateUsing;
 import org.opennms.netmgt.model.OnmsAlarm;
 import org.opennms.netmgt.model.OnmsDistPoller;
 import org.opennms.netmgt.model.OnmsEventParameter;

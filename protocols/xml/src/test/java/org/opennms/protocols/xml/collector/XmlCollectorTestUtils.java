@@ -25,8 +25,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.opennms.core.mate.api.EmptyScope;
-import org.opennms.core.mate.api.Interpolator;
+import org.citadel.core.mate.api.EmptyScope;
+import org.citadel.core.mate.api.Interpolator;
 import org.opennms.netmgt.collection.api.CollectionAgent;
 import org.opennms.netmgt.collection.api.CollectionException;
 import org.opennms.netmgt.collection.api.CollectionSet;

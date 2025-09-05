@@ -31,8 +31,8 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.rpc.api.RemoteExecutionException;
-import org.opennms.core.rpc.api.RpcResponse;
+import org.citadel.core.rpc.api.RemoteExecutionException;
+import org.citadel.core.rpc.api.RpcResponse;
 
 @XmlRootElement(name="snmp-response")
 @XmlAccessorType(XmlAccessType.NONE)

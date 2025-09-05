@@ -38,7 +38,7 @@ import javax.sql.DataSource;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.db.DataSourceFactory;
+import org.citadel.core.db.DataSourceFactory;
 
 /**
  * Tests transactional capabilities of Vacuumd

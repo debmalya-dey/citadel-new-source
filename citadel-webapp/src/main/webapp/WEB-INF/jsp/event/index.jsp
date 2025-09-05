@@ -32,7 +32,7 @@
 <%@ page import="org.opennms.web.tags.filters.FilterCallback" %>
 <%@ page import="org.opennms.netmgt.model.OnmsFilterFavorite" %>
 <%@ page import="org.opennms.web.filter.Filter" %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%@ page import="org.opennms.web.utils.Bootstrap" %>
 <% Bootstrap.with(pageContext)

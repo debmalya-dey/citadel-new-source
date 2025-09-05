@@ -53,12 +53,12 @@ import java.util.stream.StreamSupport;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.tuple.Pair;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.IteratorUtils;
-import org.opennms.core.utils.LocationUtils;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.IteratorUtils;
+import org.citadel.core.utils.LocationUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.api.DiscoveryConfigurationFactory;
 import org.opennms.netmgt.config.discovery.Definition;
 import org.opennms.netmgt.config.discovery.Detector;

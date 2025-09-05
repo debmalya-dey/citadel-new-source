@@ -27,7 +27,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Objects;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.dao.thresholding.api.OverrideableThresholdingDao;
 import org.opennms.netmgt.config.threshd.ThresholdingConfig;
 

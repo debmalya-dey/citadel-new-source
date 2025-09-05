@@ -35,7 +35,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.UserFactory;
 import org.opennms.netmgt.config.api.UserConfig.ContactType;
 import org.opennms.netmgt.config.users.Contact;

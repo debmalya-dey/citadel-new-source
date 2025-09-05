@@ -23,8 +23,8 @@ package org.opennms.web.rest.support;
 
 import java.util.function.Function;
 
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.criteria.restrictions.Restrictions;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.restrictions.Restrictions;
 
 /**
  * Specific {@link CriteriaBehavior} for IP address values that can handle

@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.dao.jmx;
 
-import org.opennms.core.xml.AbstractJaxbConfigDao;
+import org.citadel.core.xml.AbstractJaxbConfigDao;
 import org.opennms.netmgt.config.jmx.JmxConfig;
 
 /**

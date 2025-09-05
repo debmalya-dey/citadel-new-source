@@ -44,9 +44,9 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.criteria.restrictions.Restrictions;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.restrictions.Restrictions;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.dao.api.OutageDao;
 import org.opennms.netmgt.model.OnmsNode;

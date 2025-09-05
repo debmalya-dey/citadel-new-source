@@ -9,7 +9,7 @@
 
     <context:annotation-config />
 
-    <bean id="alarmListener" class="org.opennms.core.test.alarms.driver.AlarmListener" factory-method="getInstance"/>
+    <bean id="alarmListener" class="org.citadel.core.test.alarms.driver.AlarmListener" factory-method="getInstance"/>
 
     <onmsgi:service interface="org.opennms.netmgt.alarmd.api.AlarmLifecycleListener" ref="alarmListener" >
         <onmsgi:service-properties>

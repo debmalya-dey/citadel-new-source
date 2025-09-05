@@ -27,7 +27,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.poller.PollStatus;
 import org.opennms.netmgt.xml.event.Event;

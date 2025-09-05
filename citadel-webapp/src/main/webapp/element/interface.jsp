@@ -33,10 +33,10 @@
             org.opennms.netmgt.model.OnmsResource,
             org.opennms.web.api.Authentication,
             org.opennms.web.element.*,
-            org.opennms.core.utils.InetAddressUtils,
+            org.citadel.core.utils.InetAddressUtils,
             org.opennms.netmgt.dao.hibernate.IfLabelDaoImpl"
 %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@ page import="org.opennms.netmgt.model.ResourceId" %>
 <%@ page import="org.opennms.web.services.ServiceJspUtil" %>
 <%@ page import="org.opennms.netmgt.model.monitoringLocations.OnmsMonitoringLocation" %>

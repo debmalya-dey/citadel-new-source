@@ -27,7 +27,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.opennms.core.utils.FuzzyDateFormatter;
+import org.citadel.core.utils.FuzzyDateFormatter;
 import org.opennms.netmgt.model.OnmsSeverity;
 
 import com.google.common.collect.Lists;

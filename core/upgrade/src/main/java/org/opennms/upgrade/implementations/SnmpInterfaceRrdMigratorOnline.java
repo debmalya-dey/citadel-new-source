@@ -32,8 +32,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.utils.DBUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.DBUtils;
 import org.opennms.netmgt.config.DataCollectionConfigFactory;
 import org.opennms.netmgt.config.DefaultDataCollectionConfigDao;
 import org.opennms.netmgt.rrd.model.RrdConvertUtils;

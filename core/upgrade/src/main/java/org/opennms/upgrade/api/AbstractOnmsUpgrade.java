@@ -41,10 +41,10 @@ import java.util.zip.ZipOutputStream;
 
 import javax.sql.DataSource;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.db.install.SimpleDataSource;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.db.install.SimpleDataSource;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.opennmsDataSources.DataSourceConfiguration;
 import org.opennms.netmgt.config.opennmsDataSources.JdbcDataSource;
 import org.slf4j.Logger;

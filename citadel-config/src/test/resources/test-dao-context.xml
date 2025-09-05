@@ -4,6 +4,6 @@
         http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
 
     <!-- Mock EntityScopeProvider for WmiPeerFactoryTest -->
-    <bean id="entityScopeProvider" class="org.opennms.core.mate.api.EntityScopeProvider" />
+    <bean id="entityScopeProvider" class="org.citadel.core.mate.api.EntityScopeProvider" />
 
 </beans>

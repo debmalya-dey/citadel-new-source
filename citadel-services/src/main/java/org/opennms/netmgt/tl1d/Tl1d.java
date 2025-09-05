@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.tl1d;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -30,8 +30,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.dao.api.NodeLabel;
 import org.opennms.netmgt.dao.hibernate.NodeLabelDaoImpl;
 import org.opennms.netmgt.events.api.EventProxy;

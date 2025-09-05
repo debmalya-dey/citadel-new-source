@@ -27,12 +27,12 @@ import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.List;
 
-import org.opennms.core.criteria.Alias;
-import org.opennms.core.criteria.Criteria.CriteriaVisitor;
-import org.opennms.core.criteria.Criteria.LockType;
-import org.opennms.core.criteria.Fetch;
-import org.opennms.core.criteria.Order;
-import org.opennms.core.criteria.restrictions.Restriction;
+import org.citadel.core.criteria.Alias;
+import org.citadel.core.criteria.Criteria.CriteriaVisitor;
+import org.citadel.core.criteria.Criteria.LockType;
+import org.citadel.core.criteria.Fetch;
+import org.citadel.core.criteria.Order;
+import org.citadel.core.criteria.restrictions.Restriction;
 
 public class BeanWrapperCriteriaVisitor implements CriteriaVisitor {
     // private static final Logger LOG = LoggerFactory.getLogger(BeanWrapperCriteriaVisitor.class);

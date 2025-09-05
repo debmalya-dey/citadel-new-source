@@ -25,7 +25,7 @@ import java.io.Serializable;
 
 import javax.ws.rs.core.UriInfo;
 
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.model.OnmsNode;
 import org.opennms.web.rest.support.Aliases;

@@ -37,10 +37,10 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriInfo;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.criteria.Order;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.Order;
 import org.opennms.netmgt.dao.api.MonitoredServiceDao;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.EventProxy;

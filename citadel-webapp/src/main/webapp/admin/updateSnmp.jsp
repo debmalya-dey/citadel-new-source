@@ -26,7 +26,7 @@
 	session="true"
 	import="org.opennms.netmgt.events.api.EventConstants,
 		org.opennms.netmgt.xml.event.Event,
-		org.opennms.core.utils.WebSecurityUtils,
+		org.citadel.core.utils.WebSecurityUtils,
 		org.opennms.web.servlet.MissingParameterException,
 		org.opennms.web.api.Util
 	"

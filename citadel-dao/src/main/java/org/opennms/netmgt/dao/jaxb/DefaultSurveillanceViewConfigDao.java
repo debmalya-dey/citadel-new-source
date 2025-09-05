@@ -25,7 +25,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.xml.AbstractJaxbConfigDao;
+import org.citadel.core.xml.AbstractJaxbConfigDao;
 import org.opennms.netmgt.config.surveillanceViews.SurveillanceViewConfiguration;
 import org.opennms.netmgt.config.surveillanceViews.View;
 import org.opennms.netmgt.dao.api.SurveillanceViewConfigDao;

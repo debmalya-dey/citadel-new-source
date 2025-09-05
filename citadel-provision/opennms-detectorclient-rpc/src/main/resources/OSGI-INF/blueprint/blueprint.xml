@@ -23,9 +23,9 @@
         <property name="serviceDetectorRegistry" ref="serviceDetectorRegistry"/>
         <property name="executor" ref="detectorExecutor"/>
     </bean>
-    <service ref="detectorRpcModule" interface="org.opennms.core.rpc.api.RpcModule" />
+    <service ref="detectorRpcModule" interface="api.rpc.org.citadel.core.RpcModule" />
 
-    <service interface="org.opennms.core.rpc.api.RpcModule">
+    <service interface="api.rpc.org.citadel.core.RpcModule">
         <bean class="org.opennms.netmgt.provision.dns.client.rpc.DnsLookupClientRpcModule">
             <argument value="${threadCount}"/>
         </bean>

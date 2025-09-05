@@ -25,8 +25,8 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.opennms.core.soa.ServiceRegistry;
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.soa.ServiceRegistry;
+import org.citadel.core.spring.BeanUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -21,7 +21,7 @@
  */
 package org.opennms.web.utils.filter;
 
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

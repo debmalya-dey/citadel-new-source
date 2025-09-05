@@ -32,8 +32,8 @@ import static org.mockito.Mockito.when;
 
 import org.junit.After;
 import org.junit.Test;
-import org.opennms.core.test.MockPlatformTransactionManager;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.test.MockPlatformTransactionManager;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.collection.api.CollectionAgent;
 import org.opennms.netmgt.collection.core.DefaultCollectionAgent;
 import org.opennms.netmgt.config.SnmpPeerFactory;

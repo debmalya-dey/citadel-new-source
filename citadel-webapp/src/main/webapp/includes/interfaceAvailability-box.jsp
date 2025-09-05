@@ -33,7 +33,7 @@
 	contentType="text/html"
 	session="true"
 	import="org.opennms.web.category.*,
-		org.opennms.core.utils.WebSecurityUtils,
+		org.citadel.core.utils.WebSecurityUtils,
 		org.opennms.web.element.*,
 		java.util.Date
 	"

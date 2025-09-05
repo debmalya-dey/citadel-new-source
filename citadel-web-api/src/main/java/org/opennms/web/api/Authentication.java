@@ -28,8 +28,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Properties;
 
-import org.opennms.core.utils.BundleLists;
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.BundleLists;
+import org.citadel.core.utils.ConfigFileConstants;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

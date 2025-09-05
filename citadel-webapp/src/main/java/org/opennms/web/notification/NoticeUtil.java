@@ -26,7 +26,7 @@ import java.util.StringTokenizer;
 
 import javax.servlet.ServletContext;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.model.OnmsSeverity;
 import org.opennms.web.filter.Filter;
 import org.opennms.web.notification.filter.AcknowledgedByFilter;

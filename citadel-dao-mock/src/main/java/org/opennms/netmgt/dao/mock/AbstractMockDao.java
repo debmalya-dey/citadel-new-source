@@ -29,8 +29,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.soa.ServiceRegistry;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.soa.ServiceRegistry;
 import org.opennms.netmgt.dao.api.AlarmAssociationDao;
 import org.opennms.netmgt.dao.api.AlarmDao;
 import org.opennms.netmgt.dao.api.AssetRecordDao;

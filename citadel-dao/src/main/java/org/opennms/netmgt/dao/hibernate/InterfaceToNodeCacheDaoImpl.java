@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.dao.hibernate;
 
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.net.InetAddress;
 import java.util.List;
@@ -43,8 +43,8 @@ import java.util.stream.Collectors;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.utils.LocationUtils;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.utils.LocationUtils;
 import org.opennms.netmgt.dao.api.AbstractInterfaceToNodeCache;
 import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
 import org.opennms.netmgt.dao.api.IpInterfaceDao;

@@ -18,7 +18,7 @@
     <reference id="locationAwareSnmpClient" interface="org.opennms.netmgt.snmp.proxy.LocationAwareSnmpClient" availability="mandatory"/>
 
 
-    <bean id="snmpProfileMapper" class="org.opennms.core.snmp.profile.mapper.impl.SnmpProfileMapperImpl" >
+    <bean id="snmpProfileMapper" class="org.citadel.core.snmp.profile.mapper.impl.SnmpProfileMapperImpl" >
         <argument ref="filterDao" />
         <argument ref="agentConfigFactory" />
         <argument ref="locationAwareSnmpClient" />

@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
-import org.opennms.core.rpc.api.RpcRequest;
+import org.citadel.core.rpc.api.RpcRequest;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;
 
 import io.opentracing.Span;

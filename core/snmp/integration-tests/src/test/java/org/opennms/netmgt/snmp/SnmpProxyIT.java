@@ -36,7 +36,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
 import org.opennms.mock.snmp.MockSnmpAgent;
 import org.opennms.netmgt.config.SnmpPeerFactory;
 import org.opennms.netmgt.snmp.proxy.LocationAwareSnmpClient;

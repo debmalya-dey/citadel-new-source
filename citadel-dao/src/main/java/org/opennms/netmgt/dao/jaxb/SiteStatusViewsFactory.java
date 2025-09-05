@@ -33,8 +33,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.siteStatusViews.SiteStatusViewConfiguration;
 import org.opennms.netmgt.config.siteStatusViews.View;
 import org.slf4j.Logger;

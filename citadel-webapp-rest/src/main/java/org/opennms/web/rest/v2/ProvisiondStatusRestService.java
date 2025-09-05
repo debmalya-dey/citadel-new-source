@@ -27,7 +27,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.provision.service.MonitorHolder;
 import org.opennms.netmgt.provision.service.TimeTrackingMonitor;
 import org.opennms.netmgt.provision.service.operations.ProvisionMonitor;

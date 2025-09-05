@@ -40,8 +40,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.concurrent.LogPreservingThreadFactory;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.concurrent.LogPreservingThreadFactory;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.KSC_PerformanceReportFactory;
 import org.opennms.netmgt.config.kscReports.Graph;
 import org.opennms.netmgt.config.kscReports.Report;

@@ -33,7 +33,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.api.CatFactory;
 import org.opennms.netmgt.config.categories.Category;
 import org.opennms.netmgt.config.categories.CategoryGroup;

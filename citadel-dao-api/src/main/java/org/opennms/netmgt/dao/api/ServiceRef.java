@@ -24,7 +24,7 @@ package org.opennms.netmgt.dao.api;
 import java.net.InetAddress;
 import java.util.Objects;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.events.api.model.IEvent;
 import org.opennms.netmgt.model.OnmsIpInterface;
 

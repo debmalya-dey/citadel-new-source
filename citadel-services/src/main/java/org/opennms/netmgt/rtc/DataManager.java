@@ -36,7 +36,7 @@ import java.util.ListIterator;
 import java.util.Map;
 import java.util.Set;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.RTCConfigFactory;
 import org.opennms.netmgt.dao.api.MonitoredServiceDao;
 import org.opennms.netmgt.events.api.EventConstants;

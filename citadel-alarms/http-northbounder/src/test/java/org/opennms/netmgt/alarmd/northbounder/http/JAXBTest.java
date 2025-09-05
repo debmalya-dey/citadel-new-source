@@ -22,7 +22,7 @@
 package org.opennms.netmgt.alarmd.northbounder.http;
 
 import static org.junit.Assert.assertNotNull;
-import static org.opennms.core.test.xml.XmlTest.assertXmlEquals;
+import static org.citadel.core.test.xml.XmlTest.assertXmlEquals;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

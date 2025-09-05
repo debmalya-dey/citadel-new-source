@@ -24,9 +24,11 @@ package org.opennms.netmgt.notifd;
 import java.util.List;
 import java.util.SortedMap;
 
+import org.citadel.core.fiber.Fiber;
+import org.citadel.core.fiber.PausableFiber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.opennms.core.utils.TimeConverter;
+import org.citadel.core.utils.TimeConverter;
 
 /**
  * This class is used as a thread for executing notices for events that are
@@ -258,8 +260,8 @@ public class DefaultQueueHandler implements NotifdQueueHandler {
      * Returns the current status of the pausable fiber.
      *
      * @return The current status of the fiber.
-     * @see org.opennms.core.fiber.PausableFiber
-     * @see org.opennms.core.fiber.Fiber
+     * @see PausableFiber
+     * @see Fiber
      */
     @Override
     public synchronized int getStatus() {

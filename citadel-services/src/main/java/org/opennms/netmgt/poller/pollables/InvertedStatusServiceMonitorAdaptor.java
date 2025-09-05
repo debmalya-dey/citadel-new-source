@@ -23,7 +23,7 @@ package org.opennms.netmgt.poller.pollables;
 
 import java.util.Map;
 
-import org.opennms.core.utils.ParameterMap;
+import org.citadel.core.utils.ParameterMap;
 import org.opennms.netmgt.poller.MonitoredService;
 import org.opennms.netmgt.poller.PollStatus;
 import org.opennms.netmgt.poller.ServiceMonitorAdaptor;

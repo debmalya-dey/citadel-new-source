@@ -36,7 +36,7 @@
   org.opennms.web.admin.discovery.ActionDiscoveryServlet,
   org.opennms.web.admin.discovery.DiscoveryScanServlet
 "%>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <% 
 	response.setDateHeader("Expires", 0);
 	response.setHeader("Pragma", "no-cache");

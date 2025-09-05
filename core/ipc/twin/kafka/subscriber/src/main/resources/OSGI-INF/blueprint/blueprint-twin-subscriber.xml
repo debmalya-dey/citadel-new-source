@@ -15,7 +15,7 @@
     <reference id="configurationAdmin" interface="org.osgi.service.cm.ConfigurationAdmin" availability="mandatory" />
 
     <!-- Config Provider -->
-    <bean id="kafkaConfigProvider" class="org.opennms.core.ipc.common.kafka.OsgiKafkaConfigProvider" >
+    <bean id="kafkaConfigProvider" class="org.citadel.core.ipc.common.kafka.OsgiKafkaConfigProvider" >
         <argument value="org.opennms.core.ipc.twin.kafka"/>
         <argument ref="configurationAdmin" />
         <!-- common pid for kafka config on IPC-->
@@ -25,9 +25,9 @@
     <!-- Provided by minion-core -->
     <reference id="identity" interface="org.opennms.distributed.core.api.MinionIdentity"/>
 
-    <reference id="tracerRegistry" interface="org.opennms.core.tracing.api.TracerRegistry"/>
+    <reference id="tracerRegistry" interface="org.citadel.core.tracing.api.TracerRegistry"/>
 
-    <bean id="kafkaTwinSubscriber" class="org.opennms.core.ipc.twin.kafka.subscriber.KafkaTwinSubscriber"
+    <bean id="kafkaTwinSubscriber" class="org.citadel.core.ipc.twin.kafka.subscriber.KafkaTwinSubscriber"
           init-method="init" destroy-method="close">
         <argument ref="identity"/>
         <argument ref="kafkaConfigProvider" />
@@ -35,12 +35,12 @@
         <argument ref="metricRegistry"/>
     </bean>
 
-    <service ref="kafkaTwinSubscriber" interface="org.opennms.core.ipc.twin.api.TwinSubscriber"/>
+    <service ref="kafkaTwinSubscriber" interface="org.citadel.core.ipc.twin.api.TwinSubscriber"/>
 
     <!-- Kafka HealthCheck for Twin -->
 
-    <service interface="org.opennms.core.health.api.HealthCheck">
-        <bean class="org.opennms.core.ipc.common.kafka.KafkaHealthCheck" >
+    <service interface="org.citadel.core.health.api.HealthCheck">
+        <bean class="org.citadel.core.ipc.common.kafka.KafkaHealthCheck" >
             <argument ref="kafkaConfigProvider"/>
             <argument value="Twin" />
         </bean>

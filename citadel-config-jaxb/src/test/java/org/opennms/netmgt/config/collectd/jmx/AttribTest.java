@@ -22,7 +22,7 @@
 package org.opennms.netmgt.config.collectd.jmx;
 
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.test.xml.XmlTestNoCastor;
+import org.citadel.core.test.xml.XmlTestNoCastor;
 import org.opennms.netmgt.collection.api.AttributeType;
 
 import java.text.ParseException;

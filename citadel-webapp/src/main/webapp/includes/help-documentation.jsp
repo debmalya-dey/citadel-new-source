@@ -21,7 +21,7 @@
     License.
 
 --%>
-<%@ page import="org.opennms.core.resource.Vault" %><%--
+<%@ page import="org.citadel.core.resource.Vault" %><%--
 /*******************************************************************************
  * This file is part of OpenNMS(R).
  *

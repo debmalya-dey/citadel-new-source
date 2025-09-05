@@ -26,7 +26,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.opennms.core.utils.DBUtils;
+import org.citadel.core.utils.DBUtils;
 
 /**
  *

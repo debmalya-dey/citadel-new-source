@@ -28,8 +28,8 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import org.opennms.core.time.ZonedDateTimeBuilder;
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.time.ZonedDateTimeBuilder;
+import org.citadel.core.utils.StringUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.model.OnmsIpInterface;
 import org.opennms.netmgt.model.OnmsMonitoredService;

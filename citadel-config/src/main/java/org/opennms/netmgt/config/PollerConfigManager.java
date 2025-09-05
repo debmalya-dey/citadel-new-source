@@ -22,8 +22,8 @@
 package org.opennms.netmgt.config;
 
 import static java.util.Objects.requireNonNull;
-import static org.opennms.core.utils.InetAddressUtils.addr;
-import static org.opennms.core.utils.InetAddressUtils.toIpAddrBytes;
+import static org.citadel.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.toIpAddrBytes;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -52,9 +52,9 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.collections.ListUtils;
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.network.IpListFromUrl;
-import org.opennms.core.utils.ByteArrayComparator;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.network.IpListFromUrl;
+import org.citadel.core.utils.ByteArrayComparator;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.poller.CriticalService;
 import org.opennms.netmgt.config.poller.ExcludeRange;
 import org.opennms.netmgt.config.poller.IncludeRange;
@@ -65,7 +65,6 @@ import org.opennms.netmgt.config.poller.Parameter;
 import org.opennms.netmgt.config.poller.PollerConfiguration;
 import org.opennms.netmgt.config.poller.Service;
 import org.opennms.netmgt.filter.FilterDaoFactory;
-import org.opennms.netmgt.model.ServiceSelector;
 import org.opennms.netmgt.poller.ServiceMonitor;
 import org.opennms.netmgt.poller.ServiceMonitorLocator;
 import org.opennms.netmgt.poller.ServiceMonitorRegistry;

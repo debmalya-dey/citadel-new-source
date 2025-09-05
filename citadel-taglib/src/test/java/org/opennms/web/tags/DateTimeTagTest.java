@@ -44,7 +44,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
-import org.opennms.core.time.CentralizedDateTimeFormat;
+import org.citadel.core.time.CentralizedDateTimeFormat;
 
 public class DateTimeTagTest {
     private TimeZone m_defaultZone;

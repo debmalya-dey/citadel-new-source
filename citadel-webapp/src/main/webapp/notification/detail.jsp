@@ -24,7 +24,7 @@
 <%@page language="java"
 	contentType="text/html"
 	session="true"
-	import="org.opennms.core.utils.WebSecurityUtils,
+	import="org.citadel.core.utils.WebSecurityUtils,
 		org.opennms.web.notification.*,
 		org.opennms.web.element.*,
 		org.opennms.web.event.*,

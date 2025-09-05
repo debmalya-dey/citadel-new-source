@@ -22,7 +22,7 @@
 package org.opennms.web.controller.event;
 
 import org.apache.commons.lang.StringUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.model.OnmsFilterFavorite;
 import org.opennms.web.alert.AlertType;
 import org.opennms.web.event.*;

@@ -30,8 +30,8 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.mate.api.Interpolator;
-import org.opennms.core.mate.api.SecureCredentialsVaultScope;
+import org.citadel.core.mate.api.Interpolator;
+import org.citadel.core.mate.api.SecureCredentialsVaultScope;
 import org.opennms.features.scv.api.SecureCredentialsVault;
 import org.opennms.features.scv.jceks.JCEKSSecureCredentialsVault;
 import org.slf4j.Logger;

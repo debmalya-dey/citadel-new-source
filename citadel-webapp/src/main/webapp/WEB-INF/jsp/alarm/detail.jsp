@@ -25,9 +25,9 @@
         contentType="text/html"
         session="true"
         import="java.util.*,
-        org.opennms.core.resource.Vault,
-        org.opennms.core.utils.InetAddressUtils,
-        org.opennms.core.utils.WebSecurityUtils,
+        org.citadel.core.resource.Vault,
+        org.citadel.core.utils.InetAddressUtils,
+        org.citadel.core.utils.WebSecurityUtils,
         org.opennms.web.controller.alarm.*,
         org.opennms.web.alarm.*,
         org.opennms.web.servlet.XssRequestWrapper,

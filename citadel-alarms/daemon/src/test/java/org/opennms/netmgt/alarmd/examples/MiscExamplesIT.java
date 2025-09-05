@@ -35,7 +35,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.model.OnmsAlarm;
 import org.opennms.netmgt.model.OnmsCategory;

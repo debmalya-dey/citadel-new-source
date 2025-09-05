@@ -38,9 +38,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.resource.Vault;
-import org.opennms.core.time.CentralizedDateTimeFormat;
-import org.opennms.core.utils.SystemInfoUtils;
+import org.citadel.core.resource.Vault;
+import org.citadel.core.time.CentralizedDateTimeFormat;
+import org.citadel.core.utils.SystemInfoUtils;
 import org.opennms.features.timeformat.api.TimeformatService;
 import org.opennms.netmgt.vmmgr.Controller;
 import org.opennms.netmgt.vmmgr.StatusGetter;

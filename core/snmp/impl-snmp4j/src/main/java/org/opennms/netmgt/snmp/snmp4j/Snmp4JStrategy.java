@@ -43,9 +43,9 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import org.opennms.core.logging.Logging;
-import org.opennms.core.sysprops.SystemProperties;
-import org.opennms.core.utils.SystemInfoUtils;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.sysprops.SystemProperties;
+import org.citadel.core.utils.SystemInfoUtils;
 import org.opennms.netmgt.snmp.CollectionTracker;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;
 import org.opennms.netmgt.snmp.SnmpAgentTimeoutException;

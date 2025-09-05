@@ -19,6 +19,6 @@
        <property name="serviceCollectorRegistry" ref="serviceCollectorRegistry"/>
        <property name="executor" ref="collectorExecutor"/>
     </bean>
-    <service ref="collectorClientRpcModule" interface="org.opennms.core.rpc.api.RpcModule" />
+    <service ref="collectorClientRpcModule" interface="api.rpc.org.citadel.core.RpcModule" />
 
 </blueprint>

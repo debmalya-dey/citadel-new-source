@@ -6,6 +6,6 @@
        ">
 
     <!-- Conditionally load the Camel Sink -->
-    <bean class="org.opennms.core.ipc.sink.camel.server.ConditionalCamelSinkContext"/>
+    <bean class="org.citadel.core.ipc.sink.camel.server.ConditionalCamelSinkContext"/>
 
 </beans>

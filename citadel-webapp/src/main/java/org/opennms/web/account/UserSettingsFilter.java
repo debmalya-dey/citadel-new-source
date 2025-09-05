@@ -34,11 +34,10 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import org.opennms.core.time.CentralizedDateTimeFormat;
+import org.citadel.core.time.CentralizedDateTimeFormat;
 import org.opennms.netmgt.config.UserFactory;
 import org.opennms.netmgt.config.UserManager;
 import org.opennms.netmgt.config.users.User;
-import org.opennms.web.tags.DateTimeTag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -60,14 +60,14 @@
           destroy-method="stop" />
 
     <!-- CacheConfig -->
-    <bean id="timeseriesPersisterMetaTagCache" class="org.opennms.core.cache.CacheConfig">
+    <bean id="timeseriesPersisterMetaTagCache" class="cache.org.citadel.core.CacheConfig">
         <argument value="timeseriesPersisterMetaTagCache" />
         <property name="expireAfterRead" value="${cache.timeseriesPersisterMetaTagCache.expireAfterRead}" />
         <property name="maximumSize" value="${cache.timeseriesPersisterMetaTagCache.maximumSize}" />
         <property name="recordStats" value="${cache.timeseriesPersisterMetaTagCache.recordStats}" />
         <property name="metricRegistry" ref="metricRegistry" />
     </bean>
-    <bean id="timeseriesSearcherCache" class="org.opennms.core.cache.CacheConfig">
+    <bean id="timeseriesSearcherCache" class="cache.org.citadel.core.CacheConfig">
         <argument index="0" value="timeseriesSearcherCache" />
         <property name="expireAfterRead" value="${cache.timeseriesSearcherCache.expireAfterRead}" />
         <property name="maximumSize" value="${cache.timeseriesSearcherCache.maximumSize}" />
@@ -76,11 +76,11 @@
     </bean>
 
     <!-- Beans -->
-    <bean id="rpcTargetHelper" class="org.opennms.core.rpc.utils.RpcTargetHelper">
+    <bean id="rpcTargetHelper" class="utils.rpc.org.citadel.core.RpcTargetHelper">
         <property name="nodeDao" ref="nodeDao"/>
     </bean>
 
-    <bean id="entityScopeProvider" class="org.opennms.core.mate.model.EntityScopeProviderImpl">
+    <bean id="entityScopeProvider" class="model.mate.org.citadel.core.EntityScopeProviderImpl">
         <property name="nodeDao" ref="nodeDao"/>
         <property name="ipInterfaceDao" ref="ipInterfaceDao"/>
         <property name="snmpInterfaceDao" ref="snmpInterfaceDao"/>
@@ -88,7 +88,7 @@
         <property name="sessionUtils" ref="sessionUtils"/>
         <property name="scv" ref="secureCredentialsVault"/>
     </bean>
-    <service interface="org.opennms.core.mate.api.EntityScopeProvider" ref="entityScopeProvider"/>
+    <service interface="api.mate.org.citadel.core.EntityScopeProvider" ref="entityScopeProvider"/>
 
     <bean id="timeseriesStorageManager" class="org.opennms.netmgt.timeseries.TimeseriesStorageManagerImpl" />
     <reference-list interface="org.opennms.integration.api.v1.timeseries.TimeSeriesStorage" availability="optional">

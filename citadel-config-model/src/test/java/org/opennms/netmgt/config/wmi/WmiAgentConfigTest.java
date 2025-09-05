@@ -28,8 +28,8 @@ import java.util.Collection;
 
 import org.junit.Test;
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.test.xml.XmlTestNoCastor;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.test.xml.XmlTestNoCastor;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.snmp.InetAddrUtils;
 
 public class WmiAgentConfigTest extends XmlTestNoCastor<WmiAgentConfig> {

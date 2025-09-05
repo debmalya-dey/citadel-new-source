@@ -34,7 +34,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.MockLogAppender;
 import org.springframework.mock.web.MockHttpServletRequest;
 
 public class XssRequestWrapperTest {

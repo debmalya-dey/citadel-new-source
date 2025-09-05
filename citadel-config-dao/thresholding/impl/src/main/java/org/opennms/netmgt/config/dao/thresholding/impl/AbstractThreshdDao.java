@@ -29,9 +29,9 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 
-import org.opennms.core.network.IpListFromUrl;
-import org.opennms.core.utils.ByteArrayComparator;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.network.IpListFromUrl;
+import org.citadel.core.utils.ByteArrayComparator;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.features.distributed.kvstore.api.JsonStore;
 import org.opennms.netmgt.config.dao.thresholding.api.ReadableThreshdDao;
 import org.opennms.netmgt.config.threshd.ExcludeRange;

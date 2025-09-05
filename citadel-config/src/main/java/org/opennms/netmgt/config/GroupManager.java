@@ -39,10 +39,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.opennms.core.utils.OwnedInterval;
-import org.opennms.core.utils.OwnedIntervalSequence;
-import org.opennms.core.utils.Owner;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.OwnedInterval;
+import org.citadel.core.utils.OwnedIntervalSequence;
+import org.citadel.core.utils.Owner;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.api.GroupConfig;
 import org.opennms.netmgt.config.groups.Group;
 import org.opennms.netmgt.config.groups.Groupinfo;
@@ -655,7 +655,7 @@ public abstract class GroupManager implements GroupConfig {
      * @param roleid a {@link java.lang.String} object.
      * @param start a {@link java.util.Date} object.
      * @param end a {@link java.util.Date} object.
-     * @return a {@link org.opennms.core.utils.OwnedIntervalSequence} object.
+     * @return a {@link OwnedIntervalSequence} object.
      * @throws java.io.IOException if any.
      */
     public OwnedIntervalSequence getRoleScheduleEntries(String roleid, Date start, Date end) throws IOException {

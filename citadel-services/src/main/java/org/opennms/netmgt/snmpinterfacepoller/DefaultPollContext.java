@@ -24,9 +24,9 @@ package org.opennms.netmgt.snmpinterfacepoller;
 import java.util.Date;
 import java.util.List;
 
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.IpInterfaceDao;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.dao.api.SnmpInterfaceDao;

@@ -42,8 +42,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.ws.rs.core.Response.Status;
 
-import org.opennms.core.config.api.JaxbListWrapper;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.config.api.JaxbListWrapper;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.alarmd.northbounder.email.EmailDestination;
 import org.opennms.netmgt.alarmd.northbounder.email.EmailNorthbounderConfig;
 import org.opennms.netmgt.alarmd.northbounder.email.EmailNorthbounderConfigDao;

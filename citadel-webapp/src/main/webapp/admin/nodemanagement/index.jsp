@@ -24,7 +24,7 @@
 <%@page language="java"
 	contentType="text/html"
 	session="true"
-	import="org.opennms.core.utils.WebSecurityUtils,
+	import="org.citadel.core.utils.WebSecurityUtils,
 			org.opennms.web.element.*,
 			org.opennms.netmgt.model.OnmsNode,
 			org.opennms.web.servlet.MissingParameterException"
@@ -58,9 +58,9 @@
     boolean isRequisitioned = (node_db.getForeignSource() != null && node_db.getForeignSource().length() != 0);
 %>
 
-<%@page import="org.opennms.core.resource.Vault"%>
+<%@page import="org.citadel.core.resource.Vault"%>
 <%@ page import="org.opennms.netmgt.model.OnmsIpInterface" %>
-<%@ page import="org.opennms.core.utils.InetAddressUtils" %>
+<%@ page import="org.citadel.core.utils.InetAddressUtils" %>
 <%@ page import="org.opennms.web.utils.Bootstrap" %>
 <% Bootstrap.with(pageContext)
           .headTitle("Node Management")

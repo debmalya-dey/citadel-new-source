@@ -27,7 +27,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Collection;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.notifd.AutoAcknowledge;
 import org.opennms.netmgt.config.notifd.NotifdConfiguration;
 import org.opennms.netmgt.config.notifications.Notification;

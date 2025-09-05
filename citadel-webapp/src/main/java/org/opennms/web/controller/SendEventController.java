@@ -33,8 +33,8 @@ import java.util.TreeMap;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.utils.BundleLists;
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.BundleLists;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.xml.eventconf.Event;
 import org.slf4j.Logger;

@@ -27,7 +27,7 @@
 	import="java.util.*,
 		org.opennms.web.outage.*,
 		java.text.DateFormat,
-		org.opennms.core.utils.WebSecurityUtils
+		org.citadel.core.utils.WebSecurityUtils
 	"
 %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

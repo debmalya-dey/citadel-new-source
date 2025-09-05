@@ -20,7 +20,7 @@
     <reference id="configurationAdmin" interface="org.osgi.service.cm.ConfigurationAdmin" availability="mandatory" />
 
     <!-- Config Provider -->
-    <bean id="kafkaConfigProvider" class="org.opennms.core.ipc.common.kafka.OsgiKafkaConfigProvider" >
+    <bean id="kafkaConfigProvider" class="org.citadel.core.ipc.common.kafka.OsgiKafkaConfigProvider" >
         <argument value="[[group.id]]"/>
         <!-- same as persistent-id -->
         <argument value="org.opennms.core.ipc.sink.kafka.consumer"/>
@@ -28,19 +28,19 @@
     </bean>
 
 
-    <reference id="tracerRegistry" interface="org.opennms.core.tracing.api.TracerRegistry"/>
+    <reference id="tracerRegistry" interface="org.citadel.core.tracing.api.TracerRegistry"/>
 
     <reference id="identity" interface="org.opennms.distributed.core.api.Identity"/>
 
     <!-- ConsumerManager -->
-    <bean id="kafkaMessageConsumerManager" class="org.opennms.core.ipc.sink.kafka.server.KafkaMessageConsumerManager" init-method="afterPropertiesSet"
+    <bean id="kafkaMessageConsumerManager" class="org.citadel.core.ipc.sink.kafka.server.KafkaMessageConsumerManager" init-method="afterPropertiesSet"
           destroy-method="shutdown">
         <argument ref="kafkaConfigProvider" />
         <argument ref="identity"/>
         <argument ref="tracerRegistry"/>
         <argument ref="kafkaSinkMetricRegistry"/>
     </bean>
-    <service ref="kafkaMessageConsumerManager" interface="org.opennms.core.ipc.sink.api.MessageConsumerManager" />
+    <service ref="kafkaMessageConsumerManager" interface="org.citadel.core.ipc.sink.api.MessageConsumerManager" />
 
     <!-- Offset Provider (Consumer) -->
     <bean id="kafkaLagMetricRegistry" class="com.codahale.metrics.MetricRegistry"/>
@@ -51,15 +51,15 @@
         </service-properties>
     </service>
 
-    <bean id="kafkaOffsetProvider" class="org.opennms.core.ipc.sink.kafka.server.offset.KafkaOffsetProvider"
+    <bean id="kafkaOffsetProvider" class="org.citadel.core.ipc.sink.kafka.server.offset.KafkaOffsetProvider"
           init-method="start" destroy-method="stop">
         <argument ref="kafkaConfigProvider"/>
         <argument ref="kafkaLagMetricRegistry"/>
     </bean>
 
     <!-- Kafka HealthCheck for Sink (Sentinel) -->
-    <service interface="org.opennms.core.health.api.HealthCheck">
-        <bean class="org.opennms.core.ipc.common.kafka.KafkaHealthCheck" >
+    <service interface="org.citadel.core.health.api.HealthCheck">
+        <bean class="org.citadel.core.ipc.common.kafka.KafkaHealthCheck" >
             <argument ref="kafkaConfigProvider"/>
             <argument value="Sink Consumer" />
         </bean>

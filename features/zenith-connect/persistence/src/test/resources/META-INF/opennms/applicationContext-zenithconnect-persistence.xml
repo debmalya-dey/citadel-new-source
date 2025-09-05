@@ -8,7 +8,7 @@
 	">
     <bean
         name="dataSource"
-        class="org.opennms.core.db.DataSourceFactory"
+        class="db.org.citadel.core.DataSourceFactory"
         factory-method="getInstance"
     />
     <bean name="jsonStore" class="org.opennms.features.distributed.kvstore.json.postgres.PostgresJsonStore">

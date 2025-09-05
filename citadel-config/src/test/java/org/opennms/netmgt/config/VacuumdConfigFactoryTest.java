@@ -25,7 +25,7 @@ import java.io.InputStream;
 
 import junit.framework.TestCase;
 
-import org.opennms.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
 
 /**
  * Tests for VacuumdConfigFactory.

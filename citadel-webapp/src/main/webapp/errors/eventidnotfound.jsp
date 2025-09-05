@@ -25,7 +25,7 @@
 	contentType="text/html"
 	session="true"
 	isErrorPage="true"
-	import="org.opennms.web.event.*, org.opennms.web.utils.ExceptionUtils, org.opennms.core.utils.WebSecurityUtils"
+	import="org.opennms.web.event.*, org.opennms.web.utils.ExceptionUtils, org.citadel.core.utils.WebSecurityUtils"
 %>
 
 <%

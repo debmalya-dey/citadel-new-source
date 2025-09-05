@@ -30,12 +30,12 @@ import java.util.HashMap;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.ssh.SshServerDataProvider;
-import org.opennms.core.test.ssh.SshServerDataProviderAware;
-import org.opennms.core.test.ssh.annotations.JUnitSshServer;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.TimeoutTracker;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.ssh.SshServerDataProvider;
+import org.citadel.core.test.ssh.SshServerDataProviderAware;
+import org.citadel.core.test.ssh.annotations.JUnitSshServer;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.TimeoutTracker;
 import org.opennms.netmgt.poller.monitors.support.Ssh;
 import org.springframework.test.context.ContextConfiguration;
 

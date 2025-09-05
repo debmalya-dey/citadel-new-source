@@ -34,11 +34,11 @@ import org.apache.cxf.jaxrs.ext.search.SearchCondition;
 import org.apache.cxf.jaxrs.ext.search.SearchConditionVisitor;
 import org.apache.cxf.jaxrs.ext.search.SearchUtils;
 import org.apache.cxf.jaxrs.ext.search.visitor.AbstractSearchConditionVisitor;
-import org.opennms.core.criteria.Alias;
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.criteria.restrictions.Restriction;
-import org.opennms.core.criteria.restrictions.Restrictions;
+import org.citadel.core.criteria.Alias;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.restrictions.Restriction;
+import org.citadel.core.criteria.restrictions.Restrictions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

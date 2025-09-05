@@ -24,7 +24,7 @@ package org.opennms.netmgt.ackd.readers;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.ackd.AckReader;
 import org.opennms.netmgt.dao.api.AckdConfigurationDao;
 import org.slf4j.Logger;

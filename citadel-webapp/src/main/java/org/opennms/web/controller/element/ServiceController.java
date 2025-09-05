@@ -21,8 +21,8 @@
  */
 package org.opennms.web.controller.element;
 
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.MonitoredServiceDao;
 import org.opennms.netmgt.model.OnmsMonitoredService;
 import org.springframework.beans.factory.InitializingBean;

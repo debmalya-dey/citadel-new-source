@@ -26,7 +26,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.attrsummary.Summary;
 import org.opennms.web.svclayer.model.SummarySpecification;
 import org.opennms.web.svclayer.rrd.RrdSummaryService;

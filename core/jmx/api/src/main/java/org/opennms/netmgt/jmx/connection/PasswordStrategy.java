@@ -30,7 +30,7 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 
-import org.opennms.core.utils.AnyServerX509TrustManager;
+import org.citadel.core.utils.AnyServerX509TrustManager;
 import org.slf4j.LoggerFactory;
 
 public interface PasswordStrategy {

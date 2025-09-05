@@ -23,7 +23,7 @@ package org.opennms.netmgt.config;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.opennms.core.test.ConfigurationTestUtils.getDaemonEtcDirectory;
+import static org.citadel.core.test.ConfigurationTestUtils.getDaemonEtcDirectory;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,9 +46,9 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.test.xml.XmlTest;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.xml.XmlTest;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.features.ifttt.config.IfTttConfig;
 import org.opennms.features.reporting.model.basicreport.LegacyLocalReportsDefinition;
 import org.opennms.features.reporting.model.jasperreport.LocalJasperReports;

@@ -32,7 +32,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.validator.routines.EmailValidator;
-import org.opennms.core.utils.StreamUtils;
+import org.citadel.core.utils.StreamUtils;
 import org.opennms.javamail.JavaMailer;
 import org.opennms.javamail.JavaMailerException;
 import org.opennms.web.servlet.MissingParameterException;

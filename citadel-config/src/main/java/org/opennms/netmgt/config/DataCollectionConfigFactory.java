@@ -24,8 +24,8 @@ package org.opennms.netmgt.config;
 import java.io.File;
 import java.io.IOException;
 
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.api.DataCollectionConfigDao;
 import org.springframework.core.io.FileSystemResource;
 

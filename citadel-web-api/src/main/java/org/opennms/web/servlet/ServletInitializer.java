@@ -32,8 +32,8 @@ import java.util.Properties;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
-import org.opennms.core.logging.Logging;
-import org.opennms.core.resource.Vault;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.resource.Vault;
 
 /**
  * Encapsulates all initialization and configuration needed by the OpenNMS

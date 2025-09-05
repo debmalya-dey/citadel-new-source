@@ -29,7 +29,7 @@
 		org.opennms.web.admin.notification.noticeWizard.*,
 		org.opennms.netmgt.config.*,
 		org.opennms.netmgt.config.notifications.*,
-		org.opennms.core.utils.WebSecurityUtils
+		org.citadel.core.utils.WebSecurityUtils
 	"
 %>
 

@@ -79,7 +79,7 @@ public class ConnectionPool implements java.io.Serializable {
     private Integer maxSize;
 
     public ConnectionPool() {
-        setFactory("org.opennms.core.db.HikariCPConnectionFactory");
+        setFactory("db.org.citadel.core.HikariCPConnectionFactory");
     }
 
     /**

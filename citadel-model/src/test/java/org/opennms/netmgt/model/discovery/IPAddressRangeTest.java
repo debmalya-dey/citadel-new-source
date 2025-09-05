@@ -33,10 +33,10 @@ import java.util.List;
 
 import junit.framework.TestCase;
 
-import org.opennms.core.utils.ByteArrayComparator;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.network.IPAddress;
-import org.opennms.core.network.IPAddressRange;
+import org.citadel.core.utils.ByteArrayComparator;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.network.IPAddress;
+import org.citadel.core.network.IPAddressRange;
 
 /**
  * IPAddressRangeTest

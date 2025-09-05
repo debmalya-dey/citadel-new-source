@@ -25,12 +25,12 @@
 	contentType="text/html"
 	session="true"
 	import="java.util.*,
-	    org.opennms.core.utils.InetAddressUtils,
+	    org.citadel.core.utils.InetAddressUtils,
 		org.opennms.web.admin.notification.noticeWizard.*,
 		org.opennms.web.api.Util,
 		org.opennms.netmgt.filter.FilterDaoFactory,
 		org.opennms.netmgt.filter.api.FilterParseException,
-		org.opennms.core.utils.WebSecurityUtils
+		org.citadel.core.utils.WebSecurityUtils
 	"
 %>
 

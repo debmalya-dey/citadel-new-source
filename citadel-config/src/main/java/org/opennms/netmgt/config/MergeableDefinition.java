@@ -23,8 +23,8 @@ package org.opennms.netmgt.config;
 
 import java.util.ArrayList;
 
-import org.opennms.core.network.IPAddressRange;
-import org.opennms.core.network.IPAddressRangeSet;
+import org.citadel.core.network.IPAddressRange;
+import org.citadel.core.network.IPAddressRangeSet;
 import org.opennms.netmgt.config.snmp.Definition;
 import org.opennms.netmgt.config.snmp.Range;
 

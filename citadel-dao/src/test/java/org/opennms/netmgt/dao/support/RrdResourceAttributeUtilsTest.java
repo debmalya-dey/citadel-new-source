@@ -41,7 +41,7 @@ import java.util.stream.Collectors;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.utils.PropertiesCache;
+import org.citadel.core.utils.PropertiesCache;
 import org.opennms.netmgt.dao.support.RrdResourceAttributeUtils.AlphaNumericOnmsAttributeComparator;
 import org.opennms.netmgt.mock.MockResourceType;
 import org.opennms.netmgt.model.OnmsAttribute;

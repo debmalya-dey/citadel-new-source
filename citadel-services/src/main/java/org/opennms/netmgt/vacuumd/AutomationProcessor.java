@@ -38,9 +38,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import org.opennms.core.logging.Logging;
-import org.opennms.core.utils.PropertiesUtils;
-import org.opennms.core.utils.PropertiesUtils.SymbolTable;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.utils.PropertiesUtils;
+import org.citadel.core.utils.PropertiesUtils.SymbolTable;
 import org.opennms.netmgt.config.VacuumdConfigFactory;
 import org.opennms.netmgt.config.vacuumd.Action;
 import org.opennms.netmgt.config.vacuumd.ActionEvent;

@@ -24,8 +24,8 @@ package org.opennms.netmgt.alarmd.northbounder.email;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.utils.PropertiesUtils;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.PropertiesUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.javamail.JavaMailerException;
 import org.opennms.javamail.JavaSendMailer;
 import org.opennms.netmgt.alarmd.api.NorthboundAlarm;

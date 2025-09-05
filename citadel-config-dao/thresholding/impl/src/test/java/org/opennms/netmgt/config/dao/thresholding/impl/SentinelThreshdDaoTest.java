@@ -32,7 +32,7 @@ import java.util.OptionalLong;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
-import org.opennms.core.xml.JacksonUtils;
+import org.citadel.core.xml.JacksonUtils;
 import org.opennms.features.distributed.kvstore.api.JsonStore;
 import org.opennms.netmgt.config.dao.common.api.ConfigDaoConstants;
 import org.opennms.netmgt.config.dao.thresholding.api.ReadableThreshdDao;

@@ -30,8 +30,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.network.IPAddress;
-import org.opennms.core.test.xml.XmlTestNoCastor;
+import org.citadel.core.network.IPAddress;
+import org.citadel.core.test.xml.XmlTestNoCastor;
 
 public class AgentResponseCollectionTest extends XmlTestNoCastor<AgentResponseCollection> {
 

@@ -22,7 +22,7 @@
       </cm:default-properties>
     </cm:property-placeholder>
 
-    <reference id="messageDispatcherFactory" interface="org.opennms.core.ipc.sink.api.MessageDispatcherFactory"/>
+    <reference id="messageDispatcherFactory" interface="api.sink.ipc.org.citadel.core.MessageDispatcherFactory"/>
 
     <!-- Event Config Bean -->
     <bean id="eventdConfig" class="org.opennms.features.events.sink.dispatcher.EventdConfigBean">

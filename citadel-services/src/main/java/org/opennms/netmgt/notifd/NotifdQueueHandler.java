@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.notifd;
 
-import org.opennms.core.fiber.PausableFiber;
+import org.citadel.core.fiber.PausableFiber;
 
 /**
  * This interface defines a handler for a Notifd queue. As notifications are

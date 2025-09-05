@@ -48,9 +48,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
-import org.opennms.core.sysprops.SystemProperties;
-import org.opennms.core.utils.AlphaNumeric;
-import org.opennms.core.utils.RrdLabelUtils;
+import org.citadel.core.sysprops.SystemProperties;
+import org.citadel.core.utils.AlphaNumeric;
+import org.citadel.core.utils.RrdLabelUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

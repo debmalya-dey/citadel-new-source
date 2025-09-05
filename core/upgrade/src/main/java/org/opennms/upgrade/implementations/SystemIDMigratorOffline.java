@@ -27,7 +27,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;
 
-import org.opennms.core.db.DataSourceFactory;
+import org.citadel.core.db.DataSourceFactory;
 import org.opennms.upgrade.api.AbstractOnmsUpgrade;
 import org.opennms.upgrade.api.OnmsUpgradeException;
 

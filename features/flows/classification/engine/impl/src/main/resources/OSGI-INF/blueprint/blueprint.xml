@@ -23,7 +23,7 @@
     <reference id="sentinelIdentity" interface="org.opennms.distributed.core.api.Identity" filter="(systemType=Sentinel)" availability="optional" />
 
     <!-- CacheConfig -->
-    <bean id="classificationFilterCacheConfig" class="org.opennms.core.cache.CacheConfig">
+    <bean id="classificationFilterCacheConfig" class="cache.org.citadel.core.CacheConfig">
         <argument value="classificationFilter" />
         <property name="recordStats" value="${cache.classificationFilter.recordStats}" />
         <property name="metricRegistry" ref="classificationMetricRegistry" />

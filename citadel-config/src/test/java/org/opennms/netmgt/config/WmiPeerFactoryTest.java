@@ -27,14 +27,14 @@ import java.net.InetAddress;
 import java.util.Optional;
 
 import org.junit.rules.TemporaryFolder;
-import org.opennms.core.mate.api.SecureCredentialsVaultScope;
-import org.opennms.core.test.ConfigurationTestUtils;
+import org.citadel.core.mate.api.SecureCredentialsVaultScope;
+import org.citadel.core.test.ConfigurationTestUtils;
 import org.opennms.features.scv.api.Credentials;
 import org.opennms.features.scv.api.SecureCredentialsVault;
 import org.opennms.features.scv.jceks.JCEKSSecureCredentialsVault;
 
 import junit.framework.TestCase;
-import org.opennms.core.spring.ContextRegistry;
+import org.citadel.core.spring.ContextRegistry;
 
 /**
  * JUnit tests for the configureSNMP event handling and optimization of

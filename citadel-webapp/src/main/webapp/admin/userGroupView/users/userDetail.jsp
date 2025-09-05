@@ -31,7 +31,7 @@
 		org.opennms.web.servlet.MissingParameterException
 	"
 %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@ page import="java.util.stream.Collectors" %>
 
 <%

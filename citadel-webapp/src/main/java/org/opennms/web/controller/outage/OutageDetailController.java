@@ -24,7 +24,7 @@ package org.opennms.web.controller.outage;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.web.outage.Outage;
 import org.opennms.web.outage.OutageIdNotFoundException;
 import org.opennms.web.outage.WebOutageRepository;

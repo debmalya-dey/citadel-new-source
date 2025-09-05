@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.notifd;
 
-import static org.opennms.core.web.HttpClientWrapperConfigHelper.PARAMETER_KEYS.useSystemProxy;
+import static org.citadel.core.web.HttpClientWrapperConfigHelper.PARAMETER_KEYS.useSystemProxy;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -40,10 +40,10 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.MatchTable;
-import org.opennms.core.utils.PropertiesUtils;
-import org.opennms.core.web.HttpClientWrapper;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.MatchTable;
+import org.citadel.core.utils.PropertiesUtils;
+import org.citadel.core.web.HttpClientWrapper;
 import org.opennms.netmgt.config.NotificationManager;
 import org.opennms.netmgt.model.notifd.Argument;
 import org.opennms.netmgt.model.notifd.NotificationStrategy;

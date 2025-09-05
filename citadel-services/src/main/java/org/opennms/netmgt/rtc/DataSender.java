@@ -40,9 +40,9 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.concurrent.LogPreservingThreadFactory;
-import org.opennms.core.fiber.Fiber;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.concurrent.LogPreservingThreadFactory;
+import org.citadel.core.fiber.Fiber;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.RTCConfigFactory;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.annotations.EventHandler;

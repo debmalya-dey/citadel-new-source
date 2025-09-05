@@ -24,8 +24,8 @@ package org.opennms.netmgt.notifd;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.MockLogAppender;
 import org.opennms.netmgt.config.NotificationManager;
 import org.opennms.netmgt.config.mock.MockNotifdConfigManager;
 import org.opennms.netmgt.config.mock.MockNotificationManager;

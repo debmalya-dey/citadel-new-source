@@ -23,7 +23,7 @@ package org.opennms.netmgt.poller.mock;
 
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.poller.MonitoredService;
 
 public class MockMonitoredService implements MonitoredService {

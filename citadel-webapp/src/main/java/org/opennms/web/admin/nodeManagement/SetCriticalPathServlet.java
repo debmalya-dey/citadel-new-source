@@ -32,10 +32,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 
 /**
  * A servlet that manages the pathOutage table in the DB

@@ -28,7 +28,7 @@ import java.util.Map;
 
 import javax.sql.DataSource;
 
-import org.opennms.core.utils.Querier;
+import org.citadel.core.utils.Querier;
 import org.opennms.netmgt.daemon.AbstractServiceDaemon;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.EventIpcManager;

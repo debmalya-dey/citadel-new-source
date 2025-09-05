@@ -32,7 +32,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-import org.opennms.core.utils.StringUtils;
+import org.citadel.core.utils.StringUtils;
 import org.opennms.netmgt.dao.api.FilterWatcher;
 import org.opennms.netmgt.dao.api.ServiceRef;
 import org.opennms.netmgt.dao.api.ServiceTracker;

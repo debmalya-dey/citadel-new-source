@@ -36,8 +36,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.trend.TrendConfiguration;
 import org.opennms.netmgt.config.trend.TrendDefinition;
 import org.slf4j.Logger;

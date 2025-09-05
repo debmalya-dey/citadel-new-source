@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.alarmd.northbounder.jms;
 
-import org.opennms.core.xml.AbstractJaxbConfigDao;
+import org.citadel.core.xml.AbstractJaxbConfigDao;
 
 /**
  * The Class JmsNorthbounderConfigDao.
@@ -39,7 +39,7 @@ public class JmsNorthbounderConfigDao extends AbstractJaxbConfigDao<JmsNorthboun
     }
 
     /* (non-Javadoc)
-     * @see org.opennms.core.xml.AbstractJaxbConfigDao#translateConfig(java.lang.Object)
+     * @see xml.org.citadel.core.AbstractJaxbConfigDao#translateConfig(java.lang.Object)
      */
     @Override
     protected JmsNorthbounderConfig translateConfig(

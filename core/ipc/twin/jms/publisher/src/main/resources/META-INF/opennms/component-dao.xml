@@ -8,6 +8,6 @@
        ">
 
     <!-- Conditionally load the JMS Twin Impl. -->
-    <bean class="org.opennms.core.ipc.twin.jms.publisher.ConditionalJmsTwinContext"/>
+    <bean class="org.citadel.core.ipc.twin.jms.publisher.ConditionalJmsTwinContext"/>
 
 </beans>

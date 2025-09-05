@@ -25,7 +25,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.RejectedExecutionException;
 
-import org.opennms.core.concurrent.LogPreservingThreadFactory;
+import org.citadel.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.netmgt.config.RTCConfigFactory;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.annotations.EventListener;

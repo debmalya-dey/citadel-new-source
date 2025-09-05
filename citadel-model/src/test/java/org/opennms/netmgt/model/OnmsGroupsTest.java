@@ -27,7 +27,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.test.xml.XmlTestNoCastor;
+import org.citadel.core.test.xml.XmlTestNoCastor;
 
 public class OnmsGroupsTest extends XmlTestNoCastor<OnmsGroupList> {
 

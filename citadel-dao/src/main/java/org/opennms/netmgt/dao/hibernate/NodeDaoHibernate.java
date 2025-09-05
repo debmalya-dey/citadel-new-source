@@ -35,15 +35,16 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.citadel.core.criteria.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.transform.ResultTransformer;
-import org.opennms.core.criteria.Alias;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.Order;
-import org.opennms.core.criteria.restrictions.EqRestriction;
-import org.opennms.core.criteria.restrictions.NeRestriction;
+import org.citadel.core.criteria.Alias;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.Order;
+import org.citadel.core.criteria.restrictions.EqRestriction;
+import org.citadel.core.criteria.restrictions.NeRestriction;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.model.OnmsCategory;
 import org.opennms.netmgt.model.OnmsIpInterface;
@@ -435,7 +436,7 @@ public class NodeDaoHibernate extends AbstractDaoHibernate<OnmsNode, Integer> im
 
     @Override
     public List<OnmsNode> findByIpAddressAndService(InetAddress ipAddress, String serviceName) {
-        final org.opennms.core.criteria.Criteria criteria = new org.opennms.core.criteria.Criteria(OnmsNode.class)
+        final Criteria criteria = new Criteria(OnmsNode.class)
         .setAliases(Arrays.asList(new Alias[] {
                 new Alias("ipInterfaces","ipInterfaces", JoinType.LEFT_JOIN),
                 new Alias("ipInterfaces.monitoredServices","monitoredServices", JoinType.LEFT_JOIN),

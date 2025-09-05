@@ -36,7 +36,7 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.UriInfo;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.CollectdConfigFactory;
 import org.opennms.netmgt.config.NotifdConfigFactory;
 import org.opennms.netmgt.config.PollerConfigFactory;

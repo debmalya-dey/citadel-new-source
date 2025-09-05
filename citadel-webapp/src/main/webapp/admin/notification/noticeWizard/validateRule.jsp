@@ -26,14 +26,14 @@
 	session="true"
 	import="java.util.*,
 		java.net.InetAddress,
-		org.opennms.core.utils.InetAddressUtils,
+		org.citadel.core.utils.InetAddressUtils,
 		org.opennms.web.admin.notification.noticeWizard.*,
 		org.opennms.web.api.Util,
         org.opennms.netmgt.filter.FilterDaoFactory,org.opennms.netmgt.filter.api.FilterParseException,
 		org.opennms.netmgt.config.notifications.*
 	"
 %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%!
     public void init() throws ServletException {

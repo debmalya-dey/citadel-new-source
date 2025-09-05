@@ -23,7 +23,7 @@ package org.opennms.netmgt.notifd.asterisk;
 
 import java.util.List;
 
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.asterisk.agi.scripts.BaseOnmsAgiScript;
 import org.opennms.netmgt.asterisk.utils.AsteriskOriginator;
 import org.opennms.netmgt.asterisk.utils.AsteriskOriginatorException;

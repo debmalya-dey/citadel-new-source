@@ -23,8 +23,8 @@ package org.opennms.netmgt.rtc.datablock;
 
 import java.net.InetAddress;
 
-import org.opennms.core.utils.InetAddressComparator;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressComparator;
+import org.citadel.core.utils.InetAddressUtils;
 
 /**
  * The key used to look up items in the data map

@@ -26,7 +26,7 @@ import java.net.InetAddress;
 import org.junit.Assert;
 import org.junit.Test;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 /**
  * The Test Class for SnmpTrapNorthbounder.

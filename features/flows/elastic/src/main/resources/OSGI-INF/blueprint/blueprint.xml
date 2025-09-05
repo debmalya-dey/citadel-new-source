@@ -77,7 +77,7 @@
     <reference id="sessionUtils" interface="org.opennms.netmgt.dao.api.SessionUtils"/>
     <reference id="secureCredentialsVault" interface="org.opennms.features.scv.api.SecureCredentialsVault" availability="mandatory"/>
 
-    <bean id="entityScopeProvider" class="org.opennms.core.mate.model.EntityScopeProviderImpl">
+    <bean id="entityScopeProvider" class="model.mate.org.citadel.core.EntityScopeProviderImpl">
         <property name="nodeDao" ref="nodeDao"/>
         <property name="ipInterfaceDao" ref="ipInterfaceDao"/>
         <property name="monitoredServiceDao" ref="monitoredServiceDao"/>
@@ -145,7 +145,7 @@
           destroy-method="stop" />
 
     <reference id="identity" interface="org.opennms.distributed.core.api.Identity"/>
-    <reference id="tracerRegistry" interface="org.opennms.core.tracing.api.TracerRegistry"/>
+    <reference id="tracerRegistry" interface="api.tracing.org.citadel.core.TracerRegistry"/>
 
     <!-- The query services -->
     <bean id="rawIndexSelector" class="org.opennms.features.jest.client.index.IndexSelector">
@@ -235,7 +235,7 @@
 
     <!-- Health Check -->
     <reference id="configurationAdmin" interface="org.osgi.service.cm.ConfigurationAdmin"/>
-    <service interface="org.opennms.core.health.api.HealthCheck">
+    <service interface="api.health.org.citadel.core.HealthCheck">
         <bean class="org.opennms.features.elastic.client.RequireConfigurationElasticHealthCheck" >
             <argument ref="elasticRestClient"/>
             <argument value="Flows"/>

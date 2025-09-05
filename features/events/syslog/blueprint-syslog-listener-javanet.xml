@@ -35,7 +35,7 @@
 
 	<reference id="distPollerDao" interface="org.opennms.netmgt.dao.api.DistPollerDao"/>
 
-	<reference id="messageDispatcherFactory" interface="org.opennms.core.ipc.sink.api.MessageDispatcherFactory" />
+	<reference id="messageDispatcherFactory" interface="api.sink.ipc.org.citadel.core.MessageDispatcherFactory" />
 
 	<bean id="syslogReceiverJavaNet" class="org.opennms.netmgt.syslogd.SyslogReceiverJavaNetImpl" destroy-method="stop">
 		<argument ref="syslogConfig" />

@@ -16,8 +16,8 @@
 
   <context:annotation-config />
 
-  <bean id="jeagerTracerWrapper" class="org.opennms.core.tracing.jaeger.JaegerTracerWrapper" />
+  <bean id="jeagerTracerWrapper" class="org.citadel.core.tracing.jaeger.JaegerTracerWrapper" />
 
-  <onmsgi:service ref="jeagerTracerWrapper" interface="org.opennms.core.tracing.api.TracerWrapper" />
+  <onmsgi:service ref="jeagerTracerWrapper" interface="org.citadel.core.tracing.api.TracerWrapper" />
 
 </beans>

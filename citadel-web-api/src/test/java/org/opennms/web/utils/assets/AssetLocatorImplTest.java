@@ -36,9 +36,7 @@ import java.util.Optional;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.web.utils.assets.AssetLocatorImpl;
-import org.opennms.web.utils.assets.AssetResource;
+import org.citadel.core.test.MockLogAppender;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;

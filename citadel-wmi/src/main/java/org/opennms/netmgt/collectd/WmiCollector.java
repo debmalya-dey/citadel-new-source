@@ -31,7 +31,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.opennms.core.utils.ParameterMap;
+import org.citadel.core.utils.ParameterMap;
 import org.opennms.netmgt.collectd.wmi.WmiAgentState;
 import org.opennms.netmgt.collection.api.AbstractRemoteServiceCollector;
 import org.opennms.netmgt.collection.api.AttributeType;

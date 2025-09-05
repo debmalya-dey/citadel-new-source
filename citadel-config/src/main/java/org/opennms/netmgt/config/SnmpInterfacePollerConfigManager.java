@@ -21,9 +21,9 @@
  */
 package org.opennms.netmgt.config;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
-import static org.opennms.core.utils.InetAddressUtils.isInetAddressInRange;
-import static org.opennms.core.utils.InetAddressUtils.toIpAddrBytes;
+import static org.citadel.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.isInetAddressInRange;
+import static org.citadel.core.utils.InetAddressUtils.toIpAddrBytes;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -41,9 +41,9 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.opennms.core.network.IpListFromUrl;
-import org.opennms.core.utils.ByteArrayComparator;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.network.IpListFromUrl;
+import org.citadel.core.utils.ByteArrayComparator;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.snmpinterfacepoller.CriticalService;
 import org.opennms.netmgt.config.snmpinterfacepoller.ExcludeRange;
 import org.opennms.netmgt.config.snmpinterfacepoller.IncludeRange;

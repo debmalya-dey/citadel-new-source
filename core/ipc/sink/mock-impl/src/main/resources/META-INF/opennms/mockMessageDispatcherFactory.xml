@@ -9,6 +9,6 @@
 
   <context:annotation-config />
 
-  <bean id="mockMessageDispatcherFactory" class="org.opennms.core.ipc.sink.mock.MockMessageDispatcherFactory"/>
+  <bean id="mockMessageDispatcherFactory" class="org.citadel.core.ipc.sink.mock.MockMessageDispatcherFactory"/>
 
 </beans>

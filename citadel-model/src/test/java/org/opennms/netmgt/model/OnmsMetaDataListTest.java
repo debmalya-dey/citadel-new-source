@@ -26,7 +26,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import org.junit.runners.Parameterized;
-import org.opennms.core.test.xml.MarshalAndUnmarshalTest;
+import org.citadel.core.test.xml.MarshalAndUnmarshalTest;
 
 import com.google.common.collect.Lists;
 

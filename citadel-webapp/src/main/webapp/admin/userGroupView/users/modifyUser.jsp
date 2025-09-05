@@ -32,7 +32,7 @@
 <%@page import="org.opennms.netmgt.config.users.*"%>
 <%@page import="org.opennms.web.api.Util"%>
 <%@page import="org.opennms.web.api.Authentication"%>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <%!

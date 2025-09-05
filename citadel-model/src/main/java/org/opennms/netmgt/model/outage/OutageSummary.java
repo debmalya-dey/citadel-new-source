@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.apache.commons.lang.builder.CompareToBuilder;
-import org.opennms.core.utils.FuzzyDateFormatter;
+import org.citadel.core.utils.FuzzyDateFormatter;
 
 /**
  * A data structure holding information on all outages on a single IP address.

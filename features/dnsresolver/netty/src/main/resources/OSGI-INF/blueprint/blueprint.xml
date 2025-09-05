@@ -80,7 +80,7 @@
 
     <!-- We have a health check available but don't expose it currently since
          it does not currently return a healthy status when ran on CI
-    <service interface="org.opennms.core.health.api.HealthCheck">
+    <service interface="api.health.org.citadel.core.HealthCheck">
         <bean class=" org.opennms.netmgt.dnsresolver.netty.NettyDnsHealthCheck" >
             <argument ref="dnsResolver"/>
         </bean>

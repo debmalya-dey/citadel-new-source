@@ -24,7 +24,7 @@ package org.opennms.netmgt.dao.api;
 import java.io.Serializable;
 import java.util.List;
 
-import org.opennms.core.criteria.Criteria;
+import org.citadel.core.criteria.Criteria;
 
 /**
  * OnmsDao interface.

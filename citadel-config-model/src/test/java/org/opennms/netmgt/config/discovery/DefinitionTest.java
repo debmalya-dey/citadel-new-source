@@ -26,7 +26,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import org.junit.runners.Parameterized;
-import org.opennms.core.test.xml.XmlTestNoCastor;
+import org.citadel.core.test.xml.XmlTestNoCastor;
 
 public class DefinitionTest extends XmlTestNoCastor<Definition> {
     public DefinitionTest(Definition sampleObject, Object sampleXml) {

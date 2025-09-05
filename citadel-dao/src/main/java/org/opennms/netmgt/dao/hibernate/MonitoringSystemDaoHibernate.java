@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.dao.hibernate;
 
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.dao.api.MonitoringSystemDao;
 import org.opennms.netmgt.model.OnmsMonitoringSystem;
 

@@ -32,7 +32,7 @@ import javax.ws.rs.core.Response;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.time.CentralizedDateTimeFormat;
+import org.citadel.core.time.CentralizedDateTimeFormat;
 import org.opennms.web.rest.support.menu.HttpMenuRequestContext;
 import org.opennms.web.rest.support.menu.model.MainMenu;
 import org.opennms.web.rest.support.menu.MenuProvider;

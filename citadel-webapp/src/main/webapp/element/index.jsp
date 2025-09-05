@@ -28,7 +28,7 @@
 		org.opennms.web.element.*,
 		org.opennms.web.asset.*,
 		org.opennms.netmgt.model.monitoringLocations.OnmsMonitoringLocation"%>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%!
     protected AssetModel model;

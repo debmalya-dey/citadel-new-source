@@ -24,7 +24,7 @@ package org.opennms.netmgt.config;
 import java.util.Date;
 import java.util.List;
 
-import org.opennms.core.utils.Owner;
+import org.citadel.core.utils.Owner;
 
 /**
  * <p>CalendarEntry class.</p>

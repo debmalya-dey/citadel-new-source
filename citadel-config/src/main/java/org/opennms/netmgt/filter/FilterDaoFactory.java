@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.filter;
 
-import org.opennms.core.db.DataSourceFactory;
+import org.citadel.core.db.DataSourceFactory;
 import org.opennms.netmgt.config.DatabaseSchemaConfigFactory;
 import org.opennms.netmgt.filter.api.FilterDao;
 import org.slf4j.Logger;

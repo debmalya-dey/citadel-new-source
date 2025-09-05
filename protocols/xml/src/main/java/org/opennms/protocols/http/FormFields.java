@@ -36,7 +36,7 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.message.BasicNameValuePair;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.codehaus.jackson.map.annotate.JsonRootName;
-import org.opennms.core.config.api.JaxbListWrapper;
+import org.citadel.core.config.api.JaxbListWrapper;
 
 /**
  * The Class FormFields.
@@ -65,7 +65,7 @@ public class FormFields extends JaxbListWrapper<FormField> {
     }
 
     /* (non-Javadoc)
-     * @see org.opennms.core.config.api.JaxbListWrapper#getObjects()
+     * @see api.config.org.citadel.core.JaxbListWrapper#getObjects()
      */
     @XmlElement(name="form-field")
     @JsonProperty("form-field")

@@ -29,8 +29,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
 import org.opennms.netmgt.dao.api.NotificationDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

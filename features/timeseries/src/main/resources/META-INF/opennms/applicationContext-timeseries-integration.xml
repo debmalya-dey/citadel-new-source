@@ -59,7 +59,7 @@
   <bean id="resourceStorageDao" primary="true" class="org.opennms.netmgt.timeseries.resource.TimeseriesResourceStorageDao" />
   <onmsgi:service interface="org.opennms.netmgt.dao.api.ResourceStorageDao" ref="resourceStorageDao" />
 
-  <bean id="entityScopeProvider" class="org.opennms.core.mate.api.EntityScopeProvider"/>
+  <bean id="entityScopeProvider" class="api.mate.org.citadel.core.EntityScopeProvider"/>
 
   <bean id="metaTagDataLoader" class="org.opennms.netmgt.timeseries.samplewrite.MetaTagDataLoader" />
 
@@ -97,14 +97,14 @@
   <onmsgi:service ref="rrdStrategy" interface="org.opennms.netmgt.rrd.RrdStrategy" />
 
   <!-- CacheConfig -->
-  <bean id="timeseriesPersisterMetaTagCache" class="org.opennms.core.cache.CacheConfig">
+  <bean id="timeseriesPersisterMetaTagCache" class="cache.org.citadel.core.CacheConfig">
     <constructor-arg index="0" value="timeseriesPersisterMetaTagCache" />
     <property name="expireAfterRead" value="${cache.timeseriesPersisterMetaTagCache.expireAfterRead:300}" />
     <property name="maximumSize" value="${cache.timeseriesPersisterMetaTagCache.maximumSize:8192}" />
     <property name="recordStats" value="${cache.timeseriesPersisterMetaTagCache.recordStats:true}" />
     <property name="metricRegistry" ref="timeseriesMetricRegistry" />
   </bean>
-  <bean id="timeseriesSearcherCache" class="org.opennms.core.cache.CacheConfig">
+  <bean id="timeseriesSearcherCache" class="cache.org.citadel.core.CacheConfig">
     <constructor-arg index="0" value="timeseriesSearcherCache" />
     <property name="expireAfterRead" value="${cache.timeseriesSearcherCache.expireAfterRead:300}" />
     <property name="maximumSize" value="${cache.timeseriesSearcherCache.maximumSize:8192}" />

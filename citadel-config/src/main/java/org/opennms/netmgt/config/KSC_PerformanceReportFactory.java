@@ -33,8 +33,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.kscReports.Report;
 import org.opennms.netmgt.config.kscReports.ReportsList;
 import org.slf4j.Logger;

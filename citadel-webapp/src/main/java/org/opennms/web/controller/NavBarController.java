@@ -44,7 +44,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.opennms.core.time.CentralizedDateTimeFormat;
+import org.citadel.core.time.CentralizedDateTimeFormat;
 import org.opennms.netmgt.config.NotifdConfigFactory;
 import org.opennms.web.api.Authentication;
 import org.opennms.web.api.MenuProvider;

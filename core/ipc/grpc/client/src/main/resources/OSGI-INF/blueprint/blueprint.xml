@@ -27,9 +27,9 @@
   <!-- Provided by minion-core -->
   <reference id="minionIdentity" interface="org.opennms.distributed.core.api.MinionIdentity"/>
 
-  <reference id="tracerRegistry" interface="org.opennms.core.tracing.api.TracerRegistry"/>
+  <reference id="tracerRegistry" interface="org.citadel.core.tracing.api.TracerRegistry"/>
 
-  <bean id="grpcClient" class="org.opennms.core.ipc.grpc.client.MinionGrpcClient"
+  <bean id="grpcClient" class="org.citadel.core.ipc.grpc.client.MinionGrpcClient"
         init-method="start" destroy-method="shutdown">
     <argument ref="minionIdentity"/>
     <argument ref="configAdmin"/>
@@ -37,18 +37,18 @@
     <property name="tracerRegistry" ref="tracerRegistry"/>
   </bean>
 
-  <service ref="grpcClient" interface="org.opennms.core.ipc.sink.api.MessageDispatcherFactory"/>
+  <service ref="grpcClient" interface="org.citadel.core.ipc.sink.api.MessageDispatcherFactory"/>
 
-  <reference-list id="rpcModulesRef" interface="org.opennms.core.rpc.api.RpcModule" availability="optional">
+  <reference-list id="rpcModulesRef" interface="org.citadel.core.rpc.api.RpcModule" availability="optional">
     <reference-listener bind-method="bind" unbind-method="unbind" ref="grpcClient"/>
   </reference-list>
 
   <!-- GRPC Health Check -->
-  <bean id="grpcHealthCheck" class="org.opennms.core.ipc.grpc.client.GrpcHealthCheck">
+  <bean id="grpcHealthCheck" class="org.citadel.core.ipc.grpc.client.GrpcHealthCheck">
     <argument ref="grpcClient"/>
   </bean>
 
-  <service ref="grpcHealthCheck" interface="org.opennms.core.health.api.HealthCheck"/>
+  <service ref="grpcHealthCheck" interface="org.citadel.core.health.api.HealthCheck"/>
 
   <!-- Sink Metrics -->
   <bean id="grpcSinkMetricRegistry" class="com.codahale.metrics.MetricRegistry"/>

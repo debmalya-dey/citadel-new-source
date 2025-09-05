@@ -26,7 +26,7 @@ import java.io.OutputStream;
 
 import org.junit.After;
 import org.junit.Before;
-import org.opennms.core.test.MockLogAppender;
+import org.citadel.core.test.MockLogAppender;
 import org.opennms.netmgt.provision.server.SimpleServer;
 import org.opennms.netmgt.provision.server.exchange.RequestHandler;
 

@@ -29,8 +29,8 @@ import java.util.concurrent.CompletionStage;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
-import org.opennms.core.rpc.api.RpcExceptionHandler;
-import org.opennms.core.rpc.api.RpcExceptionUtils;
+import org.citadel.core.rpc.api.RpcExceptionHandler;
+import org.citadel.core.rpc.api.RpcExceptionUtils;
 import org.opennms.netmgt.collection.api.PersisterFactory;
 import org.opennms.netmgt.config.PollerConfig;
 import org.opennms.netmgt.config.dao.outages.api.ReadablePollOutagesDao;

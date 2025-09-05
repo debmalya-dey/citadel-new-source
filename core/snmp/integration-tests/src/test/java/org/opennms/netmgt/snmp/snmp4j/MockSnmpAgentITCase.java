@@ -26,8 +26,8 @@ import java.net.InetAddress;
 
 import org.junit.After;
 import org.junit.Before;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.mock.snmp.MockSnmpAgent;
 import org.opennms.netmgt.snmp.SnmpAgentAddress;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;

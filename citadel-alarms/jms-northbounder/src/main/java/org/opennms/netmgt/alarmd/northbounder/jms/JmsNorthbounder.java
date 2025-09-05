@@ -29,8 +29,8 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
 
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.PropertiesUtils;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.PropertiesUtils;
 import org.opennms.netmgt.alarmd.api.NorthboundAlarm;
 import org.opennms.netmgt.alarmd.api.NorthbounderException;
 import org.opennms.netmgt.alarmd.api.support.AbstractNorthbounder;

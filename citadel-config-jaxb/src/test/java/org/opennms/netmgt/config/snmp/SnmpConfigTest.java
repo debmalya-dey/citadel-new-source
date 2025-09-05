@@ -31,8 +31,8 @@ import java.util.List;
 
 import org.junit.Test;
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.test.xml.XmlTestNoCastor;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.test.xml.XmlTestNoCastor;
+import org.citadel.core.xml.JaxbUtils;
 
 public class SnmpConfigTest extends XmlTestNoCastor<SnmpConfig> {
 

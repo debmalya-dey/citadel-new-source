@@ -40,9 +40,9 @@ import java.util.Map.Entry;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.opennms.core.resource.Vault;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.resource.Vault;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.events.api.EventProxy;
 import org.opennms.netmgt.events.api.support.TcpEventProxy;
 

@@ -22,10 +22,10 @@
 
     <reference id="configAdmin" interface="org.osgi.service.cm.ConfigurationAdmin"/>
 
-    <reference id="tracerRegistry" interface="org.opennms.core.tracing.api.TracerRegistry"/>
+    <reference id="tracerRegistry" interface="org.citadel.core.tracing.api.TracerRegistry"/>
 
     <!-- Config Provider -->
-    <bean id="kafkaConfigProvider" class="org.opennms.core.ipc.common.kafka.OsgiKafkaConfigProvider">
+    <bean id="kafkaConfigProvider" class="org.citadel.core.ipc.common.kafka.OsgiKafkaConfigProvider">
       <!-- same as persistent-id -->
       <argument value="org.opennms.core.ipc.rpc.kafka"/>
       <argument ref="configAdmin"/>
@@ -33,7 +33,7 @@
       <argument value="org.opennms.core.ipc.kafka"/>
     </bean>
 
-    <bean id="kafkaRpcServerManager" class="org.opennms.core.ipc.rpc.kafka.KafkaRpcServerManager"
+    <bean id="kafkaRpcServerManager" class="org.citadel.core.ipc.rpc.kafka.KafkaRpcServerManager"
           init-method="init" destroy-method="destroy">
       <argument ref="kafkaConfigProvider"/>
       <argument ref="minionIdentity"/>
@@ -41,14 +41,14 @@
       <argument ref="metricRegistry"/>
     </bean>
 
-    <reference-list id="rpcModulesRef" interface="org.opennms.core.rpc.api.RpcModule" availability="optional">
+    <reference-list id="rpcModulesRef" interface="org.citadel.core.rpc.api.RpcModule" availability="optional">
       <reference-listener bind-method="bind" unbind-method="unbind" ref="kafkaRpcServerManager"/>
     </reference-list>
 
     <!-- Kafka HealthCheck for RPC -->
 
-    <service interface="org.opennms.core.health.api.HealthCheck">
-      <bean class="org.opennms.core.ipc.common.kafka.KafkaHealthCheck" >
+    <service interface="org.citadel.core.health.api.HealthCheck">
+      <bean class="org.citadel.core.ipc.common.kafka.KafkaHealthCheck" >
         <argument ref="kafkaConfigProvider"/>
         <argument value="RPC" />
       </bean>

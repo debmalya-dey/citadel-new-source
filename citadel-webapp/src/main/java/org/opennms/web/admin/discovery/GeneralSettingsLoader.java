@@ -23,7 +23,7 @@ package org.opennms.web.admin.discovery;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.DiscoveryConfigFactory;
 import org.opennms.netmgt.config.discovery.DiscoveryConfiguration;
 import org.slf4j.Logger;

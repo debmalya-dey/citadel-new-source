@@ -35,12 +35,12 @@ import java.util.Iterator;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.test.IntervalTestCase;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.utils.OwnedInterval;
-import org.opennms.core.utils.OwnedIntervalSequence;
-import org.opennms.core.utils.Owner;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.IntervalTestCase;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.utils.OwnedInterval;
+import org.citadel.core.utils.OwnedIntervalSequence;
+import org.citadel.core.utils.Owner;
 import org.opennms.netmgt.config.GroupFactory;
 import org.opennms.netmgt.config.GroupManager;
 import org.opennms.netmgt.config.MonthlyCalendar;

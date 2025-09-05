@@ -22,8 +22,8 @@
 package org.opennms.netmgt.config;
 
 import org.junit.Test;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.datacollection.DatacollectionConfig;
 import org.opennms.netmgt.config.datacollection.SnmpCollection;
 import org.springframework.core.io.FileSystemResource;

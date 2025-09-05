@@ -32,8 +32,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.config.dao.thresholding.api.WriteableThresholdingDao;
 import org.opennms.netmgt.config.threshd.Basethresholddef;

@@ -50,12 +50,12 @@
     <property name="threadNamePrefix" value="nodeScanExecutor-" />
   </bean>
 
-  <bean id="scheduledExecutor" class="org.opennms.core.concurrent.PausibleScheduledThreadPoolExecutor">
+  <bean id="scheduledExecutor" class="concurrent.org.citadel.core.PausibleScheduledThreadPoolExecutor">
     <constructor-arg ref="rescanThreads" />
     <constructor-arg ref="nodeScanExecutor" />
   </bean>
 
-  <bean id="taskCoordinator" class="org.opennms.core.tasks.DefaultTaskCoordinator">
+  <bean id="taskCoordinator" class="tasks.org.citadel.core.DefaultTaskCoordinator">
     <constructor-arg value="Provisiond" />
   	<property name="defaultExecutor" value="scan" />
   	<property name="executors">

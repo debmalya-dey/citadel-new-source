@@ -9,6 +9,6 @@
        ">
   <context:annotation-config />
   <!-- Conditionally load Jeager Tracer. -->
-  <bean class="org.opennms.core.tracing.jaeger.ConditionalJaegerTracerContext"/>
+  <bean class="org.citadel.core.tracing.jaeger.ConditionalJaegerTracerContext"/>
 
 </beans>

@@ -34,7 +34,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.soa.ServiceRegistry;
+import org.citadel.core.soa.ServiceRegistry;
 import org.opennms.netmgt.config.discovery.DiscoveryConfiguration;
 import org.opennms.netmgt.config.discovery.ExcludeRange;
 import org.opennms.netmgt.config.discovery.ExcludeUrl;

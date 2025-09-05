@@ -27,8 +27,8 @@ import java.io.IOException;
 import java.util.ListIterator;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.xml.AbstractJaxbConfigDao;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.xml.AbstractJaxbConfigDao;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.microblog.MicroblogConfiguration;
 import org.opennms.netmgt.config.microblog.MicroblogProfile;
 import org.opennms.netmgt.dao.api.MicroblogConfigurationDao;

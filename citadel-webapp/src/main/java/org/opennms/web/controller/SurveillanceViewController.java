@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.web.svclayer.SurveillanceService;
 import org.opennms.web.svclayer.model.ProgressMonitor;
 import org.opennms.web.svclayer.model.SimpleWebTable;

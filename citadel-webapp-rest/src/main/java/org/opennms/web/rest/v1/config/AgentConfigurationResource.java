@@ -39,9 +39,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import org.opennms.core.config.api.ConfigurationResource;
-import org.opennms.core.config.api.ConfigurationResourceException;
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.config.api.ConfigurationResource;
+import org.citadel.core.config.api.ConfigurationResourceException;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.config.agents.AgentResponse;
 import org.opennms.netmgt.config.agents.AgentResponseCollection;
 import org.opennms.netmgt.config.api.SnmpAgentConfigFactory;

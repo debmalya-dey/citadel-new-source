@@ -25,9 +25,9 @@ import java.util.Date;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
 import org.opennms.netmgt.dao.api.ResourceReferenceDao;
 import org.opennms.netmgt.dao.api.StatisticsReportDao;
 import org.opennms.netmgt.model.ResourceReference;

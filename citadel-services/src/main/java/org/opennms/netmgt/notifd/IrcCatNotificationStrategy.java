@@ -28,7 +28,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.List;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.NotificationManager;
 import org.opennms.netmgt.model.notifd.Argument;
 import org.opennms.netmgt.model.notifd.NotificationStrategy;

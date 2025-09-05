@@ -26,7 +26,7 @@ import javax.ws.rs.container.ResourceContext;
 import javax.ws.rs.core.Context;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.config.api.ConfigurationResourceException;
+import org.citadel.core.config.api.ConfigurationResourceException;
 import org.opennms.web.rest.v1.config.AgentConfigurationResource;
 import org.opennms.web.rest.v1.config.DataCollectionConfigResource;
 import org.opennms.web.rest.v1.config.EmailNorthbounderConfigurationResource;

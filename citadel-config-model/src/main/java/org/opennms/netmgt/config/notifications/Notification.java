@@ -34,8 +34,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import org.opennms.core.xml.ValidateUsing;
-import org.opennms.core.xml.YesNoAdapter;
+import org.citadel.core.xml.ValidateUsing;
+import org.citadel.core.xml.YesNoAdapter;
 import org.opennms.netmgt.config.utils.ConfigUtils;
 
 @XmlRootElement(name = "notification")

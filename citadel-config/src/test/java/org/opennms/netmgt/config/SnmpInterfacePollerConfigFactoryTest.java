@@ -24,7 +24,7 @@ package org.opennms.netmgt.config;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.opennms.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.ConfigurationTestUtils;
 import org.opennms.netmgt.config.snmpinterfacepoller.*;
 import org.opennms.netmgt.config.snmpinterfacepoller.Package;
 

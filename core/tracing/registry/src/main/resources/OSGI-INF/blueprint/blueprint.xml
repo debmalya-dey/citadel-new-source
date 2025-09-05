@@ -10,12 +10,12 @@
 		http://aries.apache.org/schemas/blueprint-ext/blueprint-ext-1.5.xsd
 ">
 
-  <bean id="tracerRegistry" class="org.opennms.core.tracing.registry.TracerRegistryImpl" />
+  <bean id="tracerRegistry" class="org.citadel.core.tracing.registry.TracerRegistryImpl" />
 
-  <reference-list interface="org.opennms.core.tracing.api.TracerWrapper" availability="optional">
+  <reference-list interface="org.citadel.core.tracing.api.TracerWrapper" availability="optional">
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="tracerRegistry" />
   </reference-list>
 
-  <service interface="org.opennms.core.tracing.api.TracerRegistry" ref="tracerRegistry" />
+  <service interface="org.citadel.core.tracing.api.TracerRegistry" ref="tracerRegistry" />
 
 </blueprint>

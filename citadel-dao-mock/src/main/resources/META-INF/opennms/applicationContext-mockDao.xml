@@ -31,7 +31,7 @@
     <!-- <onmsgi:service interface="javax.sql.DataSource" ref="dataSource" /> -->
     <bean id="dataSourceFactory-init" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
         <property name="staticMethod">
-            <value>org.opennms.core.db.DataSourceFactory.setInstance</value>
+            <value>org.citadel.core.db.DataSourceFactory.setInstance</value>
         </property>
         <property name="arguments">
             <list>

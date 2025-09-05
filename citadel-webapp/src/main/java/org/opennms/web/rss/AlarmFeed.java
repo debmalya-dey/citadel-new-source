@@ -24,8 +24,8 @@ package org.opennms.web.rss;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.dao.api.AlarmRepository;
 import org.opennms.netmgt.model.OnmsAlarm;
 import org.opennms.netmgt.model.OnmsCriteria;

@@ -32,7 +32,7 @@
 <%@page import="org.opennms.web.element.NetworkElementFactory"%>
 <%@ page import="org.opennms.util.ilr.ServiceCollector" %>
 <%@ page import="org.opennms.web.api.Util" %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>

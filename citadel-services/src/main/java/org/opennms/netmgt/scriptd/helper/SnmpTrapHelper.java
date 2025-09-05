@@ -27,8 +27,8 @@ import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.opennms.core.utils.Base64;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.Base64;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.EventDatetimeFormatter;
 import org.opennms.netmgt.eventd.AbstractEventUtil;

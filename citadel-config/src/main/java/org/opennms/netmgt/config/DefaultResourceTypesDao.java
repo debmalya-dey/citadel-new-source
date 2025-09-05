@@ -26,8 +26,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.opennms.core.config.api.ConfigReloadContainer;
-import org.opennms.core.xml.AbstractMergingJaxbConfigDao;
+import org.citadel.core.config.api.ConfigReloadContainer;
+import org.citadel.core.xml.AbstractMergingJaxbConfigDao;
 import org.opennms.netmgt.config.api.ResourceTypesDao;
 import org.opennms.netmgt.config.datacollection.ResourceType;
 import org.opennms.netmgt.config.datacollection.ResourceTypes;

@@ -23,8 +23,8 @@ package org.opennms.netmgt.alarmd.northbounder.http;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.http.annotations.JUnitHttpServer;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.http.annotations.JUnitHttpServer;
 import org.opennms.netmgt.alarmd.api.NorthboundAlarm;
 import org.opennms.netmgt.alarmd.northbounder.http.HttpNorthbounderConfig.HttpMethod;
 import org.opennms.netmgt.model.OnmsAlarm;

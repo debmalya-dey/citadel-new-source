@@ -6,7 +6,7 @@
     <reference id="identity"                 interface="org.opennms.distributed.core.api.Identity" availability="mandatory" />
     <reference id="tftpServer"               interface="org.opennms.features.deviceconfig.tftp.TftpServer" availability="mandatory" />
     <reference id="deviceConfigSinkModule" interface="org.opennms.features.deviceconfig.sink.module.DeviceConfigSinkModule" availability="mandatory" />
-    <reference id="messageDispatcherFactory" interface="org.opennms.core.ipc.sink.api.MessageDispatcherFactory" availability="mandatory" />
+    <reference id="messageDispatcherFactory" interface="api.sink.ipc.org.citadel.core.MessageDispatcherFactory" availability="mandatory" />
 
     <bean id="deviceConfigDispatcher" class="org.opennms.features.deviceconfig.sink.dispatcher.DeviceConfigDispatcher" destroy-method="close">
         <argument ref="identity"/>

@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.alarmd;
 
-import org.opennms.core.sysprops.SystemProperties;
+import org.citadel.core.sysprops.SystemProperties;
 import org.opennms.netmgt.alarmd.drools.DroolsAlarmContext;
 import org.opennms.netmgt.daemon.AbstractServiceDaemon;
 import org.opennms.netmgt.daemon.DaemonTools;

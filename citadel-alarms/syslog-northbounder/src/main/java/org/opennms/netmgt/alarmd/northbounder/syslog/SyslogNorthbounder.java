@@ -23,7 +23,7 @@ package org.opennms.netmgt.alarmd.northbounder.syslog;
 
 import java.util.List;
 
-import org.opennms.core.utils.PropertiesUtils;
+import org.citadel.core.utils.PropertiesUtils;
 import org.opennms.netmgt.alarmd.api.NorthboundAlarm;
 import org.opennms.netmgt.alarmd.api.NorthbounderException;
 import org.opennms.netmgt.alarmd.api.support.AbstractNorthbounder;

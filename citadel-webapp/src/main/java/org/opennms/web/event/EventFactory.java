@@ -32,8 +32,8 @@ import java.util.List;
 import java.util.Map;
 import javax.servlet.ServletContext;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.utils.DBUtils;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.utils.DBUtils;
 import org.opennms.netmgt.dao.api.EventDao;
 import org.opennms.netmgt.model.OnmsSeverity;
 import org.opennms.web.event.filter.IfIndexFilter;

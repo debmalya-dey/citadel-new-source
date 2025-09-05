@@ -7,7 +7,7 @@
   <!--
     DON'T EDIT THIS FILE :: GENERATED WITH CONFD
   -->
-  <connection-pool factory="{{getv "/opennms/database/connection/poolfactory" "org.opennms.core.db.HikariCPConnectionFactory"}}"
+  <connection-pool factory="{{getv "/opennms/database/connection/poolfactory" "db.org.citadel.core.HikariCPConnectionFactory"}}"
     idleTimeout="{{getv "/opennms/database/connection/idletimeout" "600"}}"
     loginTimeout="{{getv "/opennms/database/connection/logintimeout" "3"}}"
     minPool="{{getv "/opennms/database/connection/minpool" "25"}}"

@@ -39,8 +39,8 @@
           org.opennms.web.alarm.filter.NodeFilter,
           org.opennms.web.filter.Filter,
           org.opennms.web.servlet.MissingParameterException,
-          org.opennms.core.spring.BeanUtils,
-          org.opennms.core.utils.WebSecurityUtils,
+          org.citadel.core.spring.BeanUtils,
+          org.citadel.core.utils.WebSecurityUtils,
           org.opennms.netmgt.model.OnmsAlarm,
           org.opennms.netmgt.model.OnmsSeverity,
           org.opennms.netmgt.dao.api.AlarmRepository

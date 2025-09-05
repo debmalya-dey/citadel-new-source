@@ -24,7 +24,7 @@
 <%@page import="com.google.common.base.Strings"%>
 <%@page import="org.opennms.web.svclayer.model.SnmpInfo"%>
 <%@page import="org.opennms.netmgt.snmp.SnmpConfiguration"%>
-<%@page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@page language="java" contentType="text/html" session="true"%>
 
 <%@ page import="org.opennms.web.utils.Bootstrap" %>

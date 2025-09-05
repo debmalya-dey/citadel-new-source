@@ -37,7 +37,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.utils.RegexUtils;
+import org.citadel.core.utils.RegexUtils;
 
 import com.google.common.base.Strings;
 import com.google.common.collect.Maps;

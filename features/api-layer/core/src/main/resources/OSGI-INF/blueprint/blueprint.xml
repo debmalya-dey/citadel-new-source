@@ -106,7 +106,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="eventConfExtensionManager" />
   </reference-list>
 
-  <service ref="eventConfExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="eventConfExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>
@@ -134,7 +134,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="syslogMatchExtensionManager" />
   </reference-list>
 
-  <service ref="syslogMatchExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="syslogMatchExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>
@@ -151,7 +151,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="snmpCollectionExtensionManager" />
   </reference-list>
 
-  <service ref="snmpCollectionExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="snmpCollectionExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>
@@ -165,7 +165,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="resourceTypesExtensionManager" />
   </reference-list>
 
-  <service ref="resourceTypesExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="resourceTypesExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>
@@ -181,7 +181,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="pollerConfExtensionManager" />
   </reference-list>
 
-  <service ref="pollerConfExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="pollerConfExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>
@@ -197,7 +197,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="collectorConfExtensionManager" />
   </reference-list>
 
-  <service ref="collectorConfExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="collectorConfExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>
@@ -211,7 +211,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="graphPropertiesExtensionManager" />
   </reference-list>
 
-  <service ref="graphPropertiesExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="graphPropertiesExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>
@@ -369,7 +369,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="threhsoldingConfigExtensionManager" />
   </reference-list>
 
-  <service ref="threhsoldingConfigExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="threhsoldingConfigExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>
@@ -383,7 +383,7 @@
     <reference-listener bind-method="onBind" unbind-method="onUnbind" ref="threshdConfigurationExtensionManager" />
   </reference-list>
 
-  <service ref="threshdConfigurationExtensionManager" interface="org.opennms.core.config.api.ConfigurationProvider" >
+  <service ref="threshdConfigurationExtensionManager" interface="api.config.org.citadel.core.ConfigurationProvider" >
     <service-properties>
       <entry key="registration.export" value="true"/>
     </service-properties>

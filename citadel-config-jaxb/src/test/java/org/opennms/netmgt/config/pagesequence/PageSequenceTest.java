@@ -28,9 +28,9 @@ import java.util.Properties;
 
 import org.junit.Before;
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.test.MockLogger;
-import org.opennms.core.test.xml.XmlTestNoCastor;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.test.MockLogger;
+import org.citadel.core.test.xml.XmlTestNoCastor;
 
 public class PageSequenceTest extends XmlTestNoCastor<PageSequence> {
     public PageSequenceTest(final PageSequence sampleObject, final Object sampleXml) {
@@ -41,8 +41,8 @@ public class PageSequenceTest extends XmlTestNoCastor<PageSequence> {
     public void setUp() {
         super.setUp();
         final Properties props = new Properties();
-        props.put(MockLogger.LOG_KEY_PREFIX + "org.opennms.core.xml.JaxbUtils", "TRACE");
-        props.put(MockLogger.LOG_KEY_PREFIX + "org.opennms.core.xml.JaxbClassObjectAdapter", "TRACE");
+        props.put(MockLogger.LOG_KEY_PREFIX + "xml.org.citadel.core.JaxbUtils", "TRACE");
+        props.put(MockLogger.LOG_KEY_PREFIX + "xml.org.citadel.core.JaxbClassObjectAdapter", "TRACE");
         MockLogAppender.setupLogging(true, props);
     }
 

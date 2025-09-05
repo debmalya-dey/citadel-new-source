@@ -29,7 +29,7 @@
 		org.opennms.web.element.NetworkElementFactory
 	"
 %>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%!
     protected AssetModel model;

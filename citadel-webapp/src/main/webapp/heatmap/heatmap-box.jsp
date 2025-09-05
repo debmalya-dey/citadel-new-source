@@ -21,7 +21,7 @@
     License.
 
 --%>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 <%@ page import="org.opennms.web.api.Util" %><%--
 /*******************************************************************************
  * This file is part of OpenNMS(R).

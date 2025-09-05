@@ -40,16 +40,13 @@ import java.util.TreeSet;
 import org.apache.commons.beanutils.BeanUtils;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.Criteria;
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.criteria.restrictions.Restrictions;
-import org.opennms.core.test.OpenNMSJUnit4ClassRunner;
-import org.opennms.core.test.db.annotations.JUnitTemporaryDatabase;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.criteria.Criteria;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.test.OpenNMSJUnit4ClassRunner;
+import org.citadel.core.test.db.annotations.JUnitTemporaryDatabase;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.dao.api.DistPollerDao;
 import org.opennms.netmgt.dao.api.MonitoringLocationDao;
 import org.opennms.netmgt.dao.api.NodeDao;
@@ -105,7 +102,7 @@ public class NodeDaoIT implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        org.opennms.core.spring.BeanUtils.assertAutowiring(this);
+        org.citadel.core.spring.BeanUtils.assertAutowiring(this);
     }
 
     @Before

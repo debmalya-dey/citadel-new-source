@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.codehaus.jackson.annotate.JsonProperty;
-import org.opennms.core.config.api.JaxbListWrapper;
+import org.citadel.core.config.api.JaxbListWrapper;
 
 @XmlRootElement
 public class OnmsLocationAvailDefinitionList extends JaxbListWrapper<OnmsLocationAvailDataPoint> {

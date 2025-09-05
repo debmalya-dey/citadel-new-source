@@ -25,7 +25,7 @@ import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNull;
 
 import org.junit.Test;
-import org.opennms.core.sysprops.SystemProperties;
+import org.citadel.core.sysprops.SystemProperties;
 
 import java.math.BigDecimal;
 

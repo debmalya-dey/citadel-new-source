@@ -22,8 +22,8 @@
 package org.opennms.netmgt.config.datacollection;
 
 import org.junit.Test;
-import org.opennms.core.xml.JaxbUtils;
-import org.opennms.core.xml.MarshallingResourceFailureException;
+import org.citadel.core.xml.JaxbUtils;
+import org.citadel.core.xml.MarshallingResourceFailureException;
 
 public class DatacollectionGroupValidationTest {
     @Test(expected = MarshallingResourceFailureException.class)

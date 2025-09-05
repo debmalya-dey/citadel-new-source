@@ -64,7 +64,7 @@
         <argument ref="configurationManagerService" />
     </bean>
 
-    <bean id="dataSourceFactoryBean" class="org.opennms.core.db.DataSourceFactoryBean" />
+    <bean id="dataSourceFactoryBean" class="db.org.citadel.core.DataSourceFactoryBean" />
 
     <reference id="flowQueryService"
                interface="org.opennms.netmgt.flows.api.FlowQueryService"

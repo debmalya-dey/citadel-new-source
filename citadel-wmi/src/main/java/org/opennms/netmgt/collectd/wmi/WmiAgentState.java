@@ -26,7 +26,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.wmi.WmiAgentConfig;
 import org.opennms.protocols.wmi.IWmiClient;
 import org.opennms.protocols.wmi.WmiClient;

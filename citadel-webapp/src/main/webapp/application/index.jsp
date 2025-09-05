@@ -27,7 +27,7 @@
         import="
             java.util.*,
             org.opennms.web.element.*,
-            org.opennms.core.utils.WebSecurityUtils,
+            org.citadel.core.utils.WebSecurityUtils,
             org.opennms.netmgt.model.perspectivepolling.ApplicationStatus,
             org.opennms.netmgt.model.OnmsApplication"
 %>

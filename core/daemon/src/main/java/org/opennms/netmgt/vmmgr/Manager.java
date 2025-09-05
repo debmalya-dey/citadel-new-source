@@ -38,7 +38,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import javax.management.MBeanServer;
 import javax.management.MBeanServerFactory;
 
-import org.opennms.core.logging.Logging;
+import org.citadel.core.logging.Logging;
 import org.opennms.netmgt.config.ServiceConfigFactory;
 import org.opennms.netmgt.config.service.InvokeAtType;
 import org.opennms.netmgt.icmp.Pinger;

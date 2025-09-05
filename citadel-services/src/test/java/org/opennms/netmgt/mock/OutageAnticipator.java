@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.opennms.core.test.db.MockDatabase;
+import org.citadel.core.test.db.MockDatabase;
 import org.opennms.netmgt.dao.mock.EventWrapper;
 import org.opennms.netmgt.events.api.EventListener;
 import org.opennms.netmgt.events.api.model.IEvent;

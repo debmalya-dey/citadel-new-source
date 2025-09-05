@@ -11,7 +11,7 @@
 
 	<context:annotation-config />
 
-    <bean id="snmpProfileMapper" class="org.opennms.core.snmp.profile.mapper.impl.SnmpProfileMapperImpl"/>
+    <bean id="snmpProfileMapper" class="org.citadel.core.snmp.profile.mapper.impl.SnmpProfileMapperImpl"/>
 
     <onmsgi:service interface="org.opennms.netmgt.snmp.SnmpProfileMapper" ref="snmpProfileMapper"/>
 

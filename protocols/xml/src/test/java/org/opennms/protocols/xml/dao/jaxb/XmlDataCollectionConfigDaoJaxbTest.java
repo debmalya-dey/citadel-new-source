@@ -29,7 +29,7 @@ import java.io.InputStream;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.opennms.core.xml.MarshallingResourceFailureException;
+import org.citadel.core.xml.MarshallingResourceFailureException;
 import org.opennms.protocols.xml.config.XmlDataCollectionConfig;
 import org.opennms.test.ThrowableAnticipator;
 

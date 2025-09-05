@@ -26,7 +26,7 @@
 <%@page import="org.opennms.web.enlinkd.CdpElementNode"%>
 <%@page import="org.opennms.web.enlinkd.LldpElementNode"%>
 <%@page import="java.util.Collection"%>
-<%@page import="org.opennms.core.utils.WebSecurityUtils"%>
+<%@page import="org.citadel.core.utils.WebSecurityUtils"%>
 <%@page import="org.opennms.netmgt.model.OnmsNode"%>
 <%@page import="org.opennms.web.element.ElementNotFoundException"%>
 <%@page import="org.opennms.web.element.NetworkElementFactory"%>

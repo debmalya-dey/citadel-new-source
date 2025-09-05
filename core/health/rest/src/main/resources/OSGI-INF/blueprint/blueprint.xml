@@ -8,12 +8,12 @@
                 http://aries.apache.org/schemas/blueprint-cm/blueprint-cm-1.3.0.xsd
 ">
 
-    <reference id="healthCheckService" interface="org.opennms.core.health.api.HealthCheckService" availability="mandatory" />
+    <reference id="healthCheckService" interface="org.citadel.core.health.api.HealthCheckService" availability="mandatory" />
 
-    <bean id="healthCheckRestService" class="org.opennms.core.health.rest.internal.HealthCheckRestServiceImpl">
+    <bean id="healthCheckRestService" class="org.citadel.core.health.rest.internal.HealthCheckRestServiceImpl">
         <argument ref="healthCheckService" />
     </bean>
-    <service interface="org.opennms.core.health.rest.HealthCheckRestService" ref="healthCheckRestService" >
+    <service interface="org.citadel.core.health.rest.HealthCheckRestService" ref="healthCheckRestService" >
         <service-properties>
             <entry key="application-path" value="/rest" />
         </service-properties>

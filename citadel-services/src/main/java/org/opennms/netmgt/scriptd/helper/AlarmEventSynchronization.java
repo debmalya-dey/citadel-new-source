@@ -26,8 +26,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.opennms.core.spring.BeanFactoryReference;
-import org.opennms.core.spring.BeanUtils;
+import org.citadel.core.spring.BeanFactoryReference;
+import org.citadel.core.spring.BeanUtils;
 import org.opennms.netmgt.dao.api.AlarmDao;
 import org.opennms.netmgt.model.OnmsAlarm;
 import org.opennms.netmgt.xml.event.AlarmData;

@@ -30,7 +30,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.opennms.core.resource.Vault;
+import org.citadel.core.resource.Vault;
 import org.opennms.web.api.Authentication;
 import org.opennms.web.rest.support.menu.model.MainMenu;
 import org.opennms.web.rest.support.menu.model.MenuEntry;

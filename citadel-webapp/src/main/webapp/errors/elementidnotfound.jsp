@@ -27,7 +27,7 @@
 	isErrorPage="true"
 	import="org.opennms.web.element.*, org.opennms.web.utils.ExceptionUtils"
 %>
-<%@page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%
     ElementIdNotFoundException einfe = ExceptionUtils.getRootCause(exception, ElementIdNotFoundException.class);

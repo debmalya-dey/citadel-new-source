@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.mock;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import java.util.Collection;
 import java.util.Date;

@@ -24,7 +24,7 @@ package org.opennms.netmgt.rtc;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.opennms.core.logging.Logging;
+import org.citadel.core.logging.Logging;
 import org.opennms.netmgt.config.RTCConfigFactory;
 import org.opennms.netmgt.daemon.AbstractServiceDaemon;
 import org.slf4j.Logger;

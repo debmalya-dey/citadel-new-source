@@ -28,8 +28,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 
-import org.opennms.core.utils.DBUtils;
-import org.opennms.core.utils.InetAddressUtils;
+import org.citadel.core.utils.DBUtils;
+import org.citadel.core.utils.InetAddressUtils;
 
 /**
  *

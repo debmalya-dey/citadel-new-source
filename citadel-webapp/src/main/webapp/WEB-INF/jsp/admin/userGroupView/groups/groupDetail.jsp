@@ -32,7 +32,7 @@
 %>
 
 <%@page import="org.opennms.web.group.WebGroup"%>
-<%@ page import="org.opennms.core.utils.WebSecurityUtils" %>
+<%@ page import="org.citadel.core.utils.WebSecurityUtils" %>
 
 <%
     WebGroup group = (WebGroup)request.getAttribute("group");

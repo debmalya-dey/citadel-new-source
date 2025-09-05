@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.config.poller;
 
-import org.opennms.core.xml.JaxbClassObjectAdapter;
+import org.citadel.core.xml.JaxbClassObjectAdapter;
 import org.opennms.netmgt.config.pagesequence.PageSequence;
 import org.opennms.netmgt.snmp.SnmpAgentConfig;
 

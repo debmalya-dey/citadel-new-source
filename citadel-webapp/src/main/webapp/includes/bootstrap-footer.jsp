@@ -37,7 +37,7 @@
         session="true"
         import="java.io.File,
                 org.opennms.web.api.Util,
-                org.opennms.core.resource.Vault,
+                org.citadel.core.resource.Vault,
                 org.opennms.web.api.HtmlInjectHandler,
                 org.opennms.web.servlet.XssRequestWrapper"
 %>

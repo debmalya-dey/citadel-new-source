@@ -44,10 +44,10 @@ import static org.opennms.netmgt.snmp.SnmpConfiguration.versionToString;
 import java.net.InetAddress;
 import java.util.List;
 
-import org.opennms.core.utils.ByteArrayComparator;
-import org.opennms.core.utils.IPLike;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.LocationUtils;
+import org.citadel.core.utils.ByteArrayComparator;
+import org.citadel.core.utils.IPLike;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.LocationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

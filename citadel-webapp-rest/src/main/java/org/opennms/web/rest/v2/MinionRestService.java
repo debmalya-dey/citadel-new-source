@@ -31,8 +31,8 @@ import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.core.Response.Status;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.opennms.core.config.api.JaxbListWrapper;
-import org.opennms.core.criteria.CriteriaBuilder;
+import org.citadel.core.config.api.JaxbListWrapper;
+import org.citadel.core.criteria.CriteriaBuilder;
 import org.opennms.netmgt.dao.api.MinionDao;
 import org.opennms.netmgt.events.api.EventConstants;
 import org.opennms.netmgt.events.api.EventProxy;

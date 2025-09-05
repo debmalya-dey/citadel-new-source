@@ -3,7 +3,7 @@ package org.opennms.netmgt.correlation.drools;
 
 import java.util.Date;
 
-import org.opennms.core.utils.InetAddressUtils;
+import utils.org.citadel.core.InetAddressUtils;
 import org.opennms.netmgt.correlation.drools.DroolsCorrelationEngine;
 import org.opennms.netmgt.xml.event.Event;
 import org.opennms.netmgt.model.events.EventBuilder;

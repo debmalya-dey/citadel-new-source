@@ -36,8 +36,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.opennms.core.xml.DoubleAdapter;
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.xml.DoubleAdapter;
+import org.citadel.core.xml.ValidateUsing;
 import org.opennms.netmgt.config.utils.ConfigUtils;
 
 @XmlRootElement(name = "discovery-configuration")

@@ -32,8 +32,8 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.network.IPAddress;
-import org.opennms.core.network.IpListFromUrl;
+import org.citadel.core.network.IPAddress;
+import org.citadel.core.network.IpListFromUrl;
 
 /**
  * Package encapsulating addresses eligible to have SNMP

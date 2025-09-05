@@ -26,13 +26,13 @@
     </onmsgi:service-properties>
   </onmsgi:service>
 
-  <bean id="camelMessageConsumerManager" class="org.opennms.core.ipc.sink.camel.server.CamelMessageConsumerManager"
+  <bean id="camelMessageConsumerManager" class="org.citadel.core.ipc.sink.camel.server.CamelMessageConsumerManager"
         init-method="start"  destroy-method="shutdown">
     <constructor-arg ref="sinkServer"/>
     <constructor-arg ref="camelSinkMetricRegistry"/>
   </bean>
 
-  <onmsgi:service ref="camelMessageConsumerManager" interface="org.opennms.core.ipc.sink.api.MessageConsumerManager" />
+  <onmsgi:service ref="camelMessageConsumerManager" interface="org.citadel.core.ipc.sink.api.MessageConsumerManager" />
 
   <!-- Reduces the graceful shutdown time from 300 to 15 seconds. -->
   <bean id="shutdownStrategy" class="org.apache.camel.impl.DefaultShutdownStrategy">

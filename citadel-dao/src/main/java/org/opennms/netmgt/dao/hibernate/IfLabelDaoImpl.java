@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.dao.hibernate;
 
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.net.InetAddress;
 import java.sql.SQLException;
@@ -31,10 +31,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-import org.opennms.core.criteria.Alias.JoinType;
-import org.opennms.core.criteria.CriteriaBuilder;
-import org.opennms.core.spring.BeanUtils;
-import org.opennms.core.utils.AlphaNumeric;
+import org.citadel.core.criteria.Alias.JoinType;
+import org.citadel.core.criteria.CriteriaBuilder;
+import org.citadel.core.spring.BeanUtils;
+import org.citadel.core.utils.AlphaNumeric;
 import org.opennms.netmgt.dao.api.IfLabel;
 import org.opennms.netmgt.dao.api.SnmpInterfaceDao;
 import org.opennms.netmgt.dao.util.AbstractIfLabel;

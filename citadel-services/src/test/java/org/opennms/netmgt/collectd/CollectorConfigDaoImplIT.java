@@ -24,10 +24,10 @@ package org.opennms.netmgt.collectd;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.test.MockLogAppender;
-import org.opennms.core.test.db.MockDatabase;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.test.ConfigurationTestUtils;
+import org.citadel.core.test.MockLogAppender;
+import org.citadel.core.test.db.MockDatabase;
 import org.opennms.netmgt.config.CollectdConfigFactory;
 import org.opennms.netmgt.config.DataCollectionConfigFactory;
 import org.opennms.netmgt.config.DatabaseSchemaConfigFactory;

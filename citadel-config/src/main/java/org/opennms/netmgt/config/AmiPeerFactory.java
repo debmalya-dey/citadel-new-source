@@ -38,11 +38,11 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.utils.IPLike;
-import org.opennms.core.utils.InetAddressComparator;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.IPLike;
+import org.citadel.core.utils.InetAddressComparator;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.ami.AmiAgentConfig;
 import org.opennms.netmgt.config.ami.AmiConfig;
 import org.opennms.netmgt.config.ami.Definition;

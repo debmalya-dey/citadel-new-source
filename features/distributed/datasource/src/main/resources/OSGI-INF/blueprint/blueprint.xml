@@ -15,7 +15,7 @@
 
     <cm:property-placeholder id="datasourceProperties" persistent-id="org.opennms.netmgt.distributed.datasource" update-strategy="reload">
         <cm:default-properties>
-            <cm:property name="connection.pool.factory" value="org.opennms.core.db.HikariCPConnectionFactory" />
+            <cm:property name="connection.pool.factory" value="db.org.citadel.core.HikariCPConnectionFactory" />
             <cm:property name="connection.pool.idleTimeout" value="600" />
             <cm:property name="connection.pool.loginTimeout" value="3" />
             <cm:property name="connection.pool.minPool" value="50" />

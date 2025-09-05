@@ -21,7 +21,7 @@
     License.
 
 --%>
-<%@page language="java" contentType="text/html" session="false" import="org.opennms.core.utils.WebSecurityUtils,org.opennms.web.servlet.MissingParameterException" %>
+<%@page language="java" contentType="text/html" session="false" import="org.citadel.core.utils.WebSecurityUtils,org.opennms.web.servlet.MissingParameterException" %>
 
 <%!
     protected static final String DEFAULT_LIMIT_PARAM_NAME    = "limit";

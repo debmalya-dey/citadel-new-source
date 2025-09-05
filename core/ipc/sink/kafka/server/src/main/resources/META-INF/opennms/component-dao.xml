@@ -8,8 +8,8 @@
        ">
 
     <!-- Conditionally load the Kafka Sink -->
-    <bean class="org.opennms.core.ipc.sink.kafka.server.ConditionalKafkaSinkContext"/>
+    <bean class="org.citadel.core.ipc.sink.kafka.server.ConditionalKafkaSinkContext"/>
 
     <!-- Conditionally load the Kafka Offset -->
-    <bean class="org.opennms.core.ipc.sink.kafka.server.ConditionalKafkaOffsetContext"/>
+    <bean class="org.citadel.core.ipc.sink.kafka.server.ConditionalKafkaOffsetContext"/>
 </beans>

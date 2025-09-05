@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.model;
 
-import static org.opennms.core.utils.InetAddressUtils.toInteger;
+import static org.citadel.core.utils.InetAddressUtils.toInteger;
 
 import java.io.Serializable;
 import java.math.BigInteger;

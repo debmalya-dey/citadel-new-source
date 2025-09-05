@@ -17,7 +17,7 @@
     <tx:annotation-driven />
 
     <!-- Resolve references, which are usually provided by the OpenNMS Runtime Environment -->
-    <osgi:reference id="serviceRegistry" interface="org.opennms.core.soa.ServiceRegistry" />
+    <osgi:reference id="serviceRegistry" interface="org.citadel.core.soa.ServiceRegistry" />
     <osgi:reference id="dataSource" interface="javax.sql.DataSource" />
     <osgi:reference id="databaseSchemaConfigFactory" interface="org.opennms.netmgt.config.api.DatabaseSchemaConfig" />
 

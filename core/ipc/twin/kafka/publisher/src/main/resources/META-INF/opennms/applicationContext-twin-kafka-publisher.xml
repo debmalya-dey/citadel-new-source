@@ -11,7 +11,7 @@
 
     <context:annotation-config />
 
-    <bean id="kafkaTwinPublisher" class="org.opennms.core.ipc.twin.kafka.publisher.KafkaTwinPublisher"
+    <bean id="kafkaTwinPublisher" class="org.citadel.core.ipc.twin.kafka.publisher.KafkaTwinPublisher"
           primary="true"
           init-method="init"
           destroy-method="close">
@@ -21,13 +21,13 @@
     </bean>
 
     <bean id="identity" class="org.opennms.features.distributed.identity.impl.OpenNMSIdentityImpl"/>
-    <bean id="localTwinSubscriber" class="org.opennms.core.ipc.twin.common.LocalTwinSubscriberImpl">
+    <bean id="localTwinSubscriber" class="org.citadel.core.ipc.twin.common.LocalTwinSubscriberImpl">
         <constructor-arg ref="identity"/>
         <constructor-arg ref="tracerRegistry"/>
         <constructor-arg ref="localTwinMetricRegistry"/>
     </bean>
 
-    <onmsgi:service ref="localTwinSubscriber" interface="org.opennms.core.ipc.twin.api.TwinSubscriber"/>
+    <onmsgi:service ref="localTwinSubscriber" interface="org.citadel.core.ipc.twin.api.TwinSubscriber"/>
 
     <!-- Kafka Twin Publisher Metrics -->
 

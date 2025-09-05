@@ -33,8 +33,8 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
-import org.opennms.core.config.api.ConfigReloadContainer;
-import org.opennms.core.xml.JaxbUtils;
+import org.citadel.core.config.api.ConfigReloadContainer;
+import org.citadel.core.xml.JaxbUtils;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.xml.eventconf.Event;
 import org.opennms.netmgt.xml.eventconf.EventLabelComparator;

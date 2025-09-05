@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.collectd;
 
-import static org.opennms.core.utils.InetAddressUtils.str;
+import static org.citadel.core.utils.InetAddressUtils.str;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -42,15 +42,13 @@ import java.util.stream.Collectors;
 import javax.swing.text.html.parser.Entity;
 
 import org.apache.commons.lang.StringUtils;
-import org.opennms.core.logging.Logging;
-import org.opennms.core.mate.api.EntityScopeProvider;
-import org.opennms.core.mate.api.FallBackScopeProvider;
-import org.opennms.core.mate.api.FallbackScope;
-import org.opennms.core.mate.api.Scope;
-import org.opennms.core.mate.api.ScopeProvider;
-import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.utils.InsufficientInformationException;
+import org.citadel.core.logging.Logging;
+import org.citadel.core.mate.api.EntityScopeProvider;
+import org.citadel.core.mate.api.FallBackScopeProvider;
+import org.citadel.core.mate.api.ScopeProvider;
+import org.citadel.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.utils.InsufficientInformationException;
 import org.opennms.netmgt.collection.api.CollectionInitializationException;
 import org.opennms.netmgt.collection.api.CollectionInstrumentation;
 import org.opennms.netmgt.collection.api.LocationAwareCollectorClient;
@@ -696,7 +694,7 @@ public class Collectd extends AbstractServiceDaemon implements
     /**
      * <p>handleInsufficientInfo</p>
      *
-     * @param e a {@link org.opennms.core.utils.InsufficientInformationException} object.
+     * @param e a {@link InsufficientInformationException} object.
      */
     protected void handleInsufficientInfo(InsufficientInformationException e) {
         LOG.info(e.getMessage());

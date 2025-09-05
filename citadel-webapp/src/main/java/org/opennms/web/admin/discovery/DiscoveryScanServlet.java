@@ -42,9 +42,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.opennms.core.soa.ServiceRegistry;
-import org.opennms.core.utils.LocationUtils;
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.soa.ServiceRegistry;
+import org.citadel.core.utils.LocationUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.netmgt.config.discovery.DiscoveryConfiguration;
 import org.opennms.netmgt.config.discovery.ExcludeRange;
 import org.opennms.netmgt.config.discovery.IncludeRange;

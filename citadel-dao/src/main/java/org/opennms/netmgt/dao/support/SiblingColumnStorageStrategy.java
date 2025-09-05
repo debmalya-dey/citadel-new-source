@@ -24,9 +24,9 @@ package org.opennms.netmgt.dao.support;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.opennms.core.utils.ReplaceAllOperation;
-import org.opennms.core.utils.ReplaceFirstOperation;
-import org.opennms.core.utils.StringReplaceOperation;
+import org.citadel.core.utils.ReplaceAllOperation;
+import org.citadel.core.utils.ReplaceFirstOperation;
+import org.citadel.core.utils.StringReplaceOperation;
 import org.opennms.netmgt.collection.api.CollectionResource;
 import org.opennms.netmgt.collection.api.Parameter;
 import org.opennms.netmgt.collection.support.IndexStorageStrategy;

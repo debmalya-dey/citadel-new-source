@@ -37,8 +37,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import org.opennms.core.network.InetAddressXmlAdapter;
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.network.InetAddressXmlAdapter;
+import org.citadel.core.xml.ValidateUsing;
 import org.opennms.netmgt.config.pagesequence.PageSequence;
 
 /**

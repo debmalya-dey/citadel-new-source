@@ -18,9 +18,9 @@
 
   <context:annotation-config />
 
-  <bean id="localHostAddress" class="org.opennms.core.utils.InetAddressUtils" factory-method="getLocalHostAddressAsString"/>
+  <bean id="localHostAddress" class="org.citadel.core.utils.InetAddressUtils" factory-method="getLocalHostAddressAsString"/>
   
-  <bean id="localHostName" class="org.opennms.core.utils.InetAddressUtils" factory-method="getLocalHostName"/>
+  <bean id="localHostName" class="org.citadel.core.utils.InetAddressUtils" factory-method="getLocalHostName"/>
   
   <!-- Expose the SOA interfaces for event IPC as Spring beans -->
   <onmsgi:reference id="eventForwarder" interface="org.opennms.netmgt.events.api.EventForwarder"/>

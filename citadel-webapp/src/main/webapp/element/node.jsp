@@ -34,10 +34,10 @@
         java.util.*,
         java.net.*,
         java.sql.SQLException,
-        org.opennms.core.spring.BeanUtils,
-        org.opennms.core.soa.ServiceRegistry,
-        org.opennms.core.utils.InetAddressUtils,
-        org.opennms.core.utils.WebSecurityUtils,
+        org.citadel.core.spring.BeanUtils,
+        org.citadel.core.soa.ServiceRegistry,
+        org.citadel.core.utils.InetAddressUtils,
+        org.citadel.core.utils.WebSecurityUtils,
         org.opennms.netmgt.config.dao.outages.api.ReadablePollOutagesDao,
         org.opennms.netmgt.config.poller.outages.Outage,
         org.opennms.netmgt.model.OnmsNode,
@@ -261,7 +261,7 @@
     pageContext.setAttribute("maxInterfaceCount", System.getProperty("org.opennms.interfaceAvailabilityBox.maxInterfaceCount", "10"));
 %>
 
-<%@page import="org.opennms.core.resource.Vault"%>
+<%@page import="org.citadel.core.resource.Vault"%>
 <%@ page import="org.opennms.web.utils.Bootstrap" %>
 <% Bootstrap.with(pageContext)
           .headTitle("${model.label}")

@@ -30,8 +30,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.xml.ValidateUsing;
+import org.citadel.core.utils.InetAddressUtils;
+import org.citadel.core.xml.ValidateUsing;
 
 /**
  * Interface to which the outage applies.

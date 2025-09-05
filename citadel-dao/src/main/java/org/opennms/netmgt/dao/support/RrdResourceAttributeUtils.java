@@ -33,7 +33,7 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.opennms.core.utils.PropertiesCache;
+import org.citadel.core.utils.PropertiesCache;
 import org.opennms.netmgt.model.OnmsAttribute;
 import org.opennms.netmgt.model.ResourceTypeUtils;
 import org.opennms.netmgt.model.RrdGraphAttribute;

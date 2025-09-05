@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.apache.commons.lang.builder.CompareToBuilder;
-import org.opennms.core.utils.FuzzyDateFormatter;
+import org.citadel.core.utils.FuzzyDateFormatter;
 import org.opennms.netmgt.model.OnmsSeverity;
 
 /**

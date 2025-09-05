@@ -13,7 +13,7 @@
 
     <reference id="secureCredentialsVault" interface="org.opennms.features.scv.api.SecureCredentialsVault" availability="mandatory" />
 
-    <service interface="org.opennms.core.rpc.api.RpcModule" >
+    <service interface="org.citadel.core.rpc.api.RpcModule" >
         <bean class="org.opennms.netmgt.snmp.proxy.common.SnmpProxyRpcModule">
             <property name="secureCredentialsVault" ref="secureCredentialsVault" />
         </bean>

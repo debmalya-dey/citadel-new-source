@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 
 import org.codehaus.jackson.map.ObjectMapper;
-import org.opennms.core.xml.JacksonUtils;
+import org.citadel.core.xml.JacksonUtils;
 import org.opennms.features.distributed.kvstore.api.JsonStore;
 import org.opennms.netmgt.config.dao.common.api.ReloadableConfigContainer;
 

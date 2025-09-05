@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.model;
 
-import org.opennms.core.fiber.PausableFiber;
+import org.citadel.core.fiber.PausableFiber;
 
 /**
  * <p>ServiceDaemon interface.</p>

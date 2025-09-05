@@ -37,7 +37,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TemporaryFolder;
-import org.opennms.core.utils.ConfigFileConstants;
+import org.citadel.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.alarmd.drools.DefaultAlarmService;
 import org.opennms.netmgt.alarmd.drools.DroolsAlarmContext;
 import org.opennms.netmgt.dao.api.AcknowledgmentDao;

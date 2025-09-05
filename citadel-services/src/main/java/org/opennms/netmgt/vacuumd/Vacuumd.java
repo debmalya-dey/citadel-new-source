@@ -32,8 +32,8 @@ import java.util.concurrent.ExecutorService;
 
 import javax.sql.DataSource;
 
-import org.opennms.core.db.DataSourceFactory;
-import org.opennms.core.logging.Logging;
+import org.citadel.core.db.DataSourceFactory;
+import org.citadel.core.logging.Logging;
 import org.opennms.netmgt.config.VacuumdConfigFactory;
 import org.opennms.netmgt.config.vacuumd.Action;
 import org.opennms.netmgt.config.vacuumd.Automation;

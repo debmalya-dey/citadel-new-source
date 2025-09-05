@@ -35,7 +35,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.opennms.core.utils.WebSecurityUtils;
+import org.citadel.core.utils.WebSecurityUtils;
 import org.opennms.web.api.Util;
 import org.opennms.web.event.filter.AfterDateFilter;
 import org.opennms.web.event.filter.BeforeDateFilter;

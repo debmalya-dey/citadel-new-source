@@ -24,8 +24,8 @@
 <%@page language="java" contentType="text/html" session="true"
 	import="
 	java.util.*,
-	org.opennms.core.spring.BeanUtils,
-	org.opennms.core.utils.WebSecurityUtils,
+	org.citadel.core.spring.BeanUtils,
+	org.citadel.core.utils.WebSecurityUtils,
 	org.opennms.netmgt.config.*,
 	org.opennms.netmgt.config.dao.outages.api.WriteablePollOutagesDao,
 	org.opennms.netmgt.config.dao.thresholding.api.WriteableThreshdDao,

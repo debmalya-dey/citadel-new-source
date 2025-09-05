@@ -22,7 +22,7 @@
 package org.opennms.netmgt.xml.eventconf;
 
 import org.junit.runners.Parameterized.Parameters;
-import org.opennms.core.test.xml.XmlTest;
+import org.citadel.core.test.xml.XmlTest;
 
 import java.text.ParseException;
 import java.util.Arrays;

@@ -21,7 +21,7 @@
  */
 package org.opennms.netmgt.model;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 import java.net.InetAddress;
 import java.util.HashMap;

@@ -25,7 +25,7 @@ import java.net.InetAddress;
 
 import org.opennms.netmgt.model.NetworkBuilder.InterfaceBuilder;
 
-import static org.opennms.core.utils.InetAddressUtils.addr;
+import static org.citadel.core.utils.InetAddressUtils.addr;
 
 /**
  * <p>SnmpInterfaceBuilder class.</p>

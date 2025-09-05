@@ -21,7 +21,7 @@
     </cm:property-placeholder>
 
     <!-- Configure node cache -->
-    <bean id="nodeInfoCacheConfig" class="org.opennms.core.cache.CacheConfig">
+    <bean id="nodeInfoCacheConfig" class="cache.org.citadel.core.CacheConfig">
         <argument value="nodeInfoCache"/>
         <property name="metricRegistry" ref="flowCacheMetricRegistry" />
         <property name="enabled" value="${nodeInfoCache.enabled}" />

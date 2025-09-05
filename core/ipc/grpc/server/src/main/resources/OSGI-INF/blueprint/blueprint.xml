@@ -7,12 +7,12 @@
 
   <reference id="identity" interface="org.opennms.distributed.core.api.Identity"/>
 
-  <reference id="tracerRegistry" interface="org.opennms.core.tracing.api.TracerRegistry"/>
+  <reference id="tracerRegistry" interface="org.citadel.core.tracing.api.TracerRegistry"/>
 
-  <reference id="grpcIpcServer" interface="org.opennms.core.grpc.common.GrpcIpcServer" />
+  <reference id="grpcIpcServer" interface="org.citadel.core.grpc.common.GrpcIpcServer" />
 
 
-  <bean id="grpcServer" class="org.opennms.core.ipc.grpc.server.OpennmsGrpcServer"
+  <bean id="grpcServer" class="org.citadel.core.ipc.grpc.server.OpennmsGrpcServer"
         init-method="start" destroy-method="shutdown">
     <argument ref="grpcIpcServer"/>
     <property name="identity" ref="identity"/>
@@ -21,14 +21,14 @@
     <property name="tracerRegistry" ref="tracerRegistry"/>
   </bean>
 
-  <service ref="grpcServer" interface="org.opennms.core.ipc.sink.api.MessageConsumerManager">
+  <service ref="grpcServer" interface="org.citadel.core.ipc.sink.api.MessageConsumerManager">
     <service-properties>
       <entry key="strategy" value="grpc"/>
       <entry key="registration.export" value="true"/>
     </service-properties>
   </service>
 
-  <service ref="grpcServer" interface="org.opennms.core.rpc.api.RpcClientFactory">
+  <service ref="grpcServer" interface="org.citadel.core.rpc.api.RpcClientFactory">
     <service-properties>
       <entry key="strategy" value="grpc"/>
       <entry key="registration.export" value="true"/>
